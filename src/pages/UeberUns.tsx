@@ -20,118 +20,66 @@ const UeberUns = () => {
         
         <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-black leading-none mb-6 font-display">
-            Über uns
+            Wer wir sind – und warum wir Textilproduktion neu denken
           </h1>
           <p className="text-xl md:text-2xl font-light tracking-wide text-warm-cream font-body">
-            The Drop Factory – Ihr Partner für professionelle Textilproduktion
+            CMK.Studio – Ihr unabhängiger Partner für europäische Textilproduktion
           </p>
         </div>
       </section>
 
-      {/* Company Story */}
+      {/* About CMK.Studio */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-light mb-8 text-foreground font-display text-center">
-              Unsere Geschichte
-            </h2>
             <div className="prose prose-lg mx-auto text-clay/80 font-body">
               <p className="text-lg leading-relaxed mb-6">
-                The Drop Factory wurde mit der Vision gegründet, die Textilproduktion zu revolutionieren. 
-                Als erfahrenes Team aus der Fashion-Industrie verstehen wir die Herausforderungen, 
-                vor denen Marken, Designer und Unternehmen stehen – von der ersten Idee bis zum fertigen Produkt.
+                CMK.Studio ist ein unabhängiger Partner für Marken, Creator und Unternehmen, die hochwertige Kollektionen in Europa produzieren möchten.
               </p>
               <p className="text-lg leading-relaxed mb-6">
-                Unser Ansatz ist einfach: Ein Partner, ein Prozess, maximale Qualität. 
-                Wir begleiten unsere Kunden von der ersten Skizze bis zum fertigen Drop und 
-                sorgen dabei für höchste Standards in Qualität, Nachhaltigkeit und Service.
+                Mit über 20 Jahren Erfahrung in Modedesign und industrieller Fertigung verbinden wir kreative Beratung mit klaren Prozessen und nachhaltiger Produktion. Unser Ansatz: persönliche Betreuung, transparente Kosten und verlässliche Ergebnisse – von der ersten Skizze bis zum fertigen Produkt.
+              </p>
+              <p className="text-lg leading-relaxed mb-8">
+                Wir arbeiten ausschließlich mit geprüften europäischen Produktionsstätten, die höchste Qualitätsstandards und faire Arbeitsbedingungen garantieren. So entstehen Kollektionen, die nicht nur heute funktionieren, sondern auch morgen Bestand haben.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Team Values */}
+      {/* USP Block */}
       <section className="py-20" style={{ backgroundColor: 'hsl(44 29% 95%)' }}>
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
-              Unsere Werte
-            </h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="text-center">
-              <h3 className="font-medium text-foreground text-xl mb-4 font-body">
-                Qualität
-              </h3>
-              <p className="text-clay/70 text-lg font-body leading-relaxed">
-                Höchste Standards in Material, Verarbeitung und Finish. 
-                Jedes Stück durchläuft unsere strenge Qualitätskontrolle.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <h3 className="font-medium text-foreground text-xl mb-4 font-body">
-                Nachhaltigkeit
-              </h3>
-              <p className="text-clay/70 text-lg font-body leading-relaxed">
-                Verantwortungsvolle Produktion mit zertifizierten Materialien 
-                und umweltschonenden Produktionsprozessen.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <h3 className="font-medium text-foreground text-xl mb-4 font-body">
-                Partnership
-              </h3>
-              <p className="text-clay/70 text-lg font-body leading-relaxed">
-                Langfristige Partnerschaften auf Augenhöhe. 
-                Wir verstehen uns als Verlängerung Ihres Teams.
-              </p>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="flex items-start">
+                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="text-lg text-clay/80 font-body">Europäische Fertigung: kurze Wege, faire Standards</span>
+              </div>
+              <div className="flex items-start">
+                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="text-lg text-clay/80 font-body">Nachhaltige Materialien & Prozesse</span>
+              </div>
+              <div className="flex items-start">
+                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="text-lg text-clay/80 font-body">Komplettservice: Design, Produktion, Logistik</span>
+              </div>
+              <div className="flex items-start">
+                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="text-lg text-clay/80 font-body">Persönliche Beratung & Betreuung</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Expertise */}
+      {/* Call to Action */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-light mb-8 text-foreground font-display">
-              Unsere Expertise
-            </h2>
-            <p className="text-lg text-clay/80 mb-12 font-body leading-relaxed">
-              Mit jahrelanger Erfahrung in der Textilbranche und einem Netzwerk von 
-              vertrauensvollen Produktionspartnern realisieren wir Projekte jeder Größenordnung – 
-              von kleinen Capsule Collections bis hin zu großvolumigen Corporate Fashion Lines.
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-              <div>
-                <h3 className="font-medium text-foreground text-xl mb-4 font-body">
-                  Produktionserfahrung
-                </h3>
-                <ul className="space-y-2 text-clay/70 font-body">
-                  <li>• 10+ Jahre Branchenerfahrung</li>
-                  <li>• Über 500 erfolgreich realisierte Projekte</li>
-                  <li>• Internationale Produktionspartner</li>
-                  <li>• Zertifizierte Qualitätsstandards</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h3 className="font-medium text-foreground text-xl mb-4 font-body">
-                  Spezialisierung
-                </h3>
-                <ul className="space-y-2 text-clay/70 font-body">
-                  <li>• Fashion & Streetwear</li>
-                  <li>• Corporate Clothing</li>
-                  <li>• Hotel & Resort Textilien</li>
-                  <li>• Sustainable Fashion</li>
-                </ul>
-              </div>
-            </div>
+            <button className="bg-[hsl(var(--cream-tan))] hover:bg-[hsl(var(--cream-tan-hover))] text-foreground px-8 py-3 text-lg font-medium transition-colors duration-300 font-body">
+              Jetzt Kollektion starten
+            </button>
           </div>
         </div>
       </section>
