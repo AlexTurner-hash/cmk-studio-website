@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* New German color palette */
+    /* Background: Soft White #FAFAFA */
+    --background: 40 33% 98%;
+    --foreground: 0 0% 11%; /* Text/Headlines #1C1C1C */
+
+    --card: 40 33% 98%;
+    --card-foreground: 0 0% 11%;
+
+    --popover: 40 33% 98%;
+    --popover-foreground: 0 0% 11%;
+
+    /* Primary: Secondary Elements #3A3A3A */
+    --primary: 0 0% 23%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 23%;
+
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 23%;
+
+    /* Accent: Dusty Rose */
+    --accent: 320 25% 60%;
+    --accent-foreground: 0 0% 98%;
+
+    /* Destructive using accent dusty rose */
+    --destructive: 320 25% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 320 25% 60%;
+
+    --radius: 0.5rem;
+
+    /* Enhanced Color Palette */
+    --clay: 0 0% 23%; /* Secondary Elements #3A3A3A */
+    --deep-purple: 271 81% 36%; /* Deep Purple #663399 */
+    --warm-fuchsia: 320 25% 60%; /* Dusty Rose */
+    --warm-fuchsia-hover: 320 25% 50%; /* Hover Dusty Rose */
+    --warm-yellow: 48 92% 61%; /* Accent Yellow */
+    --cool-blue: 214 42% 68%; /* Accent Blue */
+    --light-gray: 25 36% 81%; /* Background #e4c7b8 */
+    --dark-gray: 0 0% 11%; /* Headlines #1C1C1C */
+    --separation-beige: 25 36% 81%; /* Separation color #e4c7b8 */
+    --warm-cream: 25 36% 81%; /* Background #e4c7b8 */
+    
+    /* PANTONE 13-1108 Cream Tan */
+    --cream-tan: 25 36% 81%; /* #e4c7b8 */
+    --cream-tan-hover: 25 36% 75%; /* Darker variant for hover */
+    
+    /* New Sophisticated Colors */
+    --charcoal: 0 0% 15%; /* Rich dark for premium feel */
+    --platinum: 0 0% 90%; /* Refined light gray */
+    --sage: 120 8% 55%; /* Subtle green accent */
+    --bronze: 30 25% 45%; /* Luxury accent */
+    --pearl: 60 10% 96%; /* Ultra-light background */
+    
+    /* Gradients using new palette */
+    --gradient-warm: linear-gradient(135deg, hsl(var(--light-gray)), hsl(var(--clay)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--clay) / 0.8), hsl(var(--warm-orange) / 0.9));
+    --gradient-premium: linear-gradient(135deg, hsl(var(--charcoal)), hsl(var(--bronze)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--pearl)), hsl(var(--platinum)));
+    
+    /* Shadows using clay color */
+    --shadow-warm: 0 4px 20px hsl(var(--clay) / 0.1);
+    --shadow-elegant: 0 8px 30px hsl(var(--clay) / 0.15);
+    --shadow-premium: 0 20px 40px hsl(var(--charcoal) / 0.12);
+    
+    /* Typography System */
+    --font-display: 'Space Grotesk', 'Inter', 'Helvetica Neue', sans-serif;
+    --font-body: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', monospace;
+
+    /* Typography Scale */
+    --text-xs: 0.75rem;      /* 12px */
+    --text-sm: 0.875rem;     /* 14px */
+    --text-base: 1rem;       /* 16px */
+    --text-lg: 1.125rem;     /* 18px */
+    --text-xl: 1.25rem;      /* 20px */
+    --text-2xl: 1.5rem;      /* 24px */
+    --text-3xl: 1.875rem;    /* 30px */
+    --text-4xl: 2.25rem;     /* 36px */
+    --text-5xl: 3rem;        /* 48px */
+    --text-6xl: 3.75rem;     /* 60px */
+    --text-7xl: 4.5rem;      /* 72px */
+
+    /* Spacing Scale */
+    --space-1: 0.25rem;   /* 4px */
+    --space-2: 0.5rem;    /* 8px */
+    --space-3: 0.75rem;   /* 12px */
+    --space-4: 1rem;      /* 16px */
+    --space-6: 1.5rem;    /* 24px */
+    --space-8: 2rem;      /* 32px */
+    --space-12: 3rem;     /* 48px */
+    --space-16: 4rem;     /* 64px */
+    --space-20: 5rem;     /* 80px */
+    --space-24: 6rem;     /* 96px */
+
+    --sidebar-background: 40 33% 98%;
+    --sidebar-foreground: 0 0% 23%;
+    --sidebar-primary: 0 0% 11%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 95%;
+    --sidebar-accent-foreground: 0 0% 11%;
+    --sidebar-border: 0 0% 88%;
+    --sidebar-ring: 320 25% 60%;
+  }
+
+  .dark {
+    --background: 20 15% 8%;
+    --foreground: 40 10% 95%;
+
+    --card: 20 15% 10%;
+    --card-foreground: 40 10% 95%;
+
+    --popover: 20 15% 10%;
+    --popover-foreground: 40 10% 95%;
+
+    --primary: 40 15% 90%;
+    --primary-foreground: 20 15% 8%;
+
+    --secondary: 25 10% 20%;
+    --secondary-foreground: 40 10% 95%;
+
+    --muted: 25 8% 18%;
+    --muted-foreground: 35 8% 65%;
+
+    --accent: 30 15% 25%;
+    --accent-foreground: 40 10% 95%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 40 10% 95%;
+
+    --border: 25 10% 20%;
+    --input: 25 10% 20%;
+    --ring: 320 25% 60%;
+
+    --clay: 40 10% 95%;
+    --charcoal: 40 10% 95%;
+    --platinum: 25 8% 18%;
+    --sage: 120 8% 65%;
+    --bronze: 30 25% 55%;
+    --pearl: 20 15% 8%;
+  }
+}
+
+/* High-End Typography Styles */
+@layer components {
+  .heading-hero {
+    @apply text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-none tracking-tight;
+  }
+  
+  .heading-section {
+    @apply text-3xl md:text-4xl lg:text-5xl font-display font-semibold leading-tight tracking-tight;
+  }
+  
+  .heading-subsection {
+    @apply text-xl md:text-2xl lg:text-3xl font-display font-semibold leading-tight;
+  }
+  
+  .text-body-large {
+    @apply text-lg md:text-xl font-body font-light leading-relaxed;
+  }
+  
+  .text-body {
+    @apply text-base md:text-lg font-body leading-relaxed;
+  }
+  
+  .text-caption {
+    @apply text-sm font-body font-medium tracking-wide uppercase;
+  }
+
+  /* Premium Button Styles */
+  .btn-primary {
+    @apply inline-flex items-center px-8 py-4 bg-[hsl(var(--cream-tan-hover))] text-white font-body font-medium tracking-wide hover:bg-[hsl(var(--clay))] transition-all duration-300 rounded-lg shadow-elegant hover:shadow-premium;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center px-6 py-3 border-2 border-[hsl(var(--cream-tan-hover))] text-[hsl(var(--cream-tan-hover))] font-body font-medium hover:bg-[hsl(var(--cream-tan-hover))] hover:text-white transition-all duration-300 rounded-lg;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center px-8 py-4 bg-[hsl(var(--cream-tan-hover))] text-white hover:text-white font-body font-medium tracking-wide hover:bg-[hsl(var(--clay))] transition-all duration-300 rounded-lg shadow-elegant hover:shadow-premium;
+  }
+
+  /* Consistent Section Spacing */
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+  
+  .section-padding-small {
+    @apply py-12 md:py-16;
+  }
+
+  /* Premium Cards */
+  .card-premium {
+    @apply bg-white/80 backdrop-blur-sm border border-platinum/50 rounded-xl p-8 shadow-elegant hover:shadow-premium transition-all duration-300;
+  }
+
+  /* Enhanced Shadows */
+  .shadow-warm {
+    box-shadow: var(--shadow-warm);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .shadow-premium {
+    box-shadow: var(--shadow-premium);
+  }
+  
+  /* Horizontal scrolling animation for client logos */
+  @keyframes horizontal-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-horizontal-scroll {
+    animation: horizontal-scroll 30s linear infinite;
+  }
+
+  /* Premium Hover Effects */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-premium;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-[0_0_30px_hsl(var(--bronze)/0.3)];
+  }
+}
