@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import blogImage from "@/assets/blog-erste-modekollektion.jpg";
 
 const ErsteModekollektion = () => {
   return (
@@ -46,7 +47,7 @@ const ErsteModekollektion = () => {
             {/* Featured Image */}
             <div className="aspect-[16/9] mb-12 rounded-lg overflow-hidden">
               <img 
-                src="/placeholder.svg" 
+                src={blogImage} 
                 alt="Modedesign Skizzen und Stoffproben auf einem Arbeitstisch"
                 className="w-full h-full object-cover"
               />

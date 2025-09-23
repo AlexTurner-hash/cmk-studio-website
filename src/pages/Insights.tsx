@@ -2,13 +2,17 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import blogImage1 from "@/assets/blog-erste-modekollektion.jpg";
+import blogImage2 from "@/assets/blog-nachhaltige-produktion.jpg";
+import blogImage3 from "@/assets/blog-private-label.jpg";
+import blogImage4 from "@/assets/blog-micro-produktion.jpg";
 
 const blogPosts = [
   {
     id: "erste-modekollektion-planen",
     title: "Wie Sie Ihre erste Modekollektion planen – ein Leitfaden für Startups und Creator",
     excerpt: "Von der ersten Idee bis zur fertigen Kollektion: Entdecken Sie die wichtigsten Schritte für eine erfolgreiche Modekollektion und vermeiden Sie typische Anfängerfehler.",
-    image: "/placeholder.svg",
+    image: blogImage1,
     readTime: "8 min",
     category: "Startup-Guide"
   },
@@ -16,7 +20,7 @@ const blogPosts = [
     id: "nachhaltige-textilproduktion-europa",
     title: "Nachhaltige Textilproduktion in Europa: Chancen für Marken und Creator",
     excerpt: "Warum europäische Fertigung der Schlüssel für nachhaltige Mode ist und welche Vorteile kurze Lieferketten für Ihre Marke haben.",
-    image: "/placeholder.svg",
+    image: blogImage2,
     readTime: "6 min",
     category: "Nachhaltigkeit"
   },
@@ -24,7 +28,7 @@ const blogPosts = [
     id: "private-label-bekleidung-eigenmarken",
     title: "Private Label Bekleidung: Warum Eigenmarken für Unternehmen immer wichtiger werden",
     excerpt: "Erfahren Sie, wie Unternehmen mit maßgeschneiderter Bekleidung ihre Markenidentität stärken und sich vom Wettbewerb abheben können.",
-    image: "/placeholder.svg",
+    image: blogImage3,
     readTime: "7 min",
     category: "Business"
   },
@@ -32,7 +36,7 @@ const blogPosts = [
     id: "micro-produktion-modebranche",
     title: "Kleine Auflagen, große Wirkung: Warum Micro-Produktion die Modebranche verändert",
     excerpt: "Wie kleine Auflagen nachhaltiger, kostengünstiger und flexibler sein können als Massenproduktion – ein Paradigmenwechsel in der Textilbranche.",
-    image: "/placeholder.svg",
+    image: blogImage4,
     readTime: "5 min",
     category: "Trends"
   }

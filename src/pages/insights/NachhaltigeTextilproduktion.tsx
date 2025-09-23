@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import blogImage from "@/assets/blog-nachhaltige-produktion.jpg";
 
 const NachhaltigeTextilproduktion = () => {
   return (
@@ -43,7 +44,7 @@ const NachhaltigeTextilproduktion = () => {
 
             <div className="aspect-[16/9] mb-12 rounded-lg overflow-hidden">
               <img 
-                src="/placeholder.svg" 
+                src={blogImage} 
                 alt="Moderne europäische Textilfabrik mit nachhaltigen Produktionsmethoden"
                 className="w-full h-full object-cover"
               />
