@@ -1,8 +1,6 @@
 import headerImage from "@/assets/header-image-new.jpg";
-
 const HeroSection = () => {
-  return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img src={headerImage} alt="Modern fashion studio workspace with garment samples and design materials" className="w-full h-full object-cover" />
@@ -12,7 +10,10 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6 max-w-6xl mx-auto">
         <h1 className="heading-hero text-white mb-6">
-          <span className="block text-white">Ihre Kollektion. Unsere Produktion. Ein Partner für jeden Schritt.</span>
+          <span className="block text-white">Ihre Kollektion. 
+Unsere Produktion. 
+
+        </span>
         </h1>
         
         <p className="text-xl md:text-2xl lg:text-3xl font-body font-light leading-relaxed tracking-normal text-white/90 mb-12 max-w-4xl mx-auto">
@@ -26,8 +27,6 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
