@@ -1,30 +1,20 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/textile-factory.jpg";
-
 const UeberUns = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src={heroImage}
-            alt="Textile factory showcasing our production capabilities"
-            className="w-full h-full object-cover"
-          />
+          <img src={heroImage} alt="Textile factory showcasing our production capabilities" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
         
         <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-black leading-none mb-6 font-display">
-            Wer wir sind – und warum wir Textilproduktion neu denken
-          </h1>
-          <p className="text-xl md:text-2xl font-light tracking-wide text-warm-cream font-body">
-            CMK.Studio – Ihr unabhängiger Partner für europäische Textilproduktion
-          </p>
+          <h1 className="text-4xl md:text-6xl font-black leading-none mb-6 font-display">Wer wir sind</h1>
+          <p className="text-xl md:text-2xl font-light tracking-wide text-warm-cream font-body">CMK.Studio – Unabhängiger Partner für europäische Textilproduktion</p>
         </div>
       </section>
 
@@ -48,7 +38,9 @@ const UeberUns = () => {
       </section>
 
       {/* USP Block */}
-      <section className="py-20" style={{ backgroundColor: 'hsl(44 29% 95%)' }}>
+      <section className="py-20" style={{
+      backgroundColor: 'hsl(44 29% 95%)'
+    }}>
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -85,8 +77,6 @@ const UeberUns = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default UeberUns;
