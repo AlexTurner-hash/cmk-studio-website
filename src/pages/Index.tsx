@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import IntroSection from "@/components/IntroSection";
 import ClientsSection from "@/components/ClientsSection";
 import ServicesSection from "@/components/ServicesSection";
-import ServicesCTASection from "@/components/ServicesCTASection";
+import ServicesOfferedSection from "@/components/ServicesOfferedSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import SustainabilitySection from "@/components/SustainabilitySection";
 import FAQSection from "@/components/FAQSection";
@@ -17,14 +17,11 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <IntroSection />
-      <ClientsSection />
       <ServicesSection />
-      <TestimonialsSection />
-      <SustainabilitySection />
-      <AboutSection />
-      <FAQSection />
+      <ServicesOfferedSection />
       <WhyUsSection />
+      <TestimonialsSection />
+      <FAQSection />
       <ContactSection />
       <Footer />
     </div>

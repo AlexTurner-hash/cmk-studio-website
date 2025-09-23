@@ -22,7 +22,7 @@ const FAQSection = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl mb-6 text-foreground font-display font-semibold md:text-4xl">FAQ</h2>
+          <h2 className="text-3xl mb-6 text-foreground font-display font-semibold md:text-4xl">Häufige Fragen</h2>
         </div>
 
         {/* FAQ Accordion */}

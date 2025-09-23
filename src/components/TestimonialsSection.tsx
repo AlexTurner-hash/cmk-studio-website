@@ -2,17 +2,13 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { useEffect, useState } from "react";
 const TestimonialsSection = () => {
   const testimonials = [{
-    quote: "CMK liefert Top-Qualität aus Europa; nachhaltig, völlig individualisiert und zu wettbewerbsfähigen Preisen. Und das alles mit persönlicher Betreuung. Das können die Großen so eben nicht.",
-    client: "Tanja Rietdorf",
-    company: "ehem. Coffee Fellows"
+    quote: "Claudias Erfahrung mit Fashion-Labels jeder Größe, gepaart mit ihrem Background als Designerin, ist selten. Ihr Input ist einfach wertvoll.",
+    client: "Maiami",
+    company: ""
   }, {
-    quote: "Claudias Erfahrung mit Fashion-Labels jeder Größe und in jeder Phase, gepaart mit ihrem eigenen Background als Modedesignerin ist selten. Ihr Input ist einfach wertvoll.",
-    client: "Gitta und Peter Plotnicki",
-    company: "Merz b. Schwanen"
-  }, {
-    quote: "Wenn man Founderin ist, will man sich auf seine Vision konzentrieren. Ein Partner der versteht, was man will, und Ideen zuverlässig umsetzen kann, ist ein echtes Geschenk.",
-    client: "Steffi Diem",
-    company: "Lila Loves It"
+    quote: "CMK liefert Top-Qualität aus Europa, völlig individualisiert und zu wettbewerbsfähigen Preisen. Und das mit persönlicher Betreuung – das können die Großen nicht.",
+    client: "Merz b. Schwanen",
+    company: ""
   }];
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
@@ -40,7 +36,7 @@ const TestimonialsSection = () => {
   return <section className="py-20" style={{backgroundColor: '#f1f0e2'}}>
       <div className="container mx-auto px-6">
         <div className="text-center mb-8">
-          <h2 className="heading-section text-foreground mb-4 text-3xl font-medium">Was unsere Kunden sagen:</h2>
+          <h2 className="heading-section text-foreground mb-4 text-3xl font-medium">Was unsere Kunden sagen</h2>
         </div>
         <div className="max-w-3xl mx-auto">
           <Carousel className="w-full" setApi={setApi} opts={{

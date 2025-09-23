@@ -1,28 +1,28 @@
 import { Award, MapPin, Leaf, Target } from "lucide-react";
 const WhyUsSection = () => {
   const reasons = [{
-    icon: Target,
-    title: "Expertenberatung und strategische Planung",
-    description: "Umfassende Beratung von der Konzeption bis zur Umsetzung Ihrer Textilprojekte"
-  }, {
-    icon: MapPin,
-    title: "Europäische Produktionsstätten",
-    description: "Höchste Qualitätsstandards durch moderne Fertigungsstätten in Europa"
-  }, {
-    icon: Leaf,
-    title: "Nachhaltige und ethische Produktion",
-    description: "Umweltfreundliche Materialien und faire Arbeitsbedingungen stehen im Mittelpunkt"
-  }, {
     icon: Award,
     title: "End-to-End Service",
-    description: "Komplette Projektbetreuung von der ersten Idee bis zum fertigen Produkt"
+    description: "Beratung, Produktion, Logistik in einem Prozess"
+  }, {
+    icon: MapPin,
+    title: "Europäische Fertigung",
+    description: "Qualität & Nähe statt lange Lieferketten"
+  }, {
+    icon: Leaf,
+    title: "Nachhaltige Prozesse",
+    description: "geprüfte Fabriken, faire Arbeitsbedingungen"
+  }, {
+    icon: Target,
+    title: "Strategische Beratung",
+    description: "von der Idee bis zur Serienproduktion"
   }];
   return <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
-            Warum CMK.Studio?
+            Ihr Vorteil mit uns.
           </h2>
           
         </div>
