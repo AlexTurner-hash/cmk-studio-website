@@ -45,20 +45,20 @@ const ContactSection = () => {
             <div className="flex items-center space-x-4 p-4 bg-background rounded-lg">
               <Mail className="w-5 h-5 text-[hsl(var(--cream-tan-hover))]" />
               <a 
-                href="mailto:hello@cmk-studio.com" 
+                href="mailto:service@cmk-studio.com" 
                 className="text-foreground hover:text-accent transition-colors"
               >
-                hello@cmk-studio.com
+                service@cmk-studio.com
               </a>
             </div>
 
             <div className="flex items-center space-x-4 p-4 bg-background rounded-lg">
               <Phone className="w-5 h-5 text-[hsl(var(--cream-tan-hover))]" />
               <a 
-                href="tel:+15551234567" 
+                href="tel:+4903035050385" 
                 className="text-foreground hover:text-accent transition-colors"
               >
-                +1 (555) 123-4567
+                030 - 35050385
               </a>
             </div>
 
