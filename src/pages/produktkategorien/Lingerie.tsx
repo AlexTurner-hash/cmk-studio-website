@@ -188,7 +188,7 @@ const Lingerie = () => {
               <div className="mt-12 text-center">
                 <Link 
                   to="/kontakt" 
-                  className="inline-flex items-center gap-2 bg-[hsl(var(--bronze))] text-[hsl(var(--bronze-foreground))] px-8 py-4 rounded-lg hover:bg-[hsl(var(--clay))] transition-colors font-medium"
+                  className="btn-accent"
                 >
                   Lingerie-Projekt besprechen
                 </Link>
