@@ -79,7 +79,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="services" className="py-20">
+    <section id="services" className="section-padding">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">Wir machen Ideen tragbar.</h2>

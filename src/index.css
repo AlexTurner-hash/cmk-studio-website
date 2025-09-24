@@ -197,13 +197,17 @@ All colors MUST be HSL.
     @apply inline-flex items-center px-8 py-4 bg-[hsl(var(--bronze))] text-white hover:text-white font-body font-medium tracking-wide hover:bg-[hsl(var(--clay))] transition-all duration-300 rounded-lg shadow-elegant hover:shadow-premium;
   }
 
-  /* Consistent Section Spacing */
+  /* Consistent Section Spacing Categories */
   .section-padding {
     @apply py-16 md:py-20 lg:py-24;
   }
   
   .section-padding-small {
     @apply py-12 md:py-16;
+  }
+
+  .section-padding-compact {
+    @apply py-8 md:py-12;
   }
 
   /* Premium Cards */

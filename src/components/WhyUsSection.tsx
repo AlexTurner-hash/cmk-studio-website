@@ -17,7 +17,7 @@ const WhyUsSection = () => {
     title: "Strategische Beratung",
     description: "von der Idee bis zur Serienproduktion"
   }];
-  return <section className="py-20 bg-background">
+  return <section className="section-padding bg-background">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">

@@ -28,7 +28,7 @@ const IntroSection = () => {
   ];
 
   return (
-    <section className="py-20">
+    <section className="section-padding">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
           Die Schnittstelle für jeden Schritt

@@ -1,6 +1,6 @@
 const ServicesCTASection = () => {
   return (
-    <section className="py-16 bg-background">
+    <section className="section-padding-small bg-background">
       <div className="container mx-auto px-6 text-center">
         <a
           href="#contact"

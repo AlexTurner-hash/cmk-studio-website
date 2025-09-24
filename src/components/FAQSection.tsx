@@ -16,7 +16,7 @@ const FAQSection = () => {
     question: "Ist nachhaltige Produktion teurer?",
     answer: "Nicht zwingend. Die Kosten hängen von Material und Produktionsstandort ab. Wir beraten transparent zu Preis-Leistungs-Verhältnissen."
   }];
-  return <section className="py-20" style={{
+  return <section className="section-padding" style={{
     backgroundColor: 'hsl(44 29% 95%)'
   }}>
       <div className="container mx-auto px-6">

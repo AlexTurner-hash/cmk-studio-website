@@ -30,7 +30,7 @@ const ClientsSection = () => {
   ];
 
   return (
-    <section className="py-8 bg-background">
+    <section className="section-padding-compact bg-background">
       <div className="container mx-auto px-6">        
         <div className="relative overflow-hidden">
           <div className="flex animate-horizontal-scroll whitespace-nowrap">

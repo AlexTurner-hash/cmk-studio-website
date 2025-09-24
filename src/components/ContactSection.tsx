@@ -6,7 +6,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20" style={{ backgroundColor: 'hsl(44 29% 95%)' }}>
+    <section id="contact" className="section-padding" style={{ backgroundColor: 'hsl(44 29% 95%)' }}>
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">

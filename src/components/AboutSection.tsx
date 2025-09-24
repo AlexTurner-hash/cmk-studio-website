@@ -1,6 +1,6 @@
 import factoryImage from "@/assets/textile-factory.jpg";
 const AboutSection = () => {
-  return <section id="work" className="py-20 bg-background">
+  return <section id="work" className="section-padding bg-background">
       <div className="container mx-auto px-6">
         {/* Full width image */}
         <div className="mb-16">
