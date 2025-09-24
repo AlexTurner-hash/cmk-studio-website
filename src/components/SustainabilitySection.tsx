@@ -37,6 +37,9 @@ const SustainabilitySection = () => {
             <p>
               90% unserer Produktionsstätten befinden sich in Europa. Wir setzen auf Materialrecycling, zertifizierte Nachhaltigkeit und langlebige Qualität. Transportwege werden optimiert, um CO2-Emissionen zu minimieren.
             </p>
+            <p className="mt-4">
+              Auf Wunsch bieten wir unterschiedliche Nachhaltigkeitssiegel für die Produktion und die fertigen Produkte an, darunter GOTS, OEKO-TEX Standard 100, Responsible Wool, BSCI und mehr.
+            </p>
           </div>
         </div>
 
@@ -44,13 +47,12 @@ const SustainabilitySection = () => {
         <div className="mb-12">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {certifications.map((cert, index) => (
-              <div key={index} className="flex flex-col items-center justify-center group">
+              <div key={index} className="flex items-center justify-center group">
                 <img 
                   src={cert.logo}
                   alt={`${cert.name} Zertifizierung Logo`}
-                  className="h-16 w-16 object-contain group-hover:scale-110 transition-transform duration-300 mb-2"
+                  className="h-16 w-16 object-contain group-hover:scale-110 transition-transform duration-300"
                 />
-                <span className="text-sm text-muted-foreground font-body">{cert.name}</span>
               </div>
             ))}
           </div>
