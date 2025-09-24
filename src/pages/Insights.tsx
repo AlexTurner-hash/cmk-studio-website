@@ -8,6 +8,7 @@ import blogImage3 from "@/assets/blog-private-label-regional.jpg";
 import blogImage4 from "@/assets/blog-micro-produktion-premium.jpg";
 import blogImage5 from "@/assets/blog-workwear-employer-branding.jpg";
 import blogImage6 from "@/assets/blog-luxury-hospitality-collections.jpg";
+import blogImage7 from "@/assets/blog-creators-influencers-fashion.jpg";
 import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 
 const blogPosts = [
@@ -66,6 +67,14 @@ const blogPosts = [
     image: blogImage6,
     readTime: "7 min",
     category: "Hospitality"
+  },
+  {
+    id: "creators-influencers-fashion-produktion",
+    title: "Von der Idee zur Kollektion: Wie Creator und Influencer den Sprung in die Modeproduktion schaffen",
+    excerpt: "Creator haben die Kreativität und Community, aber oft fehlt das Fashion-Know-how. Erfahren Sie, wie kleine Drops, schnelle Turnaround-Zeiten und maximale Flexibilität die neue Ära der Modeproduktion prägen.",
+    image: blogImage7,
+    readTime: "6 min",
+    category: "Creator Economy"
   }
 ];
 
