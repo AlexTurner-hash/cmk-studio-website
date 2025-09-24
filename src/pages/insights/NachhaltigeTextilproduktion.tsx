@@ -238,7 +238,7 @@ const NachhaltigeTextilproduktion = () => {
               </div>
             </div>
 
-            <div className="mt-16 p-8 bg-[hsl(var(--cream-tan))] rounded-lg text-center">
+            <div className="mt-16 p-8 rounded-lg text-center">
               <h3 className="text-xl font-light mb-4 text-foreground font-display">
                 Interessiert an nachhaltiger europäischer Textilproduktion?
               </h3>
