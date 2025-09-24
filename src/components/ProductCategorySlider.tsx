@@ -8,6 +8,7 @@ import swimwearImage from "@/assets/category-swimwear.jpg";
 import knitwearImage from "@/assets/category-knitwear.jpg";
 import leatherImage from "@/assets/category-leather.jpg";
 import accessoriesImage from "@/assets/category-accessories.jpg";
+import workwearImage from "@/assets/category-workwear.jpg";
 
 const ProductCategorySlider = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -20,6 +21,7 @@ const ProductCategorySlider = () => {
     { name: "Knitwear", image: knitwearImage, slug: "knitwear" },
     { name: "Leder", image: leatherImage, slug: "leather" },
     { name: "Accessoires", image: accessoriesImage, slug: "accessories" },
+    { name: "Workwear", image: workwearImage, slug: "workwear" },
   ];
 
   const scroll = (direction: "left" | "right") => {
