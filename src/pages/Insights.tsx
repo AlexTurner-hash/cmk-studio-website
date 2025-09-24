@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import blogImage1 from "@/assets/blog-erste-modekollektion.jpg";
 import blogImage2 from "@/assets/blog-nachhaltige-produktion.jpg";
 import blogImage3 from "@/assets/blog-private-label.jpg";
-import blogImage4 from "@/assets/blog-micro-produktion.jpg";
+import blogImage4 from "@/assets/blog-micro-produktion-premium.jpg";
 import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 
 const blogPosts = [
