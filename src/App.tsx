@@ -13,6 +13,7 @@ import PrivateLabelBekleidung from "./pages/insights/PrivateLabelBekleidung";
 import MicroProduktion from "./pages/insights/MicroProduktion";
 import ClaudiaKleinert from "./pages/insights/ClaudiaKleinert";
 import WorkwearEmployerBranding from "./pages/insights/WorkwearEmployerBranding";
+import LuxuryHospitalityCollections from "./pages/insights/LuxuryHospitalityCollections";
 import Streetwear from "./pages/produktkategorien/Streetwear";
 import Denim from "./pages/produktkategorien/Denim";
 import Lingerie from "./pages/produktkategorien/Lingerie";
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/insights/private-label-bekleidung-eigenmarken" element={<PrivateLabelBekleidung />} />
           <Route path="/insights/micro-produktion-modebranche" element={<MicroProduktion />} />
           <Route path="/insights/workwear-employer-branding" element={<WorkwearEmployerBranding />} />
+          <Route path="/insights/luxury-hospitality-collections" element={<LuxuryHospitalityCollections />} />
           <Route path="/insights/claudia-kleinert" element={<ClaudiaKleinert />} />
           <Route path="/produktkategorien/streetwear" element={<Streetwear />} />
           <Route path="/produktkategorien/denim" element={<Denim />} />
