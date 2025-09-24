@@ -8,7 +8,7 @@ import blogImage3 from "@/assets/blog-private-label-regional.jpg";
 import blogImage4 from "@/assets/blog-micro-produktion-premium.jpg";
 import blogImage5 from "@/assets/blog-workwear-employer-branding.jpg";
 import blogImage6 from "@/assets/blog-luxury-hospitality-collections.jpg";
-import blogImage7 from "@/assets/blog-creators-influencers-fashion.jpg";
+import blogImage7 from "@/assets/blog-creators-influencers-fashion-new.jpg";
 import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 
 const blogPosts = [
