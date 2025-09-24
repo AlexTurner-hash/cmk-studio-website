@@ -43,7 +43,7 @@ const ContactSection = () => {
           {/* Contact Information */}
           <div className="space-y-6">
             <div className="flex items-center space-x-4 p-4 bg-background rounded-lg">
-              <Mail className="w-5 h-5 text-[hsl(var(--cream-tan-hover))]" />
+              <Mail className="w-5 h-5 text-[hsl(var(--bronze))]" />
               <a 
                 href="mailto:service@cmk-studio.com" 
                 className="text-foreground hover:text-accent transition-colors"
@@ -53,7 +53,7 @@ const ContactSection = () => {
             </div>
 
             <div className="flex items-center space-x-4 p-4 bg-background rounded-lg">
-              <Phone className="w-5 h-5 text-[hsl(var(--cream-tan-hover))]" />
+              <Phone className="w-5 h-5 text-[hsl(var(--bronze))]" />
               <a 
                 href="tel:+4903035050385" 
                 className="text-foreground hover:text-accent transition-colors"

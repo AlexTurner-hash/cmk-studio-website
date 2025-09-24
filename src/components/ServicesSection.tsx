@@ -94,10 +94,10 @@ const ServicesSection = () => {
               <Accordion type="single" collapsible className="w-full">
                 {category.items.map(item => (
                   <AccordionItem key={item.id} value={item.id} className="border-clay/20">
-                    <AccordionTrigger className="text-left text-base md:text-lg font-body leading-relaxed font-normal text-foreground hover:text-[hsl(var(--cream-tan-hover))] transition-colors hover:no-underline data-[state=open]:bg-[hsl(var(--cream-tan-hover))] data-[state=open]:text-white px-4 py-3">
+                    <AccordionTrigger className="text-left text-base md:text-lg font-body leading-relaxed font-normal text-foreground hover:text-[hsl(var(--bronze))] transition-colors hover:no-underline data-[state=open]:bg-[hsl(var(--bronze))] data-[state=open]:text-white px-4 py-3">
                       {item.title}
                     </AccordionTrigger>
-                    <AccordionContent className="bg-[hsl(var(--cream-tan-hover))] text-white leading-relaxed font-body pt-2 pb-4 px-4 text-left">
+                    <AccordionContent className="bg-[hsl(var(--bronze))] text-white leading-relaxed font-body pt-2 pb-4 px-4 text-left">
                       {item.description}
                     </AccordionContent>
                   </AccordionItem>
@@ -163,7 +163,7 @@ const ServicesSection = () => {
               <button 
                 key={index} 
                 onClick={() => setCurrentSlide(index)} 
-                className={`w-2 h-2 rounded-full transition-colors duration-200 ${currentSlide === index ? 'bg-[hsl(var(--cream-tan-hover))]' : 'bg-[hsl(var(--cream-tan-hover))]/30'}`} 
+                className={`w-2 h-2 rounded-full transition-colors duration-200 ${currentSlide === index ? 'bg-[hsl(var(--bronze))]' : 'bg-[hsl(var(--bronze))]/30'}`} 
               />
             ))}
           </div>

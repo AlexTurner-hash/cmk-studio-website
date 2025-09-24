@@ -186,15 +186,15 @@ All colors MUST be HSL.
 
   /* Premium Button Styles */
   .btn-primary {
-    @apply inline-flex items-center px-8 py-4 bg-[hsl(var(--cream-tan-hover))] text-white font-body font-medium tracking-wide hover:bg-[hsl(var(--clay))] transition-all duration-300 rounded-lg shadow-elegant hover:shadow-premium;
+    @apply inline-flex items-center px-8 py-4 bg-[hsl(var(--bronze))] text-white font-body font-medium tracking-wide hover:bg-[hsl(var(--clay))] transition-all duration-300 rounded-lg shadow-elegant hover:shadow-premium;
   }
   
   .btn-secondary {
-    @apply inline-flex items-center px-6 py-3 border-2 border-[hsl(var(--cream-tan-hover))] text-[hsl(var(--cream-tan-hover))] font-body font-medium hover:bg-[hsl(var(--cream-tan-hover))] hover:text-white transition-all duration-300 rounded-lg;
+    @apply inline-flex items-center px-6 py-3 border-2 border-[hsl(var(--bronze))] text-[hsl(var(--bronze))] font-body font-medium hover:bg-[hsl(var(--bronze))] hover:text-white transition-all duration-300 rounded-lg;
   }
 
   .btn-accent {
-    @apply inline-flex items-center px-8 py-4 bg-[hsl(var(--cream-tan-hover))] text-white hover:text-white font-body font-medium tracking-wide hover:bg-[hsl(var(--clay))] transition-all duration-300 rounded-lg shadow-elegant hover:shadow-premium;
+    @apply inline-flex items-center px-8 py-4 bg-[hsl(var(--bronze))] text-white hover:text-white font-body font-medium tracking-wide hover:bg-[hsl(var(--clay))] transition-all duration-300 rounded-lg shadow-elegant hover:shadow-premium;
   }
 
   /* Consistent Section Spacing */

@@ -16,51 +16,51 @@ const AboutSection = () => {
             
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
               <li className="flex items-start">
-                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="w-2 h-2 bg-[hsl(var(--bronze))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
                 Farb- und Material Konzepte
               </li>
               <li className="flex items-start">
-                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="w-2 h-2 bg-[hsl(var(--bronze))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
                 Kollektionsrahmenplanung
               </li>
               <li className="flex items-start">
-                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="w-2 h-2 bg-[hsl(var(--bronze))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
                 SKU Effizienzplanung
               </li>
               <li className="flex items-start">
-                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="w-2 h-2 bg-[hsl(var(--bronze))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
                 Design und Grafikdesign
               </li>
               <li className="flex items-start">
-                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="w-2 h-2 bg-[hsl(var(--bronze))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
                 Logoentwicklung
               </li>
               <li className="flex items-start">
-                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="w-2 h-2 bg-[hsl(var(--bronze))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
                 Schnitt und Vermassung
               </li>
               <li className="flex items-start">
-                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="w-2 h-2 bg-[hsl(var(--bronze))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
                 Strategisches Pricing
               </li>
               <li className="flex items-start">
-                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="w-2 h-2 bg-[hsl(var(--bronze))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
                 Prototypenentwicklung
               </li>
               <li className="flex items-start">
-                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="w-2 h-2 bg-[hsl(var(--bronze))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
                 Paßformberatung
               </li>
               <li className="flex items-start">
-                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="w-2 h-2 bg-[hsl(var(--bronze))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
                 Produktionsüberwachung
               </li>
               <li className="flex items-start">
-                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="w-2 h-2 bg-[hsl(var(--bronze))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
                 Qualitätskontrolle
               </li>
               <li className="flex items-start">
-                <span className="w-2 h-2 bg-[hsl(var(--cream-tan-hover))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span className="w-2 h-2 bg-[hsl(var(--bronze))] rounded-full mt-2 mr-3 flex-shrink-0"></span>
                 Zuverlässige Logistik
               </li>
             </ul>

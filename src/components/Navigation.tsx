@@ -72,7 +72,7 @@ const Navigation = () => {
           <Button
             variant="ghost"
             size="sm"
-            className="p-2 text-white hover:text-[hsl(var(--cream-tan-hover))] transition-colors duration-300"
+            className="p-2 text-white hover:text-[hsl(var(--bronze))] transition-colors duration-300"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={46} /> : <Menu size={46} />}
@@ -90,7 +90,7 @@ const Navigation = () => {
                     <button
                       key={item.name}
                       onClick={() => handleNavClick(item.href)}
-                      className="text-base font-medium tracking-tight transition-colors duration-200 uppercase font-body text-white hover:text-[hsl(var(--cream-tan-hover))] text-left"
+                      className="text-base font-medium tracking-tight transition-colors duration-200 uppercase font-body text-white hover:text-[hsl(var(--bronze))] text-left"
                     >
                       {item.name}
                     </button>
@@ -102,7 +102,7 @@ const Navigation = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className="text-base font-medium tracking-tight transition-colors duration-200 uppercase font-body text-white hover:text-[hsl(var(--cream-tan-hover))]"
+                    className="text-base font-medium tracking-tight transition-colors duration-200 uppercase font-body text-white hover:text-[hsl(var(--bronze))]"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}

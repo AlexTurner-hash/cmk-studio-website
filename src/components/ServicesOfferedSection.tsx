@@ -28,7 +28,7 @@ const ServicesOfferedSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((service, index) => (
               <div key={index} className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
-                <CheckCircle className="w-5 h-5 text-[hsl(var(--cream-tan-hover))] flex-shrink-0" />
+                <CheckCircle className="w-5 h-5 text-[hsl(var(--bronze))] flex-shrink-0" />
                 <span className="text-foreground font-body">{service}</span>
               </div>
             ))}

@@ -50,7 +50,7 @@ const InsightsPreviewSection = () => {
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-xs font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
+                  <span className="text-xs font-medium text-[hsl(var(--bronze))] tracking-wide uppercase">
                     {post.category}
                   </span>
                   <span className="text-xs text-muted-foreground">
@@ -58,7 +58,7 @@ const InsightsPreviewSection = () => {
                   </span>
                 </div>
                 
-                <h3 className="text-xl font-light mb-3 text-foreground font-display group-hover:text-[hsl(var(--cream-tan-hover))] transition-colors">
+                <h3 className="text-xl font-light mb-3 text-foreground font-display group-hover:text-[hsl(var(--bronze))] transition-colors">
                   {post.title}
                 </h3>
                 

@@ -29,10 +29,10 @@ const FAQSection = () => {
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="border-clay/20">
-                <AccordionTrigger className="text-left text-base md:text-lg font-body leading-relaxed font-normal text-foreground hover:text-[hsl(var(--cream-tan-hover))] transition-colors hover:no-underline data-[state=open]:bg-[hsl(var(--cream-tan-hover))] data-[state=open]:text-white px-4 py-3">
+                <AccordionTrigger className="text-left text-base md:text-lg font-body leading-relaxed font-normal text-foreground hover:text-[hsl(var(--bronze))] transition-colors hover:no-underline data-[state=open]:bg-[hsl(var(--bronze))] data-[state=open]:text-white px-4 py-3">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="bg-[hsl(var(--cream-tan-hover))] text-white leading-relaxed font-body pt-2 pb-4 px-4 text-left">
+                <AccordionContent className="bg-[hsl(var(--bronze))] text-white leading-relaxed font-body pt-2 pb-4 px-4 text-left">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>)}
