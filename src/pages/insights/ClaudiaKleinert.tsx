@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import claudiaPortrait from "@/assets/claudia-kleinert-portrait-professional.jpg";
+import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 import blushStore from "@/assets/claudia-kleinert-blush-store.jpg";
 const ClaudiaKleinert = () => {
   return <div className="min-h-screen">
