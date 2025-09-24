@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
     }, 12000);
     return () => clearInterval(interval);
   }, [api]);
-  return <section className="py-20" style={{backgroundColor: '#f1f0e2'}}>
+  return <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-8">
           <h2 className="heading-section text-foreground mb-4 text-3xl font-medium">Was unsere Kunden sagen</h2>
