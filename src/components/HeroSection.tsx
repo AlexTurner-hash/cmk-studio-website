@@ -1,9 +1,9 @@
-import headerImage from "@/assets/header-image-new.jpg";
+import headerImage from "@/assets/hero-option-3.jpg";
 const HeroSection = () => {
   return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img src={headerImage} alt="Modern fashion studio workspace with garment samples and design materials" className="w-full h-full object-cover" />
+        <img src={headerImage} alt="Fashion design consultation meeting between CMK.Studio team and client with sketches and fabric samples" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/20"></div>
       </div>
 
