@@ -208,6 +208,16 @@ const Knitwear = () => {
                   Unsere Expertise umfasst sowohl traditionelle als auch innovative Stricktechniken, nachhaltige Materialien und funktionale Performance-Features für moderne Knitwear-Kollektionen.
                 </p>
               </div>
+
+              {/* CTA Section */}
+              <div className="mt-12 text-center">
+                <Link 
+                  to="/kontakt" 
+                  className="inline-flex items-center gap-2 bg-[hsl(var(--bronze))] text-[hsl(var(--bronze-foreground))] px-8 py-4 rounded-lg hover:bg-[hsl(var(--clay))] transition-colors font-medium"
+                >
+                  Knitwear-Projekt besprechen
+                </Link>
+              </div>
             </div>
           </div>
         </section>

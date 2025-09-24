@@ -230,6 +230,16 @@ const Accessories = () => {
                   Unsere Expertise umfasst traditionelle Handwerkstechniken ebenso wie modernste Fertigungsverfahren. Von der Materialauswahl über Design-Entwicklung bis zur finalen Qualitätskontrolle – jedes Accessoire entsteht mit der Sorgfalt und Leidenschaft, die echte Qualität verdient.
                 </p>
               </div>
+
+              {/* CTA Section */}
+              <div className="mt-12 text-center">
+                <Link 
+                  to="/kontakt" 
+                  className="inline-flex items-center gap-2 bg-[hsl(var(--bronze))] text-[hsl(var(--bronze-foreground))] px-8 py-4 rounded-lg hover:bg-[hsl(var(--clay))] transition-colors font-medium"
+                >
+                  Accessoires-Projekt besprechen
+                </Link>
+              </div>
             </div>
           </div>
         </section>

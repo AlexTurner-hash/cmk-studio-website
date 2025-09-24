@@ -157,6 +157,16 @@ const Denim = () => {
                   Mit Partnerschaften zu führenden Denim-Mills und einem Team erfahrener Denim-Spezialisten realisieren wir Projekte von der ersten Skizze bis zur finalen Kollektion. Ob Heritage-Brand oder innovatives Startup – wir entwickeln die perfekte Denim-Lösung für Ihre Vision.
                 </p>
               </div>
+
+              {/* CTA Section */}
+              <div className="mt-12 text-center">
+                <Link 
+                  to="/kontakt" 
+                  className="inline-flex items-center gap-2 bg-[hsl(var(--bronze))] text-[hsl(var(--bronze-foreground))] px-8 py-4 rounded-lg hover:bg-[hsl(var(--clay))] transition-colors font-medium"
+                >
+                  Denim-Projekt starten
+                </Link>
+              </div>
             </div>
           </div>
         </section>

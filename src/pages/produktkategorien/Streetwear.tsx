@@ -125,6 +125,16 @@ const Streetwear = () => {
                   Ob limitierte Drops, saisonale Kollektionen oder permanente Basics – wir entwickeln gemeinsam mit Ihnen die perfekte Produktionsstrategie für Ihre Streetwear-Vision.
                 </p>
               </div>
+
+              {/* CTA Section */}
+              <div className="mt-12 text-center">
+                <Link 
+                  to="/kontakt" 
+                  className="inline-flex items-center gap-2 bg-[hsl(var(--bronze))] text-[hsl(var(--bronze-foreground))] px-8 py-4 rounded-lg hover:bg-[hsl(var(--clay))] transition-colors font-medium"
+                >
+                  Jetzt Streetwear-Projekt starten
+                </Link>
+              </div>
             </div>
           </div>
         </section>

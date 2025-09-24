@@ -213,6 +213,16 @@ const Leather = () => {
                   Unsere Expertise erstreckt sich von klassischen Lederartikeln über moderne Fashion-Pieces bis hin zu funktionalen Technical-Leather-Produkten. Jedes Projekt wird mit der Sorgfalt und Leidenschaft umgesetzt, die echtes Lederhandwerk verdient.
                 </p>
               </div>
+
+              {/* CTA Section */}
+              <div className="mt-12 text-center">
+                <Link 
+                  to="/kontakt" 
+                  className="inline-flex items-center gap-2 bg-[hsl(var(--bronze))] text-[hsl(var(--bronze-foreground))] px-8 py-4 rounded-lg hover:bg-[hsl(var(--clay))] transition-colors font-medium"
+                >
+                  Leder-Projekt starten
+                </Link>
+              </div>
             </div>
           </div>
         </section>
