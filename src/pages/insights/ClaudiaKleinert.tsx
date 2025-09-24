@@ -4,10 +4,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 import blushStore from "@/assets/claudia-kleinert-blush-store.jpg";
-
 const ClaudiaKleinert = () => {
-  return (
-    <>
+  return <>
       <title>Claudia Kleinert - Gründerin und Geschäftsführerin | CMK.Studio</title>
       <meta name="description" content="Lernen Sie Claudia Kleinert kennen: Die erfolgreiche Berliner Dessous-Designerin mit über 35 Jahren Erfahrung in Design, Produktion und Vertrieb." />
       
@@ -47,22 +45,14 @@ const ClaudiaKleinert = () => {
 
             {/* Featured Image */}
             <div className="aspect-[16/9] mb-12 rounded-lg overflow-hidden">
-              <img 
-                src={claudiaPortrait} 
-                alt="Claudia Kleinert, Gründerin und Geschäftsführerin von CMK.Studio"
-                className="w-full h-full object-cover"
-              />
+              <img src={claudiaPortrait} alt="Claudia Kleinert, Gründerin und Geschäftsführerin von CMK.Studio" className="w-full h-full object-cover" />
             </div>
 
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Von der Dessous-Designerin zur Beraterin
-              </h2>
+              <h2 className="text-2xl font-light mb-4 text-foreground font-display">Von der Designerin zur Beraterin</h2>
 
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Claudia Kleinert begann ihre Laufbahn als Dessous-Designerin und baute über 35 Jahre Erfahrung in Design, Produktmanagement und Textilproduktion auf. Diese Expertise macht sie heute anderen Modeschaffenden durch CMK.Studio zugänglich.
-              </p>
+              <p className="mb-6 font-body leading-relaxed text-muted-foreground">Claudia Kleinert begann ihre Laufbahn als studierte Modedesignerin und baute schon in ihren ersten Stationen Erfahrung in der industriellen Schnittstelle von Fashiondesign und Textilproduktion auf. Diese spezifische Expertise macht sie heute anderen Modeschaffenden durch CMK.Studio zugänglich.</p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
                 Ihr Weg führte sie durch verschiedene Bereiche der Modebranche: vom Design über die Produktentwicklung bis hin zum Aufbau von Produktionspartnerschaften in Europa. Diese vielseitige Erfahrung bildet das Fundament ihrer heutigen Beratungstätigkeit.
@@ -72,21 +62,13 @@ const ClaudiaKleinert = () => {
                 Erfahrungen aus der Praxis
               </h2>
 
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Durch ihre Arbeit mit Marken wie Puma, Homeboy, Aubade, Felina und Merz B Schwanen hat Claudia verschiedene Ansätze in der Textilproduktion kennengelernt. Von Start-ups bis zu etablierten Unternehmen – jedes Projekt brachte neue Herausforderungen und Lösungsansätze mit sich.
-              </p>
+              <p className="mb-6 font-body leading-relaxed text-muted-foreground">Durch ihre Arbeit mit Marken wie Puma, Homeboy, Aubade, Felina und Merz B Schwanen hat Claudia die Herausforderungen von Textilproduktion in jedem Reifegrad einer Marke kennengelernt. Von Start-ups bis zu etablierten Unternehmen – jedes Projekt hat seine eigene Dynamik und erfordert eigene Lösungsansätze.</p>
 
               <div className="aspect-[16/9] my-12 rounded-lg overflow-hidden">
-                <img 
-                  src={blushStore} 
-                  alt="blush Lingerie Store - Claudia Kleinerts eigene Dessous-Marke" 
-                  className="w-full h-full object-cover"
-                />
+                <img src={blushStore} alt="blush Lingerie Store - Claudia Kleinerts eigene Dessous-Marke" className="w-full h-full object-cover" />
               </div>
 
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Mit blush Lingerie entwickelte sie ihre eigene Dessous-Marke und lernte dabei alle Aspekte der Markenführung kennen – von der Produktentwicklung über die Produktion bis zum Vertrieb. Diese Erfahrung als Unternehmerin ergänzt ihre Beratungskompetenz.
-              </p>
+              <p className="mb-8 font-body leading-relaxed text-muted-foreground">Mit ihrem Berliner Fashion Start Up blush Lingerie entwickelte sie eine eigene, international erfolgreiche Dessous-Marke aus dem Stand - und forderte große industrielle Wettbewerber heraus. Sie betreute alle Aspekte der Markenführung – von der Produktentwicklung über die Produktion bis zu Marketing Vertrieb. Diese Erfahrung als kreative Unternehmerin ist für andere DesignerInnen von unschätzbarem Wert.</p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
                 Arbeitsweise bei CMK.Studio
@@ -144,8 +126,6 @@ const ClaudiaKleinert = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default ClaudiaKleinert;
