@@ -20,6 +20,7 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <ProductCategorySlider />
+      <ClientsSection />
       <ServicesSection />
       <ServicesOfferedSection />
       <WhyUsSection />
