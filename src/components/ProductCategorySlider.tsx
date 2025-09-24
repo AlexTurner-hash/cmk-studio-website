@@ -38,7 +38,7 @@ const ProductCategorySlider = () => {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
-            Unsere Produktkategorien
+            Unser Angebot
           </h2>
           <p className="text-body-large text-muted-foreground max-w-3xl mx-auto">
             Von Streetwear bis Luxus-Accessoires – wir produzieren hochwertige Kollektionen für alle Bereiche der Modebranche.
