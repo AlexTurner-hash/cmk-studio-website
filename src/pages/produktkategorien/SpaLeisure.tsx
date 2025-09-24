@@ -52,8 +52,8 @@ const SpaLeisure = () => {
     {
       title: "Qualität als Reputation",
       content: [
-        "Unsere außergewöhnliche Verarbeitungsqualität und die Auswahl der feinsten Materialien stellen sicher, dass jede Berührung ein positives Erlebnis wird und zur positiven Reputation Ihres Resorts beiträgt.",
-        "Erfahren Sie mehr über unsere <a href='/insights/nachhaltige-textilproduktion-europa' class='text-[hsl(var(--bronze))] hover:text-[hsl(var(--clay))] underline'>nachhaltigen Produktionsmethoden in Europa</a> in unserem Interview mit Gründerin Claudia Kleinert."
+        "Die Qualität Ihrer Spa-Textilien spricht Bände über die Standards Ihres Hauses. Gäste erinnern sich an das Gefühl der Handtücher, die Weichheit der Bademäntel und die Qualität der Yoga-Kleidung, die sie mit nach Hause nehmen.",
+        "Unsere außergewöhnliche Verarbeitungsqualität und die Auswahl der feinsten Materialien stellen sicher, dass jede Berührung ein positives Erlebnis wird und zur positiven Reputation Ihres Resorts beiträgt."
       ]
     },
     {

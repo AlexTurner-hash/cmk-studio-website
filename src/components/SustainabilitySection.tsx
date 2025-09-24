@@ -61,7 +61,7 @@ const SustainabilitySection = () => {
         {/* CTA Button */}
         <div className="text-center">
           <Button size="lg" variant="outline" className="bg-white text-black border-black hover:bg-black hover:text-white" asChild>
-            <Link to="/nachhaltigkeit">
+            <Link to="/insights/nachhaltige-textilproduktion-europa">
               Mehr zum Thema
             </Link>
           </Button>
