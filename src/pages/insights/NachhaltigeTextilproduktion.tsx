@@ -82,11 +82,11 @@ const NachhaltigeTextilproduktion = () => {
               </p>
 
               <div className="aspect-[16/10] my-12 rounded-lg overflow-hidden">
-                <img 
-                  src={textileFactoryImage} 
-                  alt="Große moderne Textilfabrik mit vielen Näharbeitsplätzen und nachhaltigen Produktionsmethoden"
-                  className="w-full h-full object-cover"
-                />
+              <img 
+                src="/lovable-uploads/6768a154-e7fd-4913-a3ad-7586ed102089.png" 
+                alt="Lokale Textilproduzenten arbeiten konzentriert an einer Maschine in einer gut beleuchteten europäischen Werkstatt"
+                className="w-full h-full object-cover"
+              />
               </div>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
