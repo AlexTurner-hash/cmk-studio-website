@@ -19,7 +19,7 @@ const NachhaltigeTextilproduktion = () => {
         
         <article className="pt-24 pb-16">
           <div className="container mx-auto px-6 max-w-4xl">
-            <Button variant="neutral" asChild className="mb-8">
+            <Button variant="ghost" asChild className="mb-8">
               <a href="/insights" className="flex items-center gap-2">
                 <ArrowLeft size={16} />
                 Zurück zu Insights
@@ -236,7 +236,7 @@ const NachhaltigeTextilproduktion = () => {
               <p className="text-muted-foreground mb-6 font-body">
                 Sprechen Sie mit Claudia Kleinert über die Möglichkeiten für Ihr nächstes Projekt.
               </p>
-              <Button variant="neutral" size="lg" asChild>
+              <Button size="lg" asChild>
                 <a href="#contact">
                   Persönliches Gespräch vereinbaren
                 </a>

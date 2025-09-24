@@ -12,7 +12,6 @@ const buttonVariants = cva(
         default: "bg-[hsl(var(--cream-tan-hover))] text-white hover:bg-[hsl(var(--clay))]",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline: "border border-[hsl(var(--cream-tan-hover))] bg-background text-[hsl(var(--cream-tan-hover))] hover:bg-[hsl(var(--cream-tan-hover))] hover:text-white",
-        neutral: "border border-foreground bg-background text-foreground hover:bg-foreground hover:text-background",
         secondary: "bg-[hsl(var(--cream-tan-hover))] text-white hover:bg-[hsl(var(--clay))]",
         ghost: "hover:bg-[hsl(var(--cream-tan-hover))] hover:text-white",
         link: "text-[hsl(var(--cream-tan-hover))] underline-offset-4 hover:underline",
