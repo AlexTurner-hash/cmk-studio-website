@@ -53,119 +53,114 @@ const PrivateLabelBekleidung = () => {
 
             <div className="prose prose-lg max-w-none">
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Die neue Bedeutung von Corporate Fashion
+                Der Wandel im regionalen Einzelhandel
               </h2>
               
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Unternehmensbekleidung ist längst mehr als nur ein praktisches Arbeitsoutfit. 
-                In einer Zeit, in der Markenidentität und Mitarbeiterbindung entscheidende Wettbewerbsfaktoren sind, 
-                wird Corporate Fashion zu einem strategischen Instrument der Unternehmensführung.
+                Mittelständische Modehäuser und familiengeführte Boutiquen stehen heute vor besonderen Herausforderungen. 
+                Die Online-Konkurrenz wächst stetig, während gleichzeitig die Erwartungen der Kunden an individuelle 
+                Beratung und exklusive Produkte steigen. Eigenmarken bieten hier einen strategischen Ausweg.
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Private Label Bekleidung ermöglicht es Unternehmen, ihre Werte, Kultur und Identität 
-                nach außen und innen zu kommunizieren. Dabei geht es nicht nur um Logos auf T-Shirts, 
-                sondern um durchdachte Kollektionen, die das Markenerlebnis verstärken.
+                Regionale Händler verfügen über einen entscheidenden Vorteil: die persönliche Nähe zu ihren Kunden. 
+                Diese Intimität ermöglicht es ihnen, Bedürfnisse und Wünsche ihrer Stammkundschaft genau zu verstehen 
+                und maßgeschneiderte Kollektionen zu entwickeln.
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Mehr als nur Arbeitskleidung: Die vielfältigen Einsatzbereiche
+                Eigenmarken als Differenzierungsstrategie
               </h2>
               
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Moderne Private Label Bekleidung geht weit über traditionelle Arbeitskleidung hinaus. 
-                Hotels entwickeln Lifestyle-Kollektionen für ihre Gäste, Tech-Unternehmen kreieren 
-                hochwertige Merchandise-Linien und Beratungsunternehmen setzen auf elegante Business-Kollektionen, 
-                die Professionalität und Modernität ausstrahlen.
+                Private Label Kollektionen ermöglichen es regionalen Modehäusern, sich klar von der Masse abzuheben. 
+                Statt dieselben Marken wie alle anderen zu führen, schaffen sie einzigartige Produkte, die nur bei 
+                ihnen erhältlich sind. Dies stärkt die Kundenbindung erheblich.
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Diese Diversifizierung eröffnet neue Geschäftsmöglichkeiten: Aus Kostenstellen werden 
-                potenzielle Umsatzträger, aus notwendiger Arbeitskleidung wird begehrte Lifestyle-Mode.
+                Familiengeführte Geschäfte können dabei ihre Geschichte und Werte in die Kollektion einfließen lassen. 
+                Authentizität wird zu einem echten Verkaufsargument – etwas, das große Ketten nur schwer vermitteln können.
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Mitarbeiterbindung durch Identifikation
+                Die Macht der regionalen Verbundenheit
               </h2>
               
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Hochwertige, durchdachte Unternehmensbekleidung stärkt die Identifikation der Mitarbeiter 
-                mit ihrem Arbeitgeber. Wenn Mitarbeiter stolz auf ihre Arbeitskleidung sind und diese 
-                auch in der Freizeit tragen, wird das Unternehmen zum Teil ihrer persönlichen Identität.
+                Viele Kunden schätzen die Verbindung zu ihrem lokalen Modehaus. Eine eigene Marke verstärkt dieses 
+                Gefühl der Zugehörigkeit. Kunden werden zu Botschaftern, die stolz "ihre" Marke tragen und weiterempfehlen.
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Studien zeigen, dass Unternehmen mit hochwertiger Corporate Fashion geringere 
-                Fluktuationsraten und höhere Mitarbeiterzufriedenheit verzeichnen. 
-                Die Investition in gute Bekleidung zahlt sich durch reduziierte Personalkosten aus.
+                Diese emotionale Bindung ist besonders wertvoll in einer Zeit, in der Kunden immer bewusster einkaufen 
+                und lokale Unternehmen unterstützen möchten. Eine regionale Eigenmarke verkörpert diese Werte perfekt.
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Markenaufbau und Differenzierung
+                Höhere Margen durch Eigenmarken
               </h2>
               
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                In gesättigten Märkten wird Differenzierung immer schwieriger. Private Label Bekleidung 
-                bietet eine einzigartige Möglichkeit, sich von Konkurrenten abzuheben. Ein konsistentes, 
-                hochwertiges Erscheinungsbild schafft Vertrauen und Wiedererkennung.
+                Private Label Kollektionen bieten deutlich attraktivere Margen als der Verkauf etablierter Marken. 
+                Regionale Händler können ihre Preisgestaltung selbst bestimmen und sind nicht an die Preispolitik 
+                großer Labels gebunden.
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Besonders im B2B-Bereich kann professionelle Unternehmensbekleidung den Unterschied machen. 
-                Kunden verbinden hochwertige Kleidung unbewusst mit hochwertigen Dienstleistungen – 
-                ein psychologischer Effekt, den erfolgreiche Unternehmen gezielt nutzen.
+                Diese höheren Margen ermöglichen es mittelständischen Modehäusern, in bessere Ladengestaltung, 
+                Serviceleistungen oder zusätzliches Personal zu investieren – alles Faktoren, die das 
+                Einkaufserlebnis verbessern und die Kundenbindung stärken.
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Qualität als Investition
+                Kleine Auflagen, große Flexibilität
               </h2>
               
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Hochwertige Private Label Bekleidung ist eine langfristige Investition. 
-                Qualitätsmaterialien und professionelle Verarbeitung sorgen für Langlebigkeit 
-                und reduzieren die Gesamtkosten pro Tragegang erheblich.
+                Regionale Händler benötigen keine riesigen Stückzahlen. Moderne Produktionspartner ermöglichen 
+                es auch bei kleinen Auflagen ab 50 Stück pro Modell, professionelle Kollektionen zu realisieren. 
+                Diese Flexibilität ist ein enormer Vorteil gegenüber großen Ketten.
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Zusätzlich vermittelt qualitativ hochwertige Kleidung nach außen die Botschaft, 
-                dass das Unternehmen auch in anderen Bereichen auf Qualität setzt. 
-                Diese Assoziation ist besonders für Dienstleistungsunternehmen wertvoll.
+                Kleine Auflagen bedeuten auch geringeres Risiko. Neue Trends können schnell getestet werden, 
+                ohne große Lagerbestände aufzubauen. Funktioniert ein Design gut, kann nachbestellt werden.
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Nachhaltigkeit als Wettbewerbsvorteil
+                Nachhaltigkeit als regionaler Trumpf
               </h2>
               
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Nachhaltige Private Label Bekleidung wird zunehmend zum Wettbewerbsvorteil. 
-                Unternehmen, die auf umweltfreundliche Materialien und faire Produktionsbedingungen setzen, 
-                können ihre Corporate Social Responsibility glaubwürdig kommunizieren.
+                Regionale Produktion und kurze Lieferwege passen perfekt zu den Nachhaltigkeitsansprüchen 
+                moderner Kunden. Familiengeführte Modehäuser können glaubwürdig kommunizieren, dass ihre 
+                Eigenmarken unter fairen Bedingungen in Europa produziert werden.
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Moderne Konsumenten und Geschäftspartner achten verstärkt auf die Nachhaltigkeitsbilanz 
-                ihrer Partner. Nachhaltige Unternehmensbekleidung wird so zu einem wichtigen 
-                Baustein der gesamten Nachhaltigkeitsstrategie.
+                Diese Transparenz und Verantwortung schaffen Vertrauen und rechtfertigen höhere Preise. 
+                Kunden sind bereit, mehr zu bezahlen, wenn sie wissen, wofür sie ihr Geld ausgeben.
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Die Zukunft von Private Label im B2B-Bereich
+                Der Weg zur erfolgreichen Eigenmarke
               </h2>
               
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Die Bedeutung von Private Label Bekleidung wird weiter steigen. 
-                Unternehmen erkennen zunehmend den strategischen Wert durchdachter Corporate Fashion. 
-                Wer heute investiert, positioniert sich optimal für die Zukunft – 
-                als attraktiver Arbeitgeber, glaubwürdiger Partner und starke Marke.
+                Erfolgreiche Eigenmarken entstehen nicht über Nacht. Sie erfordern durchdachte Planung, 
+                das richtige Know-how und verlässliche Produktionspartner. Doch für regionale Modehäuser, 
+                die diesen Schritt wagen, eröffnen sich neue Wachstumschancen und eine stärkere Position 
+                gegenüber der Online-Konkurrenz.
               </p>
             </div>
 
             <div className="mt-16 p-8 bg-[hsl(var(--cream-tan))] rounded-lg text-center">
               <h3 className="text-xl font-light mb-4 text-foreground font-display">
-                Bereit für Ihre Private Label Kollektion?
+                Bereit für Ihre Eigenmarke?
               </h3>
               <p className="text-muted-foreground mb-6 font-body">
-                Entwickeln Sie mit uns eine Unternehmensbekleidung, die Ihre Marke stärkt.
+                Entwickeln Sie mit uns eine Private Label Kollektion, die Ihre regionale Kundschaft begeistert.
               </p>
               <Button size="lg" asChild>
                 <a href="#contact">
