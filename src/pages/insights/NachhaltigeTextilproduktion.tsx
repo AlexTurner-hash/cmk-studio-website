@@ -3,6 +3,9 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-nachhaltige-produktion.jpg";
+import factoryImage from "@/assets/interview-sustainable-factory.jpg";
+import materialsImage from "@/assets/interview-organic-materials.jpg";
+import claudiaOfficeImage from "@/assets/interview-claudia-office.jpg";
 
 const NachhaltigeTextilproduktion = () => {
   return (
@@ -25,136 +28,194 @@ const NachhaltigeTextilproduktion = () => {
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                  Nachhaltigkeit
+                  Interview
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  6 min Lesezeit
+                  8 min Lesezeit
                 </span>
               </div>
               
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
-                Nachhaltige Textilproduktion in Europa: Chancen für Marken und Creator
+                „Europa ist die Zukunft der nachhaltigen Textilproduktion"
               </h1>
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                Warum europäische Fertigung der Schlüssel für nachhaltige Mode ist und welche Vorteile 
-                kurze Lieferketten für Ihre Marke haben.
+                Ein Gespräch mit Claudia Kleinert über die Vorteile europäischer Fertigung, 
+                kurze Lieferketten und warum Nachhaltigkeit wirtschaftlich sinnvoll ist.
               </p>
             </header>
 
             <div className="aspect-[16/9] mb-12 rounded-lg overflow-hidden">
               <img 
-                src={blogImage} 
-                alt="Moderne europäische Textilfabrik mit nachhaltigen Produktionsmethoden"
+                src={claudiaOfficeImage} 
+                alt="Claudia Kleinert, Gründerin von CMK.Studio, während des Interviews über nachhaltige Textilproduktion"
                 className="w-full h-full object-cover"
               />
             </div>
 
             <div className="prose prose-lg max-w-none">
+              <div className="bg-[hsl(var(--cream-tan))] p-6 rounded-lg mb-8">
+                <p className="text-sm text-muted-foreground mb-2 font-medium">Zur Person</p>
+                <p className="text-muted-foreground font-body leading-relaxed">
+                  <strong>Claudia Kleinert</strong> ist Gründerin und Geschäftsführerin von CMK.Studio. 
+                  Die studierte Modedesignerin brachte ihre eigene Dessous-Marke „blush Lingerie" erfolgreich 
+                  auf den Markt und berät heute andere Modeschaffende bei der europäischen Textilproduktion.
+                </p>
+              </div>
+
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Der Wandel in der Modeindustrie
+                Frau Kleinert, Sie setzen konsequent auf europäische Textilproduktion. Warum?
               </h2>
               
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Die Modeindustrie befindet sich im größten Umbruch seit Jahrzehnten. Verbraucher werden bewusster, 
-                Regulierungen strenger und die Kosten für Transport und Kommunikation steigen kontinuierlich. 
-                Was früher als Kostenvorteil galt – die Produktion in Asien – wird zunehmend zu einem Risikofaktor.
+                <strong>Claudia Kleinert:</strong> „Als ich vor Jahren meine eigene Marke aufgebaut habe, war mir schnell klar: 
+                Wenn ich Qualität und Flexibilität haben möchte, führt kein Weg an Europa vorbei. Die Modeindustrie 
+                befindet sich im größten Umbruch seit Jahrzehnten. Was früher als Kostenvorteil galt – die Produktion 
+                in Asien – wird zunehmend zu einem Risikofaktor."
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Europäische Textilproduktion erlebt eine Renaissance. Nicht nur wegen strengerer Nachhaltigkeitsauflagen, 
-                sondern weil Marken und Creator die Vorteile von Nähe, Flexibilität und Transparenz neu entdecken.
+                „Verbraucher werden bewusster, Regulierungen strenger und die Kosten für Transport steigen kontinuierlich. 
+                Europäische Textilproduktion erlebt deshalb eine Renaissance – nicht nur wegen Nachhaltigkeitsauflagen, 
+                sondern weil Marken die Vorteile von Nähe, Flexibilität und Transparenz neu entdecken."
               </p>
 
+              <div className="aspect-[16/10] my-12 rounded-lg overflow-hidden">
+                <img 
+                  src={factoryImage} 
+                  alt="Moderne europäische Textilfabrik mit nachhaltigen Produktionsmethoden"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Kurze Lieferketten: Mehr als nur Nachhaltigkeit
+                Was bedeuten kurze Lieferketten konkret für Ihre Kunden?
               </h2>
               
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Kurze Lieferketten bedeuten nicht nur weniger CO2-Emissionen. Sie ermöglichen auch eine völlig 
-                neue Art der Geschäftsführung: schnellere Reaktionen auf Marktveränderungen, bessere Qualitätskontrolle 
-                und direktere Kommunikation mit Produktionspartnern.
+                <strong>Claudia Kleinert:</strong> „Kurze Lieferketten bedeuten viel mehr als nur weniger CO2-Emissionen. 
+                Sie ermöglichen eine völlig neue Art der Geschäftsführung: schnellere Reaktionen auf Marktveränderungen, 
+                bessere Qualitätskontrolle und direktere Kommunikation mit Produktionspartnern."
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Während asiatische Produzenten oft Mindestbestellmengen von 1.000+ Stück pro Artikel verlangen, 
-                ermöglichen europäische Partner auch kleinere Auflagen. Das ist besonders für Startups und Creator 
-                ein entscheidender Vorteil.
+                „Ein konkretes Beispiel: Während asiatische Produzenten oft Mindestbestellmengen von 1.000+ Stück 
+                pro Artikel verlangen, ermöglichen unsere europäischen Partner auch kleinere Auflagen ab 50 Stück. 
+                Das ist besonders für Startups und Creator ein entscheidender Vorteil – sie können testen, 
+                ohne sich finanziell zu übernehmen."
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Qualitätsstandards und Transparenz
+                Wie sieht es mit Qualitätsstandards aus?
               </h2>
               
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Europäische Produktionsstätten unterliegen strengeren Qualitäts- und Umweltstandards. 
-                OEKO-TEX-Zertifizierungen, GOTS-Standards und faire Arbeitsbedingungen sind hier Standard, 
-                nicht Ausnahme. Diese Transparenz wird für Marken immer wichtiger, da Verbraucher zunehmend 
-                nach der Herkunft ihrer Kleidung fragen.
+                <strong>Claudia Kleinert:</strong> „Europäische Produktionsstätten unterliegen strengeren Qualitäts- 
+                und Umweltstandards. OEKO-TEX-Zertifizierungen, GOTS-Standards und faire Arbeitsbedingungen sind 
+                hier Standard, nicht Ausnahme. Diese Transparenz wird für Marken immer wichtiger, da Verbraucher 
+                zunehmend nach der Herkunft ihrer Kleidung fragen."
               </p>
 
+              <div className="aspect-[4/3] my-12 rounded-lg overflow-hidden">
+                <img 
+                  src={materialsImage} 
+                  alt="Nachhaltige Materialien und Bio-Baumwolle in der europäischen Textilproduktion"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Die Rückverfolgbarkeit der gesamten Lieferkette ist in Europa deutlich einfacher. 
+                „Die Rückverfolgbarkeit der gesamten Lieferkette ist in Europa deutlich einfacher. 
                 Von der Garnherstellung bis zum fertigen Produkt können alle Schritte dokumentiert 
-                und überprüft werden – ein Marktvorteil, der immer relevanter wird.
+                und überprüft werden – ein Marktvorteil, der immer relevanter wird. Unsere Kunden 
+                können ihre Produktionsstätten besuchen, die Arbeiter treffen und sich selbst von 
+                den Bedingungen überzeugen."
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Innovation und Technologie
+                Welche Rolle spielt Innovation in der europäischen Textilproduktion?
               </h2>
               
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Europäische Textilproduzenten investieren massiv in nachhaltige Technologien: 
-                wassersparende Färbeverfahren, recycelte Materialien und energieeffiziente Produktionsmethoden. 
-                Diese Innovationen machen nachhaltige Produktion nicht nur umweltfreundlicher, sondern oft 
-                auch kostengünstiger.
+                <strong>Claudia Kleinert:</strong> „Europäische Textilproduzenten investieren massiv in nachhaltige 
+                Technologien: wassersparende Färbeverfahren, recycelte Materialien und energieeffiziente 
+                Produktionsmethoden. Diese Innovationen machen nachhaltige Produktion nicht nur umweltfreundlicher, 
+                sondern oft auch kostengünstiger."
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Digitalisierung spielt ebenfalls eine wichtige Rolle: Von der digitalen Musterentwicklung 
+                „Digitalisierung spielt ebenfalls eine wichtige Rolle: Von der digitalen Musterentwicklung 
                 bis zur automatisierten Qualitätskontrolle – europäische Produzenten nutzen Technologie, 
-                um effizienter und präziser zu arbeiten.
+                um effizienter und präziser zu arbeiten. Das erlaubt uns, auch bei kleineren Auflagen 
+                wirtschaftlich zu produzieren."
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Die Wirtschaftlichkeit nachhaltiger Produktion
+                Ist nachhaltige Produktion nicht grundsätzlich teurer?
               </h2>
               
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Ein weit verbreiteter Mythos ist, dass nachhaltige Produktion grundsätzlich teurer ist. 
-                Tatsächlich können kurze Lieferketten, geringere Transportkosten und höhere Effizienz 
-                die Mehrkosten oft ausgleichen. Hinzu kommen weiche Faktoren wie Markenimage und Kundenloyalität.
+                <strong>Claudia Kleinert:</strong> „Das ist ein weit verbreiteter Mythos! Tatsächlich können 
+                kurze Lieferketten, geringere Transportkosten und höhere Effizienz die Mehrkosten oft ausgleichen. 
+                Hinzu kommen weiche Faktoren wie Markenimage und Kundenloyalität – nachhaltig produzierte Kleidung 
+                erzielt oft höhere Margen."
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Besonders bei kleineren Auflagen ist europäische Produktion oft wirtschaftlicher als 
-                asiatische Alternativen. Die Gesamtkosten (Total Cost of Ownership) sind entscheidend, 
-                nicht nur der reine Produktionspreis.
+                „Besonders bei kleineren Auflagen ist europäische Produktion oft wirtschaftlicher als 
+                asiatische Alternativen. Die Gesamtkosten sind entscheidend, nicht nur der reine Produktionspreis. 
+                Wenn ich Transportkosten, Zölle, Qualitätsprobleme und das Risiko von Verzögerungen einrechne, 
+                ist Europa oft die günstigere Alternative."
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Ausblick: Die Zukunft der Textilproduktion
+                Wie sehen Sie die Zukunft der Textilproduktion?
+              </h2>
+              
+              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
+                <strong>Claudia Kleinert:</strong> „Die Zukunft gehört flexiblen, transparenten und nachhaltigen 
+                Produktionsmodellen. Marken, die bereits heute auf europäische Partner setzen, positionieren sich 
+                optimal für die kommenden Herausforderungen. Der Trend zu 'Near-Shoring' und lokaler Produktion 
+                wird sich weiter verstärken."
+              </p>
+
+              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
+                „Was mich besonders freut: Immer mehr junge Designer und Unternehmer verstehen, dass nachhaltige 
+                Produktion nicht Verzicht bedeutet, sondern neue Möglichkeiten eröffnet. Sie können agiler auf 
+                Marktveränderungen reagieren, direktere Beziehungen zu ihren Produktionspartnern aufbauen und 
+                authentische Geschichten über ihre Produkte erzählen."
+              </p>
+
+              <div className="bg-[hsl(var(--cream-tan))] p-6 rounded-lg my-12">
+                <blockquote className="text-lg italic text-foreground mb-4">
+                  „Nachhaltige Produktion ist nicht nur ein Trend – es ist eine wirtschaftliche Notwendigkeit 
+                  für die Zukunft der Modebranche."
+                </blockquote>
+                <cite className="text-sm text-muted-foreground">– Claudia Kleinert, Gründerin CMK.Studio</cite>
+              </div>
+
+              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
+                Was raten Sie Designern, die mit nachhaltiger Produktion starten möchten?
               </h2>
               
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Die Zukunft gehört flexiblen, transparenten und nachhaltigen Produktionsmodellen. 
-                Marken, die bereits heute auf europäische Partner setzen, positionieren sich optimal 
-                für die kommenden Herausforderungen. Der Trend zu "Near-Shoring" und lokaler Produktion 
-                wird sich weiter verstärken – nicht nur aus Nachhaltigkeitsgründen, sondern aus 
-                wirtschaftlicher Notwendigkeit.
+                <strong>Claudia Kleinert:</strong> „Mein wichtigster Rat: Fangt klein an, aber fangt an! Viele 
+                Designer träumen von der perfekten ersten Kollektion, aber es ist besser, mit wenigen, gut 
+                durchdachten Teilen zu starten. Europäische Produktion macht das möglich – ihr könnt mit 
+                50 oder 100 Stück pro Modell testen, lernen und euch dann steigern."
               </p>
             </div>
 
             <div className="mt-16 p-8 bg-[hsl(var(--cream-tan))] rounded-lg text-center">
               <h3 className="text-xl font-light mb-4 text-foreground font-display">
-                Interessiert an nachhaltiger Textilproduktion?
+                Interessiert an nachhaltiger europäischer Textilproduktion?
               </h3>
               <p className="text-muted-foreground mb-6 font-body">
-                Erfahren Sie mehr über unsere nachhaltigen Produktionsmöglichkeiten in Europa.
+                Sprechen Sie mit Claudia Kleinert über die Möglichkeiten für Ihr nächstes Projekt.
               </p>
               <Button size="lg" asChild>
                 <a href="#contact">
-                  Jetzt Projekt starten
+                  Persönliches Gespräch vereinbaren
                 </a>
               </Button>
             </div>
