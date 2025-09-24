@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import blogImage1 from "@/assets/blog-erste-modekollektion-new.jpg";
 import blogImage2 from "@/assets/blog-nachhaltige-produktion.jpg";
-import blogImage3 from "@/assets/blog-private-label.jpg";
+import blogImage3 from "@/assets/blog-private-label-regional.jpg";
 import blogImage4 from "@/assets/blog-micro-produktion-premium.jpg";
 import blogImage5 from "@/assets/blog-workwear-employer-branding.jpg";
 import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
