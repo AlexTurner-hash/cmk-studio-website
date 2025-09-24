@@ -75,16 +75,12 @@ const InsightsPreviewSection = () => {
                   {post.excerpt}
                 </p>
                 
-                <Button 
-                  variant="outline" 
-                  size="sm" 
-                  asChild
-                  className="w-full"
+                <Link 
+                  to={`/insights/${post.id}`}
+                  className="text-[hsl(var(--bronze))] hover:text-[hsl(var(--bronze))]/80 transition-colors duration-200 font-medium"
                 >
-                  <Link to={`/insights/${post.id}`}>
-                    Weiterlesen
-                  </Link>
-                </Button>
+                  Weiterlesen
+                </Link>
               </CardContent>
             </Card>
           ))}
