@@ -226,7 +226,7 @@ const NachhaltigeTextilproduktion = () => {
                   </div>
                 </div>
                 <div className="md:w-1/2">
-                  <div className="bg-[hsl(var(--cream-tan))] p-6 rounded-lg">
+                  <div className="bg-[hsl(var(--cream-tan))] p-6 rounded-lg h-full flex flex-col justify-center">
                     <p className="text-sm text-muted-foreground mb-2 font-medium">Zur Person</p>
                     <p className="text-muted-foreground font-body leading-relaxed">
                       <strong>Claudia Kleinert</strong> ist Gründerin und Geschäftsführerin von CMK.Studio. 
