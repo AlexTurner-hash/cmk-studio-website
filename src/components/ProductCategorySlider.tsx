@@ -1,5 +1,3 @@
-import { useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import streetwearImage from "@/assets/category-streetwear.jpg";
 import denimImage from "@/assets/category-denim.jpg";
@@ -12,8 +10,6 @@ import workwearImage from "@/assets/category-workwear.jpg";
 import spaLeisureImage from "@/assets/category-spa-leisure.jpg";
 
 const ProductCategorySlider = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
   const categories = [
     { name: "Streetwear", image: streetwearImage, slug: "streetwear" },
     { name: "Denim", image: denimImage, slug: "denim" },
@@ -25,17 +21,6 @@ const ProductCategorySlider = () => {
     { name: "Workwear", image: workwearImage, slug: "workwear" },
     { name: "Hospitality", image: spaLeisureImage, slug: "spa-leisure" },
   ];
-
-  const scroll = (direction: "left" | "right") => {
-    if (scrollRef.current) {
-      const scrollAmount = 280; // Width of one category card plus gap
-      const newScrollLeft = scrollRef.current.scrollLeft + (direction === "left" ? -scrollAmount : scrollAmount);
-      scrollRef.current.scrollTo({
-        left: newScrollLeft,
-        behavior: "smooth"
-      });
-    }
-  };
 
   return (
     <section className="section-padding bg-background">
@@ -49,54 +34,30 @@ const ProductCategorySlider = () => {
           </p>
         </div>
 
-        <div className="relative">
-          {/* Navigation Buttons */}
-          <button
-            onClick={() => scroll("left")}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-background/80 backdrop-blur-sm border border-border rounded-full p-3 shadow-elegant hover:bg-background transition-all duration-200 hover:shadow-lg"
-            aria-label="Vorherige Kategorien"
-          >
-            <ChevronLeft className="w-5 h-5 text-foreground" />
-          </button>
-          
-          <button
-            onClick={() => scroll("right")}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-background/80 backdrop-blur-sm border border-border rounded-full p-3 shadow-elegant hover:bg-background transition-all duration-200 hover:shadow-lg"
-            aria-label="Nächste Kategorien"
-          >
-            <ChevronRight className="w-5 h-5 text-foreground" />
-          </button>
-
-          {/* Slider Container */}
-          <div
-            ref={scrollRef}
-            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-8 px-16"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-          >
-            {categories.map((category, index) => (
-              <Link
-                key={index}
-                to={`/produktkategorien/${category.slug}`}
-                className="flex-shrink-0 group cursor-pointer"
-              >
-                <div className="w-64 bg-card rounded-lg overflow-hidden shadow-warm hover:shadow-elegant transition-all duration-300 hover:scale-105">
-                  <div className="aspect-square overflow-hidden">
-                    <img
-                      src={category.image}
-                      alt={`${category.name} Produktkategorie - hochwertige Textilproduktion`}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="p-4 text-center">
-                    <h3 className="text-lg font-semibold text-foreground">
-                      {category.name}
-                    </h3>
-                  </div>
+        {/* Grid Container */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
+          {categories.map((category, index) => (
+            <Link
+              key={index}
+              to={`/produktkategorien/${category.slug}`}
+              className="group cursor-pointer"
+            >
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-warm hover:shadow-elegant transition-all duration-300 hover:scale-105">
+                <img
+                  src={category.image}
+                  alt={`${category.name} Produktkategorie - hochwertige Textilproduktion`}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  loading="lazy"
+                />
+                {/* Text Overlay */}
+                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                  <h3 className="text-white text-lg md:text-xl font-semibold text-center px-4">
+                    {category.name}
+                  </h3>
                 </div>
-              </Link>
-            ))}
-          </div>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
