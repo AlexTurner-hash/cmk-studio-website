@@ -3,9 +3,10 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-nachhaltige-produktion.jpg";
-import factoryImage from "@/assets/interview-sustainable-factory.jpg";
-import materialsImage from "@/assets/interview-organic-materials.jpg";
-import claudiaOfficeImage from "@/assets/interview-claudia-office.jpg";
+import textileWorkersImage from "@/assets/textile-workers-machinery.jpg";
+import textileMachineryImage from "@/assets/textile-machinery-detail.jpg";
+import cottonFieldImage from "@/assets/cotton-field-worker.jpg";
+import textileFactoryImage from "@/assets/textile-factory-floor.jpg";
 
 const NachhaltigeTextilproduktion = () => {
   return (
@@ -47,8 +48,8 @@ const NachhaltigeTextilproduktion = () => {
 
             <div className="aspect-[16/9] mb-12 rounded-lg overflow-hidden">
               <img 
-                src={claudiaOfficeImage} 
-                alt="Claudia Kleinert, Gründerin von CMK.Studio, während des Interviews über nachhaltige Textilproduktion"
+                src={textileWorkersImage} 
+                alt="Arbeiter in einer modernen europäischen Textilfabrik bei der nachhaltigen Produktion"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -82,8 +83,8 @@ const NachhaltigeTextilproduktion = () => {
 
               <div className="aspect-[16/10] my-12 rounded-lg overflow-hidden">
                 <img 
-                  src={factoryImage} 
-                  alt="Moderne europäische Textilfabrik mit nachhaltigen Produktionsmethoden"
+                  src={textileFactoryImage} 
+                  alt="Große moderne Textilfabrik mit vielen Näharbeitsplätzen und nachhaltigen Produktionsmethoden"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -118,8 +119,8 @@ const NachhaltigeTextilproduktion = () => {
 
               <div className="aspect-[4/3] my-12 rounded-lg overflow-hidden">
                 <img 
-                  src={materialsImage} 
-                  alt="Nachhaltige Materialien und Bio-Baumwolle in der europäischen Textilproduktion"
+                  src={cottonFieldImage} 
+                  alt="Arbeiterin in einem Bio-Baumwollfeld - nachhaltige Materialgewinnung für die Textilproduktion"
                   className="w-full h-full object-cover"
                 />
               </div>
