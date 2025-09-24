@@ -7,6 +7,7 @@ import blogImage2 from "@/assets/blog-nachhaltige-produktion.jpg";
 import blogImage3 from "@/assets/blog-private-label-regional.jpg";
 import blogImage4 from "@/assets/blog-micro-produktion-premium.jpg";
 import blogImage5 from "@/assets/blog-workwear-employer-branding.jpg";
+import blogImage6 from "@/assets/blog-luxury-hospitality-collections.jpg";
 import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 
 const blogPosts = [
@@ -57,6 +58,14 @@ const blogPosts = [
     image: blogImage5,
     readTime: "6 min",
     category: "Employer Branding"
+  },
+  {
+    id: "luxury-hospitality-collections",
+    title: "Luxus zum Mitnehmen: Wie Hotels und Spas mit exklusiven Kollektionen neue Umsätze generieren",
+    excerpt: "Von Yoga-Apparel bis zu Premium-Badtextilien: Erfahren Sie, wie High-End-Hotels und Spa-Resorts durch hochwertige Eigenmarken ihre Gäste begeistern und zusätzliche Erlösquellen erschließen.",
+    image: blogImage6,
+    readTime: "7 min",
+    category: "Hospitality"
   }
 ];
 
