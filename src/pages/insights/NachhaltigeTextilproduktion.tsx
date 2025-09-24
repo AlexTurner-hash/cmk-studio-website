@@ -48,8 +48,8 @@ const NachhaltigeTextilproduktion = () => {
 
             <div className="aspect-[16/9] mb-12 rounded-lg overflow-hidden">
               <img 
-                src={localTextileProducersImage} 
-                alt="Lokale Textilproduzenten arbeiten gemeinsam an einer kleinen Maschine in europäischer Werkstatt"
+                src="/lovable-uploads/2fc892b4-8981-409e-b09c-3c37cecf8f68.png" 
+                alt="Moderne Textilfabrik mit vielen Näharbeitsplätzen unter großem Industriedach - europäische Textilproduktion"
                 className="w-full h-full object-cover"
               />
             </div>
