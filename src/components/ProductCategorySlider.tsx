@@ -23,7 +23,7 @@ const ProductCategorySlider = () => {
     { name: "Leder", image: leatherImage, slug: "leather" },
     { name: "Accessoires", image: accessoriesImage, slug: "accessories" },
     { name: "Workwear", image: workwearImage, slug: "workwear" },
-    { name: "Spa & Leisure", image: spaLeisureImage, slug: "spa-leisure" },
+    { name: "Hospitality", image: spaLeisureImage, slug: "spa-leisure" },
   ];
 
   const scroll = (direction: "left" | "right") => {
