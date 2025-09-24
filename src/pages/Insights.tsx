@@ -13,14 +13,6 @@ import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 
 const blogPosts = [
   {
-    id: "claudia-kleinert",
-    title: "Claudia Kleinert: Die Gründerin",
-    excerpt: "Von der studierten Modedesignerin zur erfolgreichen Unternehmerin: Wie die Gründerin von 'blush Lingerie' ihr Praxiswissen durch CMK.Studio anderen Modeschaffenden zugänglich macht.",
-    image: claudiaPortrait,
-    readTime: "5 min",
-    category: "Portrait"
-  },
-  {
     id: "erste-modekollektion-planen",
     title: "Wie Sie Ihre erste Modekollektion planen – ein Leitfaden für Startups und Creator",
     excerpt: "Von der ersten Idee bis zur fertigen Kollektion: Entdecken Sie die wichtigsten Schritte für eine erfolgreiche Modekollektion und vermeiden Sie typische Anfängerfehler.",
@@ -43,6 +35,14 @@ const blogPosts = [
     image: blogImage3,
     readTime: "7 min",
     category: "Einzelhandel"
+  },
+  {
+    id: "claudia-kleinert",
+    title: "Claudia Kleinert: Die Gründerin",
+    excerpt: "Von der studierten Modedesignerin zur erfolgreichen Unternehmerin: Wie die Gründerin von 'blush Lingerie' ihr Praxiswissen durch CMK.Studio anderen Modeschaffenden zugänglich macht.",
+    image: claudiaPortrait,
+    readTime: "5 min",
+    category: "Portrait"
   },
   {
     id: "micro-produktion-modebranche",
