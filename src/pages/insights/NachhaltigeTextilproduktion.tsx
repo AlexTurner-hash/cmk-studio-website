@@ -3,10 +3,10 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-nachhaltige-produktion.jpg";
-import localTextileProducersImage from "@/assets/local-textile-producers-green.jpg";
+import modernBrightFacilityImage from "@/assets/modern-bright-facility-pastiche.jpg";
 import textileMachineryImage from "@/assets/textile-machinery-detail.jpg";
 import cottonFieldImage from "@/assets/cotton-field-worker.jpg";
-import textileFactoryImage from "@/assets/textile-factory-floor.jpg";
+import largeFactoryFloorImage from "@/assets/large-factory-floor-modern.jpg";
 
 const NachhaltigeTextilproduktion = () => {
   return (
@@ -48,8 +48,8 @@ const NachhaltigeTextilproduktion = () => {
 
             <div className="aspect-[16/9] mb-12 rounded-lg overflow-hidden">
               <img 
-                src={localTextileProducersImage} 
-                alt="Lokale Textilproduzenten arbeiten gemeinsam an einer kleinen Maschine in europäischer Werkstatt"
+                src={modernBrightFacilityImage} 
+                alt="Moderne hell beleuchtete europäische Textilproduktionsstätte mit nachhaltigen Standards"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -83,7 +83,7 @@ const NachhaltigeTextilproduktion = () => {
 
               <div className="aspect-[16/10] my-12 rounded-lg overflow-hidden">
                 <img 
-                  src={textileFactoryImage} 
+                  src={largeFactoryFloorImage} 
                   alt="Große moderne Textilfabrik mit vielen Näharbeitsplätzen und nachhaltigen Produktionsmethoden"
                   className="w-full h-full object-cover"
                 />
