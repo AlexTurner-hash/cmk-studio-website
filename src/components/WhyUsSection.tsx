@@ -1,11 +1,11 @@
-import { ArrowLeftRight, Star, Leaf, Lightbulb } from "lucide-react";
+import { ArrowLeftRight, Euro, Leaf, Lightbulb } from "lucide-react";
 const WhyUsSection = () => {
   const reasons = [{
     icon: ArrowLeftRight,
     title: "End-to-End Service",
     description: "Beratung, Produktion, Logistik in einem Prozess"
   }, {
-    icon: Star,
+    icon: Euro,
     title: "Europäische Fertigung",
     description: "Qualität & Nähe statt lange Lieferketten"
   }, {
