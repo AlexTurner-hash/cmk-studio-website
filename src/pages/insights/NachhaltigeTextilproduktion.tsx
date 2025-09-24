@@ -196,7 +196,7 @@ const NachhaltigeTextilproduktion = () => {
                 authentische Geschichten über ihre Produkte erzählen."
               </p>
 
-              <div className="bg-[hsl(var(--cream-tan))] p-6 rounded-lg my-12">
+              <div className="p-6 rounded-lg my-12">
                 <blockquote className="text-lg italic text-foreground mb-4">
                   „Nachhaltige Produktion ist nicht nur ein Trend – es ist eine wirtschaftliche Notwendigkeit 
                   für die Zukunft der Modebranche."
