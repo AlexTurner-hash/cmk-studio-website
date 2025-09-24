@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-nachhaltige-produktion.jpg";
-import textileWorkersImage from "@/assets/textile-workers-machinery.jpg";
+import localTextileProducersImage from "@/assets/local-textile-producers-green.jpg";
 import textileMachineryImage from "@/assets/textile-machinery-detail.jpg";
 import cottonFieldImage from "@/assets/cotton-field-worker.jpg";
 import textileFactoryImage from "@/assets/textile-factory-floor.jpg";
@@ -48,8 +48,8 @@ const NachhaltigeTextilproduktion = () => {
 
             <div className="aspect-[16/9] mb-12 rounded-lg overflow-hidden">
               <img 
-                src={textileWorkersImage} 
-                alt="Arbeiter in einer modernen europäischen Textilfabrik bei der nachhaltigen Produktion"
+                src={localTextileProducersImage} 
+                alt="Lokale Textilproduzenten arbeiten gemeinsam an einer kleinen Maschine in europäischer Werkstatt"
                 className="w-full h-full object-cover"
               />
             </div>
