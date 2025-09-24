@@ -63,8 +63,8 @@ const TestimonialsSection = () => {
                   </div>
                 </CarouselItem>)}
             </CarouselContent>
-            <CarouselPrevious className="left-4" />
-            <CarouselNext className="right-4" />
+            <CarouselPrevious />
+            <CarouselNext />
           </Carousel>
           
           {/* Dot indicators */}
