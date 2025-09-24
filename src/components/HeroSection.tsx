@@ -20,10 +20,17 @@ Unsere Produktion. 
           CMK.Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa – damit Marken, Creator und Unternehmen Kollektionen effizient, hochwertig und transparent realisieren können.
         </p>
 
-        {/* Get in Contact Button */}
-        <div className="flex justify-center">
+        {/* Action Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a href="#contact" className="btn-accent">
             Projekt starten
+          </a>
+          <a 
+            href={headerImage} 
+            download="cmk-studio-titelbild.jpg"
+            className="btn-secondary text-sm"
+          >
+            Titelbild herunterladen
           </a>
         </div>
       </div>
