@@ -50,7 +50,7 @@ const NachhaltigeTextilproduktion = () => {
               <img 
                 src="/lovable-uploads/2fc892b4-8981-409e-b09c-3c37cecf8f68.png" 
                 alt="Moderne Textilfabrik mit vielen Näharbeitsplätzen unter großem Industriedach - europäische Textilproduktion"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-left-top scale-110"
               />
             </div>
 
@@ -76,7 +76,7 @@ const NachhaltigeTextilproduktion = () => {
               <img 
                 src="/lovable-uploads/6768a154-e7fd-4913-a3ad-7586ed102089.png" 
                 alt="Lokale Textilproduzenten arbeiten konzentriert an einer Maschine in einer gut beleuchteten europäischen Werkstatt"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-left-top scale-110"
               />
               </div>
 
@@ -139,7 +139,7 @@ const NachhaltigeTextilproduktion = () => {
                 <img 
                   src="/lovable-uploads/8861c531-eceb-4d48-a743-f9bfd5ebb8ed.png" 
                   alt="Moderne Textilmaschine verarbeitet recyceltes Denim - nachhaltige Materialverarbeitung in europäischer Produktion"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-left-top scale-110"
                 />
               </div>
 
