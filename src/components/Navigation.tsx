@@ -2,12 +2,16 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "@/assets/cmk-logo-white-new.png";
+import logoWhite from "@/assets/cmk-logo-white-new.png";
+import logoBlack from "@/assets/cmk-logo-black-new.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  
+  // Check if we're on insights page or any insights subpage
+  const isInsightsPage = location.pathname.startsWith('/insights');
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -61,7 +65,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <Link to="/">
               <img 
-                src={logo} 
+                src={isInsightsPage ? logoBlack : logoWhite} 
                 alt="CMK Studio" 
                 className="h-8 w-auto"
               />
@@ -72,7 +76,11 @@ const Navigation = () => {
           <Button
             variant="ghost"
             size="sm"
-            className="p-2 text-white hover:text-[hsl(var(--bronze))] transition-colors duration-300"
+            className={`p-2 transition-colors duration-300 ${
+              isInsightsPage 
+                ? 'text-black hover:text-[hsl(var(--bronze))]' 
+                : 'text-white hover:text-[hsl(var(--bronze))]'
+            }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={46} /> : <Menu size={46} />}
