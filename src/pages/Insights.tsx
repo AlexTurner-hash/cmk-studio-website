@@ -36,11 +36,11 @@ const blogPosts = [
   },
   {
     id: "private-label-bekleidung-eigenmarken",
-    title: "Private Label Bekleidung: Warum Eigenmarken für Unternehmen immer wichtiger werden",
-    excerpt: "Erfahren Sie, wie Unternehmen mit maßgeschneiderter Bekleidung ihre Markenidentität stärken und sich vom Wettbewerb abheben können.",
+    title: "Private Label für regionale Händler: Wie mittelständische Modehäuser mit Eigenmarken punkten",
+    excerpt: "Erfahren Sie, wie familiengeführte Modehäuser und regionale Handelsketten durch maßgeschneiderte Eigenmarken ihre Stammkundschaft stärken und sich gegen die Online-Konkurrenz behaupten können.",
     image: blogImage3,
     readTime: "7 min",
-    category: "Business"
+    category: "Einzelhandel"
   },
   {
     id: "micro-produktion-modebranche",
