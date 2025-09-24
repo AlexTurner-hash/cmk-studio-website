@@ -19,19 +19,25 @@ const Workwear = () => {
             <ArrowLeft className="w-4 h-4" />
             Zurück zu den Produktkategorien
           </Link>
+        </div>
 
-          {/* Hero Section */}
-          <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-light mb-6 text-foreground font-display">
-              Workwear-Produktion bei CMK
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl font-light">
-              Professionelle Berufsbekleidung für Gastronomie, Hotellerie und Unternehmen – 
-              funktional, repräsentativ und auf höchstem Qualitätsniveau gefertigt.
-            </p>
+        {/* Hero Section */}
+        <section className="py-8">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6 text-foreground font-display">
+                Workwear-Produktion bei CMK
+              </h1>
+              <p className="text-xl text-muted-foreground mb-8 font-body leading-relaxed">
+                Professionelle Berufsbekleidung für Gastronomie, Hotellerie und Unternehmen – 
+                funktional, repräsentativ und auf höchstem Qualitätsniveau gefertigt.
+              </p>
+            </div>
           </div>
+        </section>
 
-          {/* Production Image */}
+        {/* Production Image */}
+        <div className="container mx-auto px-6">
           <div className="mb-16">
             <img 
               src={productionImage} 
