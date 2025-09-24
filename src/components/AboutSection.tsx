@@ -11,7 +11,7 @@ const AboutSection = () => {
 
         {/* Content */}
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading-section text-foreground mb-6 text-center text-3xl">Was wir leisten</h2>
+          <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display text-center">Was wir leisten</h2>
           <div className="space-y-6 text-lg md:text-xl text-clay/70 leading-relaxed font-body">
             
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">

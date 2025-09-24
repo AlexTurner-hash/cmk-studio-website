@@ -36,7 +36,7 @@ const ProductCategorySlider = () => {
     <section className="section-padding bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="heading-section text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
             Unsere Produktkategorien
           </h2>
           <p className="text-body-large text-muted-foreground max-w-3xl mx-auto">

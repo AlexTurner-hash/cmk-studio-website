@@ -18,7 +18,7 @@ const ServicesOfferedSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="heading-section text-foreground mb-6">Alles, was eine Kollektion braucht.</h2>
+          <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">Alles, was eine Kollektion braucht.</h2>
           <p className="text-body-large text-clay/80 max-w-4xl mx-auto">
             Wir bieten nicht nur Produktion, sondern eine vollständige Wertschöpfungskette – vom ersten Entwurf bis zum Versand.
           </p>

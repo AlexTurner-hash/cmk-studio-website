@@ -36,7 +36,7 @@ const TestimonialsSection = () => {
   return <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-8">
-          <h2 className="heading-section text-foreground mb-4 text-3xl font-medium">Was unsere Kunden sagen</h2>
+          <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">Was unsere Kunden sagen</h2>
         </div>
         <div className="max-w-3xl mx-auto">
           <Carousel className="w-full" setApi={setApi} opts={{
