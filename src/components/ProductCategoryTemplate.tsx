@@ -88,7 +88,7 @@ const ProductCategoryTemplate = ({
           </div>
 
           {/* CTA Section */}
-          <div className="mt-12 text-center">
+          <div className="mt-12 mb-16 text-center">
             <Link 
               to="/kontakt" 
               className="btn-accent"
