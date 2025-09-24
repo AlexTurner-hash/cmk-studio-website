@@ -11,10 +11,10 @@ import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 const blogPosts = [
   {
     id: "claudia-kleinert",
-    title: "Claudia Kleinert: Die Visionärin hinter CMK.Studio",
-    excerpt: "Mit über 35 Jahren Erfahrung in der Modebranche revolutioniert sie die europäische Textilproduktion und hat bereits namhafte Marken wie Puma und Aubade beraten.",
+    title: "Claudia Kleinert: Die Gründerin",
+    excerpt: "Von der studierten Modedesignerin zur erfolgreichen Unternehmerin: Wie die Gründerin von 'blush Lingerie' ihr Praxiswissen durch CMK.Studio anderen Modeschaffenden zugänglich macht.",
     image: claudiaPortrait,
-    readTime: "6 min",
+    readTime: "5 min",
     category: "Portrait"
   },
   {
