@@ -2,13 +2,13 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
-import blogImage from "@/assets/blog-private-label.jpg";
+import blogImage from "@/assets/blog-private-label-regional.jpg";
 
 const PrivateLabelBekleidung = () => {
   return (
     <>
-      <title>Private Label Bekleidung - Eigenmarken für Unternehmen | CMK.Studio</title>
-      <meta name="description" content="Warum Private Label Bekleidung für Unternehmen immer wichtiger wird: Markenidentität stärken, Mitarbeiterbindung fördern und sich differenzieren." />
+      <title>Private Label für regionale Händler - Eigenmarken für Modehäuser | CMK.Studio</title>
+      <meta name="description" content="Wie familiengeführte Modehäuser und regionale Handelsketten durch maßgeschneiderte Eigenmarken ihre Stammkundschaft stärken und sich gegen Online-Konkurrenz behaupten." />
       
       <div className="min-h-screen">
         <Navigation />
@@ -25,7 +25,7 @@ const PrivateLabelBekleidung = () => {
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                  Business
+                  Einzelhandel
                 </span>
                 <span className="text-sm text-muted-foreground">
                   7 min Lesezeit
@@ -33,19 +33,20 @@ const PrivateLabelBekleidung = () => {
               </div>
               
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
-                Private Label Bekleidung: Warum Eigenmarken für Unternehmen immer wichtiger werden
+                Private Label für regionale Händler: Wie mittelständische Modehäuser mit Eigenmarken punkten
               </h1>
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                Erfahren Sie, wie Unternehmen mit maßgeschneiderter Bekleidung ihre Markenidentität 
-                stärken und sich vom Wettbewerb abheben können.
+                Erfahren Sie, wie familiengeführte Modehäuser und regionale Handelsketten durch 
+                maßgeschneiderte Eigenmarken ihre Stammkundschaft stärken und sich gegen die 
+                Online-Konkurrenz behaupten können.
               </p>
             </header>
 
             <div className="aspect-[16/9] mb-12 rounded-lg overflow-hidden">
               <img 
                 src={blogImage} 
-                alt="Hochwertige Unternehmensbekleidung mit individuellen Logos und Designs"
+                alt="Regionales Modehaus mit eigener Markenkollektion - Private Label für Einzelhändler"
                 className="w-full h-full object-cover"
               />
             </div>
