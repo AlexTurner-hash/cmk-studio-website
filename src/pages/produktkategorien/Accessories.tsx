@@ -26,7 +26,7 @@ const Accessories = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6 text-foreground font-display">
-                Accessoires Produktion
+                Accessoires-Produktion bei CMK
               </h1>
               <p className="text-xl text-muted-foreground mb-8 font-body leading-relaxed">
                 Von feinster Handarbeit bis zur Präzisionsfertigung – Accessoires, die Kollektionen vollenden und Marken definieren.

@@ -23,7 +23,7 @@ const Workwear = () => {
           {/* Hero Section */}
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-light mb-6 text-foreground font-display">
-              Workwear
+              Workwear-Produktion bei CMK
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl font-light">
               Professionelle Berufsbekleidung für Gastronomie, Hotellerie und Unternehmen – 
