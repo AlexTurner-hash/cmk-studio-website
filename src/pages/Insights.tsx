@@ -27,11 +27,11 @@ const blogPosts = [
   },
   {
     id: "nachhaltige-textilproduktion-europa",
-    title: "Nachhaltige Textilproduktion in Europa: Chancen für Marken und Creator",
-    excerpt: "Warum europäische Fertigung der Schlüssel für nachhaltige Mode ist und welche Vorteile kurze Lieferketten für Ihre Marke haben.",
-    image: blogImage2,
-    readTime: "6 min",
-    category: "Nachhaltigkeit"
+    title: "Europa ist die Zukunft der nachhaltigen Textilproduktion",
+    excerpt: "Im Interview erklärt Claudia Kleinert, warum europäische Fertigung wirtschaftlich sinnvoll ist, wie kurze Lieferketten Flexibilität ermöglichen und weshalb Nachhaltigkeit kein Kostennachteil sein muss.",
+    image: "/lovable-uploads/2fc892b4-8981-409e-b09c-3c37cecf8f68.png",
+    readTime: "8 min",
+    category: "Interview"
   },
   {
     id: "private-label-bekleidung-eigenmarken",
