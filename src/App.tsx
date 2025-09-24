@@ -11,6 +11,7 @@ import ErsteModekollektion from "./pages/insights/ErsteModekollektion";
 import NachhaltigeTextilproduktion from "./pages/insights/NachhaltigeTextilproduktion";
 import PrivateLabelBekleidung from "./pages/insights/PrivateLabelBekleidung";
 import MicroProduktion from "./pages/insights/MicroProduktion";
+import ClaudiaKleinert from "./pages/insights/ClaudiaKleinert";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/insights/nachhaltige-textilproduktion-europa" element={<NachhaltigeTextilproduktion />} />
           <Route path="/insights/private-label-bekleidung-eigenmarken" element={<PrivateLabelBekleidung />} />
           <Route path="/insights/micro-produktion-modebranche" element={<MicroProduktion />} />
+          <Route path="/insights/claudia-kleinert" element={<ClaudiaKleinert />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

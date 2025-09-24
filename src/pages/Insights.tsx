@@ -6,8 +6,17 @@ import blogImage1 from "@/assets/blog-erste-modekollektion.jpg";
 import blogImage2 from "@/assets/blog-nachhaltige-produktion.jpg";
 import blogImage3 from "@/assets/blog-private-label.jpg";
 import blogImage4 from "@/assets/blog-micro-produktion.jpg";
+import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 
 const blogPosts = [
+  {
+    id: "claudia-kleinert",
+    title: "Claudia Kleinert: Die Visionärin hinter CMK.Studio",
+    excerpt: "Mit über 35 Jahren Erfahrung in der Modebranche revolutioniert sie die europäische Textilproduktion und hat bereits namhafte Marken wie Puma und Aubade beraten.",
+    image: claudiaPortrait,
+    readTime: "6 min",
+    category: "Portrait"
+  },
   {
     id: "erste-modekollektion-planen",
     title: "Wie Sie Ihre erste Modekollektion planen – ein Leitfaden für Startups und Creator",
