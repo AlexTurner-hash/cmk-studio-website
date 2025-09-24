@@ -214,6 +214,28 @@ const NachhaltigeTextilproduktion = () => {
                 durchdachten Teilen zu starten. Europäische Produktion macht das möglich – ihr könnt mit 
                 50 oder 100 Stück pro Modell testen, lernen und euch dann steigern."
               </p>
+
+              <div className="mt-12 mb-8 flex flex-col md:flex-row gap-8 items-start">
+                <div className="md:w-1/2">
+                  <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/c5c83756-fb38-428c-9acb-577ef807c735.png" 
+                      alt="Claudia Kleinert arbeitet konzentriert an Modezeichnungen in ihrem Büro - Gründerin von CMK.Studio"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="md:w-1/2">
+                  <div className="bg-[hsl(var(--cream-tan))] p-6 rounded-lg">
+                    <p className="text-sm text-muted-foreground mb-2 font-medium">Zur Person</p>
+                    <p className="text-muted-foreground font-body leading-relaxed">
+                      <strong>Claudia Kleinert</strong> ist Gründerin und Geschäftsführerin von CMK.Studio. 
+                      Die studierte Modedesignerin brachte ihre eigene Dessous-Marke „blush Lingerie" erfolgreich 
+                      auf den Markt und berät heute andere Modeschaffende bei der europäischen Textilproduktion.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="mt-16 p-8 bg-[hsl(var(--cream-tan))] rounded-lg text-center">
