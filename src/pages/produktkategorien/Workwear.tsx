@@ -145,7 +145,7 @@ const Workwear = () => {
           <div className="mt-16 mb-16 text-center">
             <Link
               to="/kontakt"
-              className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-lg font-medium"
+              className="btn-accent"
             >
               Workwear-Projekt besprechen
             </Link>
