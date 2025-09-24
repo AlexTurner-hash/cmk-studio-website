@@ -29,9 +29,9 @@ const Navigation = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
       isScrolled 
-        ? 'bg-black/20 backdrop-blur-md' 
+        ? 'bg-[hsl(var(--muted))]' 
         : 'bg-transparent'
     }`}>
       <nav className="container mx-auto px-6 py-4">
@@ -41,7 +41,7 @@ const Navigation = () => {
             <img 
               src={logo} 
               alt="CMK Studio" 
-              className="h-6 w-auto"
+              className="h-8 w-auto"
             />
           </div>
 
@@ -52,7 +52,7 @@ const Navigation = () => {
             className="p-2 text-white hover:text-[hsl(var(--cream-tan-hover))] transition-colors duration-300"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X size={36} /> : <Menu size={36} />}
+            {isMenuOpen ? <X size={46} /> : <Menu size={46} />}
           </Button>
         </div>
 
