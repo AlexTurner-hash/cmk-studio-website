@@ -55,15 +55,6 @@ const NachhaltigeTextilproduktion = () => {
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <div className="bg-[hsl(var(--cream-tan))] p-6 rounded-lg mb-8">
-                <p className="text-sm text-muted-foreground mb-2 font-medium">Zur Person</p>
-                <p className="text-muted-foreground font-body leading-relaxed">
-                  <strong>Claudia Kleinert</strong> ist Gründerin und Geschäftsführerin von CMK.Studio. 
-                  Die studierte Modedesignerin brachte ihre eigene Dessous-Marke „blush Lingerie" erfolgreich 
-                  auf den Markt und berät heute andere Modeschaffende bei der europäischen Textilproduktion.
-                </p>
-              </div>
-
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
                 Frau Kleinert, Sie setzen konsequent auf europäische Textilproduktion. Warum?
               </h2>
