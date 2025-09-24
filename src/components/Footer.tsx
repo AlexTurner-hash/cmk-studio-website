@@ -4,35 +4,23 @@ const Footer = () => {
   return (
     <footer className="bg-clay text-white py-12">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company */}
           <div>
             <img src={logo} alt="CMK.Studio" className="h-6 mb-4" />
             <p className="text-white/70 text-sm leading-relaxed font-body">
-              Ihr vertrauensvoller Partner für hochwertige Textilproduktion 
-              und Fertigungsexzellenz.
+              Ihr vertrauensvoller Partner für hochwertige Textilproduktion in Europa.
             </p>
           </div>
 
-          {/* Services */}
+          {/* Navigation */}
           <div>
-            <h4 className="font-light mb-4 tracking-wide font-display">SERVICES</h4>
+            <h4 className="font-light mb-4 tracking-wide font-display">NAVIGATION</h4>
             <ul className="space-y-2 text-sm text-white/70">
-              <li>Beratung</li>
-              <li>Private Label</li>
-              <li>Influencer Editionen</li>
-              <li>Corporate Wear</li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h4 className="font-light mb-4 tracking-wide font-display">UNTERNEHMEN</h4>
-            <ul className="space-y-2 text-sm text-white/70">
+              <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
               <li><a href="/ueber-uns" className="hover:text-white transition-colors">Über uns</a></li>
               <li><a href="/insights" className="hover:text-white transition-colors">Insights</a></li>
-              <li>Unser Team</li>
-              <li>Nachhaltigkeit</li>
+              <li><a href="#contact" className="hover:text-white transition-colors">Kontakt</a></li>
             </ul>
           </div>
 
@@ -40,17 +28,24 @@ const Footer = () => {
           <div>
             <h4 className="font-light mb-4 tracking-wide font-display">KONTAKT</h4>
             <ul className="space-y-2 text-sm text-white/70">
-              <li>hello@cmk-studio.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>123 Textile District</li>
-              <li>Manufacturing City, MC 12345</li>
+              <li>
+                <a href="mailto:service@cmk-studio.com" className="hover:text-white transition-colors">
+                  service@cmk-studio.com
+                </a>
+              </li>
+              <li>030 - 35050385</li>
+              <li>Am Friedrichshain 34</li>
+              <li>10407 Berlin</li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-8 pt-8 text-center">
-          <p className="text-sm text-white/60">
-            © 2024 CMK.Studio. Alle Rechte vorbehalten.
+        <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
+          <p>© 2024 CMK Studio GmbH. Alle Rechte vorbehalten.</p>
+          <p className="mt-2 md:mt-0">
+            <a href="/impressum" className="hover:text-white transition-colors">
+              Impressum
+            </a>
           </p>
         </div>
       </div>
