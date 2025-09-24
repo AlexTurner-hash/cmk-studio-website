@@ -6,6 +6,7 @@ import blogImage1 from "@/assets/blog-erste-modekollektion-new.jpg";
 import blogImage2 from "@/assets/blog-nachhaltige-produktion.jpg";
 import blogImage3 from "@/assets/blog-private-label.jpg";
 import blogImage4 from "@/assets/blog-micro-produktion-premium.jpg";
+import blogImage5 from "@/assets/blog-workwear-employer-branding.jpg";
 import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 
 const blogPosts = [
@@ -48,6 +49,14 @@ const blogPosts = [
     image: blogImage4,
     readTime: "5 min",
     category: "Trends"
+  },
+  {
+    id: "workwear-employer-branding",
+    title: "Workwear als Employer Branding: Warum billige T-Shirt-Drucke nicht mehr reichen",
+    excerpt: "Erfahren Sie, wie hochwertige, nachhaltige Arbeitskleidung zum Aushängeschild Ihres Unternehmens wird und warum Mitarbeiter heute Wert auf Komfort, Qualität und individuelle Details legen.",
+    image: blogImage5,
+    readTime: "6 min",
+    category: "Employer Branding"
   }
 ];
 
