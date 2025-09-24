@@ -75,7 +75,7 @@ const ProductCategorySlider = () => {
                 to={`/produktkategorien/${category.slug}`}
                 className="flex-shrink-0 group cursor-pointer"
               >
-                <div className="w-64 bg-card rounded-lg overflow-hidden shadow-elegant hover:shadow-premium transition-all duration-300 hover:scale-105">
+                <div className="w-64 bg-card rounded-lg overflow-hidden shadow-warm hover:shadow-elegant transition-all duration-300 hover:scale-105">
                   <div className="aspect-square overflow-hidden">
                     <img
                       src={category.image}
