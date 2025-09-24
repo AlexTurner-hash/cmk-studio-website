@@ -83,7 +83,7 @@ const InsightsPreviewSection = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <Button size="lg" variant="outline" asChild>
+          <Button size="lg" variant="outline" className="bg-white text-black border-black hover:bg-black hover:text-white" asChild>
             <Link to="/insights">
               Alle Insights ansehen
             </Link>
