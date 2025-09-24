@@ -12,6 +12,13 @@ import NachhaltigeTextilproduktion from "./pages/insights/NachhaltigeTextilprodu
 import PrivateLabelBekleidung from "./pages/insights/PrivateLabelBekleidung";
 import MicroProduktion from "./pages/insights/MicroProduktion";
 import ClaudiaKleinert from "./pages/insights/ClaudiaKleinert";
+import Streetwear from "./pages/produktkategorien/Streetwear";
+import Denim from "./pages/produktkategorien/Denim";
+import Lingerie from "./pages/produktkategorien/Lingerie";
+import Swimwear from "./pages/produktkategorien/Swimwear";
+import Knitwear from "./pages/produktkategorien/Knitwear";
+import Leather from "./pages/produktkategorien/Leather";
+import Accessories from "./pages/produktkategorien/Accessories";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +39,13 @@ const App = () => (
           <Route path="/insights/private-label-bekleidung-eigenmarken" element={<PrivateLabelBekleidung />} />
           <Route path="/insights/micro-produktion-modebranche" element={<MicroProduktion />} />
           <Route path="/insights/claudia-kleinert" element={<ClaudiaKleinert />} />
+          <Route path="/produktkategorien/streetwear" element={<Streetwear />} />
+          <Route path="/produktkategorien/denim" element={<Denim />} />
+          <Route path="/produktkategorien/lingerie" element={<Lingerie />} />
+          <Route path="/produktkategorien/swimwear" element={<Swimwear />} />
+          <Route path="/produktkategorien/knitwear" element={<Knitwear />} />
+          <Route path="/produktkategorien/leather" element={<Leather />} />
+          <Route path="/produktkategorien/accessories" element={<Accessories />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import streetwearImage from "@/assets/category-streetwear.jpg";
 import denimImage from "@/assets/category-denim.jpg";
 import lingerieImage from "@/assets/category-lingerie.jpg";
@@ -12,13 +13,13 @@ const ProductCategorySlider = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const categories = [
-    { name: "Streetwear", image: streetwearImage },
-    { name: "Denim", image: denimImage },
-    { name: "Lingerie", image: lingerieImage },
-    { name: "Swimwear", image: swimwearImage },
-    { name: "Knitwear", image: knitwearImage },
-    { name: "Leder", image: leatherImage },
-    { name: "Accessoires", image: accessoriesImage },
+    { name: "Streetwear", image: streetwearImage, slug: "streetwear" },
+    { name: "Denim", image: denimImage, slug: "denim" },
+    { name: "Lingerie", image: lingerieImage, slug: "lingerie" },
+    { name: "Swimwear", image: swimwearImage, slug: "swimwear" },
+    { name: "Knitwear", image: knitwearImage, slug: "knitwear" },
+    { name: "Leder", image: leatherImage, slug: "leather" },
+    { name: "Accessoires", image: accessoriesImage, slug: "accessories" },
   ];
 
   const scroll = (direction: "left" | "right") => {
@@ -69,8 +70,9 @@ const ProductCategorySlider = () => {
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {categories.map((category, index) => (
-              <div
+              <Link
                 key={index}
+                to={`/produktkategorien/${category.slug}`}
                 className="flex-shrink-0 group cursor-pointer"
               >
                 <div className="w-64 bg-card rounded-lg overflow-hidden shadow-elegant hover:shadow-premium transition-all duration-300 hover:scale-105">
@@ -88,7 +90,7 @@ const ProductCategorySlider = () => {
                     </h3>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
