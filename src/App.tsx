@@ -19,6 +19,7 @@ import Swimwear from "./pages/produktkategorien/Swimwear";
 import Knitwear from "./pages/produktkategorien/Knitwear";
 import Leather from "./pages/produktkategorien/Leather";
 import Accessories from "./pages/produktkategorien/Accessories";
+import Workwear from "./pages/produktkategorien/Workwear";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +47,7 @@ const App = () => (
           <Route path="/produktkategorien/knitwear" element={<Knitwear />} />
           <Route path="/produktkategorien/leather" element={<Leather />} />
           <Route path="/produktkategorien/accessories" element={<Accessories />} />
+          <Route path="/produktkategorien/workwear" element={<Workwear />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
