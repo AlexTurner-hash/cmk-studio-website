@@ -65,7 +65,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <Link to="/">
               <img 
-                src={isInsightsPage ? logoBlack : logoWhite} 
+                src={(isInsightsPage && !isScrolled) ? logoBlack : logoWhite} 
                 alt="CMK Studio" 
                 className="h-8 w-auto"
               />
@@ -77,7 +77,7 @@ const Navigation = () => {
             variant="ghost"
             size="sm"
             className={`p-2 transition-colors duration-300 ${
-              isInsightsPage 
+              (isInsightsPage && !isScrolled) 
                 ? 'text-black hover:text-[hsl(var(--bronze))]' 
                 : 'text-white hover:text-[hsl(var(--bronze))]'
             }`}
