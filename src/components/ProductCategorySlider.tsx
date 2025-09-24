@@ -66,7 +66,7 @@ const ProductCategorySlider = () => {
           {/* Slider Container */}
           <div
             ref={scrollRef}
-            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-4 px-12"
+            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-8 px-12"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {categories.map((category, index) => (
