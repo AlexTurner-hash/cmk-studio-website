@@ -49,7 +49,7 @@ const InsightsPreviewSection = () => {
         {/* Featured Posts */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-12">
           {featuredPosts.map((post) => (
-            <Card key={post.id} className="group hover:shadow-elegant transition-all duration-300">
+            <Card key={post.id} className="group hover:shadow-elegant transition-all duration-300 flex flex-col h-full">
               <div className="aspect-[16/9] overflow-hidden rounded-t-lg">
                 <img 
                   src={post.image} 
@@ -57,7 +57,7 @@ const InsightsPreviewSection = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-xs font-medium text-[hsl(var(--bronze))] tracking-wide uppercase">
                     {post.category}
@@ -67,17 +67,17 @@ const InsightsPreviewSection = () => {
                   </span>
                 </div>
                 
-                <h3 className="text-xl font-light mb-3 text-foreground font-display group-hover:text-[hsl(var(--bronze))] transition-colors">
+                <h3 className="text-xl font-light mb-3 text-foreground font-display group-hover:text-[hsl(var(--bronze))] transition-colors line-clamp-2">
                   {post.title}
                 </h3>
                 
-                <p className="text-muted-foreground mb-4 font-body leading-relaxed">
+                <p className="text-muted-foreground mb-4 font-body leading-relaxed flex-grow line-clamp-3">
                   {post.excerpt}
                 </p>
                 
                 <Link 
                   to={`/insights/${post.id}`}
-                  className="text-[hsl(var(--bronze))] hover:text-[hsl(var(--bronze))]/80 transition-colors duration-200 font-medium"
+                  className="text-[hsl(var(--bronze))] hover:text-[hsl(var(--bronze))]/80 transition-colors duration-200 font-medium mt-auto"
                 >
                   Weiterlesen
                 </Link>
