@@ -2,21 +2,15 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 import blushStore from "@/assets/claudia-kleinert-blush-store.jpg";
-
 const ClaudiaKleinert = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       
       {/* Header Section */}
       <section className="pt-32 pb-16 bg-background">
         <div className="container mx-auto px-6">
-          <h1 className="text-4xl md:text-5xl font-black leading-none mb-6 font-display text-foreground text-center">
-            Claudia Kleinert: Die Visionärin hinter CMK.Studio
-          </h1>
-          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto leading-relaxed">
-            Mit über 35 Jahren Erfahrung in der Modebranche revolutioniert sie die europäische Textilproduktion
-          </p>
+          <h1 className="text-4xl md:text-5xl font-black leading-none mb-6 font-display text-foreground text-center">Claudia Kleinert: Die Gründerin</h1>
+          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto leading-relaxed">Die erfolgreiche Berliner Dessous-Designerin („blush Lingerie“) stellt ihre langjährige Erfahrung in Design und Produktion mit CMK.Studio auch anderen Modeschaffenden zur Verfügung.</p>
         </div>
       </section>
 
@@ -24,11 +18,7 @@ const ClaudiaKleinert = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <img 
-              src={claudiaPortrait} 
-              alt="Claudia Kleinert, Gründerin und Geschäftsführerin von CMK.Studio"
-              className="w-full max-w-2xl mx-auto rounded-lg shadow-elegant"
-            />
+            <img src={claudiaPortrait} alt="Claudia Kleinert, Gründerin und Geschäftsführerin von CMK.Studio" className="w-full max-w-2xl mx-auto rounded-lg shadow-elegant" />
           </div>
         </div>
       </section>
@@ -60,11 +50,7 @@ const ClaudiaKleinert = () => {
               </p>
 
               <div className="my-12">
-                <img 
-                  src={blushStore} 
-                  alt="blush Lingerie Store - eine der erfolgreichen Partnerschaften von Claudia Kleinert"
-                  className="w-full rounded-lg shadow-elegant"
-                />
+                <img src={blushStore} alt="blush Lingerie Store - eine der erfolgreichen Partnerschaften von Claudia Kleinert" className="w-full rounded-lg shadow-elegant" />
                 <p className="text-sm text-muted-foreground text-center mt-4 italic">
                   blush Lingerie - eine der erfolgreichen Partnerschaften von Claudia Kleinert
                 </p>
@@ -122,10 +108,7 @@ const ClaudiaKleinert = () => {
                 <p className="text-lg text-muted-foreground mb-6">
                   Lassen Sie sich von Claudia Kleinert und ihrem Team beraten und entdecken Sie die Möglichkeiten europäischer Textilproduktion.
                 </p>
-                <a 
-                  href="#contact" 
-                  className="btn-accent inline-flex items-center"
-                >
+                <a href="#contact" className="btn-accent inline-flex items-center">
                   Jetzt Projekt starten
                 </a>
               </div>
@@ -135,8 +118,6 @@ const ClaudiaKleinert = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default ClaudiaKleinert;
