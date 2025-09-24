@@ -1,26 +1,35 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import blogImage1 from "@/assets/blog-erste-modekollektion.jpg";
-import blogImage2 from "@/assets/blog-nachhaltige-produktion.jpg";
+import blogImage1 from "@/assets/blog-erste-modekollektion-new.jpg";
+import blogImage2 from "@/assets/blog-workwear-employer-branding.jpg";
+import blogImage3 from "@/assets/blog-luxury-hospitality-collections.jpg";
 
 const InsightsPreviewSection = () => {
   const featuredPosts = [
     {
       id: "erste-modekollektion-planen",
-      title: "Wie Sie Ihre erste Modekollektion planen",
-      excerpt: "Von der ersten Idee bis zur fertigen Kollektion: Entdecken Sie die wichtigsten Schritte für eine erfolgreiche Modekollektion.",
+      title: "Wie Sie Ihre erste Modekollektion planen – ein Leitfaden für Startups und Creator",
+      excerpt: "Von der ersten Idee bis zur fertigen Kollektion: Entdecken Sie die wichtigsten Schritte für eine erfolgreiche Modekollektion und vermeiden Sie typische Anfängerfehler.",
       image: blogImage1,
       readTime: "8 min",
       category: "Startup-Guide"
     },
     {
-      id: "nachhaltige-textilproduktion-europa",
-      title: "Nachhaltige Textilproduktion in Europa",
-      excerpt: "Warum europäische Fertigung der Schlüssel für nachhaltige Mode ist und welche Vorteile kurze Lieferketten bieten.",
+      id: "workwear-employer-branding",
+      title: "Workwear als Employer Branding: Warum billige T-Shirt-Drucke nicht mehr reichen",
+      excerpt: "Erfahren Sie, wie hochwertige, nachhaltige Arbeitskleidung zum Aushängeschild Ihres Unternehmens wird und warum Mitarbeiter heute Wert auf Komfort, Qualität und individuelle Details legen.",
       image: blogImage2,
       readTime: "6 min",
-      category: "Nachhaltigkeit"
+      category: "Employer Branding"
+    },
+    {
+      id: "luxury-hospitality-collections",
+      title: "Luxus zum Mitnehmen: Wie Hotels und Spas mit exklusiven Kollektionen neue Umsätze generieren",
+      excerpt: "Von Yoga-Apparel bis zu Premium-Badtextilien: Erfahren Sie, wie High-End-Hotels und Spa-Resorts durch hochwertige Eigenmarken ihre Gäste begeistern.",
+      image: blogImage3,
+      readTime: "7 min",
+      category: "Hospitality"
     }
   ];
 
@@ -38,7 +47,7 @@ const InsightsPreviewSection = () => {
         </div>
 
         {/* Featured Posts */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-12">
           {featuredPosts.map((post) => (
             <Card key={post.id} className="group hover:shadow-elegant transition-all duration-300">
               <div className="aspect-[16/9] overflow-hidden rounded-t-lg">
