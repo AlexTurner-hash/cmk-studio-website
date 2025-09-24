@@ -144,10 +144,19 @@ const NachhaltigeTextilproduktion = () => {
                 sondern oft auch kostengünstiger."
               </p>
 
+              <div className="aspect-[4/3] my-8 rounded-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/8861c531-eceb-4d48-a743-f9bfd5ebb8ed.png" 
+                  alt="Moderne Textilmaschine verarbeitet recyceltes Denim - nachhaltige Materialverarbeitung in europäischer Produktion"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
                 „Digitalisierung spielt ebenfalls eine wichtige Rolle: Von der digitalen Musterentwicklung 
                 bis zur automatisierten Qualitätskontrolle – europäische Produzenten nutzen Technologie, 
-                um effizienter und präziser zu arbeiten. Das erlaubt uns, auch bei kleineren Auflagen 
+                um effizienter und präziser zu arbeiten. Besonders bei der Verarbeitung von recyceltem Denim 
+                und anderen nachhaltigen Materialien ermöglichen uns moderne Maschinen, auch bei kleineren Auflagen 
                 wirtschaftlich zu produzieren."
               </p>
 
