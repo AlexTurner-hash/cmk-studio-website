@@ -34,8 +34,8 @@ const WhyUsSection = () => {
           return <div key={index} className="group">
                 {/* Icon */}
                 <div className="flex justify-start mb-4">
-                  <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center group-hover:bg-accent/30 transition-colors duration-300">
-                    <IconComponent className="w-6 h-6 text-accent" />
+                  <div className="w-12 h-12 bg-[hsl(var(--cream-tan-hover))]/20 rounded-full flex items-center justify-center group-hover:bg-[hsl(var(--cream-tan-hover))]/30 transition-colors duration-300">
+                    <IconComponent className="w-6 h-6 text-[hsl(var(--cream-tan-hover))]" />
                   </div>
                 </div>
                 
