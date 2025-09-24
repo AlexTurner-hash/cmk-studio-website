@@ -90,7 +90,7 @@ const ServicesSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-16">
           {serviceCategories.map(category => (
             <div key={category.id} className="text-center">
-              <h3 className="text-xl md:text-2xl font-display leading-tight text-foreground mb-8 text-left font-semibold px-[16px] lg:text-2xl">{category.title}</h3>
+              <h3 className="text-xl md:text-2xl font-display leading-tight text-[hsl(var(--bronze))] mb-8 text-left font-semibold px-[16px] lg:text-2xl uppercase tracking-wider">{category.title}</h3>
               <Accordion type="single" collapsible className="w-full">
                 {category.items.map(item => (
                   <AccordionItem key={item.id} value={item.id} className="border-clay/20">
