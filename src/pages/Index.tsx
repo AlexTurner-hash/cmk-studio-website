@@ -22,7 +22,6 @@ const Index = () => {
       <IntroSection />
       <ServicesSection />
       <ProductCategorySlider />
-      <ClientsSection />
       <ServicesOfferedSection />
       <WhyUsSection />
       <TestimonialsSection />
