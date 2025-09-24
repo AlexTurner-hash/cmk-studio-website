@@ -9,14 +9,14 @@ const Workwear = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <main className="pt-24">
-        <div className="container mx-auto px-4">
-          {/* Back Button */}
+      <main className="pt-20">
+        {/* Back Button */}
+        <div className="container mx-auto px-6 py-8">
           <Link 
             to="/#produktkategorien" 
-            className="inline-flex items-center text-primary hover:text-primary/80 transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-[hsl(var(--bronze))] hover:text-[hsl(var(--clay))] transition-colors"
           >
-            <ArrowLeft className="w-4 h-4 mr-2" />
+            <ArrowLeft className="w-4 h-4" />
             Zurück zu den Produktkategorien
           </Link>
 
