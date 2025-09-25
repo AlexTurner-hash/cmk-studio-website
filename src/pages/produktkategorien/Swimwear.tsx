@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import productionImage from "@/assets/production-swimwear-new.jpg";
+import productionImage from "@/assets/production-swimwear-realistic.jpg";
 
 const Swimwear = () => {
   return (
