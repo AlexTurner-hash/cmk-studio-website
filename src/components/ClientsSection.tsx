@@ -1,13 +1,14 @@
-import aubadeLogo from "@/assets/client-aubade.png";
-import felinaLogo from "@/assets/client-felina.png";
-import merzLogo from "@/assets/client-merz.png";
-import blushLogo from "@/assets/client-blush.png";
+import aubadeLogo from "@/assets/client-aubade-new.png";
+import felinaLogo from "@/assets/client-felina-new.png";
+import merzLogo from "@/assets/client-merz-new.png";
+import blushLogo from "@/assets/client-blush-new.png";
 import lilaLovesItLogo from "@/assets/logo-lila-loves-it.png";
 import homeBoyLogo from "@/assets/logo-home-boy.png";
 import priestereggLogo from "@/assets/logo-priesteregg.png";
 import zeitFurBrotLogo from "@/assets/logo-zeit-fur-brot.png";
-import coffeeFellowsLogo from "@/assets/logo-coffee-fellows.png";
-import prinzenhausLogo from "@/assets/logo-prinzenhaus.png";
+import coffeeFellowsLogo from "@/assets/logo-coffee-fellows-new.png";
+import prinzenhausLogo from "@/assets/logo-prinzenhaus-new.png";
+import maiamiLogo from "@/assets/logo-maiami.png";
 
 const ClientsSection = () => {
   const clientLogos = [
@@ -17,10 +18,9 @@ const ClientsSection = () => {
     { src: blushLogo, name: "Blush Lingerie", type: "logo" },
     { src: zeitFurBrotLogo, name: "Zeit für Brot", type: "logo" },
     { src: prinzenhausLogo, name: "Prinzenhaus", type: "logo" },
-    
+    { src: coffeeFellowsLogo, name: "Coffee Fellows", type: "logo" },
     { src: homeBoyLogo, name: "Homeboy", type: "logo" },
-    
-    { name: "Maiami", type: "text" },
+    { src: maiamiLogo, name: "Maiami", type: "logo" },
     { src: lilaLovesItLogo, name: "Lila loves it", type: "logo" },
     { src: priestereggLogo, name: "Priesteregg Hotel Resort", type: "logo" },
     { src: aubadeLogo, name: "Aubade", type: "logo" },
