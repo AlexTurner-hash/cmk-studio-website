@@ -79,7 +79,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="services" className="section-padding">
+    <section id="services" className="pb-16 md:pb-20 lg:pb-24 pt-8 md:pt-12 lg:pt-16">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">Wir machen Ideen tragbar.</h2>
