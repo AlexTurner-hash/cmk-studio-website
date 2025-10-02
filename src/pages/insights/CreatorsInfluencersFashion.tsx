@@ -3,10 +3,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-creators-influencers-new.jpg";
-
 const CreatorsInfluencersFashion = () => {
-  return (
-    <>
+  return <>
       <title>Creator Kollektionen - Von der Idee zur Modeproduktion | CMK.Studio</title>
       <meta name="description" content="Wie Creator und Influencer den Sprung in die Modeproduktion schaffen: Kleine Drops, schnelle Turnaround-Zeiten und maximale Flexibilität in der Creator Economy." />
       
@@ -44,11 +42,7 @@ const CreatorsInfluencersFashion = () => {
             </header>
 
             <div className="aspect-[16/9] mb-12 rounded-lg overflow-hidden">
-              <img 
-                src={blogImage} 
-                alt="Creator bei der Entwicklung ihrer eigenen Modekollektion"
-                className="w-full h-full object-cover"
-              />
+              <img src={blogImage} alt="Creator bei der Entwicklung ihrer eigenen Modekollektion" className="w-full h-full object-cover" />
             </div>
 
             <div className="prose prose-lg max-w-none">
@@ -228,12 +222,8 @@ const CreatorsInfluencersFashion = () => {
             </div>
 
             <div className="mt-16 p-8 bg-[hsl(var(--cream-tan))] rounded-lg text-center">
-              <h3 className="text-xl font-light mb-4 text-foreground font-display">
-                Bereit für Ihre Creator-Kollektion?
-              </h3>
-              <p className="text-muted-foreground mb-6 font-body">
-                Lassen Sie uns gemeinsam Ihre Idee in ein professionelles Produkt verwandeln.
-              </p>
+              <h3 className="text-xl font-light mb-4 text-foreground font-display">Bereit zu produzieren?</h3>
+              <p className="text-muted-foreground mb-6 font-body">Lass uns deine Idee in ein professionelles Produkt für deine Community verwandeln.</p>
               <Button size="lg" asChild>
                 <a href="/#contact">
                   Jetzt Projekt starten
@@ -245,8 +235,6 @@ const CreatorsInfluencersFashion = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default CreatorsInfluencersFashion;
