@@ -33,6 +33,7 @@ import Accessories from "./pages/produktkategorien/Accessories";
 import Workwear from "./pages/produktkategorien/Workwear";
 import SpaLeisure from "./pages/produktkategorien/SpaLeisure";
 import NotFound from "./pages/NotFound";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/ueber-uns" element={<UeberUns />} />
