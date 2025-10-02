@@ -3,19 +3,14 @@ import { ArrowLeft } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import productionImage from "@/assets/production-accessories.jpg";
-
 const Accessories = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       <main className="pt-20">
         {/* Back Button */}
         <div className="container mx-auto px-6 py-8">
-          <Link 
-            to="/#produktkategorien" 
-            className="inline-flex items-center gap-2 text-[hsl(var(--bronze))] hover:text-[hsl(var(--clay))] transition-colors"
-          >
+          <Link to="/#produktkategorien" className="inline-flex items-center gap-2 text-[hsl(var(--bronze))] hover:text-[hsl(var(--clay))] transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Zurück zu den Produktkategorien
           </Link>
@@ -39,11 +34,7 @@ const Accessories = () => {
         <section className="pb-8">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
-              <img 
-                src={productionImage} 
-                alt="Moderne Accessoires-Produktion mit Präzisionsmaschinen und Handarbeit"
-                className="w-full h-[400px] md:h-[500px] object-cover rounded-lg shadow-elegant"
-              />
+              <img src={productionImage} alt="Moderne Accessoires-Produktion mit Präzisionsmaschinen und Handarbeit" className="w-full h-[400px] md:h-[500px] object-cover rounded-lg shadow-elegant" />
             </div>
           </div>
         </section>
@@ -130,11 +121,11 @@ const Accessories = () => {
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>Taschen & Kleinlederwaren:</strong> Handtaschen, Portemonnaies, Kartenetuis und Reiseartikel</li>
                   <li><strong>Gürtel & Hosenträger:</strong> Klassische und moderne Designs in verschiedenen Materialien</li>
-                  <li><strong>Schmuck & Bijouterie:</strong> Modeschmuck, Uhren und dekorative Accessoires</li>
+                  
                   <li><strong>Kopfbedeckungen:</strong> Mützen, Hüte, Caps und saisonale Kopfwear</li>
                   <li><strong>Schals & Tücher:</strong> Von feinen Seidenschals bis zu warmen Winterschals</li>
-                  <li><strong>Tech-Accessoires:</strong> Hüllen, Taschen und Cases für elektronische Geräte</li>
-                  <li><strong>Hardware & Beschläge:</strong> Knöpfe, Reißverschlüsse, Schnallen und Metallteile</li>
+                  
+                  
                 </ul>
 
                 <h3 className="text-xl font-semibold text-foreground font-display mt-8 mb-4">
@@ -233,10 +224,7 @@ const Accessories = () => {
 
               {/* CTA Section */}
               <div className="mt-12 text-center">
-                <Link 
-                  to="/kontakt" 
-                  className="btn-accent"
-                >
+                <Link to="/kontakt" className="btn-accent">
                   Accessoires-Projekt besprechen
                 </Link>
               </div>
@@ -246,8 +234,6 @@ const Accessories = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Accessories;
