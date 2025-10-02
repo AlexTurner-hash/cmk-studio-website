@@ -194,7 +194,7 @@ All colors MUST be HSL.
   }
 
   .btn-accent {
-    @apply inline-flex items-center px-8 py-4 bg-white text-black font-body font-medium tracking-wide hover:bg-black hover:text-white transition-all duration-300 rounded-lg border border-black;
+    @apply inline-flex items-center px-8 py-4 bg-white text-black font-body font-medium tracking-wide hover:bg-black hover:text-white transition-all duration-300 rounded-lg;
   }
 
   /* Consistent Section Spacing Categories */
