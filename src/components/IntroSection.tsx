@@ -38,7 +38,7 @@ const IntroSection = () => {
           {t('intro.title')}
         </h2>
         
-        <p className="text-body text-clay/80 max-w-4xl mx-auto mb-16">
+        <p className="text-body-large text-clay/80 max-w-4xl mx-auto mb-16">
           {t('intro.description')}
         </p>
 
