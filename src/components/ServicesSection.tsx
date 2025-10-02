@@ -39,7 +39,7 @@ const ServicesSection = () => {
     }]
   }, {
     id: "consulting",
-    title: "Consultancies",
+    title: "Beratung für",
     items: [{
       id: "fashion-startups",
       title: "Startups",
