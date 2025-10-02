@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import UeberUns from "./pages/UeberUns";
 import Impressum from "./pages/Impressum";
+import Glossar from "./pages/Glossar";
 import Insights from "./pages/Insights";
 import ErsteModekollektion from "./pages/insights/ErsteModekollektion";
 import NachhaltigeTextilproduktion from "./pages/insights/NachhaltigeTextilproduktion";
@@ -45,6 +46,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/ueber-uns" element={<UeberUns />} />
           <Route path="/impressum" element={<Impressum />} />
+          <Route path="/glossar" element={<Glossar />} />
           <Route path="/insights" element={<Insights />} />
           <Route path="/insights/erste-modekollektion-planen" element={<ErsteModekollektion />} />
           <Route path="/insights/nachhaltige-textilproduktion-europa" element={<NachhaltigeTextilproduktion />} />
