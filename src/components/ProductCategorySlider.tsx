@@ -50,7 +50,7 @@ const ProductCategorySlider = () => {
                   loading="lazy"
                 />
                 {/* Text Overlay */}
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                <div className="absolute inset-0 bg-black/25 flex items-center justify-center">
                   <h3 className="text-white text-lg md:text-xl font-semibold text-center px-4">
                     {category.name}
                   </h3>
