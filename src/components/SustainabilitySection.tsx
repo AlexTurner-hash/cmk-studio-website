@@ -33,7 +33,7 @@ const SustainabilitySection = () => {
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
             Nachhaltigkeit nach europäischen Standards
           </h2>
-          <div className="max-w-3xl mx-auto text-lg text-muted-foreground font-body leading-relaxed">
+          <div className="max-w-3xl mx-auto text-body-large">
             <p>
               90% unserer Produktionsstätten befinden sich in Europa. Wir setzen auf Materialrecycling, zertifizierte Nachhaltigkeit und langlebige Qualität. Transportwege werden optimiert, um CO2-Emissionen zu minimieren.
             </p>
