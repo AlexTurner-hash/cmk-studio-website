@@ -16,6 +16,7 @@ import SpezialisierungExpertise from "./pages/insights/SpezialisierungExpertise"
 import ClaudiaKleinert from "./pages/insights/ClaudiaKleinert";
 import WorkwearEmployerBranding from "./pages/insights/WorkwearEmployerBranding";
 import LuxuryHospitalityCollections from "./pages/insights/LuxuryHospitalityCollections";
+import CreatorsInfluencersFashion from "./pages/insights/CreatorsInfluencersFashion";
 import Streetwear from "./pages/produktkategorien/Streetwear";
 import Denim from "./pages/produktkategorien/Denim";
 import Lingerie from "./pages/produktkategorien/Lingerie";
@@ -49,6 +50,7 @@ const App = () => (
           <Route path="/insights/workwear-employer-branding" element={<WorkwearEmployerBranding />} />
           <Route path="/insights/luxury-hospitality-collections" element={<LuxuryHospitalityCollections />} />
           <Route path="/insights/claudia-kleinert" element={<ClaudiaKleinert />} />
+          <Route path="/insights/creators-influencers-fashion-produktion" element={<CreatorsInfluencersFashion />} />
           <Route path="/produktkategorien/streetwear" element={<Streetwear />} />
           <Route path="/produktkategorien/denim" element={<Denim />} />
           <Route path="/produktkategorien/lingerie" element={<Lingerie />} />
