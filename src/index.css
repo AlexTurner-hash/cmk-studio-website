@@ -177,7 +177,7 @@ All colors MUST be HSL.
   }
   
   .text-body {
-    @apply text-base md:text-lg font-body leading-relaxed;
+    @apply text-lg text-muted-foreground font-body leading-relaxed;
   }
   
   .text-caption {
