@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Search } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logoWhite from "@/assets/cmk-logo-white-new.png";
 import logoBlack from "@/assets/cmk-logo-black-new.png";
@@ -74,30 +74,8 @@ const Navigation = () => {
             </Link>
           </div>
 
-          {/* Search, Language Switcher & Menu Button */}
+          {/* Language Switcher & Menu Button */}
           <div className="flex items-center gap-4">
-            {/* Search Field */}
-            <div className={`relative hidden md:flex items-center border rounded-md px-3 py-1 ${
-              (isInsightsPage && !isScrolled) 
-                ? 'border-black/30' 
-                : 'border-white/30'
-            }`}>
-              <Search 
-                size={16} 
-                className={`${(isInsightsPage && !isScrolled) ? 'text-black/60' : 'text-white/60'}`}
-              />
-              <input
-                type="text"
-                placeholder="Suche"
-                className={`bg-transparent border-none outline-none ml-2 w-32 text-sm placeholder:text-sm ${
-                  (isInsightsPage && !isScrolled) 
-                    ? 'text-black placeholder:text-black/40' 
-                    : 'text-white placeholder:text-white/40'
-                }`}
-              />
-            </div>
-
-            {/* Language Switcher */}
             <div className="flex items-center gap-2">
               <button
                 onClick={() => setLanguage('de')}
