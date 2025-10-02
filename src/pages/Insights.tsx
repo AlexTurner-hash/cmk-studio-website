@@ -151,13 +151,13 @@ const Insights = () => {
         <Navigation />
         
         {/* Hero Section */}
-        <section className="pt-24 pb-8 bg-[hsl(var(--bronze))]">
+        <section className="pt-24 pb-16 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-6xl font-light mb-6 text-white font-display">
+              <h1 className="text-4xl md:text-6xl font-light mb-6 text-foreground font-display">
                 Insights
               </h1>
-              <p className="text-lg md:text-xl text-white mb-8 font-body leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 font-body leading-relaxed">
                 Expertenwissen rund um nachhaltige Textilproduktion, Kollektionsplanung 
                 und erfolgreiche Markenentwicklung.
               </p>
