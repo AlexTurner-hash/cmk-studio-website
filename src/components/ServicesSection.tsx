@@ -45,9 +45,9 @@ const ServicesSection = () => {
       title: "Startups",
       description: "Beratung und Unterstützung für Fashion-Startups."
     }, {
-      id: "designerinnen",
-      title: "Designer:innen",
-      description: "Unterstützung für unabhängige Designer bei der Umsetzung ihrer Visionen."
+      id: "consultancies",
+      title: "Consultancies",
+      description: "Kompetente Wissensträger für Unternehmensberatungen bei Due Diligence Prozessen und strategischen Analysen."
     }, {
       id: "modeunternehmen",
       title: "Modeunternehmen",
