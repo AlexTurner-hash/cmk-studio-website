@@ -83,7 +83,7 @@ const TestimonialsSection = () => {
                     
                     {/* Quote Content */}
                     <div className={`flex-1 ${!testimonial.image ? 'text-center max-w-3xl mx-auto' : ''}`}>
-                      <blockquote className="text-lg md:text-xl font-light tracking-wide leading-relaxed font-body mb-6 italic text-foreground">
+                      <blockquote className="text-xl md:text-2xl font-extralight tracking-wide leading-relaxed font-body mb-6 italic text-foreground">
                         „{testimonial.quote}"
                       </blockquote>
                       
