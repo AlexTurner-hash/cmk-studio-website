@@ -71,7 +71,7 @@ const TestimonialsSection = () => {
                     {/* Image */}
                     {testimonial.image && (
                       <div className="w-full md:w-1/3 flex-shrink-0">
-                        <div className="aspect-square overflow-hidden rounded-lg">
+                        <div className="aspect-square overflow-hidden">
                           <img 
                             src={testimonial.image} 
                             alt={testimonial.client}
@@ -83,11 +83,11 @@ const TestimonialsSection = () => {
                     
                     {/* Quote Content */}
                     <div className={`flex-1 ${!testimonial.image ? 'text-center max-w-3xl mx-auto' : ''}`}>
-                      <blockquote className="text-xl md:text-2xl font-extralight tracking-wide leading-relaxed font-body mb-6 italic text-foreground">
+                      <blockquote className="text-xl md:text-2xl font-extralight tracking-wide leading-relaxed font-body mb-6 italic text-muted-foreground">
                         „{testimonial.quote}"
                       </blockquote>
                       
-                      <div className={!testimonial.image ? 'text-center' : ''}>
+                      <div className="text-right">
                         <div className="text-base font-medium text-foreground font-body">
                           {testimonial.client}
                         </div>
