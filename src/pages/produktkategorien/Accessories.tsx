@@ -81,7 +81,7 @@ const Accessories = () => {
                 </p>
 
                 <ul className="list-disc pl-6 space-y-2">
-                  <li><strong>Metalle:</strong> Edelstahl, Messing, Aluminium und edle Legierungen in verschiedenen Oberflächenbehandlungen</li>
+                  
                   <li><strong>Textilien:</strong> Hochwertige Stoffe, technische Gewebe und nachhaltige Materialien</li>
                   <li><strong>Leder:</strong> Premium-Leder in allen Varianten und Oberflächenbehandlungen</li>
                   <li><strong>Kunststoffe:</strong> Von robusten Polymeren bis zu biodegradierbaren Alternativen</li>
