@@ -34,21 +34,23 @@ const FAQSection = () => {
       answer: "Absolut. Hochwertige, nachhaltige Arbeitskleidung mit durchdachten Details wird zum Aushängeschild Ihres Unternehmens. Mitarbeiter erwarten heute mehr als bedruckte Standard-T-Shirts – sie wollen Komfort, Qualität und ein Design, das sie gerne tragen. Das stärkt Identifikation und Arbeitgeberattraktivität."
     }
   ];
-  return <section className="section-padding bg-[hsl(var(--bronze))]">
+  return <section className="section-padding" style={{
+    backgroundColor: 'hsl(44 29% 95%)'
+  }}>
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light mb-6 text-white font-display">Häufige Fragen</h2>
+          <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">Häufige Fragen</h2>
         </div>
 
         {/* FAQ Accordion */}
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
-            {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="border-white/20">
-                <AccordionTrigger className="text-left text-base md:text-lg font-body leading-relaxed font-normal text-white hover:text-white/80 transition-colors hover:no-underline data-[state=open]:bg-white/10 px-4 py-3">
+            {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="border-clay/20">
+                <AccordionTrigger className="text-left text-base md:text-lg font-body leading-relaxed font-normal text-foreground hover:text-[hsl(var(--bronze))] transition-colors hover:no-underline data-[state=open]:bg-[hsl(var(--bronze))] data-[state=open]:text-white px-4 py-3">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="bg-white/10 text-white leading-relaxed font-body pt-2 pb-4 px-4 text-left">
+                <AccordionContent className="bg-[hsl(var(--bronze))] text-white leading-relaxed font-body pt-2 pb-4 px-4 text-left">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>)}
