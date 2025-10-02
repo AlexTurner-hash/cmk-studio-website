@@ -175,11 +175,9 @@ const Insights = () => {
             <p className="text-muted-foreground mb-8 font-body">
               Starten Sie Ihre Kollektion mit einem erfahrenen Partner an Ihrer Seite.
             </p>
-            <Button size="lg" asChild>
-              <a href="#contact">
-                Jetzt Projekt starten
-              </a>
-            </Button>
+            <a href="#contact" className="btn-accent inline-block">
+              Jetzt Projekt starten
+            </a>
           </div>
         </section>
 
