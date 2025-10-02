@@ -190,11 +190,11 @@ All colors MUST be HSL.
   }
   
   .btn-secondary {
-    @apply inline-flex items-center px-6 py-3 border-2 border-[hsl(var(--bronze))] text-[hsl(var(--bronze))] font-body font-medium hover:bg-[hsl(var(--bronze))] hover:text-white transition-all duration-300 rounded-lg;
+    @apply inline-flex items-center px-6 py-3 border-2 border-[hsl(var(--bronze))] text-[hsl(var(--bronze))] font-body font-medium hover:bg-[hsl(var(--bronze))] hover:text-white transition-all duration-300 rounded-lg shadow-md hover:shadow-lg;
   }
 
   .btn-accent {
-    @apply inline-flex items-center px-8 py-4 bg-white text-black font-body font-medium tracking-wide hover:bg-black hover:text-white transition-all duration-300 rounded-lg;
+    @apply inline-flex items-center px-8 py-4 bg-white text-black font-body font-medium tracking-wide hover:bg-black hover:text-white transition-all duration-300 rounded-lg shadow-md hover:shadow-lg;
   }
 
   /* Consistent Section Spacing Categories */
