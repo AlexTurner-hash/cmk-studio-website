@@ -135,7 +135,7 @@ const ContactSection = () => {
             Bereit für Ihre Kollektion?
           </h2>
           <p className="text-lg md:text-xl text-clay/70 max-w-3xl mx-auto leading-relaxed font-body">
-            Sprechen Sie mit uns über Ihr Projekt – wir beraten Sie gerne persönlich vor Ort in Berlin und dem Rhein-Main-Gebiet.
+            Sprechen Sie mit uns über Ihr Projekt – und starten Sie Ihre Produktion mit einem erfahrenen Partner.
           </p>
         </div>
 
