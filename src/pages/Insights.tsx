@@ -7,7 +7,7 @@ import blogImage2 from "@/assets/blog-nachhaltige-produktion.jpg";
 import blogImage3 from "@/assets/blog-private-label-regional.jpg";
 import blogImage5 from "@/assets/blog-workwear-employer-branding.jpg";
 import blogImage6 from "@/assets/blog-luxury-hospitality-collections.jpg";
-import blogImage7 from "@/assets/blog-creators-influencers-fashion-new.jpg";
+import blogImage7 from "@/assets/blog-creators-influencers-new.jpg";
 import blogImage8 from "@/assets/blog-qualitaet-nachhaltigkeit.jpg";
 import blogImage9 from "@/assets/blog-lingerie-expertise.jpg";
 import blogImage10 from "@/assets/blog-spezialisierung-expertise.jpg";
