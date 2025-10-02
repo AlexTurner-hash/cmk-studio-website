@@ -83,16 +83,16 @@ const TestimonialsSection = () => {
                     
                     {/* Quote Content */}
                     <div className={`flex-1 ${!testimonial.image ? 'text-center max-w-3xl mx-auto' : ''}`}>
-                      <blockquote className="text-lg md:text-xl font-light tracking-wide leading-relaxed font-body mb-6 italic text-white">
+                      <blockquote className="text-lg md:text-xl font-light tracking-wide leading-relaxed font-body mb-6 italic text-foreground">
                         „{testimonial.quote}"
                       </blockquote>
                       
                       <div className={!testimonial.image ? 'text-center' : ''}>
-                        <div className="text-base font-medium text-white font-body">
+                        <div className="text-base font-medium text-foreground font-body">
                           {testimonial.client}
                         </div>
                         {testimonial.company && (
-                          <div className="text-white/70 text-base font-body mt-1">
+                          <div className="text-muted-foreground text-base font-body mt-1">
                             {testimonial.company}
                           </div>
                         )}
