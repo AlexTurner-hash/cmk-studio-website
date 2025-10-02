@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
-          <p>© 2024 CMK Studio GmbH. Alle Rechte vorbehalten.</p>
+          <p>© 2025 CMK Studio GmbH. Alle Rechte vorbehalten.</p>
           <p className="mt-2 md:mt-0">
             <a href="/impressum" className="hover:text-white transition-colors">
               Impressum
