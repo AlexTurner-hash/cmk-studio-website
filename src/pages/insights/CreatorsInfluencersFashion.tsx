@@ -106,8 +106,7 @@ const CreatorsInfluencersFashion = () => {
 
               <ul className="list-disc pl-6 space-y-3 mb-8 font-body leading-relaxed text-muted-foreground">
                 <li>
-                  <strong>Hohe Mindestbestellmengen:</strong> Viele Fabriken produzieren erst ab 1.000+ Stück – 
-                  für Creator oft viel zu viel
+                  <strong>Hohe Mindestbestellmengen:</strong> Traditionelle Fabriken setzen oft auf große Produktionsvolumen
                 </li>
                 <li>
                   <strong>Lange Vorlaufzeiten:</strong> 6-12 Monate Vorlauf passt nicht zur spontanen 
@@ -131,13 +130,14 @@ const CreatorsInfluencersFashion = () => {
               </p>
 
               <p className="mb-4 font-body leading-relaxed text-muted-foreground">
-                <strong>Flexible Stückzahlen:</strong> Von 100 bis 5.000 Stück – skalierbar je nach Drop-Größe. 
-                Keine Zwang zu Überproduktion, kein finanzielles Risiko durch zu große Mengen.
+                <strong>Bedarfsgerechte Produktion:</strong> Effiziente Produktionsprozesse ohne 
+                Zwang zu Überproduktion. Die Stückzahlen orientieren sich am tatsächlichen Bedarf 
+                und der Projektgröße.
               </p>
 
               <p className="mb-4 font-body leading-relaxed text-muted-foreground">
-                <strong>Schnelle Produktionszyklen:</strong> Von der Idee bis zum fertigen Produkt in 6-8 Wochen 
-                statt 6 Monaten. Damit bleibt Zeit für Community-Feedback und Anpassungen.
+                <strong>Optimierte Produktionszyklen:</strong> Effiziente Prozesse ermöglichen 
+                kürzere Entwicklungszeiten. So bleibt Zeit für Community-Feedback und Anpassungen.
               </p>
 
               <p className="mb-4 font-body leading-relaxed text-muted-foreground">
