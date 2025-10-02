@@ -183,8 +183,7 @@ const LuxuryHospitalityCollections = () => {
                 Bereit für Ihre Hotel-Kollektion?
               </h3>
               <p className="text-muted-foreground mb-6 font-body">
-                Entwickeln Sie mit uns eine Lifestyle-Kollektion, die Ihre Gäste begeistert. 
-                Wir beraten Sie gerne persönlich vor Ort in Berlin und dem Rhein-Main-Gebiet.
+                Entwickeln Sie mit uns eine Lifestyle-Kollektion, die Ihre Gäste begeistert.
               </p>
               <Button size="lg" asChild>
                 <a href="#contact">

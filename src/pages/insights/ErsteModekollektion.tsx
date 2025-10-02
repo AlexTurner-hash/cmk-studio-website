@@ -154,8 +154,7 @@ const ErsteModekollektion = () => {
                 Bereit für Ihre erste Kollektion?
               </h3>
               <p className="text-muted-foreground mb-6 font-body">
-                Profitieren Sie von unserer Erfahrung und starten Sie Ihr Projekt mit einem erfahrenen Partner. 
-                Wir beraten Sie gerne persönlich vor Ort in Berlin und dem Rhein-Main-Gebiet.
+                Profitieren Sie von unserer Erfahrung und starten Sie Ihr Projekt mit einem erfahrenen Partner.
               </p>
               <Button size="lg" asChild>
                 <a href="#contact">

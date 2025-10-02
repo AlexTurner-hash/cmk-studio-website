@@ -225,8 +225,7 @@ const CreatorsInfluencersFashion = () => {
             <div className="mt-16 p-8 bg-[hsl(var(--cream-tan))] rounded-lg text-center">
               <h3 className="text-xl font-light mb-4 text-foreground font-display">Bereit zu produzieren?</h3>
               <p className="text-muted-foreground mb-6 font-body">
-                Lass uns deine Idee in ein professionelles Produkt für deine Community verwandeln. 
-                Wir beraten dich gerne persönlich vor Ort in Berlin und dem Rhein-Main-Gebiet.
+                Lass uns deine Idee in ein professionelles Produkt für deine Community verwandeln.
               </p>
               <Button size="lg" asChild>
                 <a href="/#contact">
