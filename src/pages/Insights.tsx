@@ -20,6 +20,22 @@ import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 
 const blogPosts = [
   {
+    id: "claudia-kleinert",
+    title: "Claudia Kleinert: Die Gründerin",
+    excerpt: "Von der studierten Modedesignerin zur erfolgreichen Unternehmerin: Wie die Gründerin von 'blush Lingerie' ihr Praxiswissen durch CMK.Studio anderen Modeschaffenden zugänglich macht.",
+    image: claudiaPortrait,
+    readTime: "5 min",
+    category: "Portrait"
+  },
+  {
+    id: "nachhaltige-textilproduktion-europa",
+    title: "Europa ist die Zukunft der nachhaltigen Textilproduktion",
+    excerpt: "Im Interview erklärt Claudia Kleinert, warum europäische Fertigung wirtschaftlich sinnvoll ist, wie kurze Lieferketten Flexibilität ermöglichen und weshalb Nachhaltigkeit kein Kostennachteil sein muss.",
+    image: "/lovable-uploads/2fc892b4-8981-409e-b09c-3c37cecf8f68.png",
+    readTime: "8 min",
+    category: "Interview"
+  },
+  {
     id: "kosten-transparenz-modeproduktion",
     title: "Kosten-Transparenz: Was kostet die Produktion einer Modekollektion wirklich?",
     excerpt: "Realistische Zahlen statt Wunschdenken: Ein detaillierter Einblick in die tatsächlichen Kosten der Modeproduktion – von Material über Fertigung bis Logistik. Europa vs. Fernost im Vergleich.",
@@ -68,14 +84,6 @@ const blogPosts = [
     category: "Startup-Guide"
   },
   {
-    id: "nachhaltige-textilproduktion-europa",
-    title: "Europa ist die Zukunft der nachhaltigen Textilproduktion",
-    excerpt: "Im Interview erklärt Claudia Kleinert, warum europäische Fertigung wirtschaftlich sinnvoll ist, wie kurze Lieferketten Flexibilität ermöglichen und weshalb Nachhaltigkeit kein Kostennachteil sein muss.",
-    image: "/lovable-uploads/2fc892b4-8981-409e-b09c-3c37cecf8f68.png",
-    readTime: "8 min",
-    category: "Interview"
-  },
-  {
     id: "private-label-bekleidung-eigenmarken",
     title: "Private Label für regionale Händler: Wie mittelständische Modehäuser mit Eigenmarken punkten",
     excerpt: "Erfahren Sie, wie familiengeführte Modehäuser und regionale Handelsketten durch maßgeschneiderte Eigenmarken ihre Stammkundschaft stärken und sich gegen die Online-Konkurrenz behaupten können.",
@@ -106,14 +114,6 @@ const blogPosts = [
     image: blogImage10,
     readTime: "7 min",
     category: "Expertise"
-  },
-  {
-    id: "claudia-kleinert",
-    title: "Claudia Kleinert: Die Gründerin",
-    excerpt: "Von der studierten Modedesignerin zur erfolgreichen Unternehmerin: Wie die Gründerin von 'blush Lingerie' ihr Praxiswissen durch CMK.Studio anderen Modeschaffenden zugänglich macht.",
-    image: claudiaPortrait,
-    readTime: "5 min",
-    category: "Portrait"
   },
   {
     id: "workwear-employer-branding",
