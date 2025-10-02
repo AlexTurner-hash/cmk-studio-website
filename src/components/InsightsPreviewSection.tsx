@@ -67,11 +67,11 @@ const InsightsPreviewSection = () => {
                   </span>
                 </div>
                 
-                <h3 className="text-xl font-light mb-3 text-foreground font-display group-hover:text-[hsl(var(--bronze))] transition-colors line-clamp-2">
+                <h3 className="text-lg font-light mb-3 text-foreground font-display group-hover:text-[hsl(var(--bronze))] transition-colors line-clamp-2">
                   {post.title}
                 </h3>
                 
-                <p className="text-muted-foreground mb-4 font-body leading-relaxed flex-grow line-clamp-3">
+                <p className="text-sm text-muted-foreground mb-4 font-body leading-relaxed flex-grow line-clamp-3">
                   {post.excerpt}
                 </p>
                 
