@@ -11,15 +11,60 @@ import blogImage7 from "@/assets/blog-creators-influencers-new.jpg";
 import blogImage8 from "@/assets/blog-qualitaet-nachhaltigkeit.jpg";
 import blogImage9 from "@/assets/blog-lingerie-expertise-new.jpg";
 import blogImage10 from "@/assets/blog-spezialisierung-expertise.jpg";
+import blogImageKosten from "@/assets/blog-kosten-transparenz.jpg";
+import blogImageZert from "@/assets/blog-zertifizierungen-vergleich.jpg";
+import blogImageDue from "@/assets/blog-due-diligence.jpg";
+import blogImageTech from "@/assets/blog-tech-zu-fashion.jpg";
+import blogImageZeit from "@/assets/blog-produktionszeiten.jpg";
 import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 
 const blogPosts = [
+  {
+    id: "kosten-transparenz-modeproduktion",
+    title: "Kosten-Transparenz: Was kostet die Produktion einer Modekollektion wirklich?",
+    excerpt: "Realistische Zahlen statt Wunschdenken: Ein detaillierter Einblick in die tatsächlichen Kosten der Modeproduktion – von Material über Fertigung bis Logistik. Europa vs. Fernost im Vergleich.",
+    image: blogImageKosten,
+    readTime: "10 min",
+    category: "Kalkulation"
+  },
   {
     id: "erste-modekollektion-planen",
     title: "Wie Sie Ihre erste Modekollektion planen – ein Leitfaden für Startups und Creator",
     excerpt: "Von der ersten Idee bis zur fertigen Kollektion: Entdecken Sie die wichtigsten Schritte für eine erfolgreiche Modekollektion und vermeiden Sie typische Anfängerfehler.",
     image: blogImage1,
     readTime: "8 min",
+    category: "Startup-Guide"
+  },
+  {
+    id: "zertifizierungen-vergleich",
+    title: "GOTS vs. OEKO-TEX vs. BSCI: Welche Zertifizierung braucht Ihre Marke wirklich?",
+    excerpt: "Nicht jedes Label braucht GOTS – aber jede Marke braucht die richtige Zertifizierung. Ein strukturierter Vergleich für fundierte Entscheidungen mit Decision Tree.",
+    image: blogImageZert,
+    readTime: "9 min",
+    category: "Nachhaltigkeit"
+  },
+  {
+    id: "produktionszeiten-timeline",
+    title: "Produktionszeiten realistisch planen: Timeline-Guide für jede Produktkategorie",
+    excerpt: "Von T-Shirt bis Lingerie: Wie lange dauert Textilproduktion wirklich? Ein detaillierter Timeline-Guide mit realistischen Zahlen für alle Produktkategorien.",
+    image: blogImageZeit,
+    readTime: "10 min",
+    category: "Planung"
+  },
+  {
+    id: "due-diligence-lieferketten",
+    title: "Due Diligence in Textil-Lieferketten: Compliance-Guide für KMUs",
+    excerpt: "Das deutsche Lieferkettengesetz betrifft auch kleinere Unternehmen. Ein praktischer Leitfaden für transparente, konforme Textilproduktion mit Checklisten.",
+    image: blogImageDue,
+    readTime: "11 min",
+    category: "Compliance"
+  },
+  {
+    id: "tech-startup-merchandise",
+    title: "Von der Tech-Firma zum Fashion-Label: So entwickeln erfolgreiche Startups Merchandise",
+    excerpt: "Tech-Startups entdecken Fashion als Umsatzquelle und Community-Builder. Wie der Sprung von Code zu Kleidung gelingt – ohne Fashion-Background. Case Studies.",
+    image: blogImageTech,
+    readTime: "9 min",
     category: "Startup-Guide"
   },
   {

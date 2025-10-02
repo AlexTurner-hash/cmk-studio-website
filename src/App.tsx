@@ -17,6 +17,11 @@ import ClaudiaKleinert from "./pages/insights/ClaudiaKleinert";
 import WorkwearEmployerBranding from "./pages/insights/WorkwearEmployerBranding";
 import LuxuryHospitalityCollections from "./pages/insights/LuxuryHospitalityCollections";
 import CreatorsInfluencersFashion from "./pages/insights/CreatorsInfluencersFashion";
+import KostenTransparenz from "./pages/insights/KostenTransparenz";
+import Zertifizierungen from "./pages/insights/Zertifizierungen";
+import DueDiligence from "./pages/insights/DueDiligence";
+import TechZuFashion from "./pages/insights/TechZuFashion";
+import Produktionszeiten from "./pages/insights/Produktionszeiten";
 import Streetwear from "./pages/produktkategorien/Streetwear";
 import Denim from "./pages/produktkategorien/Denim";
 import Lingerie from "./pages/produktkategorien/Lingerie";
@@ -51,6 +56,11 @@ const App = () => (
           <Route path="/insights/luxury-hospitality-collections" element={<LuxuryHospitalityCollections />} />
           <Route path="/insights/claudia-kleinert" element={<ClaudiaKleinert />} />
           <Route path="/insights/creators-influencers-fashion-produktion" element={<CreatorsInfluencersFashion />} />
+          <Route path="/insights/kosten-transparenz-modeproduktion" element={<KostenTransparenz />} />
+          <Route path="/insights/zertifizierungen-vergleich" element={<Zertifizierungen />} />
+          <Route path="/insights/due-diligence-lieferketten" element={<DueDiligence />} />
+          <Route path="/insights/tech-startup-merchandise" element={<TechZuFashion />} />
+          <Route path="/insights/produktionszeiten-timeline" element={<Produktionszeiten />} />
           <Route path="/produktkategorien/streetwear" element={<Streetwear />} />
           <Route path="/produktkategorien/denim" element={<Denim />} />
           <Route path="/produktkategorien/lingerie" element={<Lingerie />} />
