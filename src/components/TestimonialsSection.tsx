@@ -50,7 +50,7 @@ const TestimonialsSection = () => {
   }, [api]);
 
   return (
-    <section className="py-12 md:py-16 bg-[hsl(var(--bronze))]">
+    <section className="py-8 md:py-12 bg-[hsl(var(--bronze))]">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <Carousel 

@@ -23,8 +23,8 @@ const Index = () => {
       <ServicesSection />
       <ProductCategorySlider />
       <ServicesOfferedSection />
-      <WhyUsSection />
       <TestimonialsSection />
+      <WhyUsSection />
       <AboutSection />
       <SustainabilitySection />
       <FAQSection />
