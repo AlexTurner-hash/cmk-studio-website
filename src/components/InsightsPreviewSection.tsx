@@ -34,14 +34,14 @@ const InsightsPreviewSection = () => {
   ];
 
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-[hsl(var(--bronze))]">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
+          <h2 className="text-3xl md:text-4xl font-light mb-6 text-white font-display">
             Insights
           </h2>
-          <p className="text-body-large max-w-3xl mx-auto">
+          <p className="text-body-large max-w-3xl mx-auto text-white">
             Expertenwissen rund um nachhaltige Textilproduktion, Kollektionsplanung und erfolgreiche Markenentwicklung.
           </p>
         </div>
