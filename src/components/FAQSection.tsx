@@ -32,6 +32,10 @@ const FAQSection = () => {
     {
       question: "Kann Workwear wirklich ein Employer Branding Tool sein?",
       answer: "Absolut. Hochwertige, nachhaltige Arbeitskleidung mit durchdachten Details wird zum Aushängeschild Ihres Unternehmens. Mitarbeiter erwarten heute mehr als bedruckte Standard-T-Shirts – sie wollen Komfort, Qualität und ein Design, das sie gerne tragen. Das stärkt Identifikation und Arbeitgeberattraktivität."
+    },
+    {
+      question: "Wie findet die Kommunikation und Betreuung statt?",
+      answer: "Wir betreuen Sie persönlich durch alle Projektphasen. Neben Telefon und E-Mail sind wir auch per Video-Chat erreichbar. In Berlin und dem Rhein-Main-Gebiet bieten wir gerne auch Vor-Ort-Termine an."
     }
   ];
   return <section className="section-padding" style={{
