@@ -10,7 +10,9 @@ import Insights from "./pages/Insights";
 import ErsteModekollektion from "./pages/insights/ErsteModekollektion";
 import NachhaltigeTextilproduktion from "./pages/insights/NachhaltigeTextilproduktion";
 import PrivateLabelBekleidung from "./pages/insights/PrivateLabelBekleidung";
-
+import QualitaetNachhaltigkeit from "./pages/insights/QualitaetNachhaltigkeit";
+import LingerieExpertise from "./pages/insights/LingerieExpertise";
+import SpezialisierungExpertise from "./pages/insights/SpezialisierungExpertise";
 import ClaudiaKleinert from "./pages/insights/ClaudiaKleinert";
 import WorkwearEmployerBranding from "./pages/insights/WorkwearEmployerBranding";
 import LuxuryHospitalityCollections from "./pages/insights/LuxuryHospitalityCollections";
@@ -41,7 +43,9 @@ const App = () => (
           <Route path="/insights/erste-modekollektion-planen" element={<ErsteModekollektion />} />
           <Route path="/insights/nachhaltige-textilproduktion-europa" element={<NachhaltigeTextilproduktion />} />
           <Route path="/insights/private-label-bekleidung-eigenmarken" element={<PrivateLabelBekleidung />} />
-          
+          <Route path="/insights/qualitaet-nachhaltigkeit" element={<QualitaetNachhaltigkeit />} />
+          <Route path="/insights/lingerie-expertise" element={<LingerieExpertise />} />
+          <Route path="/insights/spezialisierung-expertise" element={<SpezialisierungExpertise />} />
           <Route path="/insights/workwear-employer-branding" element={<WorkwearEmployerBranding />} />
           <Route path="/insights/luxury-hospitality-collections" element={<LuxuryHospitalityCollections />} />
           <Route path="/insights/claudia-kleinert" element={<ClaudiaKleinert />} />

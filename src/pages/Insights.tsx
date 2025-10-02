@@ -5,10 +5,12 @@ import { Button } from "@/components/ui/button";
 import blogImage1 from "@/assets/blog-erste-modekollektion-new.jpg";
 import blogImage2 from "@/assets/blog-nachhaltige-produktion.jpg";
 import blogImage3 from "@/assets/blog-private-label-regional.jpg";
-
 import blogImage5 from "@/assets/blog-workwear-employer-branding.jpg";
 import blogImage6 from "@/assets/blog-luxury-hospitality-collections.jpg";
 import blogImage7 from "@/assets/blog-creators-influencers-fashion-new.jpg";
+import blogImage8 from "@/assets/blog-qualitaet-nachhaltigkeit.jpg";
+import blogImage9 from "@/assets/blog-lingerie-expertise.jpg";
+import blogImage10 from "@/assets/blog-spezialisierung-expertise.jpg";
 import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 
 const blogPosts = [
@@ -35,6 +37,30 @@ const blogPosts = [
     image: blogImage3,
     readTime: "7 min",
     category: "Einzelhandel"
+  },
+  {
+    id: "qualitaet-nachhaltigkeit",
+    title: "Langlebigkeit statt Fast Fashion: Warum hochwertige Qualität die nachhaltigste Investition ist",
+    excerpt: "Ein gut verarbeitetes Teil, das 10 Jahre hält, ist nachhaltiger als 10 billige Teile. Warum Cost-per-Wear die ehrlichere Rechnung ist.",
+    image: blogImage8,
+    readTime: "6 min",
+    category: "Nachhaltigkeit"
+  },
+  {
+    id: "lingerie-expertise",
+    title: "Von der Idee zum Premium-Produkt: Lingerie-Entwicklung mit Expertise",
+    excerpt: "Die Erfolgsgeschichte von blush Lingerie zeigt, wie aus Leidenschaft für Details eine erfolgreiche Premium-Marke entsteht – und warum diese Expertise auch Ihrem Projekt zugutekommt.",
+    image: blogImage9,
+    readTime: "7 min",
+    category: "Case Study"
+  },
+  {
+    id: "spezialisierung-expertise",
+    title: "Spezialisierung zahlt sich aus: Warum Nischen-Expertise in der Textilproduktion entscheidend ist",
+    excerpt: "Von Lingerie über Workwear bis Swimwear: Warum jede Produktkategorie eigenes Know-how braucht und generalistische Produzenten oft nicht ausreichen.",
+    image: blogImage10,
+    readTime: "7 min",
+    category: "Expertise"
   },
   {
     id: "claudia-kleinert",

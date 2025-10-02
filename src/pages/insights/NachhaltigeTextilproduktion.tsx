@@ -159,10 +159,17 @@ const NachhaltigeTextilproduktion = () => {
                 erzielt oft höhere Margen."
               </p>
 
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
+              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
                 „Die Gesamtkosten sind entscheidend, nicht nur der reine Produktionspreis. 
                 Wenn ich Transportkosten, Zölle, Qualitätsprobleme und das Risiko von Verzögerungen einrechne, 
                 zeigt sich oft ein sehr ausgewogenes Bild bei europäischer Produktion."
+              </p>
+
+              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
+                „Und noch ein wichtiger Punkt: Die nachhaltigste Kollektion ist die, die nicht im Müll landet. 
+                Hochwertige Qualität, die jahrelang hält, ist authentische Nachhaltigkeit – nicht nur Marketing. 
+                Wir sehen einen klaren Trend: Kunden investieren lieber in ein hochwertiges Teil als in drei billige. 
+                Cost-per-Wear ist die ehrlichere Rechnung als der reine Kaufpreis."
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
