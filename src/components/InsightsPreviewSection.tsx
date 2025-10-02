@@ -41,7 +41,7 @@ const InsightsPreviewSection = () => {
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
             Insights
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed font-body">
+          <p className="text-body-large max-w-3xl mx-auto">
             Expertenwissen rund um nachhaltige Textilproduktion, Kollektionsplanung und erfolgreiche Markenentwicklung.
           </p>
         </div>
