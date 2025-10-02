@@ -10,10 +10,11 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6 max-w-6xl mx-auto">
         <h1 className="heading-hero text-white mb-6">
-          <span className="block text-white">Ihre Kollektion. 
-Unsere Produktion. 
-
-        </span>
+          <span className="block text-white">
+            Ihre Kollektion.
+            <br />
+            Unsere Produktion.
+          </span>
         </h1>
         
         <p className="text-xl md:text-2xl lg:text-3xl font-body font-light leading-relaxed tracking-normal text-white/90 mb-12 max-w-4xl mx-auto">
