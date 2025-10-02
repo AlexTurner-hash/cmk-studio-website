@@ -63,7 +63,18 @@ const Navigation = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Language Switcher & Logo */}
+          {/* Logo */}
+          <div className="flex items-center">
+            <Link to="/">
+              <img 
+                src={(isInsightsPage && !isScrolled) ? logoBlack : logoWhite} 
+                alt="CMK Studio" 
+                className="h-8 w-auto"
+              />
+            </Link>
+          </div>
+
+          {/* Language Switcher & Menu Button */}
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <button
@@ -90,14 +101,6 @@ const Navigation = () => {
                 EN
               </button>
             </div>
-            <Link to="/">
-              <img 
-                src={(isInsightsPage && !isScrolled) ? logoBlack : logoWhite} 
-                alt="CMK Studio" 
-                className="h-8 w-auto"
-              />
-            </Link>
-          </div>
 
           {/* Menu Button */}
           <Button
@@ -112,6 +115,7 @@ const Navigation = () => {
           >
             {isMenuOpen ? <X size={46} /> : <Menu size={46} />}
           </Button>
+          </div>
         </div>
 
         {/* Navigation Menu */}
