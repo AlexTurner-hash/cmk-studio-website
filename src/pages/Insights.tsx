@@ -151,7 +151,7 @@ const Insights = () => {
         <Navigation />
         
         {/* Hero Section */}
-        <section className="pt-24 pb-16 bg-background">
+        <section className="pt-24 pb-8 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-6xl font-light mb-6 text-foreground font-display">
@@ -166,7 +166,7 @@ const Insights = () => {
         </section>
 
         {/* Blog Posts Grid */}
-        <section className="py-16 bg-background">
+        <section className="pt-8 pb-16 bg-background">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {blogPosts.map((post) => (
