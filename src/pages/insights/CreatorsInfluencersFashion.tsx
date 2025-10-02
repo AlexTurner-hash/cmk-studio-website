@@ -5,8 +5,8 @@ import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-creators-influencers-new.jpg";
 const CreatorsInfluencersFashion = () => {
   return <>
-      <title>Creator Kollektionen - Von der Idee zur Modeproduktion | CMK.Studio</title>
-      <meta name="description" content="Wie Creator und Influencer den Sprung in die Modeproduktion schaffen: Kleine Drops, schnelle Turnaround-Zeiten und maximale Flexibilität in der Creator Economy." />
+      <title>Creator Kollektionen Berlin - Von der Idee zur Modeproduktion | CMK.Studio</title>
+      <meta name="description" content="Creator und Influencer in Berlin: Kleine Drops, schnelle Turnaround-Zeiten und maximale Flexibilität. Professionelle Modeproduktion für die Creator Economy." />
       
       <div className="min-h-screen">
         <Navigation />
@@ -53,7 +53,8 @@ const CreatorsInfluencersFashion = () => {
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
                 Creator und Influencer haben etwas, das viele etablierte Marken mühsam aufbauen müssen: 
                 eine engagierte Community. Sie kennen ihre Follower, verstehen deren Geschmack und wissen, 
-                was ankommt. Der logische nächste Schritt: eigene Produkte – insbesondere Mode.
+                was ankommt. Der logische nächste Schritt: eigene Produkte – insbesondere Mode. 
+                Gerade in Berlin, dem kreativen Zentrum Deutschlands, entwickelt sich eine lebendige Creator-Fashion-Szene.
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
@@ -223,7 +224,10 @@ const CreatorsInfluencersFashion = () => {
 
             <div className="mt-16 p-8 bg-[hsl(var(--cream-tan))] rounded-lg text-center">
               <h3 className="text-xl font-light mb-4 text-foreground font-display">Bereit zu produzieren?</h3>
-              <p className="text-muted-foreground mb-6 font-body">Lass uns deine Idee in ein professionelles Produkt für deine Community verwandeln.</p>
+              <p className="text-muted-foreground mb-6 font-body">
+                Lass uns deine Idee in ein professionelles Produkt für deine Community verwandeln. 
+                Wir beraten dich gerne persönlich vor Ort in Berlin und dem Rhein-Main-Gebiet.
+              </p>
               <Button size="lg" asChild>
                 <a href="/#contact">
                   Jetzt Projekt starten

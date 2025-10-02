@@ -7,8 +7,8 @@ import blogImage from "@/assets/blog-luxury-hospitality-collections.jpg";
 const LuxuryHospitalityCollections = () => {
   return (
     <>
-      <title>Luxus zum Mitnehmen - Hotel und Spa Kollektionen | CMK.Studio</title>
-      <meta name="description" content="Von Yoga-Apparel bis zu Premium-Badtextilien: Wie High-End-Hotels und Spa-Resorts durch hochwertige Eigenmarken ihre Gäste begeistern und zusätzliche Erlösquellen erschließen." />
+      <title>Luxus Hotel & Spa Kollektionen Rhein-Main | CMK.Studio</title>
+      <meta name="description" content="Premium Hotel und Spa Kollektionen für Resorts im Rhein-Main-Gebiet: Von Yoga-Apparel bis Badtextilien. Hochwertige Eigenmarken für exklusive Gästeerlebnisse." />
       
       <div className="min-h-screen">
         <Navigation />
@@ -75,7 +75,9 @@ const LuxuryHospitalityCollections = () => {
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
                 Spa-Resorts setzen verstärkt auf exklusive Yoga- und Wellness-Kollektionen. Hochwertige 
                 Yoga-Pants, Tops und Accessoires aus nachhaltigen Materialien sprechen gesundheitsbewusste 
-                Gäste an und verlängern das Wellness-Erlebnis zu Hause.
+                Gäste an und verlängern das Wellness-Erlebnis zu Hause. Premium-Resorts im Rhein-Main-Gebiet 
+                wie das Villa Kennedy Frankfurt oder Schlosshotel Kronberg setzen bereits erfolgreich auf 
+                exklusive Eigenmarken.
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
@@ -181,7 +183,8 @@ const LuxuryHospitalityCollections = () => {
                 Bereit für Ihre Hotel-Kollektion?
               </h3>
               <p className="text-muted-foreground mb-6 font-body">
-                Entwickeln Sie mit uns eine Lifestyle-Kollektion, die Ihre Gäste begeistert.
+                Entwickeln Sie mit uns eine Lifestyle-Kollektion, die Ihre Gäste begeistert. 
+                Wir beraten Sie gerne persönlich vor Ort in Berlin und dem Rhein-Main-Gebiet.
               </p>
               <Button size="lg" asChild>
                 <a href="#contact">

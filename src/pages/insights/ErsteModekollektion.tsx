@@ -7,8 +7,8 @@ import blogImage from "@/assets/blog-erste-modekollektion.jpg";
 const ErsteModekollektion = () => {
   return (
     <>
-      <title>Erste Modekollektion planen - Leitfaden für Startups | CMK.Studio</title>
-      <meta name="description" content="Kompletter Leitfaden für Ihre erste Modekollektion: Von der Ideenfindung über Design bis zur Produktion. Tipps für Startups und Creator." />
+      <title>Erste Modekollektion planen - Leitfaden für Startups Berlin & Frankfurt | CMK.Studio</title>
+      <meta name="description" content="Kompletter Leitfaden für Ihre erste Modekollektion: Von der Ideenfindung über Design bis zur Produktion. Professionelle Beratung in Berlin und Rhein-Main." />
       
       <div className="min-h-screen">
         <Navigation />
@@ -82,7 +82,9 @@ const ErsteModekollektion = () => {
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
                 Definieren Sie Ihre Zielgruppe so präzise wie möglich. Statt "junge Frauen zwischen 20 und 30" sollten Sie 
-                eine konkrete Persona entwickeln: Beruf, Lifestyle, Einkaufsverhalten, bevorzugte Marken und Preissegment.
+                eine konkrete Persona entwickeln: Beruf, Lifestyle, Einkaufsverhalten, bevorzugte Marken und Preissegment. 
+                Erfolgreiche Fashion Startups wie die Berliner Labels Lala Berlin oder AEANCE haben genau das getan – 
+                sie kennen ihre Kundinnen bis ins Detail.
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
@@ -149,7 +151,8 @@ const ErsteModekollektion = () => {
                 Bereit für Ihre erste Kollektion?
               </h3>
               <p className="text-muted-foreground mb-6 font-body">
-                Profitieren Sie von unserer Erfahrung und starten Sie Ihr Projekt mit einem erfahrenen Partner.
+                Profitieren Sie von unserer Erfahrung und starten Sie Ihr Projekt mit einem erfahrenen Partner. 
+                Wir beraten Sie gerne persönlich vor Ort in Berlin und dem Rhein-Main-Gebiet.
               </p>
               <Button size="lg" asChild>
                 <a href="#contact">
