@@ -14,13 +14,13 @@ const TestimonialsSection = () => {
       quote: "Claudias Erfahrung mit Fashion-Labels jeder Größe, gepaart mit ihrem Background als Designerin, ist selten. Ihr Input ist einfach wertvoll.",
       client: "Maiami",
       company: "",
-      image: null
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=600&fit=crop"
     },
     {
       quote: "CMK liefert Top-Qualität aus Europa, völlig individualisiert und zu wettbewerbsfähigen Preisen. Und das mit persönlicher Betreuung – das können die Großen nicht.",
       client: "Merz b. Schwanen",
       company: "",
-      image: null
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop"
     }
   ];
 
@@ -50,7 +50,7 @@ const TestimonialsSection = () => {
   }, [api]);
 
   return (
-    <section className="section-padding bg-[hsl(var(--bronze))]">
+    <section className="py-12 md:py-16 bg-[hsl(var(--bronze))]">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <Carousel 
@@ -64,7 +64,7 @@ const TestimonialsSection = () => {
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index}>
-                  <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center py-8">
+                  <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center py-4">
                     {/* Image */}
                     {testimonial.image && (
                       <div className="w-full md:w-1/3 flex-shrink-0">
