@@ -1,5 +1,8 @@
 import headerImage from "@/assets/hero-consultation-warm.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const HeroSection = () => {
+  const { t } = useLanguage();
   return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
@@ -11,20 +14,20 @@ const HeroSection = () => {
       <div className="relative z-10 text-center text-white px-6 max-w-6xl mx-auto">
         <h1 className="heading-hero text-white mb-6">
           <span className="block text-white">
-            Ihre Kollektion.
+            {t('hero.title1')}
             <br />
-            Unsere Produktion.
+            {t('hero.title2')}
           </span>
         </h1>
         
         <p className="text-xl md:text-2xl lg:text-3xl font-body font-light leading-relaxed tracking-normal text-white/90 mb-12 max-w-4xl mx-auto">
-          CMK.Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa – damit Marken, Creator und Unternehmen Kollektionen effizient, hochwertig und transparent realisieren können.
+          {t('hero.subtitle')}
         </p>
 
         {/* Get in Contact Button */}
         <div className="flex justify-center">
           <a href="#contact" className="btn-accent">
-            Projekt starten
+            {t('hero.cta')}
           </a>
         </div>
       </div>

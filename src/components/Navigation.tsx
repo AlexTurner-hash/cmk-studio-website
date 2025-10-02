@@ -4,11 +4,13 @@ import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logoWhite from "@/assets/cmk-logo-white-new.png";
 import logoBlack from "@/assets/cmk-logo-black-new.png";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const { language, setLanguage, t } = useLanguage();
   
   // Check if we're on insights page or any insights subpage
   const isInsightsPage = location.pathname.startsWith('/insights');
@@ -25,12 +27,12 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: "HOME", href: "/" },
-    { name: "ÜBER UNS", href: "/ueber-uns" },
-    { name: "SERVICES", href: "/#services" },
-    { name: "INSIGHTS", href: "/insights" },
-    { name: "CONTACT", href: "/#contact" },
-    { name: "IMPRESSUM", href: "/impressum" },
+    { name: t('nav.home'), href: "/" },
+    { name: t('nav.about'), href: "/ueber-uns" },
+    { name: t('nav.services'), href: "/#services" },
+    { name: t('nav.insights'), href: "/insights" },
+    { name: t('nav.contact'), href: "/#contact" },
+    { name: language === 'de' ? "IMPRESSUM" : "IMPRINT", href: "/impressum" },
   ];
 
   const handleNavClick = (href: string) => {
@@ -61,8 +63,33 @@ const Navigation = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center">
+          {/* Language Switcher & Logo */}
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setLanguage('de')}
+                className={`text-sm transition-colors ${
+                  language === 'de' 
+                    ? `font-bold ${(isInsightsPage && !isScrolled) ? 'text-black' : 'text-white'}` 
+                    : `${(isInsightsPage && !isScrolled) ? 'text-black/60' : 'text-white/60'} hover:${(isInsightsPage && !isScrolled) ? 'text-black' : 'text-white'}`
+                }`}
+              >
+                DE
+              </button>
+              <span className={`${(isInsightsPage && !isScrolled) ? 'text-black/40' : 'text-white/40'}`}>
+                /
+              </span>
+              <button
+                onClick={() => setLanguage('en')}
+                className={`text-sm transition-colors ${
+                  language === 'en' 
+                    ? `font-bold ${(isInsightsPage && !isScrolled) ? 'text-black' : 'text-white'}` 
+                    : `${(isInsightsPage && !isScrolled) ? 'text-black/60' : 'text-white/60'} hover:${(isInsightsPage && !isScrolled) ? 'text-black' : 'text-white'}`
+                }`}
+              >
+                EN
+              </button>
+            </div>
             <Link to="/">
               <img 
                 src={(isInsightsPage && !isScrolled) ? logoBlack : logoWhite} 
