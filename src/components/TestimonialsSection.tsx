@@ -55,7 +55,7 @@ const TestimonialsSection = () => {
         <h2 className="text-3xl md:text-4xl font-light mb-8 text-foreground font-display text-center">
           Was unsere Kunden sagen
         </h2>
-        <div className="max-w-5xl mx-auto bg-clay rounded-lg p-8 md:p-12">
+        <div className="max-w-5xl mx-auto bg-white rounded-lg p-8 md:p-12 shadow-lg">
           <Carousel 
             className="w-full" 
             setApi={setApi} 
