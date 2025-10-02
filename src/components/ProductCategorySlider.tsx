@@ -23,7 +23,7 @@ const ProductCategorySlider = () => {
   ];
 
   return (
-    <section className="section-padding bg-background">
+    <section className="pb-16 md:pb-20 lg:pb-24 pt-8 md:pt-12 lg:pt-16 bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
