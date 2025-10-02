@@ -7,7 +7,7 @@ import blushStore from "@/assets/claudia-kleinert-blush-store.jpg";
 const ClaudiaKleinert = () => {
   return <>
       <title>Claudia Kleinert - Gründerin und Geschäftsführerin | CMK.Studio</title>
-      <meta name="description" content="Lernen Sie Claudia Kleinert kennen: Die erfolgreiche Berliner Dessous-Designerin mit über 35 Jahren Erfahrung in Design, Produktion und Vertrieb." />
+      <meta name="description" content="Lernen Sie Claudia Kleinert kennen: Die erfolgreiche Berliner Dessous-Designerin mit langjähriger Erfahrung in Design, Produktion und Vertrieb." />
       
       <div className="min-h-screen">
         <Navigation />
