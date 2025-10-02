@@ -4,9 +4,6 @@ const FAQSection = () => {
     question: "Wie lange dauert die Produktion?",
     answer: "Je nach Projekt zwischen 4 und 12 Wochen, abhängig von Material, Auflage und Komplexität."
   }, {
-    question: "Kann man kleine Auflagen produzieren lassen?",
-    answer: "Ja – wir bieten Kleinserien und Drops ab geringen Stückzahlen an, ideal für Creator oder Startups."
-  }, {
     question: "Welche Produkte können hergestellt werden?",
     answer: "Von T-Shirts über Hoodies bis hin zu Caps, Taschen und Workwear – die Bandbreite reicht von Streetwear bis Corporate Clothing."
   }, {

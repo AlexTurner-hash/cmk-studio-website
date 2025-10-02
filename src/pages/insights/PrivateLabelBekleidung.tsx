@@ -114,18 +114,13 @@ const PrivateLabelBekleidung = () => {
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Kleine Auflagen, große Flexibilität
+                Flexibilität bei der Produktion
               </h2>
               
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Regionale Händler benötigen keine riesigen Stückzahlen. Moderne Produktionspartner ermöglichen 
-                es auch bei kleinen Auflagen ab 50 Stück pro Modell, professionelle Kollektionen zu realisieren. 
-                Diese Flexibilität ist ein enormer Vorteil gegenüber großen Ketten.
-              </p>
-
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Kleine Auflagen bedeuten auch geringeres Risiko. Neue Trends können schnell getestet werden, 
-                ohne große Lagerbestände aufzubauen. Funktioniert ein Design gut, kann nachbestellt werden.
+                Moderne Produktionspartner ermöglichen flexible Lösungen, die sich an den individuellen 
+                Bedarf anpassen lassen. Diese Flexibilität ist ein enormer Vorteil für spezialisierte Händler 
+                gegenüber großen Ketten mit Standardsortiment.
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">

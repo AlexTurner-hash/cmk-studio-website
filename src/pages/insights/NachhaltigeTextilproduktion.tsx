@@ -62,8 +62,7 @@ const NachhaltigeTextilproduktion = () => {
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
                 <strong>Claudia Kleinert:</strong> „Als ich vor Jahren meine eigene Marke aufgebaut habe, war mir schnell klar: 
                 Wenn ich Qualität und Flexibilität haben möchte, führt kein Weg an Europa vorbei. Die Modeindustrie 
-                befindet sich im größten Umbruch seit Jahrzehnten. Was früher als Kostenvorteil galt – die Produktion 
-                in Asien – wird zunehmend zu einem Risikofaktor."
+                befindet sich im größten Umbruch seit Jahrzehnten."
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
@@ -91,10 +90,8 @@ const NachhaltigeTextilproduktion = () => {
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                „Ein konkretes Beispiel: Während asiatische Produzenten oft Mindestbestellmengen von 1.000+ Stück 
-                pro Artikel verlangen, ermöglichen unsere europäischen Partner auch kleinere Auflagen ab 50 Stück. 
-                Das ist besonders für Startups und Creator ein entscheidender Vorteil – sie können testen, 
-                ohne sich finanziell zu übernehmen."
+                „Die direkte Kommunikation mit Produktionspartnern vor Ort ermöglicht es, flexibel auf 
+                Anforderungen zu reagieren und Qualitätsstandards durchgängig zu gewährleisten."
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
@@ -163,10 +160,9 @@ const NachhaltigeTextilproduktion = () => {
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                „Besonders bei kleineren Auflagen ist europäische Produktion oft wirtschaftlicher als 
-                asiatische Alternativen. Die Gesamtkosten sind entscheidend, nicht nur der reine Produktionspreis. 
+                „Die Gesamtkosten sind entscheidend, nicht nur der reine Produktionspreis. 
                 Wenn ich Transportkosten, Zölle, Qualitätsprobleme und das Risiko von Verzögerungen einrechne, 
-                ist Europa oft die günstigere Alternative."
+                zeigt sich oft ein sehr ausgewogenes Bild bei europäischer Produktion."
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">

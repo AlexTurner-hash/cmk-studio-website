@@ -10,7 +10,7 @@ import Insights from "./pages/Insights";
 import ErsteModekollektion from "./pages/insights/ErsteModekollektion";
 import NachhaltigeTextilproduktion from "./pages/insights/NachhaltigeTextilproduktion";
 import PrivateLabelBekleidung from "./pages/insights/PrivateLabelBekleidung";
-import MicroProduktion from "./pages/insights/MicroProduktion";
+
 import ClaudiaKleinert from "./pages/insights/ClaudiaKleinert";
 import WorkwearEmployerBranding from "./pages/insights/WorkwearEmployerBranding";
 import LuxuryHospitalityCollections from "./pages/insights/LuxuryHospitalityCollections";
@@ -41,7 +41,7 @@ const App = () => (
           <Route path="/insights/erste-modekollektion-planen" element={<ErsteModekollektion />} />
           <Route path="/insights/nachhaltige-textilproduktion-europa" element={<NachhaltigeTextilproduktion />} />
           <Route path="/insights/private-label-bekleidung-eigenmarken" element={<PrivateLabelBekleidung />} />
-          <Route path="/insights/micro-produktion-modebranche" element={<MicroProduktion />} />
+          
           <Route path="/insights/workwear-employer-branding" element={<WorkwearEmployerBranding />} />
           <Route path="/insights/luxury-hospitality-collections" element={<LuxuryHospitalityCollections />} />
           <Route path="/insights/claudia-kleinert" element={<ClaudiaKleinert />} />

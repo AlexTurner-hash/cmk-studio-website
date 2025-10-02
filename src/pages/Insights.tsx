@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import blogImage1 from "@/assets/blog-erste-modekollektion-new.jpg";
 import blogImage2 from "@/assets/blog-nachhaltige-produktion.jpg";
 import blogImage3 from "@/assets/blog-private-label-regional.jpg";
-import blogImage4 from "@/assets/blog-micro-produktion-premium.jpg";
+
 import blogImage5 from "@/assets/blog-workwear-employer-branding.jpg";
 import blogImage6 from "@/assets/blog-luxury-hospitality-collections.jpg";
 import blogImage7 from "@/assets/blog-creators-influencers-fashion-new.jpg";
@@ -43,14 +43,6 @@ const blogPosts = [
     image: claudiaPortrait,
     readTime: "5 min",
     category: "Portrait"
-  },
-  {
-    id: "micro-produktion-modebranche",
-    title: "Kleine Auflagen, große Wirkung: Warum Micro-Produktion die Modebranche verändert",
-    excerpt: "Wie kleine Auflagen nachhaltiger, kostengünstiger und flexibler sein können als Massenproduktion – ein Paradigmenwechsel in der Textilbranche.",
-    image: blogImage4,
-    readTime: "5 min",
-    category: "Trends"
   },
   {
     id: "workwear-employer-branding",
