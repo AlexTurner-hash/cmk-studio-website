@@ -50,9 +50,9 @@ const TestimonialsSection = () => {
   }, [api]);
 
   return (
-    <section className="py-8 md:py-12 bg-[hsl(var(--bronze))]">
+    <section className="py-8 md:py-12 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto bg-[hsl(var(--bronze))] rounded-lg p-8 md:p-12">
           <Carousel 
             className="w-full" 
             setApi={setApi} 
@@ -99,8 +99,6 @@ const TestimonialsSection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="text-white border-white hover:bg-white hover:text-[hsl(var(--bronze))] -left-12" />
-            <CarouselNext className="text-white border-white hover:bg-white hover:text-[hsl(var(--bronze))] -right-12" />
           </Carousel>
           
           {/* Dot indicators */}
