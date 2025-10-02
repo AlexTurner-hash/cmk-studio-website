@@ -47,7 +47,7 @@ const ServicesSection = () => {
     }, {
       id: "consultancies",
       title: "Consultancies",
-      description: "Kompetente Wissensträger für Unternehmensberatungen bei Due Diligence Prozessen und strategischen Analysen."
+      description: "Kompetenz für Unternehmensberatungen bei Due Diligence Prozessen und strategischen Analysen."
     }, {
       id: "modeunternehmen",
       title: "Modeunternehmen",
