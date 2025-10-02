@@ -5,12 +5,44 @@ import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-luxury-hospitality-collections.jpg";
 
 const LuxuryHospitalityCollections = () => {
+  const blogPostSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Luxus zum Mitnehmen: Wie Hotels und Spas mit exklusiven Kollektionen neue Umsätze generieren",
+    "description": "Premium Hotel und Spa Kollektionen für Resorts im Rhein-Main-Gebiet: Von Yoga-Apparel bis Badtextilien. Hochwertige Eigenmarken für exklusive Gästeerlebnisse.",
+    "image": blogImage,
+    "datePublished": "2024-01-25",
+    "dateModified": "2024-01-25",
+    "author": {
+      "@type": "Organization",
+      "name": "CMK.Studio"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CMK.Studio",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cmk.studio/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://cmk.studio/insights/luxury-hospitality-collections"
+    },
+    "articleSection": "Hospitality",
+    "keywords": ["Luxus Hotels", "Spa Kollektionen", "Hotel Merchandise", "Rhein-Main", "Premium Textilien"],
+    "timeRequired": "PT7M"
+  };
+
   return (
     <>
       <title>Luxus Hotel & Spa Kollektionen Rhein-Main | CMK.Studio</title>
       <meta name="description" content="Premium Hotel und Spa Kollektionen für Resorts im Rhein-Main-Gebiet: Von Yoga-Apparel bis Badtextilien. Hochwertige Eigenmarken für exklusive Gästeerlebnisse." />
       
       <div className="min-h-screen">
+        <script type="application/ld+json">
+          {JSON.stringify(blogPostSchema)}
+        </script>
         <Navigation />
         
         <article className="pt-24 pb-16">

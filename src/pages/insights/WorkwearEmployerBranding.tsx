@@ -5,12 +5,44 @@ import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-workwear-employer-branding.jpg";
 
 const WorkwearEmployerBranding = () => {
+  const blogPostSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Workwear als Employer Branding: Warum billige T-Shirt-Drucke nicht mehr reichen",
+    "description": "Wie hochwertige, nachhaltige Arbeitskleidung zum Aushängeschild Ihres Unternehmens wird und warum Mitarbeiter heute Wert auf Komfort, Qualität und individuelle Details legen.",
+    "image": blogImage,
+    "datePublished": "2024-01-20",
+    "dateModified": "2024-01-20",
+    "author": {
+      "@type": "Organization",
+      "name": "CMK.Studio"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CMK.Studio",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cmk.studio/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://cmk.studio/insights/workwear-employer-branding"
+    },
+    "articleSection": "Employer Branding",
+    "keywords": ["Workwear", "Employer Branding", "Arbeitskleidung", "Corporate Fashion", "Nachhaltigkeit"],
+    "timeRequired": "PT6M"
+  };
+
   return (
     <>
       <title>Workwear als Employer Branding - Hochwertige Arbeitskleidung | CMK.Studio</title>
       <meta name="description" content="Wie hochwertige, nachhaltige Arbeitskleidung zum Aushängeschild Ihres Unternehmens wird und warum Mitarbeiter heute Wert auf Komfort, Qualität und individuelle Details legen." />
       
       <div className="min-h-screen">
+        <script type="application/ld+json">
+          {JSON.stringify(blogPostSchema)}
+        </script>
         <Navigation />
         
         <article className="pt-24 pb-16">

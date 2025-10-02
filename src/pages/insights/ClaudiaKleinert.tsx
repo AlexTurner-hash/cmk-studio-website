@@ -5,11 +5,38 @@ import { ArrowLeft } from "lucide-react";
 import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 import blushStore from "@/assets/claudia-kleinert-blush-store.jpg";
 const ClaudiaKleinert = () => {
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Claudia Kleinert",
+    "jobTitle": "Gründerin und Geschäftsführerin",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "CMK.Studio"
+    },
+    "description": "Erfolgreiche Berliner Dessous-Designerin und Gründerin von blush Lingerie mit langjähriger Erfahrung in Design, Produktion und Vertrieb",
+    "knowsAbout": ["Lingerie Design", "Textilproduktion", "Modedesign", "Fashion Consulting", "Europäische Produktion"],
+    "alumniOf": "blush Lingerie",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Berlin",
+      "addressCountry": "DE"
+    },
+    "image": claudiaPortrait,
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Fashion Consultant & Designer"
+    }
+  };
+
   return <>
       <title>Claudia Kleinert - Gründerin und Geschäftsführerin | CMK.Studio</title>
       <meta name="description" content="Lernen Sie Claudia Kleinert kennen: Die erfolgreiche Berliner Dessous-Designerin mit langjähriger Erfahrung in Design, Produktion und Vertrieb." />
       
       <div className="min-h-screen">
+        <script type="application/ld+json">
+          {JSON.stringify(personSchema)}
+        </script>
         <Navigation />
         
         <article className="pt-24 pb-16">

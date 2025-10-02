@@ -15,8 +15,31 @@ import InsightsPreviewSection from "@/components/InsightsPreviewSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CMK.Studio",
+    "description": "Premium-Textilproduktion aus Europa für Unternehmen, Creator und Consultancies",
+    "url": "https://cmk.studio",
+    "logo": "https://cmk.studio/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Berlin",
+      "addressCountry": "DE"
+    },
+    "areaServed": ["Berlin", "Rhein-Main", "Europa"],
+    "knowsAbout": ["Textilproduktion", "Modekollektion", "Nachhaltige Produktion", "Private Label"],
+    "founder": {
+      "@type": "Person",
+      "name": "Claudia Kleinert"
+    }
+  };
+
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json">
+        {JSON.stringify(organizationSchema)}
+      </script>
       <Navigation />
       <HeroSection />
       <IntroSection />

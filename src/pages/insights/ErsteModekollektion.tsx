@@ -5,12 +5,44 @@ import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-erste-modekollektion.jpg";
 
 const ErsteModekollektion = () => {
+  const blogPostSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wie Sie Ihre erste Modekollektion planen – ein Leitfaden für Startups und Creator",
+    "description": "Kompletter Leitfaden für Ihre erste Modekollektion: Von der Ideenfindung über Design bis zur Produktion. Professionelle Beratung in Berlin und Rhein-Main.",
+    "image": blogImage,
+    "datePublished": "2024-01-15",
+    "dateModified": "2024-01-15",
+    "author": {
+      "@type": "Organization",
+      "name": "CMK.Studio"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CMK.Studio",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cmk.studio/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://cmk.studio/insights/erste-modekollektion-planen"
+    },
+    "articleSection": "Startup-Guide",
+    "keywords": ["Modekollektion", "Fashion Startup", "Textilproduktion", "Design", "Berlin"],
+    "timeRequired": "PT8M"
+  };
+
   return (
     <>
       <title>Erste Modekollektion planen - Leitfaden für Startups Berlin & Frankfurt | CMK.Studio</title>
       <meta name="description" content="Kompletter Leitfaden für Ihre erste Modekollektion: Von der Ideenfindung über Design bis zur Produktion. Professionelle Beratung in Berlin und Rhein-Main." />
       
       <div className="min-h-screen">
+        <script type="application/ld+json">
+          {JSON.stringify(blogPostSchema)}
+        </script>
         <Navigation />
         
         <article className="pt-24 pb-16">
