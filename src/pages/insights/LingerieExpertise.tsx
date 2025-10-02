@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
-import blogImage from "@/assets/blog-lingerie-expertise.jpg";
+import blogImage from "@/assets/blog-lingerie-expertise-new.jpg";
 
 const LingerieExpertise = () => {
   return (

@@ -9,7 +9,7 @@ import blogImage5 from "@/assets/blog-workwear-employer-branding.jpg";
 import blogImage6 from "@/assets/blog-luxury-hospitality-collections.jpg";
 import blogImage7 from "@/assets/blog-creators-influencers-new.jpg";
 import blogImage8 from "@/assets/blog-qualitaet-nachhaltigkeit.jpg";
-import blogImage9 from "@/assets/blog-lingerie-expertise.jpg";
+import blogImage9 from "@/assets/blog-lingerie-expertise-new.jpg";
 import blogImage10 from "@/assets/blog-spezialisierung-expertise.jpg";
 import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 
