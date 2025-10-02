@@ -22,7 +22,7 @@ const WhyUsSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
-            Ihr Vorteil mit uns.
+            Unsere Stärken
           </h2>
           
         </div>
