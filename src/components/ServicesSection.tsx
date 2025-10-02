@@ -83,7 +83,7 @@ const ServicesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">Wir machen Ideen tragbar.</h2>
-          <p className="text-body text-clay/80 max-w-4xl mx-auto">Unsere Kunden sind vielfältig – von Creator bis Konzern. Gemeinsam haben sie den Anspruch, Kollektionen professionell umzusetzen – mit einem einzigen Ansprechpartner.</p>
+          <p className="text-body-large text-clay/80 max-w-4xl mx-auto">Unsere Kunden sind vielfältig – von Creator bis Konzern. Gemeinsam haben sie den Anspruch, Kollektionen professionell umzusetzen – mit einem einzigen Ansprechpartner.</p>
         </div>
 
         {/* Interactive Service Grid */}
