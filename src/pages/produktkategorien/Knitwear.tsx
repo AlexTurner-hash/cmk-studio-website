@@ -132,7 +132,6 @@ const Knitwear = () => {
                   <li><strong>Cable & Aran:</strong> Traditionelle Zopfmuster in moderner Interpretation</li>
                   <li><strong>Pointelle & Lochmuster:</strong> Filigrane durchbrochene Strukturen</li>
                   <li><strong>3D-Strukturen:</strong> Erhabene Muster und plastische Effekte</li>
-                  <li><strong>Seamless Construction:</strong> Nahtlose Pullover und Kleider</li>
                 </ul>
 
                 <h3 className="text-xl font-semibold text-foreground font-display mt-8 mb-4">
