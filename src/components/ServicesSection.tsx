@@ -6,7 +6,6 @@ import portfolioCardigan from "@/assets/portfolio-cardigan.png";
 import portfolioHose from "@/assets/portfolio-hose.png";
 import portfolioHemd from "@/assets/portfolio-hemd.png";
 import portfolioSchuerze from "@/assets/portfolio-schuerze.png";
-import portfolioCargo from "@/assets/portfolio-cargo.png";
 import portfolioPuffer from "@/assets/portfolio-puffer.png";
 import portfolioHoodie from "@/assets/portfolio-hoodie.png";
 import portfolioBasecap from "@/assets/portfolio-basecap.png";
@@ -71,7 +70,6 @@ const ServicesSection = () => {
     portfolioHose,
     portfolioHemd,
     portfolioSchuerze,
-    portfolioCargo,
     portfolioPuffer,
     portfolioHoodie,
     portfolioBasecap,
