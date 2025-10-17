@@ -9,7 +9,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import SustainabilitySection from "@/components/SustainabilitySection";
 import FAQSection from "@/components/FAQSection";
 import AboutSection from "@/components/AboutSection";
-import WhyUsSection from "@/components/WhyUsSection";
+
 import ContactSection from "@/components/ContactSection";
 import InsightsPreviewSection from "@/components/InsightsPreviewSection";
 import Footer from "@/components/Footer";
@@ -47,7 +47,7 @@ const Index = () => {
       <ServicesSection />
       <ProductCategorySlider />
       <ServicesOfferedSection />
-      <WhyUsSection />
+      
       <AboutSection />
       <SustainabilitySection />
       <FAQSection />
