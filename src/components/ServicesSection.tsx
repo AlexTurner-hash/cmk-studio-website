@@ -154,9 +154,9 @@ const ServicesSection = () => {
             >
               {Array.from({ length: Math.ceil(portfolioImages.length / 4) }).map((_, slideIndex) => (
                 <div key={slideIndex} className="w-full flex-shrink-0">
-                  <div className="grid grid-cols-4 h-96 gap-4 p-4 bg-white">
+                  <div className="grid grid-cols-4 h-[600px] bg-gradient-to-b from-gray-50 to-white">
                     {portfolioImages.slice(slideIndex * 4, slideIndex * 4 + 4).map((image, index) => (
-                      <div key={index} className="relative overflow-hidden group bg-white p-6 flex items-center justify-center">
+                      <div key={index} className="relative overflow-hidden group p-8 flex items-center justify-center">
                         <img 
                           src={image} 
                           alt={`Portfolio image ${slideIndex * 4 + index + 1}`} 
