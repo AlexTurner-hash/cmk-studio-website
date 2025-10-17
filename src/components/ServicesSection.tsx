@@ -14,7 +14,7 @@ import portfolioSweater from "@/assets/portfolio-sweater.png";
 const ServicesSection = () => {
   const serviceCategories = [{
     id: "corporates",
-    title: "Für Unternehmen",
+    title: "Unternehmen",
     items: [{
       id: "mitarbeiter-bekleidung",
       title: "Mitarbeiter-Bekleidung",
@@ -30,7 +30,7 @@ const ServicesSection = () => {
     }]
   }, {
     id: "creators",
-    title: "Für Creator",
+    title: "Creator",
     items: [{
       id: "fashion-drops",
       title: "Fashion Drops",
