@@ -1,5 +1,3 @@
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import portfolioTurtleneck from "@/assets/portfolio-turtleneck.png";
 import portfolioBlazer from "@/assets/portfolio-blazer.png";
@@ -15,8 +13,6 @@ import portfolioBasecap from "@/assets/portfolio-basecap.png";
 import portfolioMuetze from "@/assets/portfolio-muetze.png";
 import portfolioSweater from "@/assets/portfolio-sweater.png";
 const ServicesSection = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
   const serviceCategories = [{
     id: "corporates",
     title: "Unternehmen",
@@ -83,14 +79,6 @@ const ServicesSection = () => {
     portfolioSweater
   ];
 
-  const nextSlide = () => {
-    setCurrentSlide(prev => (prev + 1) % Math.ceil(portfolioImages.length / 4));
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide(prev => (prev - 1 + Math.ceil(portfolioImages.length / 4)) % Math.ceil(portfolioImages.length / 4));
-  };
-
   return (
     <section id="services" className="pb-8 md:pb-12 lg:pb-16 pt-8 md:pt-12 lg:pt-16">
       <div className="container mx-auto px-6">
@@ -127,57 +115,17 @@ const ServicesSection = () => {
           </a>
         </div>
 
-        {/* Portfolio Section */}
-        <div className="relative mb-16 overflow-hidden">
-          {/* Navigation Arrows */}
-          <button 
-            onClick={prevSlide} 
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white text-black p-3 hover:bg-black hover:text-white transition-colors duration-300 rounded-full" 
-            aria-label="Previous images"
-          >
-            <ChevronLeft size={24} />
-          </button>
-          
-          <button 
-            onClick={nextSlide} 
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white text-black p-3 hover:bg-black hover:text-white transition-colors duration-300 rounded-full" 
-            aria-label="Next images"
-          >
-            <ChevronRight size={24} />
-          </button>
-
-          {/* Mosaic Grid */}
-          <div className="relative">
-            <div 
-              className="flex transition-transform duration-500 ease-in-out" 
-              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-            >
-              {Array.from({ length: Math.ceil(portfolioImages.length / 4) }).map((_, slideIndex) => (
-                <div key={slideIndex} className="w-full flex-shrink-0">
-                  <div className="grid grid-cols-4 h-[600px] bg-gradient-to-b from-gray-50 to-white">
-                    {portfolioImages.slice(slideIndex * 4, slideIndex * 4 + 4).map((image, index) => (
-                      <div key={index} className="relative overflow-hidden group p-8 flex items-center justify-center">
-                        <img 
-                          src={image} 
-                          alt={`Portfolio image ${slideIndex * 4 + index + 1}`} 
-                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" 
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Slide Indicators */}
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2">
-            {Array.from({ length: Math.ceil(portfolioImages.length / 4) }).map((_, index) => (
-              <button 
-                key={index} 
-                onClick={() => setCurrentSlide(index)} 
-                className={`w-2 h-2 rounded-full transition-colors duration-200 ${currentSlide === index ? 'bg-[hsl(var(--bronze))]' : 'bg-[hsl(var(--bronze))]/30'}`} 
-              />
+        {/* Portfolio Mosaic */}
+        <div className="mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 bg-gradient-to-b from-gray-50 to-white">
+            {portfolioImages.map((image, index) => (
+              <div key={index} className="relative overflow-hidden group aspect-square flex items-center justify-center p-8">
+                <img 
+                  src={image} 
+                  alt={`Portfolio image ${index + 1}`} 
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" 
+                />
+              </div>
             ))}
           </div>
         </div>
