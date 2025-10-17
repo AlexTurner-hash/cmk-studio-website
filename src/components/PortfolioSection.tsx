@@ -1,24 +1,36 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import portfolioTurtleneck from "@/assets/portfolio-turtleneck.png";
+import portfolioBlazer from "@/assets/portfolio-blazer.png";
+import portfolioPullover from "@/assets/portfolio-pullover.png";
+import portfolioCardigan from "@/assets/portfolio-cardigan.png";
+import portfolioHose from "@/assets/portfolio-hose.png";
+import portfolioHemd from "@/assets/portfolio-hemd.png";
+import portfolioSchuerze from "@/assets/portfolio-schuerze.png";
+import portfolioCargo from "@/assets/portfolio-cargo.png";
+import portfolioPuffer from "@/assets/portfolio-puffer.png";
+import portfolioHoodie from "@/assets/portfolio-hoodie.png";
+import portfolioBasecap from "@/assets/portfolio-basecap.png";
+import portfolioMuetze from "@/assets/portfolio-muetze.png";
+import portfolioSweater from "@/assets/portfolio-sweater.png";
 
 const PortfolioSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const portfolioImages = [
-    // Influencer Fashion
-    "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=600&h=800&fit=crop&crop=center",
-    "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&h=800&fit=crop&crop=center",
-    "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&h=800&fit=crop&crop=center",
-    
-    // Corporate Fashion
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop&crop=center",
-    "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=800&fit=crop&crop=center",
-    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=800&fit=crop&crop=center",
-    
-    // Private Label
-    "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=800&fit=crop&crop=center",
-    "https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&h=800&fit=crop&crop=center",
-    "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&h=800&fit=crop&crop=center"
+    portfolioTurtleneck,
+    portfolioBlazer,
+    portfolioPullover,
+    portfolioCardigan,
+    portfolioHose,
+    portfolioHemd,
+    portfolioSchuerze,
+    portfolioCargo,
+    portfolioPuffer,
+    portfolioHoodie,
+    portfolioBasecap,
+    portfolioMuetze,
+    portfolioSweater
   ];
 
   const nextSlide = () => {
