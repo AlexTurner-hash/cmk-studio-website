@@ -262,8 +262,8 @@ const translationsDE = {
     ]
   },
   productCategories: {
-    title: 'Unser Angebot',
-    subtitle: 'Von Streetwear bis Luxus-Accessoires – wir produzieren hochwertige Kollektionen für alle Bereiche der Modebranche.',
+    title: 'Unsere Kompetenzen',
+    subtitle: 'Ob Baumwolle, Spitze, Leder oder Funktionsfaser. Wir kennen die Besonderheiten und beherrschen die hochwertige Produktion in allen Disziplinen.',
     categories: [
       { name: 'Streetwear', slug: 'streetwear' },
       { name: 'Denim', slug: 'denim' },
@@ -545,8 +545,8 @@ const translationsEN = {
     ]
   },
   productCategories: {
-    title: 'Our Offerings',
-    subtitle: 'From streetwear to luxury accessories – we produce high-quality collections for all areas of the fashion industry.',
+    title: 'Our Expertise',
+    subtitle: 'Whether cotton, lace, leather or performance fiber. We know the specifics and master high-quality production in all disciplines.',
     categories: [
       { name: 'Streetwear', slug: 'streetwear' },
       { name: 'Denim', slug: 'denim' },
