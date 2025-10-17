@@ -4,8 +4,10 @@ import rwsLogo from "@/assets/rws-logo.png";
 import bsciLogo from "@/assets/bsci-logo.png";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const SustainabilitySection = () => {
+  const { t } = useLanguage();
   const certifications = [
     {
       logo: oekoTexLogo,
@@ -31,14 +33,14 @@ const SustainabilitySection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
-            Nachhaltigkeit nach europäischen Standards
+            {t('sustainabilitySection.title')}
           </h2>
           <div className="max-w-3xl mx-auto text-body-large">
             <p>
-              90% unserer Produktionsstätten befinden sich in Europa. Wir setzen auf Materialrecycling, zertifizierte Nachhaltigkeit und langlebige Qualität. Transportwege werden optimiert, um CO2-Emissionen zu minimieren.
+              {t('sustainabilitySection.description1')}
             </p>
             <p className="mt-4">
-              Auf Wunsch bieten wir unterschiedliche Nachhaltigkeitssiegel für die Produktion und die fertigen Produkte an, darunter GOTS, OEKO-TEX Standard 100, Responsible Wool, BSCI und mehr.
+              {t('sustainabilitySection.description2')}
             </p>
           </div>
         </div>
@@ -62,7 +64,7 @@ const SustainabilitySection = () => {
         <div className="text-center">
           <Button size="lg" variant="outline" className="bg-white text-black border-black hover:bg-black hover:text-white" asChild>
             <Link to="/insights/nachhaltige-textilproduktion-europa">
-              Mehr zum Thema
+              {t('sustainabilitySection.cta')}
             </Link>
           </Button>
         </div>

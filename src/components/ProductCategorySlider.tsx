@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 import streetwearImage from "@/assets/category-streetwear.jpg";
 import denimImage from "@/assets/category-denim.jpg";
 import lingerieImage from "@/assets/category-lingerie.jpg";
@@ -10,27 +11,27 @@ import workwearImage from "@/assets/category-workwear.jpg";
 import spaLeisureImage from "@/assets/category-spa-leisure.jpg";
 
 const ProductCategorySlider = () => {
-  const categories = [
-    { name: "Streetwear", image: streetwearImage, slug: "streetwear" },
-    { name: "Denim", image: denimImage, slug: "denim" },
-    { name: "Lingerie", image: lingerieImage, slug: "lingerie" },
-    { name: "Swimwear", image: swimwearImage, slug: "swimwear" },
-    { name: "Knitwear", image: knitwearImage, slug: "knitwear" },
-    { name: "Leder", image: leatherImage, slug: "leather" },
-    { name: "Accessoires", image: accessoriesImage, slug: "accessories" },
-    { name: "Workwear", image: workwearImage, slug: "workwear" },
-    { name: "Hospitality", image: spaLeisureImage, slug: "spa-leisure" },
+  const { t } = useLanguage();
+  
+  const categoryImages = [
+    streetwearImage, denimImage, lingerieImage, swimwearImage, 
+    knitwearImage, leatherImage, accessoriesImage, workwearImage, spaLeisureImage
   ];
+  
+  const categories = (t('productCategories.categories') as unknown as any[]).map((cat: any, idx: number) => ({
+    ...cat,
+    image: categoryImages[idx]
+  }));
 
   return (
     <section className="pb-16 md:pb-20 lg:pb-24 pt-8 md:pt-12 lg:pt-16 bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
-            Unser Angebot
+            {t('productCategories.title')}
           </h2>
           <p className="text-body-large text-muted-foreground max-w-3xl mx-auto">
-            Von Streetwear bis Luxus-Accessoires – wir produzieren hochwertige Kollektionen für alle Bereiche der Modebranche.
+            {t('productCategories.subtitle')}
           </p>
         </div>
 

@@ -1,26 +1,17 @@
 import { CheckCircle } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ServicesOfferedSection = () => {
-  const services = [
-    "Farb- und Materialkonzepte",
-    "Design & Grafik",
-    "Logoentwicklung",
-    "Schnitt & Vermassung",
-    "Prototypenentwicklung",
-    "Passformberatung",
-    "Produktionsüberwachung & Qualitätskontrolle",
-    "Effiziente SKU-Planung",
-    "Strategisches Pricing",
-    "Logistik & Versand"
-  ];
+  const { t } = useLanguage();
+  const services = (t('servicesOffered.services') as unknown as string[]);
 
   return (
     <section className="py-8 md:py-12 lg:py-16 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">Alles, was eine Kollektion braucht</h2>
+          <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">{t('servicesOffered.title')}</h2>
           <p className="text-body-large text-clay/80 max-w-4xl mx-auto">
-            Wir bieten nicht nur Produktion, sondern eine vollständige Wertschöpfungskette – vom ersten Entwurf bis zum Versand.
+            {t('servicesOffered.subtitle')}
           </p>
         </div>
 
@@ -37,7 +28,7 @@ const ServicesOfferedSection = () => {
 
         <div className="text-center mt-16">
           <a href="#contact" className="btn-accent">
-            Jetzt anfragen
+            {t('servicesOffered.cta')}
           </a>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useLanguage } from "@/contexts/LanguageContext";
 import portfolioTurtleneck from "@/assets/portfolio-turtleneck.png";
 import portfolioBlazer from "@/assets/portfolio-blazer.png";
 import portfolioPullover from "@/assets/portfolio-pullover.png";
@@ -11,56 +12,10 @@ import portfolioHoodie from "@/assets/portfolio-hoodie.png";
 import portfolioBasecap from "@/assets/portfolio-basecap.png";
 import portfolioMuetze from "@/assets/portfolio-muetze.png";
 import portfolioSweater from "@/assets/portfolio-sweater.png";
+
 const ServicesSection = () => {
-  const serviceCategories = [{
-    id: "corporates",
-    title: "Unternehmen",
-    items: [{
-      id: "mitarbeiter-bekleidung",
-      title: "Mitarbeiter-Bekleidung",
-      description: "Professionelle Workwear und Uniformen für Ihr Unternehmen."
-    }, {
-      id: "private-labels",
-      title: "Private Labels",
-      description: "Exklusive Kollektionen unter Ihrem Label."
-    }, {
-      id: "hotel-resort",
-      title: "Hotels & Resorts",
-      description: "Elegante Hospitality-Bekleidung für Hotels und Resorts."
-    }]
-  }, {
-    id: "creators",
-    title: "Creator",
-    items: [{
-      id: "fashion-drops",
-      title: "Fashion Drops",
-      description: "Limitierte Fashion-Releases für Influencer und Content Creator."
-    }, {
-      id: "merch",
-      title: "Merch",
-      description: "Hochwertiges Merchandise für Ihre Community."
-    }, {
-      id: "kollektionen",
-      title: "Kollektionen",
-      description: "Umfassende Kollektionen für Creator und Influencer."
-    }]
-  }, {
-    id: "consulting",
-    title: "Beratung für",
-    items: [{
-      id: "fashion-startups",
-      title: "Startups",
-      description: "Beratung und Unterstützung für Fashion-Startups."
-    }, {
-      id: "consultancies",
-      title: "Consultancies",
-      description: "Kompetenz für Unternehmensberatungen bei Due Diligence Prozessen und strategischen Analysen."
-    }, {
-      id: "modeunternehmen",
-      title: "Modeunternehmen",
-      description: "Strategische Beratung für etablierte Modeunternehmen."
-    }]
-  }];
+  const { t } = useLanguage();
+  const serviceCategories = (t('servicesSection.categories') as unknown as any[]);
 
   const portfolioImages = [
     portfolioTurtleneck,
@@ -81,18 +36,18 @@ const ServicesSection = () => {
     <section id="services" className="pb-8 md:pb-12 lg:pb-16 pt-4 md:pt-6 lg:pt-8">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">Unsere Kompetenzen</h2>
-          <p className="text-body-large text-clay/80 max-w-4xl mx-auto">Ob Baumwolle, Spitze, Leder oder Funktionsfaser. Wir kennen die Besonderheiten und beherrschen die hochwertige Produktion in allen Disziplinen.</p>
+          <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">{t('servicesSection.title')}</h2>
+          <p className="text-body-large text-clay/80 max-w-4xl mx-auto">{t('servicesSection.subtitle')}</p>
         </div>
 
         {/* Interactive Service Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-16">
-          {serviceCategories.map(category => (
-            <div key={category.id} className="text-center">
+          {serviceCategories.map((category: any, idx: number) => (
+            <div key={idx} className="text-center">
               <h3 className="text-xl md:text-2xl font-display leading-tight text-[hsl(var(--bronze))] mb-8 text-left font-semibold px-[16px] lg:text-2xl tracking-wide">{category.title}</h3>
               <Accordion type="single" collapsible className="w-full">
-                {category.items.map(item => (
-                  <AccordionItem key={item.id} value={item.id} className="border-clay/20">
+                {category.items.map((item: any, itemIdx: number) => (
+                  <AccordionItem key={itemIdx} value={`item-${idx}-${itemIdx}`} className="border-clay/20">
                     <AccordionTrigger className="text-left text-base md:text-lg font-body leading-relaxed font-normal text-foreground hover:text-[hsl(var(--bronze))] transition-colors hover:no-underline data-[state=open]:bg-[hsl(var(--bronze))] data-[state=open]:text-white px-4 py-3">
                       {item.title}
                     </AccordionTrigger>

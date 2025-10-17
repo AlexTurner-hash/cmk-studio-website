@@ -87,25 +87,6 @@ const translationsDE = {
     subtitle: 'Spezialisierte Fertigung für jede Kategorie',
     viewDetails: 'Details ansehen'
   },
-  whyUs: {
-    title: 'Warum CMK.Studio?',
-    experience: {
-      title: 'Über 20 Jahre Erfahrung',
-      description: 'Langjähriges Know-how in der Textilproduktion'
-    },
-    network: {
-      title: '100+ Produktionsstätten',
-      description: 'Spezialisiertes Netzwerk in ganz Europa'
-    },
-    sustainable: {
-      title: 'Nachhaltig & Regional',
-      description: 'Kurze Wege, faire Bedingungen, hohe Standards'
-    },
-    flexible: {
-      title: 'Flexible Stückzahlen',
-      description: 'Von Kleinserien bis zur Großproduktion'
-    }
-  },
   about: {
     title: 'Über CMK.Studio',
     description: 'Claudia Maria Kleinert gründete CMK.Studio aus der Überzeugung, dass nachhaltige und transparente Textilproduktion in Europa nicht nur möglich, sondern notwendig ist.'
@@ -249,6 +230,100 @@ const translationsDE = {
         company: 'lila loves it'
       }
     ]
+  },
+  servicesSection: {
+    title: 'Unsere Kompetenzen',
+    subtitle: 'Ob Baumwolle, Spitze, Leder oder Funktionsfaser. Wir kennen die Besonderheiten und beherrschen die hochwertige Produktion in allen Disziplinen.',
+    categories: [
+      {
+        title: 'Unternehmen',
+        items: [
+          { title: 'Mitarbeiter-Bekleidung', description: 'Professionelle Workwear und Uniformen für Ihr Unternehmen.' },
+          { title: 'Private Labels', description: 'Exklusive Kollektionen unter Ihrem Label.' },
+          { title: 'Hotels & Resorts', description: 'Elegante Hospitality-Bekleidung für Hotels und Resorts.' }
+        ]
+      },
+      {
+        title: 'Creator',
+        items: [
+          { title: 'Fashion Drops', description: 'Limitierte Fashion-Releases für Influencer und Content Creator.' },
+          { title: 'Merch', description: 'Hochwertiges Merchandise für Ihre Community.' },
+          { title: 'Kollektionen', description: 'Umfassende Kollektionen für Creator und Influencer.' }
+        ]
+      },
+      {
+        title: 'Beratung für',
+        items: [
+          { title: 'Startups', description: 'Beratung und Unterstützung für Fashion-Startups.' },
+          { title: 'Consultancies', description: 'Kompetenz für Unternehmensberatungen bei Due Diligence Prozessen und strategischen Analysen.' },
+          { title: 'Modeunternehmen', description: 'Strategische Beratung für etablierte Modeunternehmen.' }
+        ]
+      }
+    ]
+  },
+  productCategories: {
+    title: 'Unser Angebot',
+    subtitle: 'Von Streetwear bis Luxus-Accessoires – wir produzieren hochwertige Kollektionen für alle Bereiche der Modebranche.',
+    categories: [
+      { name: 'Streetwear', slug: 'streetwear' },
+      { name: 'Denim', slug: 'denim' },
+      { name: 'Lingerie', slug: 'lingerie' },
+      { name: 'Swimwear', slug: 'swimwear' },
+      { name: 'Knitwear', slug: 'knitwear' },
+      { name: 'Leder', slug: 'leather' },
+      { name: 'Accessoires', slug: 'accessories' },
+      { name: 'Workwear', slug: 'workwear' },
+      { name: 'Hospitality', slug: 'spa-leisure' }
+    ]
+  },
+  servicesOffered: {
+    title: 'Alles, was eine Kollektion braucht',
+    subtitle: 'Wir bieten nicht nur Produktion, sondern eine vollständige Wertschöpfungskette – vom ersten Entwurf bis zum Versand.',
+    cta: 'Jetzt anfragen',
+    services: [
+      'Farb- und Materialkonzepte',
+      'Design & Grafik',
+      'Logoentwicklung',
+      'Schnitt & Vermassung',
+      'Prototypenentwicklung',
+      'Passformberatung',
+      'Produktionsüberwachung & Qualitätskontrolle',
+      'Effiziente SKU-Planung',
+      'Strategisches Pricing',
+      'Logistik & Versand'
+    ]
+  },
+  whyUs: {
+    title: 'Unsere Stärken',
+    reasons: [
+      { title: 'End-to-End Service', description: 'Beratung, Produktion, Logistik in einem Prozess' },
+      { title: 'Europäische Fertigung', description: 'Qualität & Nähe statt lange Lieferketten' },
+      { title: 'Nachhaltige Prozesse', description: 'geprüfte Fabriken, faire Arbeitsbedingungen' },
+      { title: 'Strategische Beratung', description: 'von der Idee bis zur Serienproduktion' }
+    ]
+  },
+  aboutSection: {
+    title: 'Was wir leisten',
+    services: [
+      'Farb- und Material Konzepte',
+      'Kollektionsrahmenplanung',
+      'SKU Effizienzplanung',
+      'Design und Grafikdesign',
+      'Logoentwicklung',
+      'Schnitt und Vermassung',
+      'Strategisches Pricing',
+      'Prototypenentwicklung',
+      'Paßformberatung',
+      'Produktionsüberwachung',
+      'Qualitätskontrolle',
+      'Zuverlässige Logistik'
+    ]
+  },
+  sustainabilitySection: {
+    title: 'Nachhaltigkeit nach europäischen Standards',
+    description1: '90% unserer Produktionsstätten befinden sich in Europa. Wir setzen auf Materialrecycling, zertifizierte Nachhaltigkeit und langlebige Qualität. Transportwege werden optimiert, um CO2-Emissionen zu minimieren.',
+    description2: 'Auf Wunsch bieten wir unterschiedliche Nachhaltigkeitssiegel für die Produktion und die fertigen Produkte an, darunter GOTS, OEKO-TEX Standard 100, Responsible Wool, BSCI und mehr.',
+    cta: 'Mehr zum Thema'
   }
 };
 
@@ -294,25 +369,6 @@ const translationsEN = {
     title: 'Product Categories',
     subtitle: 'Specialized manufacturing for every category',
     viewDetails: 'View Details'
-  },
-  whyUs: {
-    title: 'Why CMK.Studio?',
-    experience: {
-      title: 'Over 20 Years Experience',
-      description: 'Long-standing expertise in textile production'
-    },
-    network: {
-      title: '100+ Production Facilities',
-      description: 'Specialized network throughout Europe'
-    },
-    sustainable: {
-      title: 'Sustainable & Regional',
-      description: 'Short distances, fair conditions, high standards'
-    },
-    flexible: {
-      title: 'Flexible Quantities',
-      description: 'From small series to large-scale production'
-    }
   },
   about: {
     title: 'About CMK.Studio',
@@ -457,5 +513,99 @@ const translationsEN = {
         company: 'lila loves it'
       }
     ]
+  },
+  servicesSection: {
+    title: 'Our Expertise',
+    subtitle: 'Whether cotton, lace, leather or performance fiber. We know the specifics and master high-quality production in all disciplines.',
+    categories: [
+      {
+        title: 'Companies',
+        items: [
+          { title: 'Employee Apparel', description: 'Professional workwear and uniforms for your company.' },
+          { title: 'Private Labels', description: 'Exclusive collections under your label.' },
+          { title: 'Hotels & Resorts', description: 'Elegant hospitality apparel for hotels and resorts.' }
+        ]
+      },
+      {
+        title: 'Creators',
+        items: [
+          { title: 'Fashion Drops', description: 'Limited fashion releases for influencers and content creators.' },
+          { title: 'Merch', description: 'High-quality merchandise for your community.' },
+          { title: 'Collections', description: 'Comprehensive collections for creators and influencers.' }
+        ]
+      },
+      {
+        title: 'Consulting For',
+        items: [
+          { title: 'Startups', description: 'Consulting and support for fashion startups.' },
+          { title: 'Consultancies', description: 'Expertise for business consultancies in due diligence processes and strategic analyses.' },
+          { title: 'Fashion Companies', description: 'Strategic consulting for established fashion companies.' }
+        ]
+      }
+    ]
+  },
+  productCategories: {
+    title: 'Our Offerings',
+    subtitle: 'From streetwear to luxury accessories – we produce high-quality collections for all areas of the fashion industry.',
+    categories: [
+      { name: 'Streetwear', slug: 'streetwear' },
+      { name: 'Denim', slug: 'denim' },
+      { name: 'Lingerie', slug: 'lingerie' },
+      { name: 'Swimwear', slug: 'swimwear' },
+      { name: 'Knitwear', slug: 'knitwear' },
+      { name: 'Leather', slug: 'leather' },
+      { name: 'Accessories', slug: 'accessories' },
+      { name: 'Workwear', slug: 'workwear' },
+      { name: 'Hospitality', slug: 'spa-leisure' }
+    ]
+  },
+  servicesOffered: {
+    title: 'Everything a Collection Needs',
+    subtitle: 'We offer not just production, but a complete value chain – from the first draft to shipping.',
+    cta: 'Request Now',
+    services: [
+      'Color and Material Concepts',
+      'Design & Graphics',
+      'Logo Development',
+      'Pattern & Grading',
+      'Prototype Development',
+      'Fit Consultation',
+      'Production Monitoring & Quality Control',
+      'Efficient SKU Planning',
+      'Strategic Pricing',
+      'Logistics & Shipping'
+    ]
+  },
+  whyUs: {
+    title: 'Our Strengths',
+    reasons: [
+      { title: 'End-to-End Service', description: 'Consulting, production, logistics in one process' },
+      { title: 'European Manufacturing', description: 'Quality & proximity instead of long supply chains' },
+      { title: 'Sustainable Processes', description: 'certified factories, fair working conditions' },
+      { title: 'Strategic Consulting', description: 'from idea to series production' }
+    ]
+  },
+  aboutSection: {
+    title: 'What We Do',
+    services: [
+      'Color and Material Concepts',
+      'Collection Framework Planning',
+      'SKU Efficiency Planning',
+      'Design and Graphic Design',
+      'Logo Development',
+      'Pattern and Grading',
+      'Strategic Pricing',
+      'Prototype Development',
+      'Fit Consultation',
+      'Production Monitoring',
+      'Quality Control',
+      'Reliable Logistics'
+    ]
+  },
+  sustainabilitySection: {
+    title: 'Sustainability According to European Standards',
+    description1: '90% of our production facilities are located in Europe. We focus on material recycling, certified sustainability and long-lasting quality. Transport routes are optimized to minimize CO2 emissions.',
+    description2: 'On request, we offer various sustainability certificates for production and finished products, including GOTS, OEKO-TEX Standard 100, Responsible Wool, BSCI and more.',
+    cta: 'Learn More'
   }
 };

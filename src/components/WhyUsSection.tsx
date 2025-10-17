@@ -1,28 +1,19 @@
 import { ArrowLeftRight, Euro, Leaf, Lightbulb } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const WhyUsSection = () => {
-  const reasons = [{
-    icon: ArrowLeftRight,
-    title: "End-to-End Service",
-    description: "Beratung, Produktion, Logistik in einem Prozess"
-  }, {
-    icon: Euro,
-    title: "Europäische Fertigung",
-    description: "Qualität & Nähe statt lange Lieferketten"
-  }, {
-    icon: Leaf,
-    title: "Nachhaltige Prozesse",
-    description: "geprüfte Fabriken, faire Arbeitsbedingungen"
-  }, {
-    icon: Lightbulb,
-    title: "Strategische Beratung",
-    description: "von der Idee bis zur Serienproduktion"
-  }];
+  const { t } = useLanguage();
+  const icons = [ArrowLeftRight, Euro, Leaf, Lightbulb];
+  const reasons = (t('whyUs.reasons') as unknown as any[]).map((reason: any, idx: number) => ({
+    ...reason,
+    icon: icons[idx]
+  }));
   return <section className="section-padding bg-background">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
-            Unsere Stärken
+            {t('whyUs.title')}
           </h2>
           
         </div>
