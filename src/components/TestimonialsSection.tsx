@@ -9,19 +9,8 @@ const TestimonialsSection = () => {
       client: "Stefanie Diem",
       company: "lila loves it",
       image: testimonialStefanie
-    },
-    {
-      quote: "Claudias Erfahrung mit Fashion-Labels jeder Größe, gepaart mit ihrem Background als Designerin, ist selten. Ihr Input ist einfach wertvoll.",
-      client: "Maiami",
-      company: "",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=600&fit=crop"
-    },
-    {
-      quote: "CMK liefert Top-Qualität aus Europa, völlig individualisiert und zu wettbewerbsfähigen Preisen. Und das mit persönlicher Betreuung – das können die Großen nicht.",
-      client: "Merz b. Schwanen",
-      company: "",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop"
     }
+    // Weitere Testimonials folgen
   ];
 
   const [api, setApi] = useState<CarouselApi>();
@@ -67,23 +56,23 @@ const TestimonialsSection = () => {
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index}>
-                  <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center py-4">
+                  <div className="flex flex-col md:flex-row gap-8 md:gap-10 items-center py-4">
                     {/* Image */}
                     {testimonial.image && (
-                      <div className="w-full md:w-1/3 flex-shrink-0">
-                        <div className="aspect-square overflow-hidden">
+                      <div className="w-full md:w-1/2 flex-shrink-0">
+                        <div className="aspect-square overflow-hidden rounded-lg">
                           <img 
                             src={testimonial.image} 
                             alt={testimonial.client}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover object-center scale-110"
                           />
                         </div>
                       </div>
                     )}
                     
                     {/* Quote Content */}
-                    <div className={`flex-1 ${!testimonial.image ? 'text-center max-w-3xl mx-auto' : ''}`}>
-                      <blockquote className="text-xl md:text-2xl font-extralight tracking-wide leading-relaxed font-body mb-6 italic text-muted-foreground">
+                    <div className={`flex-1 flex flex-col justify-center ${!testimonial.image ? 'text-center max-w-3xl mx-auto' : ''}`}>
+                      <blockquote className="text-lg md:text-xl font-extralight tracking-wide leading-relaxed font-body mb-6 italic text-muted-foreground">
                         „{testimonial.quote}"
                       </blockquote>
                       
