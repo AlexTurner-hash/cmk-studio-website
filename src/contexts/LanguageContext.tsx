@@ -269,7 +269,7 @@ const translationsEN = {
   intro: {
     title: 'Textile Production Reimagined',
     subtitle: 'We are your reliable partner for realizing fashion collections – from the initial idea to the finished collection.',
-    description: 'With over 20 years of experience and a network of more than 100 specialized production facilities in Europe, we accompany you through the entire production process. We combine traditional craftsmanship with modern production methods and ensure that your vision is implemented under the highest quality and sustainability standards.'
+    description: 'With over 20 years of experience and a network of specialized production facilities in Europe, we accompany you through the entire production process. We combine traditional craftsmanship with modern production methods and ensure that your vision is implemented under the highest quality and sustainability standards.'
   },
   services: {
     title: 'Our Expertise',
