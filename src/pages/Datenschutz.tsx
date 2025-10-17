@@ -22,10 +22,10 @@ const Datenschutz = () => {
             <div className="text-clay/80 font-body space-y-8">
               
               <div>
-                <h2 className="text-xl font-medium text-foreground mb-4">
+                <h2 className="text-2xl md:text-3xl font-light text-foreground mb-6 font-display">
                   1. Datenschutz auf einen Blick
                 </h2>
-                <h3 className="text-lg font-medium text-foreground mb-3">
+                <h3 className="text-xl font-light text-foreground mb-4 font-display">
                   Allgemeine Hinweise
                 </h3>
                 <p className="text-base leading-relaxed mb-4">
@@ -36,7 +36,7 @@ const Datenschutz = () => {
               </div>
 
               <div>
-                <h3 className="text-lg font-medium text-foreground mb-3">
+                <h3 className="text-xl font-light text-foreground mb-4 font-display">
                   Datenerfassung auf dieser Website
                 </h3>
                 <p className="text-base leading-relaxed mb-4">
@@ -54,13 +54,13 @@ const Datenschutz = () => {
               </div>
 
               <div>
-                <h2 className="text-xl font-medium text-foreground mb-4">
+                <h2 className="text-2xl md:text-3xl font-light text-foreground mb-6 font-display">
                   2. Hosting
                 </h2>
                 <p className="text-base leading-relaxed mb-4">
                   Wir hosten die Inhalte unserer Website bei folgendem Anbieter:
                 </p>
-                <h3 className="text-lg font-medium text-foreground mb-3">
+                <h3 className="text-xl font-light text-foreground mb-4 font-display">
                   Externes Hosting
                 </h3>
                 <p className="text-base leading-relaxed mb-4">
@@ -72,10 +72,10 @@ const Datenschutz = () => {
               </div>
 
               <div>
-                <h2 className="text-xl font-medium text-foreground mb-4">
+                <h2 className="text-2xl md:text-3xl font-light text-foreground mb-6 font-display">
                   3. Allgemeine Hinweise und Pflichtinformationen
                 </h2>
-                <h3 className="text-lg font-medium text-foreground mb-3">
+                <h3 className="text-xl font-light text-foreground mb-4 font-display">
                   Datenschutz
                 </h3>
                 <p className="text-base leading-relaxed mb-4">
@@ -91,7 +91,7 @@ const Datenschutz = () => {
               </div>
 
               <div>
-                <h3 className="text-lg font-medium text-foreground mb-3">
+                <h3 className="text-xl font-light text-foreground mb-4 font-display">
                   Hinweis zur verantwortlichen Stelle
                 </h3>
                 <p className="text-base leading-relaxed mb-4">
@@ -115,7 +115,7 @@ const Datenschutz = () => {
               </div>
 
               <div>
-                <h3 className="text-lg font-medium text-foreground mb-3">
+                <h3 className="text-xl font-light text-foreground mb-4 font-display">
                   Speicherdauer
                 </h3>
                 <p className="text-base leading-relaxed">
@@ -127,10 +127,10 @@ const Datenschutz = () => {
               </div>
 
               <div>
-                <h2 className="text-xl font-medium text-foreground mb-4">
+                <h2 className="text-2xl md:text-3xl font-light text-foreground mb-6 font-display">
                   4. Datenerfassung auf dieser Website
                 </h2>
-                <h3 className="text-lg font-medium text-foreground mb-3">
+                <h3 className="text-xl font-light text-foreground mb-4 font-display">
                   Cookies
                 </h3>
                 <p className="text-base leading-relaxed mb-4">
@@ -145,7 +145,7 @@ const Datenschutz = () => {
               </div>
 
               <div>
-                <h3 className="text-lg font-medium text-foreground mb-3">
+                <h3 className="text-xl font-light text-foreground mb-4 font-display">
                   Server-Log-Dateien
                 </h3>
                 <p className="text-base leading-relaxed mb-4">
@@ -167,7 +167,7 @@ const Datenschutz = () => {
               </div>
 
               <div>
-                <h3 className="text-lg font-medium text-foreground mb-3">
+                <h3 className="text-xl font-light text-foreground mb-4 font-display">
                   Kontaktformular
                 </h3>
                 <p className="text-base leading-relaxed mb-4">
@@ -184,7 +184,7 @@ const Datenschutz = () => {
               </div>
 
               <div>
-                <h2 className="text-xl font-medium text-foreground mb-4">
+                <h2 className="text-2xl md:text-3xl font-light text-foreground mb-6 font-display">
                   5. Ihre Rechte
                 </h2>
                 <p className="text-base leading-relaxed mb-4">
