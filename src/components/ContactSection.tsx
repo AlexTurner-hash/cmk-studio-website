@@ -8,48 +8,51 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Mail, Phone, Loader2 } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
-// Validation schema with security-focused constraints
-const contactFormSchema = z.object({
+// Factory function to create validation schema with translations
+const createContactFormSchema = (t: any) => z.object({
   firstName: z
     .string()
     .trim()
-    .min(1, "Vorname ist erforderlich")
-    .max(50, "Vorname darf maximal 50 Zeichen lang sein")
-    .regex(/^[a-zA-ZäöüÄÖÜß\s-]+$/, "Nur Buchstaben, Leerzeichen und Bindestriche erlaubt"),
+    .min(1, t('contactForm.validationFirstName'))
+    .max(50, t('contactForm.validationFirstNameMax'))
+    .regex(/^[a-zA-ZäöüÄÖÜß\s-]+$/, t('contactForm.validationFirstNameRegex')),
   lastName: z
     .string()
     .trim()
-    .min(1, "Nachname ist erforderlich")
-    .max(50, "Nachname darf maximal 50 Zeichen lang sein")
-    .regex(/^[a-zA-ZäöüÄÖÜß\s-]+$/, "Nur Buchstaben, Leerzeichen und Bindestriche erlaubt"),
+    .min(1, t('contactForm.validationLastName'))
+    .max(50, t('contactForm.validationLastNameMax'))
+    .regex(/^[a-zA-ZäöüÄÖÜß\s-]+$/, t('contactForm.validationLastNameRegex')),
   email: z
     .string()
     .trim()
-    .email("Bitte geben Sie eine gültige E-Mail-Adresse ein")
-    .max(255, "E-Mail darf maximal 255 Zeichen lang sein")
+    .email(t('contactForm.validationEmail'))
+    .max(255, t('contactForm.validationEmailMax'))
     .toLowerCase(),
   company: z
     .string()
     .trim()
-    .max(100, "Firmenname darf maximal 100 Zeichen lang sein")
+    .max(100, t('contactForm.validationCompanyMax'))
     .optional()
     .or(z.literal("")),
   message: z
     .string()
     .trim()
-    .min(10, "Nachricht muss mindestens 10 Zeichen lang sein")
-    .max(2000, "Nachricht darf maximal 2000 Zeichen lang sein"),
+    .min(10, t('contactForm.validationMessageMin'))
+    .max(2000, t('contactForm.validationMessageMax')),
 });
-
-type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [lastSubmitTime, setLastSubmitTime] = useState(0);
   const { toast } = useToast();
+  const { t } = useLanguage();
+  
+  const contactFormSchema = createContactFormSchema(t);
+  type ContactFormValues = z.infer<typeof contactFormSchema>;
 
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
@@ -109,8 +112,8 @@ const ContactSection = () => {
 
       if (result.status === 200) {
         toast({
-          title: "Nachricht gesendet!",
-          description: "Vielen Dank für Ihre Anfrage. Wir melden uns bald bei Ihnen.",
+          title: t('contactForm.success'),
+          description: t('contactForm.successDescription'),
         });
         form.reset();
         setLastSubmitTime(now);
@@ -118,8 +121,8 @@ const ContactSection = () => {
     } catch (error) {
       console.error("Error sending email:", error);
       toast({
-        title: "Fehler beim Senden",
-        description: "Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt per E-Mail.",
+        title: t('contactForm.error'),
+        description: t('contactForm.errorDescription'),
         variant: "destructive",
       });
     } finally {
@@ -132,10 +135,10 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
-            Bereit für Ihre Kollektion?
+            {t('contactForm.title')}
           </h2>
           <p className="text-lg md:text-xl text-clay/70 max-w-3xl mx-auto leading-relaxed font-body">
-            Sprechen Sie mit uns über Ihr Projekt – und starten Sie Ihre Produktion mit einem erfahrenen Partner.
+            {t('contactForm.subtitle')}
           </p>
         </div>
 
@@ -143,7 +146,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <Card className="shadow-warm">
             <CardHeader>
-              <CardTitle className="text-xl text-foreground font-display font-light">Nachricht senden</CardTitle>
+              <CardTitle className="text-xl text-foreground font-display font-light">{t('contactForm.send')}</CardTitle>
             </CardHeader>
             <CardContent>
               <Form {...form}>
@@ -154,9 +157,9 @@ const ContactSection = () => {
                       name="firstName"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Vorname</FormLabel>
+                          <FormLabel>{t('contactForm.firstName')}</FormLabel>
                           <FormControl>
-                            <Input placeholder="Vorname" {...field} />
+                            <Input placeholder={t('contactForm.firstName')} {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -167,9 +170,9 @@ const ContactSection = () => {
                       name="lastName"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Nachname</FormLabel>
+                          <FormLabel>{t('contactForm.lastName')}</FormLabel>
                           <FormControl>
-                            <Input placeholder="Nachname" {...field} />
+                            <Input placeholder={t('contactForm.lastName')} {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -181,9 +184,9 @@ const ContactSection = () => {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>E-Mail Adresse</FormLabel>
+                        <FormLabel>{t('contactForm.email')}</FormLabel>
                         <FormControl>
-                          <Input placeholder="E-Mail Adresse" type="email" {...field} />
+                          <Input placeholder={t('contactForm.email')} type="email" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -194,9 +197,9 @@ const ContactSection = () => {
                     name="company"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Unternehmen (Optional)</FormLabel>
+                        <FormLabel>{t('contactForm.company')}</FormLabel>
                         <FormControl>
-                          <Input placeholder="Unternehmen" {...field} />
+                          <Input placeholder={t('contactForm.company')} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -207,10 +210,10 @@ const ContactSection = () => {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Nachricht</FormLabel>
+                        <FormLabel>{t('contactForm.message')}</FormLabel>
                         <FormControl>
                           <Textarea 
-                            placeholder="Erzählen Sie uns von Ihrem Projekt..." 
+                            placeholder={t('contactForm.messagePlaceholder')} 
                             className="min-h-[120px]"
                             {...field}
                           />
@@ -227,10 +230,10 @@ const ContactSection = () => {
                     {isSubmitting ? (
                       <>
                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                        Wird gesendet...
+                        {t('contactForm.sending')}
                       </>
                     ) : (
-                      "Jetzt anfragen"
+                      t('contactForm.send')
                     )}
                   </Button>
                 </form>

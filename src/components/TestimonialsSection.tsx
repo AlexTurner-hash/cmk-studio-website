@@ -1,30 +1,18 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import testimonialStefanie from "@/assets/testimonial-stefanie-diem.jpg";
 import testimonialMerz from "@/assets/testimonial-merz.jpg";
 import testimonialLena from "@/assets/testimonial-lena-mantler.jpg";
 
 const TestimonialsSection = () => {
-  const testimonials = [
-    {
-      quote: "Unglaublich zuverlässig, freundlich und mit großem Fachwissen in Sachen Bekleidung und Produktion. Das Verständnis für Materialien, insbesondere Strickwaren, ist wirklich wertvoll.",
-      client: "Gitta und Peter Plotnicki",
-      company: "Merz b. Schwanen",
-      image: testimonialMerz
-    },
-    {
-      quote: "...versteht Streetwear genauso wie High Fashion und spricht auch die Sprache von Creators. CMK macht aus Moods und Ideen eine fertige Kollektion und guidet einen durch den gesamten Prozess.",
-      client: "Lena Mantler",
-      company: "Model, Creator, mánt",
-      image: testimonialLena
-    },
-    {
-      quote: "Als Unternehmerin muss man sich auf seine Ziele und diversen Projekte konzentrieren. Ein Partner wie CMK setzt unsere Werte und unsere Ansprüche an Qualität und Verlässlichkeit um. Das ist ein echtes Geschenk.",
-      client: "Stefanie Diem",
-      company: "lila loves it",
-      image: testimonialStefanie
-    }
-  ];
+  const { t } = useLanguage();
+  
+  const testimonialImages = [testimonialMerz, testimonialLena, testimonialStefanie];
+  const testimonials = (t('testimonialsAbout.testimonials') as unknown as any[]).map((testimonial: any, index: number) => ({
+    ...testimonial,
+    image: testimonialImages[index]
+  }));
 
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
@@ -56,7 +44,7 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto bg-white rounded-lg p-8 md:p-12 shadow-lg">
           <h2 className="text-3xl md:text-4xl font-light mb-8 text-foreground font-display text-center">
-            Über uns
+            {t('testimonialsAbout.title')}
           </h2>
           <Carousel 
             className="w-full" 
