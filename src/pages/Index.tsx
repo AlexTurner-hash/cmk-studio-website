@@ -8,7 +8,7 @@ import ServicesOfferedSection from "@/components/ServicesOfferedSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import SustainabilitySection from "@/components/SustainabilitySection";
 import FAQSection from "@/components/FAQSection";
-import AboutSection from "@/components/AboutSection";
+import FactoryImageSection from "@/components/FactoryImageSection";
 
 import ContactSection from "@/components/ContactSection";
 import InsightsPreviewSection from "@/components/InsightsPreviewSection";
@@ -48,7 +48,7 @@ const Index = () => {
       <ProductCategorySlider />
       <ServicesOfferedSection />
       
-      <AboutSection />
+      <FactoryImageSection />
       <SustainabilitySection />
       <FAQSection />
       <InsightsPreviewSection />
