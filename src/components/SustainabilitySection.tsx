@@ -28,7 +28,7 @@ const SustainabilitySection = () => {
   ];
 
   return (
-    <section className="py-8 md:py-12 bg-background">
+    <section className="pt-0 pb-8 md:pb-12 bg-background">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
