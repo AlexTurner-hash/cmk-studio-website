@@ -114,6 +114,9 @@ const ServicesSection = () => {
         </div>
 
         {/* Portfolio Mosaic */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-light text-foreground font-display">100% individuelle Produktion</h2>
+        </div>
         <div className="mb-16">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 bg-gradient-to-b from-gray-50 to-white">
             {portfolioImages.map((image, index) => (
