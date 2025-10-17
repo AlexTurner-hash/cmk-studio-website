@@ -7,12 +7,6 @@ import testimonialLena from "@/assets/testimonial-lena-mantler.jpg";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      quote: "Als Unternehmerin muss man sich auf seine Ziele und diversen Projekte konzentrieren. Ein Partner wie CMK setzt unsere Werte und unsere Ansprüche an Qualität und Verlässlichkeit um. Das ist ein echtes Geschenk.",
-      client: "Stefanie Diem",
-      company: "lila loves it",
-      image: testimonialStefanie
-    },
-    {
       quote: "Unglaublich zuverlässig, freundlich und mit großem Fachwissen in Sachen Bekleidung und Produktion. Das Verständnis für Materialien, insbesondere Strickwaren, ist wirklich wertvoll.",
       client: "Gitta und Peter Plotnicki",
       company: "Merz b. Schwanen",
@@ -23,6 +17,12 @@ const TestimonialsSection = () => {
       client: "Lena Mantler",
       company: "Model, Creator, mánt",
       image: testimonialLena
+    },
+    {
+      quote: "Als Unternehmerin muss man sich auf seine Ziele und diversen Projekte konzentrieren. Ein Partner wie CMK setzt unsere Werte und unsere Ansprüche an Qualität und Verlässlichkeit um. Das ist ein echtes Geschenk.",
+      client: "Stefanie Diem",
+      company: "lila loves it",
+      image: testimonialStefanie
     }
   ];
 
@@ -112,7 +112,7 @@ const TestimonialsSection = () => {
               <button 
                 key={index} 
                 className={`w-2 h-2 rounded-full transition-colors duration-200 ${
-                  index + 1 === current ? 'bg-white' : 'bg-white/30'
+                  index + 1 === current ? 'bg-foreground' : 'bg-muted-foreground/30'
                 }`} 
                 onClick={() => api?.scrollTo(index)} 
               />
