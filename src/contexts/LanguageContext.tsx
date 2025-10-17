@@ -61,7 +61,7 @@ const translationsDE = {
   intro: {
     title: 'Textilproduktion neu gedacht',
     subtitle: 'Wir sind Ihr verlässlicher Partner für die Realisierung von Modekolektionen – von der ersten Idee bis zur fertigen Kollektion.',
-    description: 'Mit über 20 Jahren Erfahrung und einem Netzwerk von mehr als 100 spezialisierten Produktionsstätten in Europa begleiten wir Sie durch den gesamten Produktionsprozess. Wir verbinden traditionelles Handwerk mit modernen Produktionsmethoden und stellen sicher, dass Ihre Vision unter höchsten Qualitäts- und Nachhaltigkeitsstandards umgesetzt wird.'
+    description: 'Mit über 20 Jahren Erfahrung und einem Netzwerk spezialisierter Produktionsstätten in Europa begleiten wir Sie durch den gesamten Produktionsprozess. Wir verbinden traditionelles Handwerk mit modernen Produktionsmethoden und stellen sicher, dass Ihre Vision unter höchsten Qualitäts- und Nachhaltigkeitsstandards umgesetzt wird.'
   },
   services: {
     title: 'Unsere Expertise',
