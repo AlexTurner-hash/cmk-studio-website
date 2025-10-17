@@ -1,15 +1,13 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-
 const Datenschutz = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       
       {/* Header Section */}
       <section className="pt-32 pb-16 bg-background">
         <div className="container mx-auto px-6">
-          <h1 className="text-4xl font-black leading-none mb-6 font-display text-foreground text-center">
+          <h1 className="leading-none mb-6 font-display text-foreground text-center text-4xl font-normal">
             Datenschutzerklärung
           </h1>
         </div>
@@ -216,8 +214,6 @@ const Datenschutz = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Datenschutz;
