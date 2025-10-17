@@ -12,13 +12,9 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   
-  if (loading) return null;
-  
-  const navData = content.navigation || {};
-  const navItems = navData.items || [];
-  
   // Check if we're on insights page or any insights subpage
   const isInsightsPage = location.pathname.startsWith('/insights');
+  
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -31,6 +27,10 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  if (loading) return null;
+  
+  const navData = content.navigation || {};
+  const navItems = navData.items || [];
 
   const handleNavClick = (href: string) => {
     setIsMenuOpen(false);
