@@ -57,11 +57,11 @@ const TestimonialsSection = () => {
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index}>
-                  <div className="flex flex-col md:flex-row gap-8 md:gap-10 items-center py-4">
+                  <div className="flex flex-col md:flex-row gap-6 items-center md:items-start py-4">
                     {/* Image */}
                     {testimonial.image && (
-                      <div className="w-32 h-32 md:w-1/2 md:h-auto flex-shrink-0">
-                        <div className="md:aspect-square overflow-hidden rounded-lg md:rounded-none">
+                      <div className="w-40 h-40 md:w-48 md:h-48 flex-shrink-0">
+                        <div className="w-full h-full overflow-hidden">
                           <img 
                             src={testimonial.image} 
                             alt={testimonial.client}
@@ -73,7 +73,7 @@ const TestimonialsSection = () => {
                     )}
                     
                     {/* Quote Content */}
-                    <div className={`flex-1 flex flex-col justify-center ${!testimonial.image ? 'text-center max-w-3xl mx-auto' : ''}`}>
+                    <div className="flex-1 flex flex-col justify-center">
                       <blockquote className="text-lg md:text-xl font-extralight tracking-wide leading-relaxed font-body mb-6 italic text-muted-foreground">
                         „{testimonial.quote}"
                       </blockquote>
