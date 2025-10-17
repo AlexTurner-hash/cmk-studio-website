@@ -1,4 +1,4 @@
-import factoryImage from "@/assets/sustainable-textile-factory.jpg";
+import factoryImage from "@/assets/textile-factory.jpg";
 
 const FactoryImageSection = () => {
   return (
@@ -9,7 +9,7 @@ const FactoryImageSection = () => {
           <div className="relative overflow-hidden shadow-elegant">
             <img 
               src={factoryImage} 
-              alt="Sustainable textile manufacturing facility with eco-friendly production" 
+              alt="Modern textile manufacturing facility" 
               className="w-full h-96 md:h-[500px] object-cover" 
               loading="lazy" 
             />
