@@ -115,7 +115,8 @@ const ServicesSection = () => {
 
         {/* Portfolio Mosaic */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-light text-foreground font-display">100% individuelle Produktion</h2>
+          <h2 className="text-3xl md:text-4xl font-light text-foreground font-display mb-6">100% individuelle Produktion</h2>
+          <p className="text-body-large text-clay/80 max-w-4xl mx-auto">Von Knitwear, Denim und Sportswear hin zu klassischen Basics und Accessoires. Wir produzieren frei nach ihren Wünschen. Und beraten.</p>
         </div>
         <div className="mb-16">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 bg-gradient-to-b from-gray-50 to-white">
