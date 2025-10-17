@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { useContent } from "@/hooks/useContent";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -48,14 +47,9 @@ const contactFormSchema = z.object({
 type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 const ContactSection = () => {
-  const { content, loading } = useContent();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [lastSubmitTime, setLastSubmitTime] = useState(0);
   const { toast } = useToast();
-  
-  if (loading) return null;
-  
-  const contactData = content.contact || {};
 
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
@@ -138,10 +132,10 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
-            {contactData.title}
+            Bereit für Ihre Kollektion?
           </h2>
           <p className="text-lg md:text-xl text-clay/70 max-w-3xl mx-auto leading-relaxed font-body">
-            {contactData.subtitle}
+            Sprechen Sie mit uns über Ihr Projekt – und starten Sie Ihre Produktion mit einem erfahrenen Partner.
           </p>
         </div>
 

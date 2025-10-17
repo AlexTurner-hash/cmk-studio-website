@@ -1,35 +1,36 @@
 import { ArrowLeftRight, Euro, Leaf, Lightbulb } from "lucide-react";
-import { useContent } from "@/hooks/useContent";
-
 const WhyUsSection = () => {
-  const { content, loading } = useContent();
-  
-  if (loading) return null;
-  
-  const whyUs = content.whyUs || {};
-  const reasons = whyUs.reasons || [];
-  
-  const iconMap: Record<string, any> = {
-    ArrowLeftRight,
-    Euro,
-    Leaf,
-    Lightbulb
-  };
-  
+  const reasons = [{
+    icon: ArrowLeftRight,
+    title: "End-to-End Service",
+    description: "Beratung, Produktion, Logistik in einem Prozess"
+  }, {
+    icon: Euro,
+    title: "Europäische Fertigung",
+    description: "Qualität & Nähe statt lange Lieferketten"
+  }, {
+    icon: Leaf,
+    title: "Nachhaltige Prozesse",
+    description: "geprüfte Fabriken, faire Arbeitsbedingungen"
+  }, {
+    icon: Lightbulb,
+    title: "Strategische Beratung",
+    description: "von der Idee bis zur Serienproduktion"
+  }];
   return <section className="section-padding bg-background">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
-            {whyUs.title}
+            Unsere Stärken
           </h2>
           
         </div>
 
         {/* Reasons Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-          {reasons.map((reason: any, index: number) => {
-          const IconComponent = iconMap[reason.icon] || Lightbulb;
+          {reasons.map((reason, index) => {
+          const IconComponent = reason.icon;
           return <div key={index} className="group">
                 {/* Icon */}
                 <div className="flex justify-start mb-4">

@@ -9,14 +9,10 @@ import zeitFurBrotLogo from "@/assets/logo-zeit-fur-brot.png";
 import coffeeFellowsLogo from "@/assets/logo-coffee-fellows-new.png";
 import prinzenhausLogo from "@/assets/logo-prinzenhaus-new.png";
 import maiamiLogo from "@/assets/logo-maiami.png";
-import { useContent } from "@/hooks/useContent";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const IntroSection = () => {
-  const { content, loading } = useContent();
-  
-  if (loading) return null;
-  
-  const intro = content.intro || {};
+  const { t } = useLanguage();
   const clientLogos = [
     { src: aubadeLogo, name: "Aubade", type: "logo" },
     { src: felinaLogo, name: "Felina", type: "logo" },
@@ -39,11 +35,11 @@ const IntroSection = () => {
     <section className="section-padding">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
-          {intro.title}
+          {t('intro.title')}
         </h2>
         
         <p className="text-body-large text-clay/80 max-w-4xl mx-auto mb-16">
-          {intro.description}
+          {t('intro.description')}
         </p>
 
         {/* Scrolling Logos */}
