@@ -1,32 +1,21 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
 import testimonialStefanie from "@/assets/testimonial-stefanie-diem.jpg";
+import { useContent } from "@/hooks/useContent";
 
 const TestimonialsSection = () => {
-  const testimonials = [
-    {
-      quote: "Als Unternehmerin muss man sich auf seine Ziele und diversen Projekte konzentrieren. Ein Partner wie CMK setzt unsere Werte und unsere Ansprüche an Qualität und Verlässlichkeit um. Das ist ein echtes Geschenk.",
-      client: "Stefanie Diem",
-      company: "lila loves it",
-      image: testimonialStefanie
-    },
-    {
-      quote: "Claudias Erfahrung mit Fashion-Labels jeder Größe, gepaart mit ihrem Background als Designerin, ist selten. Ihr Input ist einfach wertvoll.",
-      client: "Maiami",
-      company: "",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=600&fit=crop"
-    },
-    {
-      quote: "CMK liefert Top-Qualität aus Europa, völlig individualisiert und zu wettbewerbsfähigen Preisen. Und das mit persönlicher Betreuung – das können die Großen nicht.",
-      client: "Merz b. Schwanen",
-      company: "",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop"
-    }
-  ];
-
+  const { content, loading } = useContent();
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
+  
+  if (loading) return null;
+  
+  const testimonialsData = content.testimonials || {};
+  const testimonials = (testimonialsData.items || []).map((item: any) => ({
+    ...item,
+    image: item.imageName ? testimonialStefanie : item.imageUrl
+  }));
 
   useEffect(() => {
     if (!api) {
@@ -54,7 +43,7 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto bg-white rounded-lg p-8 md:p-12 shadow-lg">
           <h2 className="text-3xl md:text-4xl font-light mb-8 text-foreground font-display text-center">
-            Was unsere KundInnen sagen
+            {testimonialsData.title}
           </h2>
           <Carousel 
             className="w-full" 

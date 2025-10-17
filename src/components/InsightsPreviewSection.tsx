@@ -4,34 +4,24 @@ import { Link } from "react-router-dom";
 import blogImage1 from "@/assets/blog-erste-modekollektion-new.jpg";
 import blogImage2 from "@/assets/blog-workwear-employer-branding.jpg";
 import blogImage3 from "@/assets/blog-luxury-hospitality-collections.jpg";
+import { useContent } from "@/hooks/useContent";
 
 const InsightsPreviewSection = () => {
-  const featuredPosts = [
-    {
-      id: "erste-modekollektion-planen",
-      title: "Wie Sie Ihre erste Modekollektion planen – ein Leitfaden für Startups und Creator",
-      excerpt: "Von der ersten Idee bis zur fertigen Kollektion: Entdecken Sie die wichtigsten Schritte für eine erfolgreiche Modekollektion und vermeiden Sie typische Anfängerfehler.",
-      image: blogImage1,
-      readTime: "8 min",
-      category: "Startup-Guide"
-    },
-    {
-      id: "workwear-employer-branding",
-      title: "Workwear als Employer Branding: Warum billige T-Shirt-Drucke nicht mehr reichen",
-      excerpt: "Erfahren Sie, wie hochwertige, nachhaltige Arbeitskleidung zum Aushängeschild Ihres Unternehmens wird und warum Mitarbeiter heute Wert auf Komfort, Qualität und individuelle Details legen.",
-      image: blogImage2,
-      readTime: "6 min",
-      category: "Employer Branding"
-    },
-    {
-      id: "luxury-hospitality-collections",
-      title: "Luxus zum Mitnehmen: Wie Hotels und Spas mit exklusiven Kollektionen neue Umsätze generieren",
-      excerpt: "Von Yoga-Apparel bis zu Premium-Badtextilien: Erfahren Sie, wie High-End-Hotels und Spa-Resorts durch hochwertige Eigenmarken ihre Gäste begeistern.",
-      image: blogImage3,
-      readTime: "7 min",
-      category: "Hospitality"
-    }
-  ];
+  const { content, loading } = useContent();
+  
+  if (loading) return null;
+  
+  const insightsData = content.insights || {};
+  const imageMap: Record<string, string> = {
+    "blog-erste-modekollektion-new.jpg": blogImage1,
+    "blog-workwear-employer-branding.jpg": blogImage2,
+    "blog-luxury-hospitality-collections.jpg": blogImage3
+  };
+  
+  const featuredPosts = (insightsData.featuredPosts || []).map((post: any) => ({
+    ...post,
+    image: imageMap[post.imageName] || blogImage1
+  }));
 
   return (
     <section className="section-padding bg-background">
@@ -39,10 +29,10 @@ const InsightsPreviewSection = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
-            Insights
+            {insightsData.title}
           </h2>
           <p className="text-body-large max-w-3xl mx-auto">
-            Expertenwissen rund um nachhaltige Textilproduktion, Kollektionsplanung und erfolgreiche Markenentwicklung.
+            {insightsData.subtitle}
           </p>
         </div>
 
@@ -90,7 +80,7 @@ const InsightsPreviewSection = () => {
         <div className="text-center">
           <Button size="lg" variant="outline" className="bg-white text-black border-black hover:bg-black hover:text-white" asChild>
             <Link to="/insights">
-              Alle Insights ansehen
+              {insightsData.ctaText}
             </Link>
           </Button>
         </div>

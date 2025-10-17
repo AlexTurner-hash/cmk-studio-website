@@ -1,11 +1,16 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useContent } from "@/hooks/useContent";
 
 const ServicesSection = () => {
+  const { content, loading } = useContent();
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  const serviceCategories = [{
+  
+  if (loading) return null;
+  
+  const services = content.services || {};
+  const serviceCategories = services.categories || [{
     id: "corporates",
     title: "Unternehmen",
     items: [{
@@ -82,8 +87,8 @@ const ServicesSection = () => {
     <section id="services" className="pb-8 md:pb-12 lg:pb-16 pt-8 md:pt-12 lg:pt-16">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">Wir machen Ideen tragbar.</h2>
-          <p className="text-body-large text-clay/80 max-w-4xl mx-auto">Unsere KundInnen sind unterschiedlich – von Creator bis Konzern. Gemeinsam haben sie den Anspruch, Kollektionen professionell umzusetzen – mit einem einzigen Ansprechpartner.</p>
+          <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">{services.title}</h2>
+          <p className="text-body-large text-clay/80 max-w-4xl mx-auto">{services.subtitle}</p>
         </div>
 
         {/* Interactive Service Grid */}
@@ -110,7 +115,7 @@ const ServicesSection = () => {
         {/* CTA Button */}
         <div className="text-center mb-16">
           <a href="#contact" className="btn-accent">
-            Jetzt anfragen
+            {services.cta}
           </a>
         </div>
 

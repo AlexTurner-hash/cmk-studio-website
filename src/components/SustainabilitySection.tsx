@@ -4,26 +4,21 @@ import rwsLogo from "@/assets/rws-logo.png";
 import bsciLogo from "@/assets/bsci-logo.png";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useContent } from "@/hooks/useContent";
 
 const SustainabilitySection = () => {
-  const certifications = [
-    {
-      logo: oekoTexLogo,
-      name: "OEKO-TEX Standard 100"
-    },
-    {
-      logo: gotsLogo,
-      name: "GOTS"
-    },
-    {
-      logo: rwsLogo,
-      name: "Responsible Wool"
-    },
-    {
-      logo: bsciLogo,
-      name: "BSCI"
-    }
-  ];
+  const { content, loading } = useContent();
+  
+  if (loading) return null;
+  
+  const sustainability = content.sustainability || {};
+  
+  const logoMap: Record<string, string> = {
+    "oeko-tex-logo.png": oekoTexLogo,
+    "gots-logo.png": gotsLogo,
+    "rws-logo.png": rwsLogo,
+    "bsci-logo.png": bsciLogo
+  };
 
   return (
     <section className="section-padding bg-background">
@@ -31,14 +26,14 @@ const SustainabilitySection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">
-            Nachhaltigkeit nach europäischen Standards
+            {sustainability.title}
           </h2>
           <div className="max-w-3xl mx-auto text-body-large">
             <p>
-              90% unserer Produktionsstätten befinden sich in Europa. Wir setzen auf Materialrecycling, zertifizierte Nachhaltigkeit und langlebige Qualität. Transportwege werden optimiert, um CO2-Emissionen zu minimieren.
+              {sustainability.description1}
             </p>
             <p className="mt-4">
-              Auf Wunsch bieten wir unterschiedliche Nachhaltigkeitssiegel für die Produktion und die fertigen Produkte an, darunter GOTS, OEKO-TEX Standard 100, Responsible Wool, BSCI und mehr.
+              {sustainability.description2}
             </p>
           </div>
         </div>
@@ -46,10 +41,10 @@ const SustainabilitySection = () => {
         {/* Certifications */}
         <div className="mb-12">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            {certifications.map((cert, index) => (
+            {(sustainability.certifications || []).map((cert: any, index: number) => (
               <div key={index} className="flex items-center justify-center group">
                 <img 
-                  src={cert.logo}
+                  src={logoMap[cert.imageName]}
                   alt={`${cert.name} Zertifizierung Logo`}
                   className="h-16 w-16 object-contain group-hover:scale-110 transition-transform duration-300"
                 />
@@ -62,7 +57,7 @@ const SustainabilitySection = () => {
         <div className="text-center">
           <Button size="lg" variant="outline" className="bg-white text-black border-black hover:bg-black hover:text-white" asChild>
             <Link to="/insights/nachhaltige-textilproduktion-europa">
-              Mehr zum Thema
+              {sustainability.ctaText}
             </Link>
           </Button>
         </div>

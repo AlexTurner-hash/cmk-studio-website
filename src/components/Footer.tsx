@@ -1,6 +1,13 @@
 import logo from "@/assets/cmk-logo-white-new.png";
+import { useContent } from "@/hooks/useContent";
 
 const Footer = () => {
+  const { content, loading } = useContent();
+  
+  if (loading) return null;
+  
+  const footer = content.footer || {};
+  
   return (
     <footer className="bg-clay text-white py-12">
       <div className="container mx-auto px-6">
@@ -9,7 +16,7 @@ const Footer = () => {
           <div>
             <img src={logo} alt="CMK.Studio" className="h-6 mb-4" />
             <p className="text-white/70 text-sm leading-relaxed font-body">
-              CMK.Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa – damit Marken, Creator und Unternehmen Kollektionen effizient, hochwertig und transparent realisieren können.
+              {footer.description}
             </p>
           </div>
 

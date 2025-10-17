@@ -1,0 +1,341 @@
+{
+  "hero": {
+    "title1": "Ihre Kollektion.",
+    "title2": "Unsere Produktion.",
+    "subtitle": "CMK.Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa – damit Marken, Creator und Unternehmen Kollektionen effizient, hochwertig und transparent realisieren können.",
+    "cta": "Projekt starten",
+    "imageAlt": "Warm fashion design consultation meeting between CMK.Studio team and client in bright, welcoming studio"
+  },
+  "intro": {
+    "title": "Textilproduktion neu gedacht",
+    "description": "Mit über 20 Jahren Erfahrung und einem Netzwerk von mehr als 100 spezialisierten Produktionsstätten in Europa begleiten wir Sie durch den gesamten Produktionsprozess. Wir verbinden traditionelles Handwerk mit modernen Produktionsmethoden und stellen sicher, dass Ihre Vision unter höchsten Qualitäts- und Nachhaltigkeitsstandards umgesetzt wird."
+  },
+  "services": {
+    "title": "Wir machen Ideen tragbar.",
+    "subtitle": "Unsere KundInnen sind unterschiedlich – von Creator bis Konzern. Gemeinsam haben sie den Anspruch, Kollektionen professionell umzusetzen – mit einem einzigen Ansprechpartner.",
+    "categories": [
+      {
+        "id": "corporates",
+        "title": "Unternehmen",
+        "items": [
+          {
+            "id": "mitarbeiter-bekleidung",
+            "title": "Mitarbeiter-Bekleidung",
+            "description": "Professionelle Workwear und Uniformen für Ihr Unternehmen."
+          },
+          {
+            "id": "private-labels",
+            "title": "Private Labels",
+            "description": "Exklusive Kollektionen unter Ihrem Label."
+          },
+          {
+            "id": "hotel-resort",
+            "title": "Hotels & Resorts",
+            "description": "Elegante Hospitality-Bekleidung für Hotels und Resorts."
+          }
+        ]
+      },
+      {
+        "id": "creators",
+        "title": "Creator",
+        "items": [
+          {
+            "id": "fashion-drops",
+            "title": "Fashion Drops",
+            "description": "Limitierte Fashion-Releases für Influencer und Content Creator."
+          },
+          {
+            "id": "merch",
+            "title": "Merch",
+            "description": "Hochwertiges Merchandise für Ihre Community."
+          },
+          {
+            "id": "kollektionen",
+            "title": "Kollektionen",
+            "description": "Umfassende Kollektionen für Creator und Influencer."
+          }
+        ]
+      },
+      {
+        "id": "consulting",
+        "title": "Beratung für",
+        "items": [
+          {
+            "id": "fashion-startups",
+            "title": "Startups",
+            "description": "Beratung und Unterstützung für Fashion-Startups."
+          },
+          {
+            "id": "consultancies",
+            "title": "Consultancies",
+            "description": "Kompetenz für Unternehmensberatungen bei Due Diligence Prozessen und strategischen Analysen."
+          },
+          {
+            "id": "modeunternehmen",
+            "title": "Modeunternehmen",
+            "description": "Strategische Beratung für etablierte Modeunternehmen."
+          }
+        ]
+      }
+    ],
+    "cta": "Jetzt anfragen"
+  },
+  "servicesOffered": {
+    "title": "Alles, was eine Kollektion braucht",
+    "subtitle": "Wir bieten nicht nur Produktion, sondern eine vollständige Wertschöpfungskette – vom ersten Entwurf bis zum Versand.",
+    "items": [
+      "Farb- und Materialkonzepte",
+      "Design & Grafik",
+      "Logoentwicklung",
+      "Schnitt & Vermassung",
+      "Prototypenentwicklung",
+      "Passformberatung",
+      "Produktionsüberwachung & Qualitätskontrolle",
+      "Effiziente SKU-Planung",
+      "Strategisches Pricing",
+      "Logistik & Versand"
+    ],
+    "cta": "Jetzt anfragen"
+  },
+  "whyUs": {
+    "title": "Unsere Stärken",
+    "reasons": [
+      {
+        "title": "End-to-End Service",
+        "description": "Beratung, Produktion, Logistik in einem Prozess",
+        "icon": "ArrowLeftRight"
+      },
+      {
+        "title": "Europäische Fertigung",
+        "description": "Qualität & Nähe statt lange Lieferketten",
+        "icon": "Euro"
+      },
+      {
+        "title": "Nachhaltige Prozesse",
+        "description": "geprüfte Fabriken, faire Arbeitsbedingungen",
+        "icon": "Leaf"
+      },
+      {
+        "title": "Strategische Beratung",
+        "description": "von der Idee bis zur Serienproduktion",
+        "icon": "Lightbulb"
+      }
+    ]
+  },
+  "values": {
+    "title": "Our Values",
+    "items": [
+      {
+        "title": "MADE IN EU",
+        "description": "Alle unsere Textilien werden ausschließlich in europäischen Produktionsstätten gefertigt. Höchste Qualitätsstandards und faire Arbeitsbedingungen sind garantiert.",
+        "icon": "MapPin"
+      },
+      {
+        "title": "NACHHALTIGKEIT FIRST",
+        "description": "Umweltschutz steht bei uns an erster Stelle. Von der Materialauswahl bis zur Produktion achten wir auf minimale Umweltbelastung und ressourcenschonende Verfahren.",
+        "icon": "Leaf"
+      },
+      {
+        "title": "ÖKO-ZERTIFIZIERT",
+        "description": "Unsere Textilien erfüllen strenge Öko-Standards wie GOTS und Grüner Knopf. Zertifizierte Bio-Materialien und schadstofffreie Produktion für Ihre Sicherheit.",
+        "icon": "Award"
+      }
+    ]
+  },
+  "sustainability": {
+    "title": "Nachhaltigkeit nach europäischen Standards",
+    "description1": "90% unserer Produktionsstätten befinden sich in Europa. Wir setzen auf Materialrecycling, zertifizierte Nachhaltigkeit und langlebige Qualität. Transportwege werden optimiert, um CO2-Emissionen zu minimieren.",
+    "description2": "Auf Wunsch bieten wir unterschiedliche Nachhaltigkeitssiegel für die Produktion und die fertigen Produkte an, darunter GOTS, OEKO-TEX Standard 100, Responsible Wool, BSCI und mehr.",
+    "ctaText": "Mehr zum Thema",
+    "certifications": [
+      {
+        "name": "OEKO-TEX Standard 100",
+        "imageName": "oeko-tex-logo.png"
+      },
+      {
+        "name": "GOTS",
+        "imageName": "gots-logo.png"
+      },
+      {
+        "name": "Responsible Wool",
+        "imageName": "rws-logo.png"
+      },
+      {
+        "name": "BSCI",
+        "imageName": "bsci-logo.png"
+      }
+    ]
+  },
+  "about": {
+    "title": "Was wir leisten",
+    "imageAlt": "Modern textile manufacturing facility",
+    "services": [
+      "Farb- und Material Konzepte",
+      "Kollektionsrahmenplanung",
+      "SKU Effizienzplanung",
+      "Design und Grafikdesign",
+      "Logoentwicklung",
+      "Schnitt und Vermassung",
+      "Strategisches Pricing",
+      "Prototypenentwicklung",
+      "Paßformberatung",
+      "Produktionsüberwachung",
+      "Qualitätskontrolle",
+      "Zuverlässige Logistik"
+    ]
+  },
+  "testimonials": {
+    "title": "Was unsere KundInnen sagen",
+    "items": [
+      {
+        "quote": "Als Unternehmerin muss man sich auf seine Ziele und diversen Projekte konzentrieren. Ein Partner wie CMK setzt unsere Werte und unsere Ansprüche an Qualität und Verlässlichkeit um. Das ist ein echtes Geschenk.",
+        "client": "Stefanie Diem",
+        "company": "lila loves it",
+        "imageName": "testimonial-stefanie-diem.jpg"
+      },
+      {
+        "quote": "Claudias Erfahrung mit Fashion-Labels jeder Größe, gepaart mit ihrem Background als Designerin, ist selten. Ihr Input ist einfach wertvoll.",
+        "client": "Maiami",
+        "company": "",
+        "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=600&fit=crop"
+      },
+      {
+        "quote": "CMK liefert Top-Qualität aus Europa, völlig individualisiert und zu wettbewerbsfähigen Preisen. Und das mit persönlicher Betreuung – das können die Großen nicht.",
+        "client": "Merz b. Schwanen",
+        "company": "",
+        "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "items": [
+      {
+        "question": "Wie lange dauert die Produktion?",
+        "answer": "Je nach Projekt zwischen 4 und 12 Wochen, abhängig von Material, Auflage und Komplexität."
+      },
+      {
+        "question": "Welche Produkte können hergestellt werden?",
+        "answer": "Von T-Shirts über Hoodies bis hin zu Caps, Taschen und Workwear – die Bandbreite reicht von Streetwear bis Corporate Clothing."
+      },
+      {
+        "question": "Kümmert ihr euch auch um den Versand?",
+        "answer": "Ja. Wir übernehmen Fulfillment, Verpackung, Etikettierung, Zoll und weltweiten Versand."
+      },
+      {
+        "question": "Ist nachhaltige Produktion teurer?",
+        "answer": "Nicht zwingend. Die Kosten hängen von Material und Produktionsstandort ab. Wir beraten transparent zu Preis-Leistungs-Verhältnissen."
+      },
+      {
+        "question": "Was unterscheidet CMK.Studio von klassischen Produzenten?",
+        "answer": "Wir sind kein reiner Produzent, sondern strategischer Partner mit Branchen-Expertise. Von Kollektionsplanung über Design und Schnittentwicklung bis zu Produktion, Qualitätskontrolle und Logistik – alles aus einer Hand, mit einem Ansprechpartner."
+      },
+      {
+        "question": "Welche Produktkategorien produziert ihr?",
+        "answer": "Unsere Expertise umfasst Lingerie & Swimwear, Premium Workwear & Corporate Fashion, Hospitality-Kollektionen, hochwertige Streetwear sowie Knitwear. Besonders Knitwear erfordert spezialisiertes Know-how – von der Garnauswahl über Maschinenprogrammierung bis zur Passform entwickeln wir alles von feinen Cashmere-Pieces bis zu innovativer Performance-Knitwear."
+      },
+      {
+        "question": "Wie unterstützt ihr bei Due Diligence und Transparenz-Anforderungen?",
+        "answer": "Wir dokumentieren die gesamte Lieferkette transparent – von Materialherkunft bis Fertigung. Alle Partner sind GOTS-, OEKO-TEX-, BSCI- oder RWS-zertifiziert. Ideal für Due Diligence-Prozesse, Investoren-Prüfungen und die Vorbereitung auf den EU Digital Product Pass ab 2027."
+      },
+      {
+        "question": "Kann Workwear wirklich ein Employer Branding Tool sein?",
+        "answer": "Absolut. Hochwertige, nachhaltige Arbeitskleidung mit durchdachten Details wird zum Aushängeschild Ihres Unternehmens. Mitarbeiter erwarten heute mehr als bedruckte Standard-T-Shirts – sie wollen Komfort, Qualität und ein Design, das sie gerne tragen. Das stärkt Identifikation und Arbeitgeberattraktivität."
+      },
+      {
+        "question": "Wie findet die Kommunikation und Betreuung statt?",
+        "answer": "Wir betreuen Sie persönlich durch alle Projektphasen. Neben Telefon und E-Mail sind wir auch per Video-Chat erreichbar. In Berlin und dem Rhein-Main-Gebiet bieten wir gerne auch Vor-Ort-Termine an."
+      }
+    ]
+  },
+  "insights": {
+    "title": "Insights",
+    "subtitle": "Expertenwissen rund um nachhaltige Textilproduktion, Kollektionsplanung und erfolgreiche Markenentwicklung.",
+    "featuredPosts": [
+      {
+        "id": "erste-modekollektion-planen",
+        "title": "Wie Sie Ihre erste Modekollektion planen – ein Leitfaden für Startups und Creator",
+        "excerpt": "Von der ersten Idee bis zur fertigen Kollektion: Entdecken Sie die wichtigsten Schritte für eine erfolgreiche Modekollektion und vermeiden Sie typische Anfängerfehler.",
+        "imageName": "blog-erste-modekollektion-new.jpg",
+        "readTime": "8 min",
+        "category": "Startup-Guide"
+      },
+      {
+        "id": "workwear-employer-branding",
+        "title": "Workwear als Employer Branding: Warum billige T-Shirt-Drucke nicht mehr reichen",
+        "excerpt": "Erfahren Sie, wie hochwertige, nachhaltige Arbeitskleidung zum Aushängeschild Ihres Unternehmens wird und warum Mitarbeiter heute Wert auf Komfort, Qualität und individuelle Details legen.",
+        "imageName": "blog-workwear-employer-branding.jpg",
+        "readTime": "6 min",
+        "category": "Employer Branding"
+      },
+      {
+        "id": "luxury-hospitality-collections",
+        "title": "Luxus zum Mitnehmen: Wie Hotels und Spas mit exklusiven Kollektionen neue Umsätze generieren",
+        "excerpt": "Von Yoga-Apparel bis zu Premium-Badtextilien: Erfahren Sie, wie High-End-Hotels und Spa-Resorts durch hochwertige Eigenmarken ihre Gäste begeistern.",
+        "imageName": "blog-luxury-hospitality-collections.jpg",
+        "readTime": "7 min",
+        "category": "Hospitality"
+      }
+    ],
+    "ctaText": "Alle Insights ansehen"
+  },
+  "contact": {
+    "title": "Bereit für Ihre Kollektion?",
+    "subtitle": "Sprechen Sie mit uns über Ihr Projekt – und starten Sie Ihre Produktion mit einem erfahrenen Partner.",
+    "formTitle": "Nachricht senden",
+    "labels": {
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail Adresse",
+      "company": "Unternehmen (Optional)",
+      "message": "Nachricht"
+    },
+    "placeholders": {
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail Adresse",
+      "company": "Unternehmen",
+      "message": "Erzählen Sie uns von Ihrem Projekt..."
+    },
+    "submitButton": "Jetzt anfragen",
+    "submitting": "Wird gesendet...",
+    "contactInfo": {
+      "email": "service@cmk-studio.com",
+      "phone": "030 - 35050385"
+    }
+  },
+  "navigation": {
+    "items": [
+      { "name": "START", "href": "/" },
+      { "name": "ÜBER UNS", "href": "/ueber-uns" },
+      { "name": "LEISTUNGEN", "href": "/#services" },
+      { "name": "INSIGHTS", "href": "/insights" },
+      { "name": "KONTAKT", "href": "/#contact" },
+      { "name": "IMPRESSUM", "href": "/impressum" }
+    ]
+  },
+  "footer": {
+    "description": "CMK.Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa – damit Marken, Creator und Unternehmen Kollektionen effizient, hochwertig und transparent realisieren können.",
+    "navigation": {
+      "title": "NAVIGATION",
+      "items": [
+        { "name": "Home", "href": "/" },
+        { "name": "Über uns", "href": "/ueber-uns" },
+        { "name": "Insights", "href": "/insights" },
+        { "name": "Glossar", "href": "/glossar" },
+        { "name": "Kontakt", "href": "#contact" }
+      ]
+    },
+    "contact": {
+      "title": "KONTAKT",
+      "email": "service@cmk-studio.com",
+      "phone": "030 - 35050385",
+      "address": {
+        "street": "Am Friedrichshain 34",
+        "city": "10407 Berlin"
+      }
+    },
+    "copyright": "© 2025 CMK Studio GmbH. Alle Rechte vorbehalten.",
+    "imprint": "Impressum"
+  }
+}
