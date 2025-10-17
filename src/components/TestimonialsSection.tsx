@@ -60,12 +60,12 @@ const TestimonialsSection = () => {
                   <div className="flex flex-col md:flex-row gap-8 md:gap-10 items-center py-4">
                     {/* Image */}
                     {testimonial.image && (
-                      <div className="w-full md:w-1/2 flex-shrink-0">
-                        <div className="aspect-square overflow-hidden">
+                      <div className="w-32 h-32 md:w-1/2 md:h-auto flex-shrink-0">
+                        <div className="md:aspect-square overflow-hidden rounded-lg md:rounded-none">
                           <img 
                             src={testimonial.image} 
                             alt={testimonial.client}
-                            className="w-full h-full object-cover object-center scale-110"
+                            className="w-full h-full object-cover object-center"
                             loading="lazy"
                           />
                         </div>
