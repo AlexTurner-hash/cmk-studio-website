@@ -9,7 +9,7 @@ const TestimonialsSection = () => {
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
   
-  if (loading) return null;
+  
   
   const testimonialsData = content.testimonials || {};
   const testimonials = (testimonialsData.items || []).map((item: any) => ({
@@ -37,6 +37,8 @@ const TestimonialsSection = () => {
     }, 12000);
     return () => clearInterval(interval);
   }, [api]);
+
+  if (loading) return null;
 
   return (
     <section className="py-8 md:py-12 bg-background">
