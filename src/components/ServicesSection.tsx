@@ -125,7 +125,8 @@ const ServicesSection = () => {
                 <img 
                   src={image} 
                   alt={`Portfolio image ${index + 1}`} 
-                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" 
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
               </div>
             ))}

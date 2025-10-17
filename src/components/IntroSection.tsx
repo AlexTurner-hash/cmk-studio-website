@@ -55,6 +55,7 @@ const IntroSection = () => {
                     src={client.src}
                     alt={`${client.name} logo`}
                     className="max-w-full max-h-full object-contain"
+                    loading="lazy"
                   />
                 ) : (
                   <span className="text-foreground text-sm font-medium text-center px-2">

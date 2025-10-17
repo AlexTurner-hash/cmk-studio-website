@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company */}
           <div>
-            <img src={logo} alt="CMK.Studio" className="h-6 mb-4" />
+            <img src={logo} alt="CMK.Studio" className="h-6 mb-4" loading="lazy" />
             <p className="text-white/70 text-sm leading-relaxed font-body">
               CMK.Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa – damit Marken, Creator und Unternehmen Kollektionen effizient, hochwertig und transparent realisieren können.
             </p>
@@ -43,11 +43,15 @@ const Footer = () => {
 
         <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
           <p>© 2025 CMK Studio GmbH. Alle Rechte vorbehalten.</p>
-          <p className="mt-2 md:mt-0">
+          <div className="mt-2 md:mt-0 flex gap-4">
             <a href="/impressum" className="hover:text-white transition-colors">
               Impressum
             </a>
-          </p>
+            <span>•</span>
+            <a href="/datenschutz" className="hover:text-white transition-colors">
+              Datenschutz
+            </a>
+          </div>
         </div>
       </div>
     </footer>

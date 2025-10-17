@@ -78,6 +78,7 @@ const TestimonialsSection = () => {
                             src={testimonial.image} 
                             alt={testimonial.client}
                             className="w-full h-full object-cover object-center scale-110"
+                            loading="lazy"
                           />
                         </div>
                       </div>
