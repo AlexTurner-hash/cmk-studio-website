@@ -78,7 +78,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="pb-8 md:pb-12 lg:pb-16 pt-8 md:pt-12 lg:pt-16">
+    <section id="services" className="pb-8 md:pb-12 lg:pb-16 pt-4 md:pt-6 lg:pt-8">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-foreground font-display">Unsere Kompetenzen</h2>
