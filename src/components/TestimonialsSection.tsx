@@ -60,7 +60,7 @@ const TestimonialsSection = () => {
                     {/* Image */}
                     {testimonial.image && (
                       <div className="w-full md:w-1/2 flex-shrink-0">
-                        <div className="aspect-square overflow-hidden rounded-lg">
+                        <div className="aspect-square overflow-hidden">
                           <img 
                             src={testimonial.image} 
                             alt={testimonial.client}
