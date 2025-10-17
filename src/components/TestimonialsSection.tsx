@@ -2,6 +2,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { useEffect, useState } from "react";
 import testimonialStefanie from "@/assets/testimonial-stefanie-diem.jpg";
 import testimonialMerz from "@/assets/testimonial-merz.jpg";
+import testimonialLena from "@/assets/testimonial-lena-mantler.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -16,6 +17,12 @@ const TestimonialsSection = () => {
       client: "Gitta und Peter Plotnicki",
       company: "Merz b. Schwanen",
       image: testimonialMerz
+    },
+    {
+      quote: "...versteht Streetwear genauso wie High Fashion und spricht auch die Sprache von Creators. CMK macht aus Moods und Ideen eine fertige Kollektion und guidet einen durch den gesamten Prozess.",
+      client: "Lena Mantler",
+      company: "Model, Creator, mánt",
+      image: testimonialLena
     }
   ];
 
