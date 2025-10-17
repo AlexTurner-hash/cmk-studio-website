@@ -1,6 +1,7 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
 import testimonialStefanie from "@/assets/testimonial-stefanie-diem.jpg";
+import testimonialMerz from "@/assets/testimonial-merz.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -9,8 +10,13 @@ const TestimonialsSection = () => {
       client: "Stefanie Diem",
       company: "lila loves it",
       image: testimonialStefanie
+    },
+    {
+      quote: "Unglaublich zuverlässig, freundlich und mit großem Fachwissen in Sachen Bekleidung und Produktion. Das Verständnis für Materialien, insbesondere Strickwaren, ist wirklich wertvoll.",
+      client: "Gitta und Peter Plotnicki",
+      company: "Merz b. Schwanen",
+      image: testimonialMerz
     }
-    // Weitere Testimonials folgen
   ];
 
   const [api, setApi] = useState<CarouselApi>();
