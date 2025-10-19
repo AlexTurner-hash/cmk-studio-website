@@ -1,34 +1,34 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import flatlayTurtleneck from "@/assets/flatlay-turtleneck.png";
-import flatlaySchuerze from "@/assets/flatlay-schuerze.png";
-import flatlayHemdGruen from "@/assets/flatlay-hemd-gruen.png";
-import flatlayChino from "@/assets/flatlay-chino.png";
-import flatlayPulloverLila from "@/assets/flatlay-pullover-lila.png";
-import flatlayCardiganBunt from "@/assets/flatlay-cardigan-bunt.png";
-import flatlayDenimJacket from "@/assets/flatlay-denim-jacket.png";
-import flatlayDenimPants from "@/assets/flatlay-denim-pants.png";
-import flatlayLeatherJacket from "@/assets/flatlay-leather-jacket.png";
-import flatlayZipHoodie from "@/assets/flatlay-zip-hoodie.png";
-import flatlayBlazerKhaki from "@/assets/flatlay-blazer-khaki.png";
+import portfolioSchuerze from "@/assets/portfolio-schuerze.png";
+import portfolioHemdGruen from "@/assets/portfolio-hemd-gruen.png";
+import portfolioChino from "@/assets/portfolio-chino.png";
+import portfolioPulloverLila from "@/assets/portfolio-pullover-lila.png";
+import portfolioCardiganBunt from "@/assets/portfolio-cardigan-bunt.png";
+import portfolioDenimJacket from "@/assets/portfolio-denim-jacket.png";
+import portfolioDenimPants from "@/assets/portfolio-denim-pants.png";
+import portfolioLeatherJacket from "@/assets/portfolio-leather-jacket.png";
+import portfolioZipHoodie from "@/assets/portfolio-zip-hoodie.png";
+import portfolioBlazerKhaki from "@/assets/portfolio-blazer-khaki.png";
+import portfolioTurtleneckGreen from "@/assets/portfolio-turtleneck-green.png";
 
 const ServicesSection = () => {
   const { t } = useLanguage();
   const serviceCategories = (t('servicesSection.categories') as unknown as any[]);
 
   const portfolioImages = [
-    flatlaySchuerze,
-    flatlayHemdGruen,
-    flatlayChino,
-    flatlayPulloverLila,
-    flatlayCardiganBunt,
-    flatlayDenimJacket,
-    flatlayDenimPants,
-    flatlayLeatherJacket,
-    flatlayZipHoodie,
-    flatlayBlazerKhaki,
-    flatlayTurtleneck
+    portfolioSchuerze,
+    portfolioHemdGruen,
+    portfolioChino,
+    portfolioPulloverLila,
+    portfolioCardiganBunt,
+    portfolioDenimJacket,
+    portfolioDenimPants,
+    portfolioLeatherJacket,
+    portfolioZipHoodie,
+    portfolioBlazerKhaki,
+    portfolioTurtleneckGreen
   ];
 
   return (
