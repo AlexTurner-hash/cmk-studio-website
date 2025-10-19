@@ -55,8 +55,8 @@ const ServicesSection = () => {
         </div>
 
         {/* Portfolio Carousel */}
-        <div className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-light text-foreground font-display mb-4">100% individuelle Produktion</h2>
+        <div className="text-center mb-3">
+          <h2 className="text-3xl md:text-4xl font-light text-foreground font-display mb-2">100% individuelle Produktion</h2>
           <p className="text-body-large text-clay/80 max-w-4xl mx-auto">Von Knitwear, Denim und Basics bis zu High Fashion und Accessoires. Wir produzieren frei nach ihren Wünschen. Und beraten.</p>
         </div>
         <div className="mb-16">
