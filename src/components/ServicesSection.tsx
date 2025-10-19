@@ -70,7 +70,7 @@ const ServicesSection = () => {
             <CarouselContent>
               {portfolioImages.map((image, index) => (
                 <CarouselItem key={index} className="basis-full">
-                  <div className="flex items-center justify-center px-4 md:px-8">
+                  <div className="flex items-start justify-center px-4 md:px-8">
                     <AspectRatio ratio={16/9} className="w-full">
                       <img 
                         src={image} 
