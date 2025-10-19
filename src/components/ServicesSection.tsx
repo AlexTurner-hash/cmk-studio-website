@@ -87,7 +87,7 @@ const ServicesSection = () => {
                 <CarouselItem key={slideIndex}>
                   <div className="grid grid-cols-3 gap-8">
                     {portfolioImages.slice(slideIndex * 3, slideIndex * 3 + 3).map((image, index) => (
-                      <div key={index} className="relative overflow-hidden group aspect-square flex items-center justify-center p-8 bg-white">
+                      <div key={index} className="relative overflow-hidden group aspect-square flex items-center justify-center">
                         <img 
                           src={image} 
                           alt={`Portfolio image ${slideIndex * 3 + index + 1}`} 
