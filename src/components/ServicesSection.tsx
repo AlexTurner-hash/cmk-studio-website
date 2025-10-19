@@ -2,35 +2,33 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import flatlayTurtleneck from "@/assets/flatlay-turtleneck.png";
-import flatlayBlazer from "@/assets/flatlay-blazer.png";
-import flatlayPullover from "@/assets/flatlay-pullover.png";
-import flatlayCardigan from "@/assets/flatlay-cardigan.png";
-import flatlayHose from "@/assets/flatlay-hose.png";
-import flatlayHemd from "@/assets/flatlay-hemd.png";
 import flatlaySchuerze from "@/assets/flatlay-schuerze.png";
-import flatlayPuffer from "@/assets/flatlay-puffer.png";
-import flatlayHoodie from "@/assets/flatlay-hoodie.png";
-import flatlayBasecap from "@/assets/flatlay-basecap.png";
-import flatlayMuetze from "@/assets/flatlay-muetze.png";
-import flataySweater from "@/assets/flatlay-sweater.png";
+import flatlayHemdGruen from "@/assets/flatlay-hemd-gruen.png";
+import flatlayChino from "@/assets/flatlay-chino.png";
+import flatlayPulloverLila from "@/assets/flatlay-pullover-lila.png";
+import flatlayCardiganBunt from "@/assets/flatlay-cardigan-bunt.png";
+import flatlayDenimJacket from "@/assets/flatlay-denim-jacket.png";
+import flatlayDenimPants from "@/assets/flatlay-denim-pants.png";
+import flatlayLeatherJacket from "@/assets/flatlay-leather-jacket.png";
+import flatlayZipHoodie from "@/assets/flatlay-zip-hoodie.png";
+import flatlayBlazerKhaki from "@/assets/flatlay-blazer-khaki.png";
 
 const ServicesSection = () => {
   const { t } = useLanguage();
   const serviceCategories = (t('servicesSection.categories') as unknown as any[]);
 
   const portfolioImages = [
-    flatlayTurtleneck,
-    flatlayBlazer,
-    flatlayPullover,
-    flatlayCardigan,
-    flatlayHose,
-    flatlayHemd,
     flatlaySchuerze,
-    flatlayPuffer,
-    flatlayHoodie,
-    flatlayBasecap,
-    flatlayMuetze,
-    flataySweater
+    flatlayHemdGruen,
+    flatlayChino,
+    flatlayPulloverLila,
+    flatlayCardiganBunt,
+    flatlayDenimJacket,
+    flatlayDenimPants,
+    flatlayLeatherJacket,
+    flatlayZipHoodie,
+    flatlayBlazerKhaki,
+    flatlayTurtleneck
   ];
 
   return (
