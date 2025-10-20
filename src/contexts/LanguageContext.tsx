@@ -233,7 +233,7 @@ const translationsDE = {
   },
   servicesSection: {
     title: 'Für wen wir arbeiten',
-    subtitle: 'Ob Baumwolle, Spitze, Leder oder Funktionsfaser. Wir kennen die Besonderheiten und beherrschen die hochwertige Produktion in allen Disziplinen.',
+    subtitle: 'Wir begleiten Unternehmen, Creator und Beratungshäuser bei der Entwicklung und Produktion hochwertiger Kollektionen – von der ersten Idee bis zur fertigen Kollektion.',
     categories: [
       {
         title: 'Unternehmen',
