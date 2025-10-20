@@ -9,7 +9,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Mail, Phone, Loader2, MessageCircle } from "lucide-react";
+import { Mail, Phone, Loader2 } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 // Factory function to create validation schema with translations
 const createContactFormSchema = (t: any) => z.object({
@@ -79,33 +80,46 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      // Prepare WhatsApp message
-      const whatsappMessage = `*Neue Kontaktanfrage von CMK Studio Website*
+      // Initialize EmailJS with public key
+      // Users need to set up EmailJS account and replace these values
+      const serviceId = "YOUR_SERVICE_ID"; // Replace with your EmailJS service ID
+      const templateId = "YOUR_TEMPLATE_ID"; // Replace with your EmailJS template ID
+      const publicKey = "YOUR_PUBLIC_KEY"; // Replace with your EmailJS public key
 
-*Name:* ${data.firstName} ${data.lastName}
-*E-Mail:* ${data.email}
-${data.company ? `*Firma:* ${data.company}` : ''}
+      if (serviceId === "YOUR_SERVICE_ID" || templateId === "YOUR_TEMPLATE_ID" || publicKey === "YOUR_PUBLIC_KEY") {
+        toast({
+          title: "Konfiguration erforderlich",
+          description: "Bitte konfigurieren Sie EmailJS in ContactSection.tsx",
+          variant: "destructive",
+        });
+        setIsSubmitting(false);
+        return;
+      }
 
-*Nachricht:*
-${data.message}`;
+      // Send email via EmailJS
+      const result = await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: `${data.firstName} ${data.lastName}`,
+          from_email: data.email,
+          company: data.company || "Nicht angegeben",
+          message: data.message,
+          to_name: "CMK Studio",
+        },
+        publicKey
+      );
 
-      // CMK Studio WhatsApp number (replace with actual number)
-      const phoneNumber = "4903035050385"; // Format: country code + number without + or spaces
-      const encodedMessage = encodeURIComponent(whatsappMessage);
-      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
-      // Open WhatsApp in new window
-      window.open(whatsappUrl, '_blank');
-
-      toast({
-        title: t('contactForm.success'),
-        description: "Ihre Nachricht wird in WhatsApp geöffnet. Bitte senden Sie sie dort ab.",
-      });
-      
-      form.reset();
-      setLastSubmitTime(now);
+      if (result.status === 200) {
+        toast({
+          title: t('contactForm.success'),
+          description: t('contactForm.successDescription'),
+        });
+        form.reset();
+        setLastSubmitTime(now);
+      }
     } catch (error) {
-      console.error("Error preparing message:", error);
+      console.error("Error sending email:", error);
       toast({
         title: t('contactForm.error'),
         description: t('contactForm.errorDescription'),
@@ -246,18 +260,6 @@ ${data.message}`;
                 className="text-foreground hover:text-accent transition-colors"
               >
                 030 - 35050385
-              </a>
-            </div>
-
-            <div className="flex items-center space-x-4 p-4 bg-background rounded-lg">
-              <MessageCircle className="w-5 h-5 text-[hsl(var(--bronze))]" />
-              <a 
-                href="https://wa.me/4903035050385" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-accent transition-colors"
-              >
-                WhatsApp: 030 - 35050385
               </a>
             </div>
           </div>
