@@ -232,7 +232,7 @@ const translationsDE = {
     ]
   },
   servicesSection: {
-    title: 'Unsere Kompetenzen',
+    title: 'Für wen wir arbeiten',
     subtitle: 'Ob Baumwolle, Spitze, Leder oder Funktionsfaser. Wir kennen die Besonderheiten und beherrschen die hochwertige Produktion in allen Disziplinen.',
     categories: [
       {
