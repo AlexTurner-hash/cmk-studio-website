@@ -16,21 +16,21 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-center space-y-6 max-w-md mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 max-w-2xl mx-auto">
           <a 
             href="mailto:service@cmk-studio.com" 
-            className="flex items-center space-x-4 p-6 bg-background rounded-lg w-full hover:shadow-lg transition-shadow"
+            className="btn-accent flex items-center justify-center space-x-3 w-full md:w-auto px-8 py-4"
           >
-            <Mail className="w-6 h-6 text-[hsl(var(--bronze))]" />
-            <span className="text-foreground text-lg">service@cmk-studio.com</span>
+            <Mail className="w-5 h-5" />
+            <span>Email senden</span>
           </a>
 
           <a 
             href="tel:+4903035050385" 
-            className="flex items-center space-x-4 p-6 bg-background rounded-lg w-full hover:shadow-lg transition-shadow"
+            className="btn-accent flex items-center justify-center space-x-3 w-full md:w-auto px-8 py-4"
           >
-            <Phone className="w-6 h-6 text-[hsl(var(--bronze))]" />
-            <span className="text-foreground text-lg">030 - 35050385</span>
+            <Phone className="w-5 h-5" />
+            <span>Anrufen</span>
           </a>
         </div>
       </div>
