@@ -48,7 +48,7 @@ const ServicesSection = () => {
           <h2 className="text-3xl md:text-4xl font-light text-foreground font-display mb-4">100% individuelle Produktion</h2>
           <p className="text-body-large text-clay/80 max-w-4xl mx-auto">Von Knitwear, Denim und Basics bis zu High Fashion und Accessoires. Wir produzieren frei nach ihren Wünschen, statt nur Basics zu bedrucken. Und wir beraten, was möglich ist.</p>
         </div>
-        <div className="mb-2">
+        <div className="-mb-8">
           <Carousel opts={{
           align: "center",
           loop: true
