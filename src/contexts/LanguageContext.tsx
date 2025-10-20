@@ -234,6 +234,10 @@ const translationsDE = {
   servicesSection: {
     title: 'Für wen wir arbeiten',
     subtitle: 'Wir begleiten Unternehmen, Creator und Beratungshäuser bei der Entwicklung und Produktion hochwertiger Kollektionen – von der ersten Idee bis zur fertigen Kollektion.',
+    cta: 'Jetzt anfragen',
+    portfolioTitle: '100% individuelle Produktion',
+    portfolioSubtitle: 'Von Knitwear, Denim und Basics bis zu High Fashion und Accessoires. Wir produzieren frei nach ihren Wünschen, statt nur Basics zu bedrucken. Und wir beraten, was möglich ist.',
+    goToImage: 'Gehe zu Bild',
     categories: [
       {
         title: 'Unternehmen',
@@ -515,8 +519,12 @@ const translationsEN = {
     ]
   },
   servicesSection: {
-    title: 'Our Expertise',
-    subtitle: 'Whether cotton, lace, leather or performance fiber. We know the specifics and master high-quality production in all disciplines.',
+    title: 'Who We Work For',
+    subtitle: 'We support companies, creators and consultancies in developing and producing high-quality collections – from the first idea to the finished collection.',
+    cta: 'Request Now',
+    portfolioTitle: '100% Individual Production',
+    portfolioSubtitle: 'From knitwear, denim and basics to high fashion and accessories. We produce freely according to your wishes, instead of just printing on basics. And we advise what is possible.',
+    goToImage: 'Go to image',
     categories: [
       {
         title: 'Companies',

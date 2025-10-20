@@ -53,14 +53,14 @@ const ServicesSection = () => {
         {/* CTA Button */}
         <div className="text-center mb-16">
           <a href="#contact" className="btn-accent">
-            Jetzt anfragen
+            {t('servicesSection.cta')}
           </a>
         </div>
 
         {/* Portfolio Carousel */}
         <div className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-light text-foreground font-display mb-4">100% individuelle Produktion</h2>
-          <p className="text-body-large text-clay/80 max-w-4xl mx-auto">Von Knitwear, Denim und Basics bis zu High Fashion und Accessoires. Wir produzieren frei nach ihren Wünschen, statt nur Basics zu bedrucken. Und wir beraten, was möglich ist.</p>
+          <h2 className="text-3xl md:text-4xl font-light text-foreground font-display mb-4">{t('servicesSection.portfolioTitle')}</h2>
+          <p className="text-body-large text-clay/80 max-w-4xl mx-auto">{t('servicesSection.portfolioSubtitle')}</p>
         </div>
         <div className="-mb-8">
           <Carousel 
@@ -95,7 +95,7 @@ const ServicesSection = () => {
                     ? 'w-8 bg-[hsl(var(--bronze))]' 
                     : 'w-2 bg-clay/30 hover:bg-clay/50'
                 }`}
-                aria-label={`Gehe zu Bild ${index + 1}`}
+                aria-label={`${t('servicesSection.goToImage')} ${index + 1}`}
               />
             ))}
           </div>
