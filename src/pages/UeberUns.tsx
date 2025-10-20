@@ -1,12 +1,15 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/textile-factory.jpg";
+import { Helmet } from "react-helmet-async";
+
 const UeberUns = () => {
-  return <>
-      <title>Über uns - CMK Studio | Europäische Textilproduktion</title>
-      <meta name="description" content="Lernen Sie CMK Studio kennen: Unabhängiger Partner für hochwertige Textilproduktion in Europa. Über 20 Jahre Erfahrung in Modedesign und nachhaltiger Fertigung." />
-      
-      <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
+      <Helmet>
+        <title>Über uns - CMK Studio | Europäische Textilproduktion</title>
+        <meta name="description" content="Lernen Sie CMK Studio kennen: Unabhängiger Partner für hochwertige Textilproduktion in Europa. Über 20 Jahre Erfahrung in Modedesign und nachhaltiger Fertigung." />
+      </Helmet>
       <Navigation />
       
       {/* Hero Section */}
@@ -82,6 +85,6 @@ const UeberUns = () => {
 
       <Footer />
     </div>
-  </>;
+  );
 };
 export default UeberUns;

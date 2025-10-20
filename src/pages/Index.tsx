@@ -9,10 +9,10 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import SustainabilitySection from "@/components/SustainabilitySection";
 import FAQSection from "@/components/FAQSection";
 import FactoryImageSection from "@/components/FactoryImageSection";
-
 import ContactSection from "@/components/ContactSection";
 import InsightsPreviewSection from "@/components/InsightsPreviewSection";
 import Footer from "@/components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const Index = () => {
   const organizationSchema = {
@@ -37,11 +37,13 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <title>CMK Studio | Premium Textilproduktion in Europa - Berlin & Rhein-Main</title>
-      <meta name="description" content="CMK Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa. Hochwertige Textilproduktion für Marken, Creator und Unternehmen – von der ersten Idee bis zur fertigen Kollektion." />
-      <script type="application/ld+json">
-        {JSON.stringify(organizationSchema)}
-      </script>
+      <Helmet>
+        <title>CMK Studio | Premium Textilproduktion in Europa - Berlin & Rhein-Main</title>
+        <meta name="description" content="CMK Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa. Hochwertige Textilproduktion für Marken, Creator und Unternehmen – von der ersten Idee bis zur fertigen Kollektion." />
+        <script type="application/ld+json">
+          {JSON.stringify(organizationSchema)}
+        </script>
+      </Helmet>
       <Navigation />
       <HeroSection />
       <IntroSection />
