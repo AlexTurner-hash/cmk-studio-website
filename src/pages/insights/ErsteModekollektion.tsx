@@ -189,7 +189,7 @@ const ErsteModekollektion = () => {
                 Profitieren Sie von unserer Erfahrung und starten Sie Ihr Projekt mit einem erfahrenen Partner.
               </p>
               <Button size="lg" asChild>
-                <a href="#contact">
+                <a href="/#contact">
                   Jetzt Projekt starten
                 </a>
               </Button>

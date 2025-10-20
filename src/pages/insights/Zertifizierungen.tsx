@@ -256,7 +256,7 @@ const Zertifizierungen = () => {
                 Wir beraten Sie, welche Zertifizierung für Ihre Marke sinnvoll und realistisch ist.
               </p>
               <Button size="lg" asChild>
-                <a href="#contact">
+                <a href="/#contact">
                   Beratungsgespräch vereinbaren
                 </a>
               </Button>

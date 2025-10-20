@@ -293,7 +293,7 @@ const TechZuFashion = () => {
                 Wir unterstützen Tech-Startups bei der Entwicklung professioneller Fashion-Kollektionen.
               </p>
               <Button size="lg" asChild>
-                <a href="#contact">
+                <a href="/#contact">
                   Merch-Projekt starten
                 </a>
               </Button>

@@ -143,7 +143,7 @@ const ClaudiaKleinert = () => {
                 Lassen Sie sich von Claudia Kleinert und ihrem Team beraten und entdecken Sie die Möglichkeiten europäischer Textilproduktion.
               </p>
               <Button size="lg" asChild>
-                <a href="#contact">
+                <a href="/#contact">
                   Jetzt Projekt starten
                 </a>
               </Button>

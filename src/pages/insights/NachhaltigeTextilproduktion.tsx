@@ -240,7 +240,7 @@ const NachhaltigeTextilproduktion = () => {
                 Sprechen Sie mit Claudia Kleinert über die Möglichkeiten für Ihr nächstes Projekt.
               </p>
               <Button size="lg" asChild>
-                <a href="#contact">
+                <a href="/#contact">
                   Persönliches Gespräch vereinbaren
                 </a>
               </Button>

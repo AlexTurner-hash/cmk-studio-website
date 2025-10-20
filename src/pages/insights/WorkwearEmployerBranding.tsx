@@ -202,7 +202,7 @@ const WorkwearEmployerBranding = () => {
                 Entwickeln Sie mit uns Arbeitskleidung, die Ihre Mitarbeiter stolz macht.
               </p>
               <Button size="lg" asChild>
-                <a href="#contact">
+                <a href="/#contact">
                   Jetzt Projekt starten
                 </a>
               </Button>
