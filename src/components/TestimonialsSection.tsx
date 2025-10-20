@@ -3,16 +3,17 @@ import { useEffect, useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import testimonialStefanie from "@/assets/testimonial-stefanie-diem.jpg";
 import testimonialMerz from "@/assets/testimonial-merz.jpg";
-import testimonialLena from "@/assets/testimonial-lena-mantler.jpg";
 
 const TestimonialsSection = () => {
   const { t } = useLanguage();
   
-  const testimonialImages = [testimonialMerz, testimonialLena, testimonialStefanie];
-  const testimonials = (t('testimonialsAbout.testimonials') as unknown as any[]).map((testimonial: any, index: number) => ({
-    ...testimonial,
-    image: testimonialImages[index]
-  }));
+  const testimonialImages = [testimonialMerz, testimonialStefanie];
+  const testimonials = (t('testimonialsAbout.testimonials') as unknown as any[])
+    .filter((_, index) => index !== 1) // Remove Lena Mantler (index 1)
+    .map((testimonial: any, index: number) => ({
+      ...testimonial,
+      image: testimonialImages[index]
+    }));
 
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
