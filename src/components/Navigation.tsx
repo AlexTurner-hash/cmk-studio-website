@@ -57,8 +57,10 @@ const Navigation = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      isScrolled 
-        ? 'bg-black/60 backdrop-blur-md' 
+      isScrolled || isMenuOpen
+        ? isScrolled
+          ? 'bg-black/60 backdrop-blur-md'
+          : 'bg-white'
         : 'bg-transparent'
     }`}>
       <nav className="container mx-auto px-6 py-4">
@@ -67,7 +69,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <Link to="/">
               <img 
-                src={(isInsightsPage && !isScrolled) ? logoBlack : logoWhite} 
+                src={(isInsightsPage && !isScrolled && !isMenuOpen) ? logoBlack : (isScrolled ? logoWhite : (isMenuOpen ? logoBlack : logoWhite))} 
                 alt="CMK Studio" 
                 className="h-8 w-auto"
               />
@@ -81,21 +83,21 @@ const Navigation = () => {
                 onClick={() => setLanguage('de')}
                 className={`text-sm transition-colors ${
                   language === 'de' 
-                    ? `font-bold ${(isInsightsPage && !isScrolled) ? 'text-black' : 'text-white'}` 
-                    : `${(isInsightsPage && !isScrolled) ? 'text-black/60' : 'text-white/60'} hover:${(isInsightsPage && !isScrolled) ? 'text-black' : 'text-white'}`
+                    ? `font-bold ${(isInsightsPage && !isScrolled && !isMenuOpen) || (isMenuOpen && !isScrolled) ? 'text-black' : 'text-white'}` 
+                    : `${(isInsightsPage && !isScrolled && !isMenuOpen) || (isMenuOpen && !isScrolled) ? 'text-black/60' : 'text-white/60'} hover:${(isInsightsPage && !isScrolled && !isMenuOpen) || (isMenuOpen && !isScrolled) ? 'text-black' : 'text-white'}`
                 }`}
               >
                 DE
               </button>
-              <span className={`${(isInsightsPage && !isScrolled) ? 'text-black/40' : 'text-white/40'}`}>
+              <span className={`${(isInsightsPage && !isScrolled && !isMenuOpen) || (isMenuOpen && !isScrolled) ? 'text-black/40' : 'text-white/40'}`}>
                 /
               </span>
               <button
                 onClick={() => setLanguage('en')}
                 className={`text-sm transition-colors ${
                   language === 'en' 
-                    ? `font-bold ${(isInsightsPage && !isScrolled) ? 'text-black' : 'text-white'}` 
-                    : `${(isInsightsPage && !isScrolled) ? 'text-black/60' : 'text-white/60'} hover:${(isInsightsPage && !isScrolled) ? 'text-black' : 'text-white'}`
+                    ? `font-bold ${(isInsightsPage && !isScrolled && !isMenuOpen) || (isMenuOpen && !isScrolled) ? 'text-black' : 'text-white'}` 
+                    : `${(isInsightsPage && !isScrolled && !isMenuOpen) || (isMenuOpen && !isScrolled) ? 'text-black/60' : 'text-white/60'} hover:${(isInsightsPage && !isScrolled && !isMenuOpen) || (isMenuOpen && !isScrolled) ? 'text-black' : 'text-white'}`
                 }`}
               >
                 EN
@@ -107,9 +109,9 @@ const Navigation = () => {
             variant="ghost"
             size="sm"
             className={`p-2 transition-colors duration-300 ${
-              (isInsightsPage && !isScrolled) 
-                ? 'text-black hover:text-[hsl(var(--bronze))]' 
-                : 'text-white hover:text-[hsl(var(--bronze))]'
+              (isInsightsPage && !isScrolled && !isMenuOpen) || (isMenuOpen && !isScrolled)
+                ? 'text-black hover:text-black' 
+                : 'text-white hover:text-white'
             }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
