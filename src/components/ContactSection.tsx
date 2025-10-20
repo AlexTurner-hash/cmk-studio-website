@@ -12,7 +12,7 @@ const ContactSection = () => {
             {t('contactForm.title')}
           </h2>
           <p className="text-lg md:text-xl text-clay/70 max-w-3xl mx-auto leading-relaxed font-body">
-            CMK Studio. Wir freuen uns auf ein Gespräch.
+            {t('contactForm.subtitle')}
           </p>
         </div>
 
