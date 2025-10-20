@@ -133,7 +133,7 @@ const Navigation = () => {
                     <button
                       key={item.name}
                       onClick={() => handleNavClick(item.href)}
-                      className={`text-base font-medium tracking-tight transition-colors duration-200 uppercase font-body text-left ${
+                      className={`text-base font-light tracking-tight transition-colors duration-200 uppercase text-left ${
                         isScrolled 
                           ? 'text-white hover:text-[hsl(var(--bronze))]' 
                           : 'text-black hover:text-[hsl(var(--bronze))]'
@@ -149,7 +149,7 @@ const Navigation = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`text-base font-medium tracking-tight transition-colors duration-200 uppercase font-body ${
+                    className={`text-base font-light tracking-tight transition-colors duration-200 uppercase ${
                       isScrolled 
                         ? 'text-white hover:text-[hsl(var(--bronze))]' 
                         : 'text-black hover:text-[hsl(var(--bronze))]'
