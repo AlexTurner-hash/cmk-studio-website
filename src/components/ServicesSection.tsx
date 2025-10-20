@@ -2,16 +2,30 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { useState, useEffect } from "react";
 import portfolioSlide1 from "@/assets/portfolio-slide-1.png";
 import portfolioSlide2 from "@/assets/portfolio-slide-2-new.png";
 import portfolioSlide3 from "@/assets/portfolio-slide-3.png";
 import portfolioSlide4 from "@/assets/portfolio-slide-4-new.png";
 const ServicesSection = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [carouselApi, setCarouselApi] = useState<any>(null);
+  
   const {
     t
   } = useLanguage();
   const serviceCategories = t('servicesSection.categories') as unknown as any[];
   const portfolioImages = [portfolioSlide1, portfolioSlide2, portfolioSlide3, portfolioSlide4];
+
+  useEffect(() => {
+    if (!carouselApi) {
+      return;
+    }
+
+    carouselApi.on("select", () => {
+      setCurrentSlide(carouselApi.selectedScrollSnap());
+    });
+  }, [carouselApi]);
   return <section id="services" className="pb-8 md:pb-12 lg:pb-16 pt-4 md:pt-6 lg:pt-8">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
@@ -49,10 +63,14 @@ const ServicesSection = () => {
           <p className="text-body-large text-clay/80 max-w-4xl mx-auto">Von Knitwear, Denim und Basics bis zu High Fashion und Accessoires. Wir produzieren frei nach ihren Wünschen, statt nur Basics zu bedrucken. Und wir beraten, was möglich ist.</p>
         </div>
         <div className="-mb-8">
-          <Carousel opts={{
-          align: "center",
-          loop: true
-        }} className="w-full max-w-5xl mx-auto">
+          <Carousel 
+            opts={{
+              align: "center",
+              loop: true
+            }} 
+            className="w-full max-w-5xl mx-auto"
+            setApi={setCarouselApi}
+          >
             <CarouselContent>
               {portfolioImages.map((image, index) => <CarouselItem key={index} className="basis-full">
                   <div className="flex items-start justify-center px-4 md:px-8">
@@ -65,6 +83,22 @@ const ServicesSection = () => {
             <CarouselPrevious className="left-2 md:left-4" />
             <CarouselNext className="right-2 md:right-4" />
           </Carousel>
+          
+          {/* Carousel Dots */}
+          <div className="flex justify-center gap-2 mt-6">
+            {portfolioImages.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => carouselApi?.scrollTo(index)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  currentSlide === index 
+                    ? 'w-8 bg-[hsl(var(--bronze))]' 
+                    : 'w-2 bg-clay/30 hover:bg-clay/50'
+                }`}
+                aria-label={`Gehe zu Bild ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>;
