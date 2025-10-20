@@ -202,7 +202,7 @@ const WorkwearEmployerBranding = () => {
                 Entwickeln Sie mit uns Arbeitskleidung, die Ihre Mitarbeiter stolz macht.
               </p>
               <Button size="lg" asChild>
-                <a href="mailto:service@cmk-studio.com">
+                <a href="mailto:service@cmk-studio.com?subject=Anfrage Workwear Kollektion">
                   Jetzt Projekt starten
                 </a>
               </Button>

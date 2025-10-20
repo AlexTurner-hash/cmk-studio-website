@@ -143,7 +143,7 @@ const ClaudiaKleinert = () => {
                 Lassen Sie sich von Claudia Kleinert und ihrem Team beraten und entdecken Sie die Möglichkeiten europäischer Textilproduktion.
               </p>
               <Button size="lg" asChild>
-                <a href="mailto:service@cmk-studio.com">
+                <a href="mailto:service@cmk-studio.com?subject=Anfrage Beratung">
                   Jetzt Projekt starten
                 </a>
               </Button>
