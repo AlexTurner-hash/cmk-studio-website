@@ -16,17 +16,16 @@ const Datenschutz = () => {
       {/* Header Section */}
       <section className="pt-32 pb-16 bg-background">
         <div className="container mx-auto px-6">
-          <h1 className="leading-none mb-6 font-display text-foreground text-center text-4xl font-normal">
+          <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display text-center leading-tight">
             Datenschutzerklärung
           </h1>
         </div>
       </section>
 
-      {/* Datenschutz Content */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
-            <div className="text-clay/80 font-body space-y-8">
+            <div className="text-muted-foreground font-body space-y-12">
               
               <div>
                 <h2 className="text-2xl md:text-3xl font-light text-foreground mb-6 font-display">
@@ -104,13 +103,13 @@ const Datenschutz = () => {
                 <p className="text-base leading-relaxed mb-4">
                   Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
                 </p>
-                <div className="bg-background/50 p-4 rounded-lg mb-4">
+                <div className="bg-[hsl(var(--cream-tan))] p-6 rounded-lg mb-4">
                   <p className="font-medium text-foreground">CMK Studio GmbH</p>
                   <p>Am Friedrichshain 34</p>
                   <p>10407 Berlin</p>
-                  <p className="mt-2">
+                  <p className="mt-3">
                     Tel: 030 - 35050385<br />
-                    E-Mail: <a href="mailto:service@cmk-studio.com" className="text-accent hover:text-warm-fuchsia transition-colors">
+                    E-Mail: <a href="mailto:service@cmk-studio.com" className="text-[hsl(var(--bronze))] hover:text-[hsl(var(--bronze))]/80 transition-colors underline">
                       service@cmk-studio.com
                     </a>
                   </p>
@@ -211,8 +210,8 @@ const Datenschutz = () => {
                 </p>
               </div>
 
-              <div className="pt-6 border-t border-foreground/10">
-                <p className="text-sm text-clay/60">
+              <div className="pt-8 mt-8 border-t border-foreground/10">
+                <p className="text-sm text-muted-foreground/60">
                   Stand: Januar 2025
                 </p>
               </div>

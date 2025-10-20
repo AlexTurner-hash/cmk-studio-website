@@ -137,14 +137,14 @@ const Glossar = () => {
         </script>
         <Navigation />
         
-        <main className="pt-24 pb-16">
+        <main className="pt-32 pb-16">
           <div className="container mx-auto px-6 max-w-6xl">
             {/* Header */}
-            <header className="mb-12 text-center">
-              <h1 className="text-4xl md:text-5xl font-light mb-6 text-foreground font-display">
+            <header className="mb-16 text-center">
+              <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
                 Glossar: Textilproduktion von A-Z
               </h1>
-              <p className="text-lg text-muted-foreground font-body leading-relaxed max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-muted-foreground font-body leading-relaxed max-w-3xl mx-auto">
                 Die wichtigsten Fachbegriffe aus Textilproduktion, nachhaltiger Mode und Fashion-Business – 
                 verständlich erklärt für Startups, Creator und Unternehmen.
               </p>
@@ -153,12 +153,12 @@ const Glossar = () => {
             {/* Glossary Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {glossaryTerms.map((item, index) => (
-                <Card key={index} className="hover:shadow-elegant transition-shadow duration-300">
-                  <CardContent className="p-6">
-                    <h2 className="text-xl font-light mb-3 text-[hsl(var(--bronze))] font-display">
+                <Card key={index} className="hover:shadow-elegant transition-all duration-300 border-foreground/10">
+                  <CardContent className="p-8">
+                    <h2 className="text-xl md:text-2xl font-light mb-4 text-[hsl(var(--bronze))] font-display">
                       {item.term}
                     </h2>
-                    <p className="text-muted-foreground font-body leading-relaxed">
+                    <p className="text-muted-foreground font-body leading-relaxed text-base">
                       {item.definition}
                     </p>
                   </CardContent>
@@ -167,17 +167,17 @@ const Glossar = () => {
             </div>
 
             {/* CTA Section */}
-            <div className="mt-16 p-8 bg-[hsl(var(--cream-tan))] rounded-lg text-center">
-              <h3 className="text-2xl font-light mb-4 text-foreground font-display">
+            <div className="mt-20 p-8 md:p-12 bg-[hsl(var(--cream-tan))] rounded-lg text-center">
+              <h3 className="text-2xl md:text-3xl font-light mb-4 text-foreground font-display">
                 Fragen zu Ihrem Projekt?
               </h3>
-              <p className="text-muted-foreground mb-6 font-body max-w-2xl mx-auto">
+              <p className="text-lg text-muted-foreground mb-8 font-body max-w-2xl mx-auto leading-relaxed">
                 Lassen Sie sich von unseren Experten beraten und profitieren Sie von 
                 jahrelanger Erfahrung in der europäischen Textilproduktion.
               </p>
               <a 
-                href="/#contact"
-                className="inline-flex items-center justify-center px-6 py-3 bg-foreground text-background hover:bg-foreground/90 rounded-md font-medium transition-colors"
+                href="mailto:service@cmk-studio.com?subject=*Anfrage* Beratung"
+                className="btn-accent"
               >
                 Jetzt Beratung anfragen
               </a>
