@@ -293,7 +293,7 @@ const TechZuFashion = () => {
                 Wir unterstützen Tech-Startups bei der Entwicklung professioneller Fashion-Kollektionen.
               </p>
               <Button size="lg" asChild>
-                <a href="mailto:service@cmk-studio.com?subject=Anfrage Merchandise Kollektion">
+                <a href="mailto:service@cmk-studio.com?subject=*Anfrage* Merchandise Kollektion">
                   Merch-Projekt starten
                 </a>
               </Button>

@@ -334,7 +334,7 @@ const Produktionszeiten = () => {
                 Wir erstellen eine detaillierte Timeline mit allen Produktionsschritten für Ihre Kollektion.
               </p>
               <Button size="lg" asChild>
-                <a href="mailto:service@cmk-studio.com?subject=Anfrage Timeline-Planung">
+                <a href="mailto:service@cmk-studio.com?subject=*Anfrage* Timeline-Planung">
                   Timeline-Planung anfragen
                 </a>
               </Button>

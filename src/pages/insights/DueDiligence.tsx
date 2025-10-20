@@ -263,7 +263,7 @@ const DueDiligence = () => {
                 Wir helfen Ihnen, transparente Lieferketten aufzubauen und Due Diligence-Anforderungen zu erfüllen.
               </p>
               <Button size="lg" asChild>
-                <a href="mailto:service@cmk-studio.com?subject=Anfrage Due Diligence Compliance-Beratung">
+                <a href="mailto:service@cmk-studio.com?subject=*Anfrage* Due Diligence Compliance-Beratung">
                   Compliance-Beratung anfragen
                 </a>
               </Button>

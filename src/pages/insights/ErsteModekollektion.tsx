@@ -189,7 +189,7 @@ const ErsteModekollektion = () => {
                 Profitieren Sie von unserer Erfahrung und starten Sie Ihr Projekt mit einem erfahrenen Partner.
               </p>
               <Button size="lg" asChild>
-                <a href="mailto:service@cmk-studio.com?subject=Anfrage Erste Modekollektion">
+                <a href="mailto:service@cmk-studio.com?subject=*Anfrage* Erste Modekollektion">
                   Jetzt Projekt starten
                 </a>
               </Button>

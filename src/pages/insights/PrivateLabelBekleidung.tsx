@@ -158,7 +158,7 @@ const PrivateLabelBekleidung = () => {
                 Entwickeln Sie mit uns eine Private Label Kollektion, die Ihre regionale Kundschaft begeistert.
               </p>
               <Button size="lg" asChild>
-                <a href="mailto:service@cmk-studio.com?subject=Anfrage Private Label Kollektion">
+                <a href="mailto:service@cmk-studio.com?subject=*Anfrage* Private Label Kollektion">
                   Jetzt Projekt starten
                 </a>
               </Button>

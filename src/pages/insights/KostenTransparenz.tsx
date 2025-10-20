@@ -219,7 +219,7 @@ const KostenTransparenz = () => {
                 Wir erstellen eine transparente, detaillierte Kostenkalkulation für Ihre Kollektion.
               </p>
               <Button size="lg" asChild>
-                <a href="mailto:service@cmk-studio.com?subject=Anfrage Kostenkalkulation">
+                <a href="mailto:service@cmk-studio.com?subject=*Anfrage* Kostenkalkulation">
                   Kostenlose Kalkulation anfragen
                 </a>
               </Button>

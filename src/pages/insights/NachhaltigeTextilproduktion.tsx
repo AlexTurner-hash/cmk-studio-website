@@ -240,7 +240,7 @@ const NachhaltigeTextilproduktion = () => {
                 Sprechen Sie mit Claudia Kleinert über die Möglichkeiten für Ihr nächstes Projekt.
               </p>
               <Button size="lg" asChild>
-                <a href="mailto:service@cmk-studio.com?subject=Anfrage Nachhaltige Textilproduktion">
+                <a href="mailto:service@cmk-studio.com?subject=*Anfrage* Nachhaltige Textilproduktion">
                   Persönliches Gespräch vereinbaren
                 </a>
               </Button>
