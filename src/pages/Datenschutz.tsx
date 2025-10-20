@@ -1,7 +1,14 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Helmet } from "react-helmet-async";
+
 const Datenschutz = () => {
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
+      <Helmet>
+        <title>Datenschutzerklärung - CMK Studio | Datenschutz und Datenverarbeitung</title>
+        <meta name="description" content="Datenschutzerklärung der CMK Studio GmbH - Informationen zu Datenerfassung, Verarbeitung und Ihren Rechten gemäß DSGVO." />
+      </Helmet>
       <Navigation />
       
       {/* Header Section */}
@@ -214,6 +221,7 @@ const Datenschutz = () => {
       </section>
 
       <Footer />
-    </div>;
+    </div>
+  );
 };
 export default Datenschutz;

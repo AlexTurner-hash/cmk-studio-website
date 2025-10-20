@@ -1,9 +1,14 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const Impressum = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Impressum - CMK Studio GmbH | Kontakt und rechtliche Informationen</title>
+        <meta name="description" content="Impressum der CMK Studio GmbH - Herausgeber, Kontaktdaten und rechtliche Informationen zur Premium-Textilproduktion in Europa." />
+      </Helmet>
       <Navigation />
       
       {/* Header Section */}
