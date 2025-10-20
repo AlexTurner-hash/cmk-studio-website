@@ -2,7 +2,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import portfolioSlide1 from "@/assets/portfolio-slide-1.png";
+import portfolioSlide1 from "@/assets/portfolio-slide-new.png";
 import portfolioSlide2 from "@/assets/portfolio-slide-2.png";
 import portfolioSlide3 from "@/assets/portfolio-slide-3.png";
 import portfolioSlide4 from "@/assets/portfolio-slide-4.png";
