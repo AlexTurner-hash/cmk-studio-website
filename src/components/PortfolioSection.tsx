@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import portfolioTurtleneck from "@/assets/portfolio-turtleneck.png";
 import portfolioBlazer from "@/assets/portfolio-blazer.png";
@@ -16,6 +16,8 @@ import portfolioSweater from "@/assets/portfolio-sweater.png";
 
 const PortfolioSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const sectionRef = useRef<HTMLElement>(null);
+  const imagesRef = useRef<(HTMLImageElement | null)[]>([]);
 
   const portfolioImages = [
     portfolioTurtleneck,
@@ -33,6 +35,47 @@ const PortfolioSection = () => {
     portfolioSweater
   ];
 
+  useEffect(() => {
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (sectionRef.current) {
+            const rect = sectionRef.current.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            
+            // Check if section is in viewport
+            if (rect.top < windowHeight && rect.bottom > 0) {
+              // Calculate scroll progress through section (0 to 1)
+              const progress = Math.max(0, Math.min(1, 
+                (windowHeight - rect.top) / (windowHeight + rect.height)
+              ));
+              
+              // Apply zoom to all visible images
+              imagesRef.current.forEach((img) => {
+                if (img) {
+                  // Zoom from 1.0 to 1.08 as user scrolls through section
+                  const scale = 1 + (progress * 0.08);
+                  img.style.transform = `scale(${scale})`;
+                }
+              });
+            }
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // Initial call
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % Math.ceil(portfolioImages.length / 4));
   };
@@ -42,7 +85,7 @@ const PortfolioSection = () => {
   };
 
   return (
-    <section id="portfolio" className="relative bg-background overflow-hidden">
+    <section ref={sectionRef} id="portfolio" className="relative bg-background overflow-hidden">
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
@@ -71,15 +114,20 @@ const PortfolioSection = () => {
               <div className="grid grid-cols-4 h-screen">
                 {portfolioImages
                   .slice(slideIndex * 4, slideIndex * 4 + 4)
-                  .map((image, index) => (
-                    <div key={index} className="relative overflow-hidden group">
-                      <img
-                        src={image}
-                        alt={`Portfolio image ${slideIndex * 4 + index + 1}`}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale"
-                      />
-                    </div>
-                  ))}
+                  .map((image, index) => {
+                    const globalIndex = slideIndex * 4 + index;
+                    return (
+                      <div key={index} className="relative overflow-hidden group">
+                        <img
+                          ref={(el) => { imagesRef.current[globalIndex] = el; }}
+                          src={image}
+                          alt={`Portfolio image ${globalIndex + 1}`}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale will-change-transform"
+                          style={{ transform: 'scale(1)' }}
+                        />
+                      </div>
+                    );
+                  })}
               </div>
             </div>
           ))}
