@@ -218,7 +218,7 @@ const LuxuryHospitalityCollections = () => {
                 Entwickeln Sie mit uns eine Lifestyle-Kollektion, die Ihre Gäste begeistert.
               </p>
               <Button size="lg" asChild>
-                <a href="/#contact">
+                <a href="mailto:service@cmk-studio.com">
                   Jetzt Projekt starten
                 </a>
               </Button>

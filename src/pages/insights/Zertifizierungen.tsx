@@ -256,7 +256,7 @@ const Zertifizierungen = () => {
                 Wir beraten Sie, welche Zertifizierung für Ihre Marke sinnvoll und realistisch ist.
               </p>
               <Button size="lg" asChild>
-                <a href="/#contact">
+                <a href="mailto:service@cmk-studio.com">
                   Beratungsgespräch vereinbaren
                 </a>
               </Button>
