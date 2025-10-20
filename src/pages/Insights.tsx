@@ -22,7 +22,7 @@ const blogPosts = [
   {
     id: "claudia-kleinert",
     title: "Claudia Kleinert: Die Gründerin",
-    excerpt: "Von der studierten Modedesignerin zur erfolgreichen Unternehmerin: Wie die Gründerin von 'blush Lingerie' ihr Praxiswissen durch CMK.Studio anderen Modeschaffenden zugänglich macht.",
+    excerpt: "Von der studierten Modedesignerin zur erfolgreichen Unternehmerin: Wie die Gründerin von 'blush Lingerie' ihr Praxiswissen durch CMK Studio anderen Modeschaffenden zugänglich macht.",
     image: claudiaPortrait,
     readTime: "5 min",
     category: "Portrait"

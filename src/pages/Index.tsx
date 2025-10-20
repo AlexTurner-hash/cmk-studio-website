@@ -18,7 +18,7 @@ const Index = () => {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "CMK.Studio",
+    "name": "CMK Studio",
     "description": "Premium-Textilproduktion aus Europa für Unternehmen, Creator und Consultancies",
     "url": "https://cmk.studio",
     "logo": "https://cmk.studio/logo.png",

@@ -55,7 +55,7 @@ const translationsDE = {
   hero: {
     title1: 'Ihre Kollektion.',
     title2: 'Unsere Produktion.',
-    subtitle: 'CMK.Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa – damit Marken, Creator und Unternehmen Kollektionen effizient, hochwertig und transparent realisieren können.',
+    subtitle: 'CMK Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa – damit Marken, Creator und Unternehmen Kollektionen effizient, hochwertig und transparent realisieren können.',
     cta: 'Projekt starten'
   },
   intro: {
@@ -88,8 +88,8 @@ const translationsDE = {
     viewDetails: 'Details ansehen'
   },
   about: {
-    title: 'Über CMK.Studio',
-    description: 'Claudia Maria Kleinert gründete CMK.Studio aus der Überzeugung, dass nachhaltige und transparente Textilproduktion in Europa nicht nur möglich, sondern notwendig ist.'
+    title: 'Über CMK Studio',
+    description: 'Claudia Maria Kleinert gründete CMK Studio aus der Überzeugung, dass nachhaltige und transparente Textilproduktion in Europa nicht nur möglich, sondern notwendig ist.'
   },
   sustainability: {
     title: 'Nachhaltigkeit',
@@ -119,7 +119,7 @@ const translationsDE = {
         answer: 'Nicht zwingend. Die Kosten hängen von Material und Produktionsstandort ab. Wir beraten transparent zu Preis-Leistungs-Verhältnissen.'
       },
       {
-        question: 'Was unterscheidet CMK.Studio von klassischen Produzenten?',
+        question: 'Was unterscheidet CMK Studio von klassischen Produzenten?',
         answer: 'Wir sind kein reiner Produzent, sondern strategischer Partner mit Branchen-Expertise. Von Kollektionsplanung über Design und Schnittentwicklung bis zu Produktion, Qualitätskontrolle und Logistik – alles aus einer Hand, mit einem Ansprechpartner.'
       },
       {
@@ -220,12 +220,12 @@ const translationsDE = {
         company: 'Merz b. Schwanen'
       },
       {
-        quote: '...versteht Streetwear genauso wie High Fashion und spricht auch die Sprache von Creators. CMK macht aus Moods und Ideen eine fertige Kollektion und guidet einen durch den gesamten Prozess.',
+        quote: '...versteht Streetwear genauso wie High Fashion und spricht auch die Sprache von Creators. CMK Studio macht aus Moods und Ideen eine fertige Kollektion und guidet einen durch den gesamten Prozess.',
         client: 'Lena Mantler',
         company: 'Model, Creator, mánt'
       },
       {
-        quote: 'Als Unternehmerin muss man sich auf seine Ziele und diversen Projekte konzentrieren. Ein Partner wie CMK setzt unsere Werte und unsere Ansprüche an Qualität und Verlässlichkeit um. Das ist ein echtes Geschenk.',
+        quote: 'Als Unternehmerin muss man sich auf seine Ziele und diversen Projekte konzentrieren. Ein Partner wie CMK Studio setzt unsere Werte und unsere Ansprüche an Qualität und Verlässlichkeit um. Das ist ein echtes Geschenk.',
         client: 'Stefanie Diem',
         company: 'lila loves it'
       }
@@ -338,7 +338,7 @@ const translationsEN = {
   hero: {
     title1: 'Your Collection.',
     title2: 'Our Production.',
-    subtitle: 'CMK.Studio combines consulting, design, sustainable production and logistics in Europe – enabling brands, creators and companies to realize collections efficiently, with high quality and transparency.',
+    subtitle: 'CMK Studio combines consulting, design, sustainable production and logistics in Europe – enabling brands, creators and companies to realize collections efficiently, with high quality and transparency.',
     cta: 'Start Project'
   },
   intro: {
@@ -371,8 +371,8 @@ const translationsEN = {
     viewDetails: 'View Details'
   },
   about: {
-    title: 'About CMK.Studio',
-    description: 'Claudia Maria Kleinert founded CMK.Studio with the conviction that sustainable and transparent textile production in Europe is not only possible, but necessary.'
+    title: 'About CMK Studio',
+    description: 'Claudia Maria Kleinert founded CMK Studio with the conviction that sustainable and transparent textile production in Europe is not only possible, but necessary.'
   },
   sustainability: {
     title: 'Sustainability',
@@ -402,7 +402,7 @@ const translationsEN = {
         answer: 'Not necessarily. Costs depend on material and production location. We provide transparent advice on value for money.'
       },
       {
-        question: 'What sets CMK.Studio apart from traditional manufacturers?',
+        question: 'What sets CMK Studio apart from traditional manufacturers?',
         answer: 'We are not just a manufacturer, but a strategic partner with industry expertise. From collection planning to design and pattern development to production, quality control and logistics – all from one source, with one contact person.'
       },
       {
@@ -503,12 +503,12 @@ const translationsEN = {
         company: 'Merz b. Schwanen'
       },
       {
-        quote: '...understands streetwear as well as high fashion and also speaks the language of creators. CMK turns moods and ideas into a finished collection and guides you through the entire process.',
+        quote: '...understands streetwear as well as high fashion and also speaks the language of creators. CMK Studio turns moods and ideas into a finished collection and guides you through the entire process.',
         client: 'Lena Mantler',
         company: 'Model, Creator, mánt'
       },
       {
-        quote: 'As an entrepreneur, you have to focus on your goals and various projects. A partner like CMK implements our values and our demands for quality and reliability. That is a real gift.',
+        quote: 'As an entrepreneur, you have to focus on your goals and various projects. A partner like CMK Studio implements our values and our demands for quality and reliability. That is a real gift.',
         client: 'Stefanie Diem',
         company: 'lila loves it'
       }

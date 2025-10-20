@@ -14,17 +14,17 @@ const UeberUns = () => {
         
         <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-black leading-none mb-6 font-display">Wer wir sind</h1>
-          <p className="text-xl md:text-2xl font-light tracking-wide text-warm-cream font-body">CMK.Studio – Unabhängiger Partner für europäische Textilproduktion</p>
+          <p className="text-xl md:text-2xl font-light tracking-wide text-warm-cream font-body">CMK Studio – Unabhängiger Partner für europäische Textilproduktion</p>
         </div>
       </section>
 
-      {/* About CMK.Studio */}
+      {/* About CMK Studio */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg mx-auto text-clay/80 font-body">
               <p className="text-lg leading-relaxed mb-6">
-                CMK.Studio ist ein unabhängiger Partner für Marken, Creator und Unternehmen, die hochwertige Kollektionen in Europa produzieren möchten.
+                CMK Studio ist ein unabhängiger Partner für Marken, Creator und Unternehmen, die hochwertige Kollektionen in Europa produzieren möchten.
               </p>
               <p className="text-lg leading-relaxed mb-6">
                 Mit über 20 Jahren Erfahrung in Modedesign und industrieller Fertigung verbinden wir kreative Beratung mit klaren Prozessen und nachhaltiger Produktion. Unser Ansatz: persönliche Betreuung, transparente Kosten und verlässliche Ergebnisse – von der ersten Skizze bis zum fertigen Produkt.

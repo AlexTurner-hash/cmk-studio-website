@@ -109,7 +109,7 @@ const Glossar = () => {
   const definitionListSchema = {
     "@context": "https://schema.org",
     "@type": "DefinedTermSet",
-    "name": "Textilproduktion Glossar - Fachbegriffe von CMK.Studio",
+    "name": "Textilproduktion Glossar - Fachbegriffe von CMK Studio",
     "description": "Umfassendes Glossar wichtiger Fachbegriffe aus Textilproduktion, nachhaltiger Mode und Fashion-Business",
     "hasDefinedTerm": glossaryTerms.map(term => ({
       "@type": "DefinedTerm",
@@ -120,7 +120,7 @@ const Glossar = () => {
 
   return (
     <>
-      <title>Glossar Textilproduktion - Fachbegriffe von A-Z | CMK.Studio</title>
+      <title>Glossar Textilproduktion - Fachbegriffe von A-Z | CMK Studio</title>
       <meta name="description" content="Umfassendes Glossar mit den wichtigsten Fachbegriffen aus Textilproduktion, nachhaltiger Mode und Fashion-Business. Verständlich erklärt von Experten." />
       
       <div className="min-h-screen bg-background">

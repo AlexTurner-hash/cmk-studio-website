@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company */}
           <div>
-            <img src={logo} alt="CMK.Studio" className="h-6 mb-4" loading="lazy" />
+            <img src={logo} alt="CMK Studio" className="h-6 mb-4" loading="lazy" />
             <p className="text-white/70 text-sm leading-relaxed font-body">
-              CMK.Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa – damit Marken, Creator und Unternehmen Kollektionen effizient, hochwertig und transparent realisieren können.
+              CMK Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa – damit Marken, Creator und Unternehmen Kollektionen effizient, hochwertig und transparent realisieren können.
             </p>
           </div>
 

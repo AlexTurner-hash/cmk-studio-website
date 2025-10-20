@@ -6,7 +6,7 @@ const HeroSection = () => {
   return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img src={headerImage} alt="Warm fashion design consultation meeting between CMK.Studio team and client in bright, welcoming studio" className="w-full h-full object-cover" loading="eager" />
+        <img src={headerImage} alt="Warm fashion design consultation meeting between CMK Studio team and client in bright, welcoming studio" className="w-full h-full object-cover" loading="eager" />
         <div className="absolute inset-0 bg-black/25"></div>
       </div>
 

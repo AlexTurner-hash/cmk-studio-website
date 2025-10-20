@@ -105,7 +105,7 @@ const ContactSection = () => {
           from_email: data.email,
           company: data.company || "Nicht angegeben",
           message: data.message,
-          to_name: "CMK.Studio",
+          to_name: "CMK Studio",
         },
         publicKey
       );
