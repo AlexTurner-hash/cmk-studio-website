@@ -144,7 +144,7 @@ const blogPosts = [
 const Insights = () => {
   return (
     <>
-      <title>Insights - CMK.Studio | Expertenwissen für Textilproduktion</title>
+      <title>Insights - CMK Studio | Expertenwissen für Textilproduktion</title>
       <meta name="description" content="Entdecken Sie Expertenwissen zu nachhaltiger Textilproduktion, Modekollektion-Planung und Private Label. Praktische Tipps für Startups, Creator und Unternehmen." />
       
       <div className="min-h-screen">
