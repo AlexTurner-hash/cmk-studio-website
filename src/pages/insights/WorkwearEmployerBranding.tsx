@@ -15,11 +15,11 @@ const WorkwearEmployerBranding = () => {
     "dateModified": "2024-01-20",
     "author": {
       "@type": "Organization",
-      "name": "CMK.Studio"
+      "name": "CMK Studio"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "CMK.Studio",
+      "name": "CMK Studio",
       "logo": {
         "@type": "ImageObject",
         "url": "https://cmk.studio/logo.png"
@@ -36,7 +36,7 @@ const WorkwearEmployerBranding = () => {
 
   return (
     <>
-      <title>Workwear als Employer Branding - Hochwertige Arbeitskleidung | CMK.Studio</title>
+      <title>Workwear als Employer Branding - Hochwertige Arbeitskleidung | CMK Studio</title>
       <meta name="description" content="Wie hochwertige, nachhaltige Arbeitskleidung zum Aushängeschild Ihres Unternehmens wird und warum Mitarbeiter heute Wert auf Komfort, Qualität und individuelle Details legen." />
       
       <div className="min-h-screen">

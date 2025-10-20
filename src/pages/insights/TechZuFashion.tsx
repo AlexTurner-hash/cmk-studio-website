@@ -7,7 +7,7 @@ import blogImage from "@/assets/blog-tech-zu-fashion.jpg";
 const TechZuFashion = () => {
   return (
     <>
-      <title>Tech-Startup zu Fashion-Label: Merchandise-Guide | CMK.Studio</title>
+      <title>Tech-Startup zu Fashion-Label: Merchandise-Guide | CMK Studio</title>
       <meta name="description" content="Wie Tech-Startups erfolgreiche Merchandise-Kollektionen launchen. Von SaaS zu Fashion: Planung, Design, Produktion. Case Studies und praktische Tipps für Startup-Merch." />
       
       <div className="min-h-screen">

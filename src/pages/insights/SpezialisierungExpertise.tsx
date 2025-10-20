@@ -7,7 +7,7 @@ import blogImage from "@/assets/blog-spezialisierung-expertise.jpg";
 const SpezialisierungExpertise = () => {
   return (
     <>
-      <title>Spezialisierung in der Textilproduktion - Warum Nischen-Expertise entscheidend ist | CMK.Studio</title>
+      <title>Spezialisierung in der Textilproduktion - Warum Nischen-Expertise entscheidend ist | CMK Studio</title>
       <meta name="description" content="Von Lingerie über Workwear bis Swimwear: Warum jede Produktkategorie eigenes Know-how braucht und generalistische Produzenten oft nicht ausreichen." />
       
       <div className="min-h-screen">
@@ -210,11 +210,11 @@ const SpezialisierungExpertise = () => {
               </p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                CMK.Studio: Spezialisiertes Netzwerk statt Generalisten-Ansatz
+                CMK Studio: Spezialisiertes Netzwerk statt Generalisten-Ansatz
               </h2>
               
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Bei CMK.Studio setzen wir auf ein Netzwerk spezialisierter Produktionspartner. 
+                Bei CMK Studio setzen wir auf ein Netzwerk spezialisierter Produktionspartner. 
                 Jede Kategorie wird von Experten gefertigt, die sich seit Jahren auf genau diese 
                 Produkte konzentrieren.
               </p>
@@ -232,7 +232,7 @@ const SpezialisierungExpertise = () => {
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
                 Nischen-Expertise ist kein Marketing-Versprechen, sondern die Grundlage für exzellente Produkte. 
                 Wer in seiner Kategorie der Beste ist, liefert bessere Ergebnisse als jemand, der versucht, 
-                alles zu können. Bei CMK.Studio stellen wir sicher, dass Ihr Projekt in den Händen derjenigen 
+                alles zu können. Bei CMK Studio stellen wir sicher, dass Ihr Projekt in den Händen derjenigen 
                 liegt, die ihre Kategorie wirklich beherrschen.
               </p>
             </div>

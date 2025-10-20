@@ -7,7 +7,7 @@ import blogImage from "@/assets/blog-qualitaet-nachhaltigkeit.jpg";
 const QualitaetNachhaltigkeit = () => {
   return (
     <>
-      <title>Langlebigkeit statt Fast Fashion - Qualität als Nachhaltigkeit | CMK.Studio</title>
+      <title>Langlebigkeit statt Fast Fashion - Qualität als Nachhaltigkeit | CMK Studio</title>
       <meta name="description" content="Warum hochwertige Qualität die nachhaltigste Investition ist: Ein gut verarbeitetes Teil, das 10 Jahre hält, schlägt 10 billige Fast-Fashion-Teile." />
       
       <div className="min-h-screen">

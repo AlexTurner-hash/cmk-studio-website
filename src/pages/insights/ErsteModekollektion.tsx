@@ -15,11 +15,11 @@ const ErsteModekollektion = () => {
     "dateModified": "2024-01-15",
     "author": {
       "@type": "Organization",
-      "name": "CMK.Studio"
+      "name": "CMK Studio"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "CMK.Studio",
+      "name": "CMK Studio",
       "logo": {
         "@type": "ImageObject",
         "url": "https://cmk.studio/logo.png"
@@ -36,7 +36,7 @@ const ErsteModekollektion = () => {
 
   return (
     <>
-      <title>Erste Modekollektion planen - Leitfaden für Startups Berlin & Frankfurt | CMK.Studio</title>
+      <title>Erste Modekollektion planen - Leitfaden für Startups Berlin & Frankfurt | CMK Studio</title>
       <meta name="description" content="Kompletter Leitfaden für Ihre erste Modekollektion: Von der Ideenfindung über Design bis zur Produktion. Professionelle Beratung in Berlin und Rhein-Main." />
       
       <div className="min-h-screen">

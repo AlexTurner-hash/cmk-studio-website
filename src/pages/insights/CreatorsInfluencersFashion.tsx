@@ -5,7 +5,7 @@ import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-creators-influencers-new.jpg";
 const CreatorsInfluencersFashion = () => {
   return <>
-      <title>Creator Kollektionen Berlin - Von der Idee zur Modeproduktion | CMK.Studio</title>
+      <title>Creator Kollektionen Berlin - Von der Idee zur Modeproduktion | CMK Studio</title>
       <meta name="description" content="Creator und Influencer in Berlin: Kleine Drops, schnelle Turnaround-Zeiten und maximale Flexibilität. Professionelle Modeproduktion für die Creator Economy." />
       
       <div className="min-h-screen">

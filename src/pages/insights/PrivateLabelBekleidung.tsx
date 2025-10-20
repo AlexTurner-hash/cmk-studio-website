@@ -7,7 +7,7 @@ import blogImage from "@/assets/blog-private-label-regional.jpg";
 const PrivateLabelBekleidung = () => {
   return (
     <>
-      <title>Private Label für regionale Händler - Eigenmarken für Modehäuser | CMK.Studio</title>
+      <title>Private Label für regionale Händler - Eigenmarken für Modehäuser | CMK Studio</title>
       <meta name="description" content="Wie familiengeführte Modehäuser und regionale Handelsketten durch maßgeschneiderte Eigenmarken ihre Stammkundschaft stärken und sich gegen Online-Konkurrenz behaupten." />
       
       <div className="min-h-screen">

@@ -7,7 +7,7 @@ import blogImage from "@/assets/blog-kosten-transparenz.jpg";
 const KostenTransparenz = () => {
   return (
     <>
-      <title>Kosten-Transparenz: Was kostet Modeproduktion wirklich? | CMK.Studio</title>
+      <title>Kosten-Transparenz: Was kostet Modeproduktion wirklich? | CMK Studio</title>
       <meta name="description" content="Realistische Kostenübersicht für Modekollektion-Produktion: Materialkosten, Fertigung, MOQs, Kalkulation. Vergleich Europa vs. Fernost mit konkreten Zahlen." />
       
       <div className="min-h-screen">

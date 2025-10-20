@@ -7,7 +7,7 @@ import blogImage from "@/assets/blog-zertifizierungen-vergleich.jpg";
 const Zertifizierungen = () => {
   return (
     <>
-      <title>GOTS vs. OEKO-TEX vs. BSCI: Zertifizierungs-Guide | CMK.Studio</title>
+      <title>GOTS vs. OEKO-TEX vs. BSCI: Zertifizierungs-Guide | CMK Studio</title>
       <meta name="description" content="Welche Textil-Zertifizierung braucht Ihre Marke? Vergleich GOTS, OEKO-TEX, BSCI, RWS. Kosten, Anforderungen, Zielgruppen. Entscheidungshilfe für nachhaltige Mode." />
       
       <div className="min-h-screen">

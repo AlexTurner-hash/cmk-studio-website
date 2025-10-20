@@ -12,7 +12,7 @@ const ClaudiaKleinert = () => {
     "jobTitle": "Gründerin und Geschäftsführerin",
     "worksFor": {
       "@type": "Organization",
-      "name": "CMK.Studio"
+      "name": "CMK Studio"
     },
     "description": "Erfolgreiche Berliner Dessous-Designerin und Gründerin von blush Lingerie mit langjähriger Erfahrung in Design, Produktion und Vertrieb",
     "knowsAbout": ["Lingerie Design", "Textilproduktion", "Modedesign", "Fashion Consulting", "Europäische Produktion"],
@@ -30,7 +30,7 @@ const ClaudiaKleinert = () => {
   };
 
   return <>
-      <title>Claudia Kleinert - Gründerin und Geschäftsführerin | CMK.Studio</title>
+      <title>Claudia Kleinert - Gründerin und Geschäftsführerin | CMK Studio</title>
       <meta name="description" content="Lernen Sie Claudia Kleinert kennen: Die erfolgreiche Berliner Dessous-Designerin mit langjähriger Erfahrung in Design, Produktion und Vertrieb." />
       
       <div className="min-h-screen">
@@ -66,20 +66,20 @@ const ClaudiaKleinert = () => {
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
                 Die erfolgreiche Berliner Dessous-Designerin („blush Lingerie") stellt ihre langjährige 
-                Erfahrung in Design und Produktion mit CMK.Studio auch anderen Modeschaffenden zur Verfügung.
+                Erfahrung in Design und Produktion mit CMK Studio auch anderen Modeschaffenden zur Verfügung.
               </p>
             </header>
 
             {/* Featured Image */}
             <div className="aspect-[16/9] mb-12 rounded-lg overflow-hidden">
-              <img src={claudiaPortrait} alt="Claudia Kleinert, Gründerin und Geschäftsführerin von CMK.Studio" className="w-full h-full object-cover" />
+              <img src={claudiaPortrait} alt="Claudia Kleinert, Gründerin und Geschäftsführerin von CMK Studio" className="w-full h-full object-cover" />
             </div>
 
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">Von der Designerin zur Beraterin</h2>
 
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">Claudia Kleinert begann ihre Laufbahn als studierte Modedesignerin und baute schon in ihren ersten Stationen Erfahrung in der industriellen Schnittstelle von Fashiondesign und Textilproduktion auf. Diese spezifische Expertise macht sie heute anderen Modeschaffenden durch CMK.Studio zugänglich.</p>
+              <p className="mb-6 font-body leading-relaxed text-muted-foreground">Claudia Kleinert begann ihre Laufbahn als studierte Modedesignerin und baute schon in ihren ersten Stationen Erfahrung in der industriellen Schnittstelle von Fashiondesign und Textilproduktion auf. Diese spezifische Expertise macht sie heute anderen Modeschaffenden durch CMK Studio zugänglich.</p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
                 Ihr Weg führte sie durch verschiedene Bereiche der Modebranche: vom Design über die Produktentwicklung bis hin zum Aufbau von Produktionspartnerschaften in Europa. Diese vielseitige Erfahrung bildet das Fundament ihrer heutigen Beratungstätigkeit.
@@ -98,11 +98,11 @@ const ClaudiaKleinert = () => {
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">Mit ihrem Berliner Fashion Start Up blush Lingerie entwickelte sie eine eigene, international erfolgreiche Dessous-Marke aus dem Stand - und forderte große industrielle Wettbewerber heraus. Sie betreute alle Aspekte der Markenführung – von der Produktentwicklung über die Produktion bis zu Marketing Vertrieb. Diese Erfahrung als kreative Unternehmerin ist für andere DesignerInnen von unschätzbarem Wert.</p>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Arbeitsweise bei CMK.Studio
+                Arbeitsweise bei CMK Studio
               </h2>
 
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Bei CMK.Studio führt Claudia zunächst persönliche Gespräche mit Interessenten, um deren Vorstellungen und Ziele zu verstehen. Dabei geht es darum, realistische Erwartungen zu entwickeln und passende Lösungsansätze zu finden.
+                Bei CMK Studio führt Claudia zunächst persönliche Gespräche mit Interessenten, um deren Vorstellungen und Ziele zu verstehen. Dabei geht es darum, realistische Erwartungen zu entwickeln und passende Lösungsansätze zu finden.
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
@@ -126,7 +126,7 @@ const ClaudiaKleinert = () => {
               </h2>
 
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                CMK.Studio versteht sich als Brücke zwischen erfahrenen Produktionspartnern und neuen Modeschaffenden. Claudia teilt ihr Wissen über Materialkunde, Produktionsabläufe und Qualitätskontrolle mit Designern und Unternehmern, die eigene Projekte umsetzen möchten.
+                CMK Studio versteht sich als Brücke zwischen erfahrenen Produktionspartnern und neuen Modeschaffenden. Claudia teilt ihr Wissen über Materialkunde, Produktionsabläufe und Qualitätskontrolle mit Designern und Unternehmern, die eigene Projekte umsetzen möchten.
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">

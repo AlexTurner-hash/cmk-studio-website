@@ -15,11 +15,11 @@ const LuxuryHospitalityCollections = () => {
     "dateModified": "2024-01-25",
     "author": {
       "@type": "Organization",
-      "name": "CMK.Studio"
+      "name": "CMK Studio"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "CMK.Studio",
+      "name": "CMK Studio",
       "logo": {
         "@type": "ImageObject",
         "url": "https://cmk.studio/logo.png"
@@ -36,7 +36,7 @@ const LuxuryHospitalityCollections = () => {
 
   return (
     <>
-      <title>Luxus Hotel & Spa Kollektionen Rhein-Main | CMK.Studio</title>
+      <title>Luxus Hotel & Spa Kollektionen Rhein-Main | CMK Studio</title>
       <meta name="description" content="Premium Hotel und Spa Kollektionen für Resorts im Rhein-Main-Gebiet: Von Yoga-Apparel bis Badtextilien. Hochwertige Eigenmarken für exklusive Gästeerlebnisse." />
       
       <div className="min-h-screen">

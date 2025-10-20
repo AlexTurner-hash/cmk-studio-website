@@ -7,7 +7,7 @@ import blogImage from "@/assets/blog-produktionszeiten.jpg";
 const Produktionszeiten = () => {
   return (
     <>
-      <title>Produktionszeiten Textil realistisch planen - Timeline-Guide | CMK.Studio</title>
+      <title>Produktionszeiten Textil realistisch planen - Timeline-Guide | CMK Studio</title>
       <meta name="description" content="Realistische Produktionszeiten für jede Produktkategorie: T-Shirts, Lingerie, Swimwear, Knitwear, Workwear. Timeline-Planung, Bottlenecks vermeiden, Europa vs. Fernost Vergleich." />
       
       <div className="min-h-screen">

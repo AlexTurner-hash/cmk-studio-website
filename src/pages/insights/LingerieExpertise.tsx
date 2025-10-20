@@ -7,7 +7,7 @@ import blogImage from "@/assets/blog-lingerie-expertise-new.jpg";
 const LingerieExpertise = () => {
   return (
     <>
-      <title>Von der Idee zum Premium-Produkt: Lingerie-Entwicklung mit Expertise | CMK.Studio</title>
+      <title>Von der Idee zum Premium-Produkt: Lingerie-Entwicklung mit Expertise | CMK Studio</title>
       <meta name="description" content="Wie die Erfolgsgeschichte von blush Lingerie zeigt, dass Lingerie-Expertise der Schlüssel zu außergewöhnlicher Produktqualität in allen Kategorien ist." />
       
       <div className="min-h-screen">
@@ -133,7 +133,7 @@ const LingerieExpertise = () => {
               </h2>
               
               <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Die Erfahrung aus der Lingerie-Entwicklung fließt direkt in jedes Projekt von CMK.Studio ein:
+                Die Erfahrung aus der Lingerie-Entwicklung fließt direkt in jedes Projekt von CMK Studio ein:
               </p>
 
               <p className="mb-4 font-body leading-relaxed text-muted-foreground">
@@ -163,7 +163,7 @@ const LingerieExpertise = () => {
               </p>
 
               <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Bei CMK.Studio profitieren alle Projekte von dieser Expertise: Ob Creator-Kollektion, 
+                Bei CMK Studio profitieren alle Projekte von dieser Expertise: Ob Creator-Kollektion, 
                 Corporate Wear oder Premium-Einzelhandel – die Detailgenauigkeit, Materialkenntnis und 
                 Qualitätsstandards aus der Lingerie-Produktion machen den Unterschied.
               </p>

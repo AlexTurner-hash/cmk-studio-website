@@ -7,7 +7,7 @@ import blogImage from "@/assets/blog-due-diligence.jpg";
 const DueDiligence = () => {
   return (
     <>
-      <title>Due Diligence Textil-Lieferketten: Compliance-Guide KMU | CMK.Studio</title>
+      <title>Due Diligence Textil-Lieferketten: Compliance-Guide KMU | CMK Studio</title>
       <meta name="description" content="Lieferkettengesetz-Compliance für KMUs: Praktischer Due Diligence Guide für Textilproduktion. Risikobewertung, Dokumentation, Audits. Expertenwissen für Transparenz." />
       
       <div className="min-h-screen">

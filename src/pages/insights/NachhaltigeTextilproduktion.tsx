@@ -11,7 +11,7 @@ import textileFactoryImage from "@/assets/textile-factory-floor.jpg";
 const NachhaltigeTextilproduktion = () => {
   return (
     <>
-      <title>Nachhaltige Textilproduktion Europa - Chancen für Marken | CMK.Studio</title>
+      <title>Nachhaltige Textilproduktion Europa - Chancen für Marken | CMK Studio</title>
       <meta name="description" content="Entdecken Sie die Vorteile nachhaltiger Textilproduktion in Europa: Kurze Lieferketten, faire Standards und Qualität für Ihre Marke." />
       
       <div className="min-h-screen">
@@ -195,7 +195,7 @@ const NachhaltigeTextilproduktion = () => {
                   „Nachhaltige Produktion ist nicht nur ein Trend – es ist eine wirtschaftliche Notwendigkeit 
                   für die Zukunft der Modebranche."
                 </blockquote>
-                <cite className="text-sm text-muted-foreground">– Claudia Kleinert, Gründerin CMK.Studio</cite>
+                <cite className="text-sm text-muted-foreground">– Claudia Kleinert, Gründerin CMK Studio</cite>
               </div>
 
               <h2 className="text-2xl font-light mb-4 text-foreground font-display">
@@ -214,7 +214,7 @@ const NachhaltigeTextilproduktion = () => {
                   <div className="aspect-[4/3] rounded-lg overflow-hidden">
                     <img 
                       src="/lovable-uploads/c5c83756-fb38-428c-9acb-577ef807c735.png" 
-                      alt="Claudia Kleinert arbeitet konzentriert an Modezeichnungen in ihrem Büro - Gründerin von CMK.Studio"
+                      alt="Claudia Kleinert arbeitet konzentriert an Modezeichnungen in ihrem Büro - Gründerin von CMK Studio"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -223,7 +223,7 @@ const NachhaltigeTextilproduktion = () => {
                   <div className="bg-[hsl(var(--cream-tan))] p-6 rounded-lg h-full flex flex-col justify-center">
                     <p className="text-sm text-muted-foreground mb-2 font-medium">Zur Person</p>
                     <p className="text-muted-foreground font-body leading-relaxed">
-                      <strong>Claudia Kleinert</strong> ist Gründerin und Geschäftsführerin von CMK.Studio. 
+                      <strong>Claudia Kleinert</strong> ist Gründerin und Geschäftsführerin von CMK Studio. 
                       Die studierte Modedesignerin brachte ihre eigene Dessous-Marke „blush Lingerie" erfolgreich 
                       auf den Markt und berät heute andere Modeschaffende bei der europäischen Textilproduktion.
                     </p>
