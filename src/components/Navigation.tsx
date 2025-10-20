@@ -120,7 +120,11 @@ const Navigation = () => {
 
         {/* Navigation Menu */}
         {isMenuOpen && (
-          <div className="absolute left-0 right-0 mt-4 pb-4 bg-black/60 backdrop-blur-md">
+          <div className={`absolute left-0 right-0 mt-4 pb-4 backdrop-blur-md ${
+            isScrolled 
+              ? 'bg-black/60' 
+              : 'bg-white'
+          }`}>
             <div className="container mx-auto px-6 flex flex-col space-y-3 pt-4">
               {navItems.map((item) => {
                 // Handle anchor links differently
@@ -129,7 +133,11 @@ const Navigation = () => {
                     <button
                       key={item.name}
                       onClick={() => handleNavClick(item.href)}
-                      className="text-base font-medium tracking-tight transition-colors duration-200 uppercase font-body text-white hover:text-[hsl(var(--bronze))] text-left"
+                      className={`text-base font-medium tracking-tight transition-colors duration-200 uppercase font-body text-left ${
+                        isScrolled 
+                          ? 'text-white hover:text-[hsl(var(--bronze))]' 
+                          : 'text-black hover:text-[hsl(var(--bronze))]'
+                      }`}
                     >
                       {item.name}
                     </button>
@@ -141,7 +149,11 @@ const Navigation = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className="text-base font-medium tracking-tight transition-colors duration-200 uppercase font-body text-white hover:text-[hsl(var(--bronze))]"
+                    className={`text-base font-medium tracking-tight transition-colors duration-200 uppercase font-body ${
+                      isScrolled 
+                        ? 'text-white hover:text-[hsl(var(--bronze))]' 
+                        : 'text-black hover:text-[hsl(var(--bronze))]'
+                    }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
