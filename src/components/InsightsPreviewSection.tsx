@@ -77,11 +77,11 @@ const InsightsPreviewSection = () => {
 
         {/* CTA to all Insights */}
         <div className="text-center">
-          <Link to="/insights">
-            <Button size="lg" className="bg-bronze hover:bg-warm-fuchsia transition-all">
+          <Button size="lg" variant="outline" className="bg-white text-black border-black hover:bg-black hover:text-white" asChild>
+            <Link to="/insights">
               {t('insightsPreview.viewAll')}
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
