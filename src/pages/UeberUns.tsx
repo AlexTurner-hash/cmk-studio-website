@@ -2,7 +2,11 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/textile-factory.jpg";
 const UeberUns = () => {
-  return <div className="min-h-screen">
+  return <>
+      <title>Über uns - CMK Studio | Europäische Textilproduktion</title>
+      <meta name="description" content="Lernen Sie CMK Studio kennen: Unabhängiger Partner für hochwertige Textilproduktion in Europa. Über 20 Jahre Erfahrung in Modedesign und nachhaltiger Fertigung." />
+      
+      <div className="min-h-screen">
       <Navigation />
       
       {/* Hero Section */}
@@ -77,6 +81,7 @@ const UeberUns = () => {
       </section>
 
       <Footer />
-    </div>;
+    </div>
+  </>;
 };
 export default UeberUns;
