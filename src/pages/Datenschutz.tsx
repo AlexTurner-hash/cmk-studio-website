@@ -6,8 +6,10 @@ const Datenschutz = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Datenschutzerklärung - CMK Studio | Datenschutz und Datenverarbeitung</title>
+        <title>Datenschutz | CMK Studio GmbH</title>
         <meta name="description" content="Datenschutzerklärung der CMK Studio GmbH - Informationen zu Datenerfassung, Verarbeitung und Ihren Rechten gemäß DSGVO." />
+        <link rel="canonical" href="https://cmk.studio/datenschutz" />
+        <meta name="robots" content="noindex, follow" />
       </Helmet>
       <Navigation />
       

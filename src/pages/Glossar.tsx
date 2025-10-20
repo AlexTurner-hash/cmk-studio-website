@@ -122,8 +122,14 @@ const Glossar = () => {
   return (
     <>
       <Helmet>
-        <title>Glossar Textilproduktion - Fachbegriffe von A-Z | CMK Studio</title>
+        <title>Glossar | CMK Studio - Fachbegriffe Textilproduktion</title>
         <meta name="description" content="Umfassendes Glossar mit den wichtigsten Fachbegriffen aus Textilproduktion, nachhaltiger Mode und Fashion-Business. Verständlich erklärt von Experten." />
+        <link rel="canonical" href="https://cmk.studio/glossar" />
+        
+        <meta property="og:title" content="Glossar | CMK Studio - Fachbegriffe Textilproduktion" />
+        <meta property="og:description" content="Umfassendes Glossar mit den wichtigsten Fachbegriffen aus Textilproduktion, nachhaltiger Mode und Fashion-Business." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cmk.studio/glossar" />
       </Helmet>
       <div className="min-h-screen bg-background">
         <script type="application/ld+json">

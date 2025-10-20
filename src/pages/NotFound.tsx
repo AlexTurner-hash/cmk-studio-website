@@ -15,7 +15,14 @@ const NotFound = () => {
         <title>404 - Seite nicht gefunden | CMK Studio</title>
         <meta name="description" content="Seite nicht gefunden. Bitte kehren Sie zur Startseite zurück oder nutzen Sie die Navigation." />
         <meta name="robots" content="noindex, follow" />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://cmk.studio/" />
+        
+        <meta property="og:title" content="404 - Seite nicht gefunden | CMK Studio" />
+        <meta property="og:description" content="Diese Seite existiert nicht. Zur Startseite zurückkehren." />
+        <meta property="og:type" content="website" />
+        
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="404 - Seite nicht gefunden | CMK Studio" />
       </Helmet>
       <div className="text-center">
         <h1 className="mb-4 text-4xl font-bold">404</h1>

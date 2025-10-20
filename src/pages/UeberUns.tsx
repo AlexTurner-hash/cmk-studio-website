@@ -7,8 +7,18 @@ const UeberUns = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Über uns - CMK Studio | Europäische Textilproduktion</title>
+        <title>Über uns | CMK Studio - Premium Textilproduktion Europa</title>
         <meta name="description" content="Lernen Sie CMK Studio kennen: Unabhängiger Partner für hochwertige Textilproduktion in Europa. Über 20 Jahre Erfahrung in Modedesign und nachhaltiger Fertigung." />
+        <link rel="canonical" href="https://cmk.studio/ueber-uns" />
+        
+        <meta property="og:title" content="Über uns | CMK Studio - Premium Textilproduktion Europa" />
+        <meta property="og:description" content="Lernen Sie CMK Studio kennen: Unabhängiger Partner für hochwertige Textilproduktion in Europa. Über 20 Jahre Erfahrung in Modedesign und nachhaltiger Fertigung." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cmk.studio/ueber-uns" />
+        
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Über uns | CMK Studio" />
+        <meta name="twitter:description" content="Lernen Sie CMK Studio kennen: Unabhängiger Partner für hochwertige Textilproduktion in Europa." />
       </Helmet>
       <Navigation />
       

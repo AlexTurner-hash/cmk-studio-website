@@ -146,8 +146,17 @@ const Insights = () => {
   return (
     <>
       <Helmet>
-        <title>Insights - CMK Studio | Expertenwissen für Textilproduktion</title>
+        <title>Insights | CMK Studio - Expertenwissen Textilproduktion</title>
         <meta name="description" content="Entdecken Sie Expertenwissen zu nachhaltiger Textilproduktion, Modekollektion-Planung und Private Label. Praktische Tipps für Startups, Creator und Unternehmen." />
+        <link rel="canonical" href="https://cmk.studio/insights" />
+        
+        <meta property="og:title" content="Insights | CMK Studio - Expertenwissen Textilproduktion" />
+        <meta property="og:description" content="Entdecken Sie Expertenwissen zu nachhaltiger Textilproduktion, Modekollektion-Planung und Private Label." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cmk.studio/insights" />
+        
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Insights | CMK Studio" />
       </Helmet>
       <div className="min-h-screen">
         <Navigation />
