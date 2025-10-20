@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Helmet } from "react-helmet-async";
 import blogImage1 from "@/assets/blog-erste-modekollektion-new.jpg";
 import blogImage2 from "@/assets/blog-nachhaltige-produktion.jpg";
 import blogImage3 from "@/assets/blog-private-label-regional.jpg";
@@ -144,9 +145,10 @@ const blogPosts = [
 const Insights = () => {
   return (
     <>
-      <title>Insights - CMK Studio | Expertenwissen für Textilproduktion</title>
-      <meta name="description" content="Entdecken Sie Expertenwissen zu nachhaltiger Textilproduktion, Modekollektion-Planung und Private Label. Praktische Tipps für Startups, Creator und Unternehmen." />
-      
+      <Helmet>
+        <title>Insights - CMK Studio | Expertenwissen für Textilproduktion</title>
+        <meta name="description" content="Entdecken Sie Expertenwissen zu nachhaltiger Textilproduktion, Modekollektion-Planung und Private Label. Praktische Tipps für Startups, Creator und Unternehmen." />
+      </Helmet>
       <div className="min-h-screen">
         <Navigation />
         

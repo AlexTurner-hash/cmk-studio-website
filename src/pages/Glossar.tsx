@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
+import { Helmet } from "react-helmet-async";
 
 const Glossar = () => {
   const glossaryTerms = [
@@ -120,9 +121,10 @@ const Glossar = () => {
 
   return (
     <>
-      <title>Glossar Textilproduktion - Fachbegriffe von A-Z | CMK Studio</title>
-      <meta name="description" content="Umfassendes Glossar mit den wichtigsten Fachbegriffen aus Textilproduktion, nachhaltiger Mode und Fashion-Business. Verständlich erklärt von Experten." />
-      
+      <Helmet>
+        <title>Glossar Textilproduktion - Fachbegriffe von A-Z | CMK Studio</title>
+        <meta name="description" content="Umfassendes Glossar mit den wichtigsten Fachbegriffen aus Textilproduktion, nachhaltiger Mode und Fashion-Business. Verständlich erklärt von Experten." />
+      </Helmet>
       <div className="min-h-screen bg-background">
         <script type="application/ld+json">
           {JSON.stringify(definitionListSchema)}
