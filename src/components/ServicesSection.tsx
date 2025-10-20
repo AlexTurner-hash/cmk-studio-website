@@ -5,13 +5,12 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import portfolioSlide1 from "@/assets/portfolio-slide-1.png";
 import portfolioSlide2 from "@/assets/portfolio-slide-2-new.png";
 import portfolioSlide3 from "@/assets/portfolio-slide-3.png";
-import portfolioSlide4 from "@/assets/portfolio-slide-4.png";
 const ServicesSection = () => {
   const {
     t
   } = useLanguage();
   const serviceCategories = t('servicesSection.categories') as unknown as any[];
-  const portfolioImages = [portfolioSlide1, portfolioSlide2, portfolioSlide3, portfolioSlide4];
+  const portfolioImages = [portfolioSlide1, portfolioSlide2, portfolioSlide3];
   return <section id="services" className="pb-8 md:pb-12 lg:pb-16 pt-4 md:pt-6 lg:pt-8">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
