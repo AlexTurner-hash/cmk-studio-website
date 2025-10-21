@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import heroVideo from "@/assets/hero-video.mp4";
+import headerImage from "@/assets/hero-consultation-warm.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
   const { t } = useLanguage();
-  const videoRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -17,22 +17,22 @@ const HeroSection = () => {
     window.addEventListener('resize', checkMobile);
 
     // Parallax effect - only on desktop
-    if (!isMobile && videoRef.current) {
+    if (!isMobile && imageRef.current) {
       let ticking = false;
 
       const handleScroll = () => {
         if (!ticking) {
           window.requestAnimationFrame(() => {
-            if (videoRef.current) {
+            if (imageRef.current) {
               const scrolled = window.scrollY;
-              const heroHeight = videoRef.current.parentElement?.offsetHeight || 0;
+              const heroHeight = imageRef.current.parentElement?.offsetHeight || 0;
               
               // Only apply effect while hero is visible
               if (scrolled < heroHeight) {
                 // Slower movement: 0.3 multiplier creates subtle parallax
                 // Max displacement: ±30px (controlled by heroHeight limit)
                 const translateY = Math.min(scrolled * 0.3, 30);
-                videoRef.current.style.transform = `translateY(${translateY}px)`;
+                imageRef.current.style.transform = `translateY(${translateY}px)`;
               }
             }
             ticking = false;
@@ -56,22 +56,18 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Video with Parallax */}
+      {/* Background Image with Parallax */}
       <div 
-        ref={videoRef}
+        ref={imageRef}
         className="absolute inset-0 will-change-transform"
         style={{ transform: 'translateY(0px)' }}
       >
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          preload="auto"
-          className="w-full h-full object-cover scale-110"
-        >
-          <source src={heroVideo} type="video/mp4" />
-        </video>
+        <img 
+          src={headerImage} 
+          alt="Warm fashion design consultation meeting between CMK Studio team and client in bright, welcoming studio" 
+          className="w-full h-full object-cover scale-110" 
+          loading="eager" 
+        />
         <div className="absolute inset-0 bg-black/25"></div>
       </div>
 
