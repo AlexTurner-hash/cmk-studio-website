@@ -181,42 +181,45 @@ const Insights = () => {
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {blogPosts.map((post) => (
-                <Card key={post.id} className="group hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
-                  <div className="aspect-[16/9] overflow-hidden rounded-t-lg">
-                    <img 
-                      src={post.image} 
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <CardContent className="p-6 flex flex-col flex-grow">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="text-xs font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                        {post.category}
-                      </span>
-                      <span className="text-xs text-muted-foreground">
-                        {post.readTime} Lesezeit
-                      </span>
+                <a 
+                  key={post.id} 
+                  href={`/insights/${post.id}`}
+                  className="block h-full"
+                >
+                  <Card className="group hover:shadow-lg transition-shadow duration-300 flex flex-col h-full cursor-pointer">
+                    <div className="aspect-[16/9] overflow-hidden rounded-t-lg">
+                      <img 
+                        src={post.image} 
+                        alt={post.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
                     </div>
-                    
-                    <h2 className="text-xl font-light mb-3 text-foreground font-display group-hover:text-[hsl(var(--cream-tan-hover))] transition-colors line-clamp-2">
-                      {post.title}
-                    </h2>
-                    
-                    <p className="text-muted-foreground mb-4 font-body leading-relaxed flex-grow line-clamp-4">
-                      {post.excerpt}
-                    </p>
-                    
-                    <div className="mt-auto pt-4">
-                      <a 
-                        href={`/insights/${post.id}`}
-                        className="text-[hsl(var(--cream-tan-hover))] hover:text-[hsl(var(--cream-tan-hover))]/80 transition-colors duration-200 font-medium"
-                      >
-                        Weiterlesen
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
+                    <CardContent className="p-6 flex flex-col flex-grow">
+                      <div className="flex items-center gap-3 mb-3">
+                        <span className="text-xs font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
+                          {post.category}
+                        </span>
+                        <span className="text-xs text-muted-foreground">
+                          {post.readTime} Lesezeit
+                        </span>
+                      </div>
+                      
+                      <h2 className="text-xl font-light mb-3 text-foreground font-display group-hover:text-[hsl(var(--cream-tan-hover))] transition-colors line-clamp-2">
+                        {post.title}
+                      </h2>
+                      
+                      <p className="text-muted-foreground mb-4 font-body leading-relaxed flex-grow line-clamp-4">
+                        {post.excerpt}
+                      </p>
+                      
+                      <div className="mt-auto pt-4">
+                        <span className="text-[hsl(var(--cream-tan-hover))] hover:text-[hsl(var(--cream-tan-hover))]/80 transition-colors duration-200 font-medium">
+                          Weiterlesen
+                        </span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
               ))}
             </div>
           </div>
