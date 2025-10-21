@@ -67,7 +67,18 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/">
+            <Link 
+              to="/" 
+              onClick={(e) => {
+                if (location.pathname === "/") {
+                  e.preventDefault();
+                  const element = document.getElementById("home");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }
+              }}
+            >
               <img 
                 src={(isInsightsPage && !isScrolled && !isMenuOpen) ? logoBlack : (isScrolled ? logoWhite : (isMenuOpen ? logoBlack : logoWhite))} 
                 alt="CMK Studio" 
