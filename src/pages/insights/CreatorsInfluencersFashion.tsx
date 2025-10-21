@@ -3,10 +3,16 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-creators-influencers-new.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { insightsArticlesDE, insightsArticlesEN } from "@/translations/insights-articles";
+
 const CreatorsInfluencersFashion = () => {
+  const { language } = useLanguage();
+  const t = language === 'de' ? insightsArticlesDE.creatorsInfluencersFashion : insightsArticlesEN.creatorsInfluencersFashion;
+  
   return <>
-      <title>Creator Kollektionen Berlin - Von der Idee zur Modeproduktion | CMK Studio</title>
-      <meta name="description" content="Creator und Influencer in Berlin: Kleine Drops, schnelle Turnaround-Zeiten und maximale Flexibilität. Professionelle Modeproduktion für die Creator Economy." />
+      <title>{language === 'de' ? 'Creator Kollektionen Berlin - Von der Idee zur Modeproduktion | CMK Studio' : 'Creator Collections Berlin - From Idea to Fashion Production | CMK Studio'}</title>
+      <meta name="description" content={t.subtitle} />
       
       <div className="min-h-screen">
         <Navigation />
@@ -16,28 +22,26 @@ const CreatorsInfluencersFashion = () => {
             <Button variant="ghost" asChild className="mb-8">
               <a href="/insights" className="flex items-center gap-2">
                 <ArrowLeft size={16} />
-                Zurück zu Insights
+                {t.backToInsights}
               </a>
             </Button>
 
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                  Creator Economy
+                  {t.category}
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  6 min Lesezeit
+                  {t.readTime}
                 </span>
               </div>
               
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
-                Von der Idee zur Kollektion: Wie Creator und Influencer den Sprung in die Modeproduktion schaffen
+                {t.title}
               </h1>
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                Creator haben die Kreativität und Community, aber oft fehlt das Fashion-Know-how. 
-                Erfahren Sie, wie kleine Drops, schnelle Turnaround-Zeiten und maximale Flexibilität 
-                die neue Ära der Modeproduktion prägen.
+                {t.subtitle}
               </p>
             </header>
 

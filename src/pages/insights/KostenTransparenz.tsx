@@ -3,12 +3,17 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-kosten-transparenz.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { insightsArticlesDE, insightsArticlesEN } from "@/translations/insights-articles";
 
 const KostenTransparenz = () => {
+  const { language } = useLanguage();
+  const t = language === 'de' ? insightsArticlesDE.kostenTransparenz : insightsArticlesEN.kostenTransparenz;
+  
   return (
     <>
-      <title>Kosten-Transparenz: Was kostet Modeproduktion wirklich? | CMK Studio</title>
-      <meta name="description" content="Realistische Kostenübersicht für Modekollektion-Produktion: Materialkosten, Fertigung, MOQs, Kalkulation. Vergleich Europa vs. Fernost mit konkreten Zahlen." />
+      <title>{language === 'de' ? 'Kosten-Transparenz: Was kostet Modeproduktion wirklich? | CMK Studio' : 'Cost Transparency: What Does Fashion Production Really Cost? | CMK Studio'}</title>
+      <meta name="description" content={t.subtitle} />
       
       <div className="min-h-screen">
         <Navigation />
@@ -18,27 +23,26 @@ const KostenTransparenz = () => {
             <Button variant="ghost" asChild className="mb-8">
               <a href="/insights" className="flex items-center gap-2">
                 <ArrowLeft size={16} />
-                Zurück zu Insights
+                {t.backToInsights}
               </a>
             </Button>
 
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                  Kalkulation
+                  {t.category}
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  10 min Lesezeit
+                  {t.readTime}
                 </span>
               </div>
               
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
-                Kosten-Transparenz: Was kostet die Produktion einer Modekollektion wirklich?
+                {t.title}
               </h1>
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                Realistische Zahlen statt Wunschdenken: Ein detaillierter Einblick in die tatsächlichen Kosten 
-                der Modeproduktion – von Material über Fertigung bis Logistik.
+                {t.subtitle}
               </p>
             </header>
 

@@ -76,6 +76,97 @@ export const insightsArticlesDE = {
         content: 'Eine erfolgreiche erste Modekollektion erfordert sorgfältige Planung, realistische Budgetierung und die Zusammenarbeit mit den richtigen Partnern. Eine gründliche Vorbereitung und strategische Herangehensweise bilden das Fundament für nachhaltigen Markterfolg und langfristiges Wachstum.'
       }
     }
+  },
+  produktionszeiten: {
+    title: 'Produktionszeiten realistisch planen: Timeline-Guide für jede Produktkategorie',
+    subtitle: 'Von T-Shirt bis Lingerie: Wie lange dauert Textilproduktion wirklich? Ein detaillierter Timeline-Guide mit realistischen Zahlen statt Wunschdenken.',
+    category: 'Planung',
+    readTime: '10 min Lesezeit',
+    backToInsights: 'Zurück zu Insights'
+  },
+  privateLabelBekleidung: {
+    title: 'Private Label für regionale Händler: Wie mittelständische Modehäuser mit Eigenmarken punkten',
+    subtitle: 'Erfahren Sie, wie familiengeführte Modehäuser und regionale Handelsketten durch maßgeschneiderte Eigenmarken ihre Stammkundschaft stärken und sich gegen die Online-Konkurrenz behaupten können.',
+    category: 'Einzelhandel',
+    readTime: '7 min Lesezeit',
+    backToInsights: 'Zurück zu Insights'
+  },
+  qualitaetNachhaltigkeit: {
+    title: 'Langlebigkeit statt Fast Fashion: Warum hochwertige Qualität die nachhaltigste Investition ist',
+    subtitle: 'Ein gut verarbeitetes Teil, das 10 Jahre hält, ist nachhaltiger als 10 billige Teile. Warum Qualität die ehrlichste Form von Nachhaltigkeit ist.',
+    category: 'Nachhaltigkeit',
+    readTime: '6 min Lesezeit',
+    backToInsights: 'Zurück zu Insights'
+  },
+  lingerieExpertise: {
+    title: 'Von der Idee zum Premium-Produkt: Lingerie-Entwicklung mit Expertise',
+    subtitle: 'Die Erfolgsgeschichte von blush Lingerie zeigt, wie aus Leidenschaft für Details und kompromissloser Qualität eine erfolgreiche Premium-Marke entsteht – und warum diese Expertise auch Ihrem Projekt zugutekommt.',
+    category: 'Case Study',
+    readTime: '7 min Lesezeit',
+    backToInsights: 'Zurück zu Insights'
+  },
+  workwearEmployerBranding: {
+    title: 'Workwear als Employer Branding: Warum billige T-Shirt-Drucke nicht mehr reichen',
+    subtitle: 'Erfahren Sie, wie hochwertige, nachhaltige Arbeitskleidung zum Aushängeschild Ihres Unternehmens wird und warum Mitarbeiter heute Wert auf Komfort, Qualität und individuelle Details legen.',
+    category: 'Employer Branding',
+    readTime: '6 min Lesezeit',
+    backToInsights: 'Zurück zu Insights'
+  },
+  luxuryHospitalityCollections: {
+    title: 'Luxus zum Mitnehmen: Wie Hotels und Spas mit exklusiven Kollektionen neue Umsätze generieren',
+    subtitle: 'Von Yoga-Apparel bis zu Premium-Badtextilien: Erfahren Sie, wie High-End-Hotels und Spa-Resorts durch hochwertige Eigenmarken ihre Gäste begeistern und zusätzliche Erlösquellen erschließen.',
+    category: 'Hospitality',
+    readTime: '7 min Lesezeit',
+    backToInsights: 'Zurück zu Insights'
+  },
+  creatorsInfluencersFashion: {
+    title: 'Von der Idee zur Kollektion: Wie Creator und Influencer den Sprung in die Modeproduktion schaffen',
+    subtitle: 'Creator haben die Kreativität und Community, aber oft fehlt das Fashion-Know-how. Erfahren Sie, wie kleine Drops, schnelle Turnaround-Zeiten und maximale Flexibilität die neue Ära der Modeproduktion prägen.',
+    category: 'Creator Economy',
+    readTime: '6 min Lesezeit',
+    backToInsights: 'Zurück zu Insights'
+  },
+  kostenTransparenz: {
+    title: 'Kosten-Transparenz: Was kostet die Produktion einer Modekollektion wirklich?',
+    subtitle: 'Realistische Zahlen statt Wunschdenken: Ein detaillierter Einblick in die tatsächlichen Kosten der Modeproduktion – von Material über Fertigung bis Logistik.',
+    category: 'Kalkulation',
+    readTime: '10 min Lesezeit',
+    backToInsights: 'Zurück zu Insights'
+  },
+  spezialisierungExpertise: {
+    title: 'Spezialisierung zahlt sich aus: Warum Nischen-Expertise in der Textilproduktion entscheidend ist',
+    subtitle: 'Verschiedene Produktkategorien brauchen verschiedenes Know-how. Von Lingerie über Workwear bis Swimwear – warum ein generalistischer Produzent oft nicht ausreicht.',
+    category: 'Expertise',
+    readTime: '7 min Lesezeit',
+    backToInsights: 'Zurück zu Insights'
+  },
+  zertifizierungen: {
+    title: 'GOTS vs. OEKO-TEX vs. BSCI: Welche Zertifizierung braucht Ihre Marke wirklich?',
+    subtitle: 'Nicht jedes Label braucht GOTS – aber jede Marke braucht die richtige Zertifizierung. Ein strukturierter Vergleich für fundierte Entscheidungen.',
+    category: 'Nachhaltigkeit',
+    readTime: '9 min Lesezeit',
+    backToInsights: 'Zurück zu Insights'
+  },
+  nachhaltigeTextilproduktion: {
+    title: '„Europa ist die Zukunft der nachhaltigen Textilproduktion"',
+    subtitle: 'Ein Gespräch mit Claudia Kleinert über die Vorteile europäischer Fertigung, kurze Lieferketten und warum Nachhaltigkeit wirtschaftlich sinnvoll ist.',
+    category: 'Interview',
+    readTime: '8 min Lesezeit',
+    backToInsights: 'Zurück zu Insights'
+  },
+  dueDiligence: {
+    title: 'Due Diligence in Textil-Lieferketten: Compliance-Guide für KMUs',
+    subtitle: 'Das deutsche Lieferkettengesetz betrifft auch kleinere Unternehmen. Ein praktischer Leitfaden für transparente, konforme Textilproduktion.',
+    category: 'Compliance',
+    readTime: '11 min Lesezeit',
+    backToInsights: 'Zurück zu Insights'
+  },
+  techZuFashion: {
+    title: 'Von der Tech-Firma zum Fashion-Label: So entwickeln erfolgreiche Startups Merchandise',
+    subtitle: 'Tech-Startups entdecken Fashion als Umsatzquelle und Community-Builder. Wie der Sprung von Code zu Kleidung gelingt – ohne Fashion-Background.',
+    category: 'Startup-Guide',
+    readTime: '9 min Lesezeit',
+    backToInsights: 'Zurück zu Insights'
   }
 };
 
@@ -157,5 +248,96 @@ export const insightsArticlesEN = {
         content: 'A successful first fashion collection requires careful planning, realistic budgeting and collaboration with the right partners. Thorough preparation and a strategic approach form the foundation for sustainable market success and long-term growth.'
       }
     }
+  },
+  produktionszeiten: {
+    title: 'Realistic Production Timelines: Timeline Guide for Every Product Category',
+    subtitle: 'From T-shirt to lingerie: How long does textile production really take? A detailed timeline guide with realistic numbers instead of wishful thinking.',
+    category: 'Planning',
+    readTime: '10 min read',
+    backToInsights: 'Back to Insights'
+  },
+  privateLabelBekleidung: {
+    title: 'Private Label for Regional Retailers: How Mid-Size Fashion Houses Score with Own Brands',
+    subtitle: 'Learn how family-run fashion houses and regional retail chains strengthen their loyal customers and compete against online competition through custom private labels.',
+    category: 'Retail',
+    readTime: '7 min read',
+    backToInsights: 'Back to Insights'
+  },
+  qualitaetNachhaltigkeit: {
+    title: 'Longevity Over Fast Fashion: Why High Quality is the Most Sustainable Investment',
+    subtitle: 'One well-made piece that lasts 10 years is more sustainable than 10 cheap pieces. Why quality is the most honest form of sustainability.',
+    category: 'Sustainability',
+    readTime: '6 min read',
+    backToInsights: 'Back to Insights'
+  },
+  lingerieExpertise: {
+    title: 'From Idea to Premium Product: Lingerie Development with Expertise',
+    subtitle: 'The success story of blush Lingerie shows how passion for details and uncompromising quality create a successful premium brand – and why this expertise benefits your project too.',
+    category: 'Case Study',
+    readTime: '7 min read',
+    backToInsights: 'Back to Insights'
+  },
+  workwearEmployerBranding: {
+    title: 'Workwear as Employer Branding: Why Cheap T-Shirt Prints Are No Longer Enough',
+    subtitle: 'Learn how high-quality, sustainable workwear becomes your company\'s flagship and why employees today value comfort, quality and individual details.',
+    category: 'Employer Branding',
+    readTime: '6 min read',
+    backToInsights: 'Back to Insights'
+  },
+  luxuryHospitalityCollections: {
+    title: 'Luxury to Go: How Hotels and Spas Generate New Revenue with Exclusive Collections',
+    subtitle: 'From yoga apparel to premium bath textiles: Learn how high-end hotels and spa resorts delight their guests and open up additional revenue streams through high-quality own brands.',
+    category: 'Hospitality',
+    readTime: '7 min read',
+    backToInsights: 'Back to Insights'
+  },
+  creatorsInfluencersFashion: {
+    title: 'From Idea to Collection: How Creators and Influencers Make the Jump to Fashion Production',
+    subtitle: 'Creators have the creativity and community, but often lack fashion know-how. Learn how small drops, fast turnaround times and maximum flexibility shape the new era of fashion production.',
+    category: 'Creator Economy',
+    readTime: '6 min read',
+    backToInsights: 'Back to Insights'
+  },
+  kostenTransparenz: {
+    title: 'Cost Transparency: What Does Producing a Fashion Collection Really Cost?',
+    subtitle: 'Realistic numbers instead of wishful thinking: A detailed insight into the actual costs of fashion production – from materials to manufacturing to logistics.',
+    category: 'Calculation',
+    readTime: '10 min read',
+    backToInsights: 'Back to Insights'
+  },
+  spezialisierungExpertise: {
+    title: 'Specialization Pays Off: Why Niche Expertise in Textile Production is Crucial',
+    subtitle: 'Different product categories need different know-how. From lingerie to workwear to swimwear – why a generalist producer is often not enough.',
+    category: 'Expertise',
+    readTime: '7 min read',
+    backToInsights: 'Back to Insights'
+  },
+  zertifizierungen: {
+    title: 'GOTS vs. OEKO-TEX vs. BSCI: Which Certification Does Your Brand Really Need?',
+    subtitle: 'Not every label needs GOTS – but every brand needs the right certification. A structured comparison for informed decisions.',
+    category: 'Sustainability',
+    readTime: '9 min read',
+    backToInsights: 'Back to Insights'
+  },
+  nachhaltigeTextilproduktion: {
+    title: '"Europe is the Future of Sustainable Textile Production"',
+    subtitle: 'A conversation with Claudia Kleinert about the advantages of European manufacturing, short supply chains and why sustainability makes economic sense.',
+    category: 'Interview',
+    readTime: '8 min read',
+    backToInsights: 'Back to Insights'
+  },
+  dueDiligence: {
+    title: 'Due Diligence in Textile Supply Chains: Compliance Guide for SMEs',
+    subtitle: 'The German Supply Chain Act also affects smaller companies. A practical guide for transparent, compliant textile production.',
+    category: 'Compliance',
+    readTime: '11 min read',
+    backToInsights: 'Back to Insights'
+  },
+  techZuFashion: {
+    title: 'From Tech Company to Fashion Label: How Successful Startups Develop Merchandise',
+    subtitle: 'Tech startups discover fashion as a revenue source and community builder. How the jump from code to clothing succeeds – without fashion background.',
+    category: 'Startup Guide',
+    readTime: '9 min read',
+    backToInsights: 'Back to Insights'
   }
 };

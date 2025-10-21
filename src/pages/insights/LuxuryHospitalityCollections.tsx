@@ -3,8 +3,13 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-luxury-hospitality-collections.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { insightsArticlesDE, insightsArticlesEN } from "@/translations/insights-articles";
 
 const LuxuryHospitalityCollections = () => {
+  const { language } = useLanguage();
+  const t = language === 'de' ? insightsArticlesDE.luxuryHospitalityCollections : insightsArticlesEN.luxuryHospitalityCollections;
+  
   const blogPostSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -36,8 +41,8 @@ const LuxuryHospitalityCollections = () => {
 
   return (
     <>
-      <title>Luxus Hotel & Spa Kollektionen Rhein-Main | CMK Studio</title>
-      <meta name="description" content="Premium Hotel und Spa Kollektionen für Resorts im Rhein-Main-Gebiet: Von Yoga-Apparel bis Badtextilien. Hochwertige Eigenmarken für exklusive Gästeerlebnisse." />
+      <title>{language === 'de' ? 'Luxus Hotel & Spa Kollektionen Rhein-Main | CMK Studio' : 'Luxury Hotel & Spa Collections Rhine-Main | CMK Studio'}</title>
+      <meta name="description" content={t.subtitle} />
       
       <div className="min-h-screen">
         <script type="application/ld+json">
@@ -50,28 +55,26 @@ const LuxuryHospitalityCollections = () => {
             <Button variant="ghost" asChild className="mb-8">
               <a href="/insights" className="flex items-center gap-2">
                 <ArrowLeft size={16} />
-                Zurück zu Insights
+                {t.backToInsights}
               </a>
             </Button>
 
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                  Hospitality
+                  {t.category}
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  7 min Lesezeit
+                  {t.readTime}
                 </span>
               </div>
               
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
-                Luxus zum Mitnehmen: Wie Hotels und Spas mit exklusiven Kollektionen neue Umsätze generieren
+                {t.title}
               </h1>
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                Von Yoga-Apparel bis zu Premium-Badtextilien: Erfahren Sie, wie High-End-Hotels und 
-                Spa-Resorts durch hochwertige Eigenmarken ihre Gäste begeistern und zusätzliche 
-                Erlösquellen erschließen.
+                {t.subtitle}
               </p>
             </header>
 

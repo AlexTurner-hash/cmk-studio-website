@@ -3,12 +3,17 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-tech-zu-fashion.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { insightsArticlesDE, insightsArticlesEN } from "@/translations/insights-articles";
 
 const TechZuFashion = () => {
+  const { language } = useLanguage();
+  const t = language === 'de' ? insightsArticlesDE.techZuFashion : insightsArticlesEN.techZuFashion;
+  
   return (
     <>
-      <title>Tech-Startup zu Fashion-Label: Merchandise-Guide | CMK Studio</title>
-      <meta name="description" content="Wie Tech-Startups erfolgreiche Merchandise-Kollektionen launchen. Von SaaS zu Fashion: Planung, Design, Produktion. Case Studies und praktische Tipps für Startup-Merch." />
+      <title>{language === 'de' ? 'Tech-Startup zu Fashion-Label: Merchandise-Guide | CMK Studio' : 'Tech Startup to Fashion Label: Merchandise Guide | CMK Studio'}</title>
+      <meta name="description" content={t.subtitle} />
       
       <div className="min-h-screen">
         <Navigation />
@@ -18,27 +23,26 @@ const TechZuFashion = () => {
             <Button variant="ghost" asChild className="mb-8">
               <a href="/insights" className="flex items-center gap-2">
                 <ArrowLeft size={16} />
-                Zurück zu Insights
+                {t.backToInsights}
               </a>
             </Button>
 
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                  Startup-Guide
+                  {t.category}
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  9 min Lesezeit
+                  {t.readTime}
                 </span>
               </div>
               
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
-                Von der Tech-Firma zum Fashion-Label: So entwickeln erfolgreiche Startups Merchandise
+                {t.title}
               </h1>
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                Tech-Startups entdecken Fashion als Umsatzquelle und Community-Builder. Wie der Sprung von Code 
-                zu Kleidung gelingt – ohne Fashion-Background.
+                {t.subtitle}
               </p>
             </header>
 

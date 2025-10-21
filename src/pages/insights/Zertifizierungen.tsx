@@ -3,12 +3,17 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-zertifizierungen-vergleich.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { insightsArticlesDE, insightsArticlesEN } from "@/translations/insights-articles";
 
 const Zertifizierungen = () => {
+  const { language } = useLanguage();
+  const t = language === 'de' ? insightsArticlesDE.zertifizierungen : insightsArticlesEN.zertifizierungen;
+  
   return (
     <>
-      <title>GOTS vs. OEKO-TEX vs. BSCI: Zertifizierungs-Guide | CMK Studio</title>
-      <meta name="description" content="Welche Textil-Zertifizierung braucht Ihre Marke? Vergleich GOTS, OEKO-TEX, BSCI, RWS. Kosten, Anforderungen, Zielgruppen. Entscheidungshilfe für nachhaltige Mode." />
+      <title>{language === 'de' ? 'GOTS vs. OEKO-TEX vs. BSCI: Zertifizierungs-Guide | CMK Studio' : 'GOTS vs. OEKO-TEX vs. BSCI: Certification Guide | CMK Studio'}</title>
+      <meta name="description" content={t.subtitle} />
       
       <div className="min-h-screen">
         <Navigation />
@@ -18,27 +23,26 @@ const Zertifizierungen = () => {
             <Button variant="ghost" asChild className="mb-8">
               <a href="/insights" className="flex items-center gap-2">
                 <ArrowLeft size={16} />
-                Zurück zu Insights
+                {t.backToInsights}
               </a>
             </Button>
 
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                  Nachhaltigkeit
+                  {t.category}
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  9 min Lesezeit
+                  {t.readTime}
                 </span>
               </div>
               
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
-                GOTS vs. OEKO-TEX vs. BSCI: Welche Zertifizierung braucht Ihre Marke wirklich?
+                {t.title}
               </h1>
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                Nicht jedes Label braucht GOTS – aber jede Marke braucht die richtige Zertifizierung. 
-                Ein strukturierter Vergleich für fundierte Entscheidungen.
+                {t.subtitle}
               </p>
             </header>
 

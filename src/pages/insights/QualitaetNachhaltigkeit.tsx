@@ -3,12 +3,17 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-qualitaet-nachhaltigkeit.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { insightsArticlesDE, insightsArticlesEN } from "@/translations/insights-articles";
 
 const QualitaetNachhaltigkeit = () => {
+  const { language } = useLanguage();
+  const t = language === 'de' ? insightsArticlesDE.qualitaetNachhaltigkeit : insightsArticlesEN.qualitaetNachhaltigkeit;
+  
   return (
     <>
-      <title>Langlebigkeit statt Fast Fashion - Qualität als Nachhaltigkeit | CMK Studio</title>
-      <meta name="description" content="Warum hochwertige Qualität die nachhaltigste Investition ist: Ein gut verarbeitetes Teil, das 10 Jahre hält, schlägt 10 billige Fast-Fashion-Teile." />
+      <title>{language === 'de' ? 'Langlebigkeit statt Fast Fashion - Qualität als Nachhaltigkeit | CMK Studio' : 'Longevity Over Fast Fashion - Quality as Sustainability | CMK Studio'}</title>
+      <meta name="description" content={t.subtitle} />
       
       <div className="min-h-screen">
         <Navigation />
@@ -18,27 +23,26 @@ const QualitaetNachhaltigkeit = () => {
             <Button variant="ghost" asChild className="mb-8">
               <a href="/insights" className="flex items-center gap-2">
                 <ArrowLeft size={16} />
-                Zurück zu Insights
+                {t.backToInsights}
               </a>
             </Button>
 
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                  Nachhaltigkeit
+                  {t.category}
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  6 min Lesezeit
+                  {t.readTime}
                 </span>
               </div>
               
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
-                Langlebigkeit statt Fast Fashion: Warum hochwertige Qualität die nachhaltigste Investition ist
+                {t.title}
               </h1>
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                Ein gut verarbeitetes Teil, das 10 Jahre hält, ist nachhaltiger als 10 billige Teile. 
-                Warum Qualität die ehrlichste Form von Nachhaltigkeit ist.
+                {t.subtitle}
               </p>
             </header>
 

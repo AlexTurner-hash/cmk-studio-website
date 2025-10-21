@@ -3,12 +3,17 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-produktionszeiten.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { insightsArticlesDE, insightsArticlesEN } from "@/translations/insights-articles";
 
 const Produktionszeiten = () => {
+  const { language } = useLanguage();
+  const t = language === 'de' ? insightsArticlesDE.produktionszeiten : insightsArticlesEN.produktionszeiten;
+  
   return (
     <>
-      <title>Produktionszeiten Textil realistisch planen - Timeline-Guide | CMK Studio</title>
-      <meta name="description" content="Realistische Produktionszeiten für jede Produktkategorie: T-Shirts, Lingerie, Swimwear, Knitwear, Workwear. Timeline-Planung, Bottlenecks vermeiden, Europa vs. Fernost Vergleich." />
+      <title>{language === 'de' ? 'Produktionszeiten Textil realistisch planen - Timeline-Guide | CMK Studio' : 'Realistic Textile Production Timelines - Timeline Guide | CMK Studio'}</title>
+      <meta name="description" content={t.subtitle} />
       
       <div className="min-h-screen">
         <Navigation />
@@ -18,27 +23,26 @@ const Produktionszeiten = () => {
             <Button variant="ghost" asChild className="mb-8">
               <a href="/insights" className="flex items-center gap-2">
                 <ArrowLeft size={16} />
-                Zurück zu Insights
+                {t.backToInsights}
               </a>
             </Button>
 
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                  Planung
+                  {t.category}
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  10 min Lesezeit
+                  {t.readTime}
                 </span>
               </div>
               
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
-                Produktionszeiten realistisch planen: Timeline-Guide für jede Produktkategorie
+                {t.title}
               </h1>
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                Von T-Shirt bis Lingerie: Wie lange dauert Textilproduktion wirklich? Ein detaillierter Timeline-Guide 
-                mit realistischen Zahlen statt Wunschdenken.
+                {t.subtitle}
               </p>
             </header>
 

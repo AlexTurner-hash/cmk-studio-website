@@ -3,12 +3,17 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-lingerie-expertise-new.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { insightsArticlesDE, insightsArticlesEN } from "@/translations/insights-articles";
 
 const LingerieExpertise = () => {
+  const { language } = useLanguage();
+  const t = language === 'de' ? insightsArticlesDE.lingerieExpertise : insightsArticlesEN.lingerieExpertise;
+  
   return (
     <>
-      <title>Von der Idee zum Premium-Produkt: Lingerie-Entwicklung mit Expertise | CMK Studio</title>
-      <meta name="description" content="Wie die Erfolgsgeschichte von blush Lingerie zeigt, dass Lingerie-Expertise der Schlüssel zu außergewöhnlicher Produktqualität in allen Kategorien ist." />
+      <title>{language === 'de' ? 'Von der Idee zum Premium-Produkt: Lingerie-Entwicklung mit Expertise | CMK Studio' : 'From Idea to Premium Product: Lingerie Development with Expertise | CMK Studio'}</title>
+      <meta name="description" content={t.subtitle} />
       
       <div className="min-h-screen">
         <Navigation />
@@ -18,28 +23,26 @@ const LingerieExpertise = () => {
             <Button variant="ghost" asChild className="mb-8">
               <a href="/insights" className="flex items-center gap-2">
                 <ArrowLeft size={16} />
-                Zurück zu Insights
+                {t.backToInsights}
               </a>
             </Button>
 
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                  Case Study
+                  {t.category}
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  7 min Lesezeit
+                  {t.readTime}
                 </span>
               </div>
               
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
-                Von der Idee zum Premium-Produkt: Lingerie-Entwicklung mit Expertise
+                {t.title}
               </h1>
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                Die Erfolgsgeschichte von blush Lingerie zeigt, wie aus Leidenschaft für Details 
-                und kompromissloser Qualität eine erfolgreiche Premium-Marke entsteht – 
-                und warum diese Expertise auch Ihrem Projekt zugutekommt.
+                {t.subtitle}
               </p>
             </header>
 

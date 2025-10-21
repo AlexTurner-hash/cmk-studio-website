@@ -3,8 +3,13 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-workwear-employer-branding.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { insightsArticlesDE, insightsArticlesEN } from "@/translations/insights-articles";
 
 const WorkwearEmployerBranding = () => {
+  const { language } = useLanguage();
+  const t = language === 'de' ? insightsArticlesDE.workwearEmployerBranding : insightsArticlesEN.workwearEmployerBranding;
+  
   const blogPostSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -36,8 +41,8 @@ const WorkwearEmployerBranding = () => {
 
   return (
     <>
-      <title>Workwear als Employer Branding - Hochwertige Arbeitskleidung | CMK Studio</title>
-      <meta name="description" content="Wie hochwertige, nachhaltige Arbeitskleidung zum Aushängeschild Ihres Unternehmens wird und warum Mitarbeiter heute Wert auf Komfort, Qualität und individuelle Details legen." />
+      <title>{language === 'de' ? 'Workwear als Employer Branding - Hochwertige Arbeitskleidung | CMK Studio' : 'Workwear as Employer Branding - High-Quality Workwear | CMK Studio'}</title>
+      <meta name="description" content={t.subtitle} />
       
       <div className="min-h-screen">
         <script type="application/ld+json">
@@ -50,28 +55,26 @@ const WorkwearEmployerBranding = () => {
             <Button variant="ghost" asChild className="mb-8">
               <a href="/insights" className="flex items-center gap-2">
                 <ArrowLeft size={16} />
-                Zurück zu Insights
+                {t.backToInsights}
               </a>
             </Button>
 
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                  Employer Branding
+                  {t.category}
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  6 min Lesezeit
+                  {t.readTime}
                 </span>
               </div>
               
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
-                Workwear als Employer Branding: Warum billige T-Shirt-Drucke nicht mehr reichen
+                {t.title}
               </h1>
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                Erfahren Sie, wie hochwertige, nachhaltige Arbeitskleidung zum Aushängeschild Ihres 
-                Unternehmens wird und warum Mitarbeiter heute Wert auf Komfort, Qualität und 
-                individuelle Details legen.
+                {t.subtitle}
               </p>
             </header>
 

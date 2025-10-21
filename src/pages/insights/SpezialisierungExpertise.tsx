@@ -3,12 +3,17 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-spezialisierung-expertise.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { insightsArticlesDE, insightsArticlesEN } from "@/translations/insights-articles";
 
 const SpezialisierungExpertise = () => {
+  const { language } = useLanguage();
+  const t = language === 'de' ? insightsArticlesDE.spezialisierungExpertise : insightsArticlesEN.spezialisierungExpertise;
+  
   return (
     <>
-      <title>Spezialisierung in der Textilproduktion - Warum Nischen-Expertise entscheidend ist | CMK Studio</title>
-      <meta name="description" content="Von Lingerie über Workwear bis Swimwear: Warum jede Produktkategorie eigenes Know-how braucht und generalistische Produzenten oft nicht ausreichen." />
+      <title>{language === 'de' ? 'Spezialisierung in der Textilproduktion - Warum Nischen-Expertise entscheidend ist | CMK Studio' : 'Specialization in Textile Production - Why Niche Expertise is Crucial | CMK Studio'}</title>
+      <meta name="description" content={t.subtitle} />
       
       <div className="min-h-screen">
         <Navigation />
@@ -18,27 +23,26 @@ const SpezialisierungExpertise = () => {
             <Button variant="ghost" asChild className="mb-8">
               <a href="/insights" className="flex items-center gap-2">
                 <ArrowLeft size={16} />
-                Zurück zu Insights
+                {t.backToInsights}
               </a>
             </Button>
 
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                  Expertise
+                  {t.category}
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  7 min Lesezeit
+                  {t.readTime}
                 </span>
               </div>
               
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
-                Spezialisierung zahlt sich aus: Warum Nischen-Expertise in der Textilproduktion entscheidend ist
+                {t.title}
               </h1>
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                Verschiedene Produktkategorien brauchen verschiedenes Know-how. 
-                Von Lingerie über Workwear bis Swimwear – warum ein generalistischer Produzent oft nicht ausreicht.
+                {t.subtitle}
               </p>
             </header>
 

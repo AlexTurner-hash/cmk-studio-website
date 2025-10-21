@@ -7,12 +7,17 @@ import localTextileProducersImage from "@/assets/local-textile-producers-green.j
 import textileMachineryImage from "@/assets/textile-machinery-detail.jpg";
 import cottonFieldImage from "@/assets/cotton-field-worker.jpg";
 import textileFactoryImage from "@/assets/textile-factory-floor.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { insightsArticlesDE, insightsArticlesEN } from "@/translations/insights-articles";
 
 const NachhaltigeTextilproduktion = () => {
+  const { language } = useLanguage();
+  const t = language === 'de' ? insightsArticlesDE.nachhaltigeTextilproduktion : insightsArticlesEN.nachhaltigeTextilproduktion;
+  
   return (
     <>
-      <title>Nachhaltige Textilproduktion Europa - Chancen für Marken | CMK Studio</title>
-      <meta name="description" content="Entdecken Sie die Vorteile nachhaltiger Textilproduktion in Europa: Kurze Lieferketten, faire Standards und Qualität für Ihre Marke." />
+      <title>{language === 'de' ? 'Nachhaltige Textilproduktion Europa - Chancen für Marken | CMK Studio' : 'Sustainable Textile Production Europe - Opportunities for Brands | CMK Studio'}</title>
+      <meta name="description" content={t.subtitle} />
       
       <div className="min-h-screen">
         <Navigation />
@@ -22,27 +27,26 @@ const NachhaltigeTextilproduktion = () => {
             <Button variant="ghost" asChild className="mb-8">
               <a href="/insights" className="flex items-center gap-2">
                 <ArrowLeft size={16} />
-                Zurück zu Insights
+                {t.backToInsights}
               </a>
             </Button>
 
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                  Interview
+                  {t.category}
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  8 min Lesezeit
+                  {t.readTime}
                 </span>
               </div>
               
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
-                „Europa ist die Zukunft der nachhaltigen Textilproduktion"
+                {t.title}
               </h1>
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                Ein Gespräch mit Claudia Kleinert über die Vorteile europäischer Fertigung, 
-                kurze Lieferketten und warum Nachhaltigkeit wirtschaftlich sinnvoll ist.
+                {t.subtitle}
               </p>
             </header>
 

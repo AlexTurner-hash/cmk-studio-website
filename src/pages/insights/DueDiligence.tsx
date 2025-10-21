@@ -3,12 +3,17 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import blogImage from "@/assets/blog-due-diligence.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { insightsArticlesDE, insightsArticlesEN } from "@/translations/insights-articles";
 
 const DueDiligence = () => {
+  const { language } = useLanguage();
+  const t = language === 'de' ? insightsArticlesDE.dueDiligence : insightsArticlesEN.dueDiligence;
+  
   return (
     <>
-      <title>Due Diligence Textil-Lieferketten: Compliance-Guide KMU | CMK Studio</title>
-      <meta name="description" content="Lieferkettengesetz-Compliance für KMUs: Praktischer Due Diligence Guide für Textilproduktion. Risikobewertung, Dokumentation, Audits. Expertenwissen für Transparenz." />
+      <title>{language === 'de' ? 'Due Diligence Textil-Lieferketten: Compliance-Guide KMU | CMK Studio' : 'Due Diligence Textile Supply Chains: Compliance Guide SME | CMK Studio'}</title>
+      <meta name="description" content={t.subtitle} />
       
       <div className="min-h-screen">
         <Navigation />
@@ -18,27 +23,26 @@ const DueDiligence = () => {
             <Button variant="ghost" asChild className="mb-8">
               <a href="/insights" className="flex items-center gap-2">
                 <ArrowLeft size={16} />
-                Zurück zu Insights
+                {t.backToInsights}
               </a>
             </Button>
 
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
-                  Compliance
+                  {t.category}
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  11 min Lesezeit
+                  {t.readTime}
                 </span>
               </div>
               
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
-                Due Diligence in Textil-Lieferketten: Compliance-Guide für KMUs
+                {t.title}
               </h1>
               
               <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                Das deutsche Lieferkettengesetz betrifft auch kleinere Unternehmen. Ein praktischer Leitfaden 
-                für transparente, konforme Textilproduktion.
+                {t.subtitle}
               </p>
             </header>
 
