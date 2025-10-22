@@ -67,7 +67,10 @@ const FactoryImageSection = () => {
               src={factoryImage} 
               alt="Modern textile manufacturing facility" 
               className="w-full h-96 md:h-[500px] object-cover will-change-transform transition-transform duration-100" 
+              width="1920"
+              height="500"
               loading="lazy"
+              decoding="async"
               style={{ transform: 'scale(1.15)' }}
             />
           </div>

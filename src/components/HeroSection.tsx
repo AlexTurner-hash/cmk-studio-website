@@ -68,7 +68,9 @@ const HeroSection = () => {
           className="w-full h-full object-cover scale-110"
           width="1920"
           height="1080"
-          loading="eager" 
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-black/25"></div>
       </div>
