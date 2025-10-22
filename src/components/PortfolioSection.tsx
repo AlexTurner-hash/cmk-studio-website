@@ -143,6 +143,7 @@ const PortfolioSection = () => {
             className={`w-3 h-3 transition-colors duration-300 ${
               currentSlide === index ? 'bg-[hsl(var(--cream-tan-hover))]' : 'bg-[hsl(var(--cream-tan-hover))]/50'
             }`}
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>

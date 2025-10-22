@@ -97,6 +97,7 @@ const Navigation = () => {
                     ? `font-bold ${(isInsightsPage && !isScrolled && !isMenuOpen) || (isMenuOpen && !isScrolled) ? 'text-black' : 'text-white'}` 
                     : `${(isInsightsPage && !isScrolled && !isMenuOpen) || (isMenuOpen && !isScrolled) ? 'text-black/60' : 'text-white/60'} hover:${(isInsightsPage && !isScrolled && !isMenuOpen) || (isMenuOpen && !isScrolled) ? 'text-black' : 'text-white'}`
                 }`}
+                aria-label="Switch to German"
               >
                 DE
               </button>
@@ -110,6 +111,7 @@ const Navigation = () => {
                     ? `font-bold ${(isInsightsPage && !isScrolled && !isMenuOpen) || (isMenuOpen && !isScrolled) ? 'text-black' : 'text-white'}` 
                     : `${(isInsightsPage && !isScrolled && !isMenuOpen) || (isMenuOpen && !isScrolled) ? 'text-black/60' : 'text-white/60'} hover:${(isInsightsPage && !isScrolled && !isMenuOpen) || (isMenuOpen && !isScrolled) ? 'text-black' : 'text-white'}`
                 }`}
+                aria-label="Switch to English"
               >
                 EN
               </button>
@@ -125,6 +127,7 @@ const Navigation = () => {
                 : 'text-white hover:text-white'
             }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMenuOpen ? <X size={46} /> : <Menu size={46} />}
           </Button>

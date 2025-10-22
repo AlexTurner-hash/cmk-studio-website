@@ -106,7 +106,8 @@ const TestimonialsSection = () => {
                 className={`w-2 h-2 rounded-full transition-colors duration-200 ${
                   index + 1 === current ? 'bg-foreground' : 'bg-muted-foreground/30'
                 }`} 
-                onClick={() => api?.scrollTo(index)} 
+                onClick={() => api?.scrollTo(index)}
+                aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
           </div>
