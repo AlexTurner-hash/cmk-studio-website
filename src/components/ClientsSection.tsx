@@ -44,6 +44,9 @@ const ClientsSection = () => {
                     src={client.src}
                     alt={`${client.name} logo`}
                     className="max-w-full max-h-full object-contain"
+                    width="128"
+                    height="64"
+                    loading="lazy"
                   />
                 ) : (
                   <span className="text-foreground text-sm font-medium text-center px-2">

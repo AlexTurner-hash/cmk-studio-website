@@ -49,6 +49,9 @@ const InsightsPreviewSection = () => {
                     src={post.image} 
                     alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    width="800"
+                    height="450"
+                    loading="lazy"
                   />
                 </div>
                 <CardContent className="p-6 flex flex-col flex-grow">

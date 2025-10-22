@@ -65,7 +65,9 @@ const HeroSection = () => {
         <img 
           src={headerImage} 
           alt="Warm fashion design consultation meeting between CMK Studio team and client in bright, welcoming studio" 
-          className="w-full h-full object-cover scale-110" 
+          className="w-full h-full object-cover scale-110"
+          width="1920"
+          height="1080"
           loading="eager" 
         />
         <div className="absolute inset-0 bg-black/25"></div>
