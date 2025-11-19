@@ -213,7 +213,7 @@ const translationsDE = {
     ]
   },
   testimonialsAbout: {
-    title: 'Über uns',
+    title: 'Kundinnen und Kunden',
     testimonials: [
       {
         quote: 'Unglaublich zuverlässig, freundlich und mit großem Fachwissen in Sachen Bekleidung und Produktion. Das Verständnis für Materialien, insbesondere Strickwaren, ist wirklich wertvoll.',
@@ -501,7 +501,7 @@ const translationsEN = {
     ]
   },
   testimonialsAbout: {
-    title: 'About Us',
+    title: 'Clients',
     testimonials: [
       {
         quote: 'Incredibly reliable, friendly and with great expertise in clothing and production. The understanding of materials, especially knitwear, is really valuable.',
