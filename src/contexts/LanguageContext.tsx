@@ -189,6 +189,7 @@ const translationsDE = {
     validationMessageMax: 'Nachricht darf maximal 2000 Zeichen lang sein'
   },
   insightsPreview: {
+    featured: 'Empfohlen',
     title: 'Insights',
     subtitle: 'Expertenwissen rund um nachhaltige Textilproduktion, Kollektionsplanung und erfolgreiche Markenentwicklung.',
     viewAll: 'Alle Insights ansehen',
@@ -476,6 +477,7 @@ const translationsEN = {
     validationMessageMax: 'Message must be less than 2000 characters'
   },
   insightsPreview: {
+    featured: 'Featured',
     title: 'Insights',
     subtitle: 'Expert knowledge on sustainable textile production, collection planning and successful brand development.',
     viewAll: 'View All Insights',

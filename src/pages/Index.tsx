@@ -11,6 +11,7 @@ import FAQSection from "@/components/FAQSection";
 import FactoryImageSection from "@/components/FactoryImageSection";
 import ContactSection from "@/components/ContactSection";
 import InsightsPreviewSection from "@/components/InsightsPreviewSection";
+import FeaturedInsightSection from "@/components/FeaturedInsightSection";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 
@@ -61,6 +62,7 @@ const Index = () => {
       <HeroSection />
       <IntroSection />
       <TestimonialsSection />
+      <FeaturedInsightSection />
       <ServicesSection />
       <ProductCategorySlider />
       <ServicesOfferedSection />
