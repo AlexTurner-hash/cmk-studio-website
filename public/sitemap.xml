@@ -3,28 +3,28 @@
   <!-- Hauptseiten -->
   <url>
     <loc>https://cmk.studio/</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/ueber-uns</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/insights</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/glossar</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -32,162 +32,169 @@
   <!-- Produktkategorien -->
   <url>
     <loc>https://cmk.studio/produktkategorien/lingerie</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/produktkategorien/streetwear</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/produktkategorien/denim</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/produktkategorien/knitwear</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/produktkategorien/swimwear</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/produktkategorien/workwear</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/produktkategorien/spa-leisure</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/produktkategorien/leather</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/produktkategorien/accessories</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Insights Artikel -->
   <url>
-    <loc>https://cmk.studio/insights/erste-modekollektion</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://cmk.studio/insights/erste-modekollektion-planen</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://cmk.studio/insights/private-label-bekleidung</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://cmk.studio/insights/nachhaltige-textilproduktion-europa</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://cmk.studio/insights/lingerie-expertise</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://cmk.studio/insights/nachhaltige-textilproduktion</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://cmk.studio/insights/private-label-bekleidung-eigenmarken</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/insights/qualitaet-nachhaltigkeit</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://cmk.studio/insights/produktionszeiten</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://cmk.studio/insights/kosten-transparenz</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://cmk.studio/insights/zertifizierungen</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://cmk.studio/insights/lingerie-expertise</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/insights/spezialisierung-expertise</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://cmk.studio/insights/creators-influencers-fashion</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://cmk.studio/insights/tech-zu-fashion</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://cmk.studio/insights/claudia-kleinert</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://cmk.studio/insights/workwear-employer-branding</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/insights/luxury-hospitality-collections</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://cmk.studio/insights/due-diligence</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://cmk.studio/insights/claudia-kleinert</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://cmk.studio/insights/creators-influencers-fashion-produktion</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://cmk.studio/insights/kosten-transparenz-modeproduktion</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://cmk.studio/insights/zertifizierungen-vergleich</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://cmk.studio/insights/due-diligence-lieferketten</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://cmk.studio/insights/tech-startup-merchandise</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://cmk.studio/insights/produktionszeiten-timeline</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -195,14 +202,14 @@
   <!-- Rechtliche Seiten -->
   <url>
     <loc>https://cmk.studio/impressum</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
     <loc>https://cmk.studio/datenschutz</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
