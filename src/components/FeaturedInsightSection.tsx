@@ -2,18 +2,29 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ArrowRight } from "lucide-react";
-import blogImage from "@/assets/blog-erste-modekollektion-new.jpg";
+import claudiaPortrait from "@/assets/claudia-kleinert-portrait.jpg";
 
 const FeaturedInsightSection = () => {
-  const { t } = useLanguage();
+  const { language } = useLanguage();
   
-  const featuredArticle = {
-    id: "erste-modekollektion-planen",
-    title: t('insightsPreview.posts.0.title'),
-    excerpt: t('insightsPreview.posts.0.excerpt'),
-    image: blogImage,
-    category: t('insightsPreview.posts.0.category'),
-    readTime: `8 ${t('insightsPreview.readTime')}`
+  const featuredArticle = language === 'de' ? {
+    id: "claudia-kleinert",
+    title: "Die Gründerin: Claudia Kleinert",
+    excerpt: "Von der Dessous-Unternehmerin zur Expertin für nachhaltige Textilproduktion – erfahren Sie mehr über die Vision hinter CMK Studio.",
+    image: claudiaPortrait,
+    category: "Über uns",
+    readTime: "5 Min. Lesezeit",
+    featured: "Empfohlen",
+    cta: "Mehr erfahren"
+  } : {
+    id: "claudia-kleinert",
+    title: "The Founder: Claudia Kleinert",
+    excerpt: "From lingerie entrepreneur to expert in sustainable textile production – learn more about the vision behind CMK Studio.",
+    image: claudiaPortrait,
+    category: "About us",
+    readTime: "5 min read",
+    featured: "Featured",
+    cta: "Learn more"
   };
 
   return (
@@ -37,7 +48,7 @@ const FeaturedInsightSection = () => {
               />
               <div className="absolute top-4 left-4">
                 <span className="bg-background/95 backdrop-blur-sm px-4 py-2 rounded-full text-xs font-medium text-[hsl(var(--bronze))] tracking-wide uppercase">
-                  {t('insightsPreview.featured')}
+                  {featuredArticle.featured}
                 </span>
               </div>
             </div>
@@ -65,7 +76,7 @@ const FeaturedInsightSection = () => {
                 variant="ghost" 
                 className="group/btn p-0 h-auto text-[hsl(var(--bronze))] hover:text-[hsl(var(--bronze))]/80 hover:bg-transparent"
               >
-                {t('insights.readMore')}
+                {featuredArticle.cta}
                 <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
               </Button>
             </div>
