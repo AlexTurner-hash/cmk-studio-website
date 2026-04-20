@@ -90,7 +90,7 @@ const ProductCategoryTemplate = ({
           {/* CTA Section */}
           <div className="mt-12 mb-16 text-center">
             <Link 
-              to="/kontakt" 
+              to="/#contact" 
               className="btn-accent"
             >
               {ctaText}

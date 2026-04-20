@@ -217,7 +217,7 @@ const Leather = () => {
               {/* CTA Section */}
               <div className="mt-12 text-center">
                 <Link 
-                  to="/kontakt" 
+                  to="/#contact" 
                   className="btn-accent"
                 >
                   Leder-Projekt starten

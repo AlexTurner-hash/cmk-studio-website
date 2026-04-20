@@ -27,12 +27,12 @@ const LuxuryHospitalityCollections = () => {
       "name": "CMK Studio",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://cmk.studio/logo.png"
+        "url": "https://cmk-studio.com/logo.png"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://cmk.studio/insights/luxury-hospitality-collections"
+      "@id": "https://cmk-studio.com/insights/luxury-hospitality-collections"
     },
     "articleSection": "Hospitality",
     "keywords": ["Luxus Hotels", "Spa Kollektionen", "Hotel Merchandise", "Rhein-Main", "Premium Textilien"],

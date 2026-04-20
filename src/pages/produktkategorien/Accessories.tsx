@@ -224,7 +224,7 @@ const Accessories = () => {
 
               {/* CTA Section */}
               <div className="mt-12 text-center">
-                <Link to="/kontakt" className="btn-accent">
+                <Link to="/#contact" className="btn-accent">
                   Accessoires-Projekt besprechen
                 </Link>
               </div>
