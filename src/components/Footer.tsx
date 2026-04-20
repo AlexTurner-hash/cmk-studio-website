@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "@/assets/cmk-logo-white-new.png";
 
 const Footer = () => {
@@ -17,10 +18,10 @@ const Footer = () => {
           <div>
             <h4 className="font-light mb-4 tracking-wide font-display">NAVIGATION</h4>
             <ul className="space-y-2 text-sm text-white/70">
-              <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
-              <li><a href="/ueber-uns" className="hover:text-white transition-colors">Über uns</a></li>
-              <li><a href="/insights" className="hover:text-white transition-colors">Insights</a></li>
-              <li><a href="/glossar" className="hover:text-white transition-colors">Glossar</a></li>
+              <li><Link to="/" className="hover:text-white transition-colors">Home</Link></li>
+              <li><Link to="/ueber-uns" className="hover:text-white transition-colors">Über uns</Link></li>
+              <li><Link to="/insights" className="hover:text-white transition-colors">Insights</Link></li>
+              <li><Link to="/glossar" className="hover:text-white transition-colors">Glossar</Link></li>
               <li><a href="mailto:service@cmk-studio.com?subject=*Anfrage* Kontakt" className="hover:text-white transition-colors">Kontakt</a></li>
             </ul>
           </div>
@@ -44,13 +45,13 @@ const Footer = () => {
         <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
           <p>© 2025 CMK Studio GmbH. Alle Rechte vorbehalten.</p>
           <div className="mt-2 md:mt-0 flex gap-4">
-            <a href="/impressum" className="hover:text-white transition-colors">
+            <Link to="/impressum" className="hover:text-white transition-colors">
               Impressum
-            </a>
+            </Link>
             <span>•</span>
-            <a href="/datenschutz" className="hover:text-white transition-colors">
+            <Link to="/datenschutz" className="hover:text-white transition-colors">
               Datenschutz
-            </a>
+            </Link>
           </div>
         </div>
       </div>
