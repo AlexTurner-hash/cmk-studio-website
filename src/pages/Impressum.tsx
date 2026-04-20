@@ -8,7 +8,7 @@ const Impressum = () => {
       <Helmet>
         <title>Impressum | CMK Studio GmbH</title>
         <meta name="description" content="Impressum der CMK Studio GmbH - Herausgeber, Kontaktdaten und rechtliche Informationen zur Premium-Textilproduktion in Europa." />
-        <link rel="canonical" href="https://cmk.studio/impressum" />
+        <link rel="canonical" href="https://cmk-studio.com/impressum" />
         <meta name="robots" content="noindex, follow" />
       </Helmet>
       <Navigation />

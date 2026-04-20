@@ -21,8 +21,8 @@ const Index = () => {
     "@type": "Organization",
     "name": "CMK Studio",
     "description": "Premium-Textilproduktion aus Europa für Unternehmen, Creator und Consultancies",
-    "url": "https://cmk.studio",
-    "logo": "https://cmk.studio/logo.png",
+    "url": "https://cmk-studio.com",
+    "logo": "https://cmk-studio.com/logo.png",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Berlin",
@@ -41,18 +41,21 @@ const Index = () => {
       <Helmet>
         <title>CMK Studio | Premium Textilproduktion in Europa - Berlin & Rhein-Main</title>
         <meta name="description" content="CMK Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa. Hochwertige Textilproduktion für Marken, Creator und Unternehmen – von der ersten Idee bis zur fertigen Kollektion." />
-        <link rel="canonical" href="https://cmk.studio/" />
+        <link rel="canonical" href="https://cmk-studio.com/" />
         
         <meta property="og:title" content="CMK Studio | Premium Textilproduktion in Europa" />
         <meta property="og:description" content="CMK Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa. Hochwertige Textilproduktion für Marken, Creator und Unternehmen – von der ersten Idee bis zur fertigen Kollektion." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://cmk.studio/" />
-        <meta property="og:image" content="https://cmk.studio/web-app-manifest-512x512.png" />
+        <meta property="og:url" content="https://cmk-studio.com/" />
+        <meta property="og:image" content="https://cmk-studio.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:locale" content="de_DE" />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="CMK Studio | Premium Textilproduktion in Europa" />
         <meta name="twitter:description" content="CMK Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa. Hochwertige Textilproduktion für Marken, Creator und Unternehmen." />
-        <meta name="twitter:image" content="https://cmk.studio/web-app-manifest-512x512.png" />
+        <meta name="twitter:image" content="https://cmk-studio.com/og-image.jpg" />
         
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}

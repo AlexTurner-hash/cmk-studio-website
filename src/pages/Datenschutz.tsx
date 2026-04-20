@@ -8,7 +8,7 @@ const Datenschutz = () => {
       <Helmet>
         <title>Datenschutz | CMK Studio GmbH</title>
         <meta name="description" content="Datenschutzerklärung der CMK Studio GmbH - Informationen zu Datenerfassung, Verarbeitung und Ihren Rechten gemäß DSGVO." />
-        <link rel="canonical" href="https://cmk.studio/datenschutz" />
+        <link rel="canonical" href="https://cmk-studio.com/datenschutz" />
         <meta name="robots" content="noindex, follow" />
       </Helmet>
       <Navigation />

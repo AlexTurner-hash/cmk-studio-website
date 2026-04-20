@@ -27,12 +27,12 @@ const ErsteModekollektion = () => {
       "name": "CMK Studio",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://cmk.studio/logo.png"
+        "url": "https://cmk-studio.com/logo.png"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://cmk.studio/insights/erste-modekollektion-planen"
+      "@id": "https://cmk-studio.com/insights/erste-modekollektion-planen"
     },
     "articleSection": "Startup-Guide",
     "keywords": ["Modekollektion", "Fashion Startup", "Textilproduktion", "Design", "Berlin"],
