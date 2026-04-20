@@ -47,12 +47,15 @@ const Index = () => {
         <meta property="og:description" content="CMK Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa. Hochwertige Textilproduktion für Marken, Creator und Unternehmen – von der ersten Idee bis zur fertigen Kollektion." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://cmk-studio.com/" />
-        <meta property="og:image" content="https://cmk-studio.com/web-app-manifest-512x512.png" />
+        <meta property="og:image" content="https://cmk-studio.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:locale" content="de_DE" />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="CMK Studio | Premium Textilproduktion in Europa" />
         <meta name="twitter:description" content="CMK Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa. Hochwertige Textilproduktion für Marken, Creator und Unternehmen." />
-        <meta name="twitter:image" content="https://cmk-studio.com/web-app-manifest-512x512.png" />
+        <meta name="twitter:image" content="https://cmk-studio.com/og-image.jpg" />
         
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
