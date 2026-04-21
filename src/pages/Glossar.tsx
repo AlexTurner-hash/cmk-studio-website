@@ -146,7 +146,7 @@ const Glossar = () => {
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground font-body leading-relaxed max-w-3xl mx-auto">
                 Die wichtigsten Fachbegriffe aus Textilproduktion, nachhaltiger Mode und Fashion-Business – 
-                verständlich erklärt für Startups, Creator und Unternehmen.
+                verständlich erklärt für Startups, Marken und Unternehmen.
               </p>
             </header>
 
