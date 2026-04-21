@@ -87,126 +87,30 @@ const WorkwearEmployerBranding = () => {
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Das Ende der T-Shirt-Ära
-              </h2>
-              
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Billige T-Shirts mit aufgedruckten Logos waren gestern. Moderne Mitarbeiter haben höhere 
-                Ansprüche an ihre Arbeitskleidung und sehen diese als Spiegelbild der Unternehmenskultur. 
-                Unternehmen, die noch auf günstige Online-Drucke setzen, verpassen eine wichtige Chance 
-                im Employer Branding.
-              </p>
-
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Hochwertige Workwear signalisiert Wertschätzung gegenüber den Mitarbeitern und zeigt, 
-                dass das Unternehmen bereit ist, in Qualität zu investieren. Diese Botschaft kommt 
-                sowohl intern als auch extern an.
-              </p>
-
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Workwear als Visitenkarte
-              </h2>
-              
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Mitarbeiter sind die besten Botschafter eines Unternehmens. Wenn sie stolz auf ihre 
-                Arbeitskleidung sind und diese auch in der Freizeit tragen, wird das Unternehmen 
-                zur persönlichen Empfehlung. Hochwertige Workwear macht aus jedem Mitarbeiter einen 
-                authentischen Markenbotschafter.
-              </p>
-
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Besonders in kreativen und technischen Branchen ist die Kleidung ein wichtiger 
-                Ausdruck der Unternehmensidentität. Startups und innovative Unternehmen nutzen 
-                durchdachte Workwear, um ihre Kultur und Werte zu kommunizieren.
-              </p>
-
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Qualität, die überzeugt
-              </h2>
-              
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Mitarbeiter merken sofort den Unterschied zwischen billiger Massenware und hochwertiger 
-                Kleidung. Gute Passform, angenehme Materialien und durchdachte Details schaffen ein 
-                positives Tragegefühl, das sich auf die Arbeitseinstellung auswirkt.
-              </p>
-
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Nachhaltige Materialien wie Bio-Baumwolle oder recycelte Fasern zeigen außerdem, 
-                dass das Unternehmen Verantwortung übernimmt. Diese Werte werden von modernen 
-                Arbeitnehmern zunehmend geschätzt und erwartet.
-              </p>
-
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Individualität statt Einheitsoptik
-              </h2>
-              
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Moderne Workwear muss nicht uniform aussehen. Verschiedene Schnitte, Farben und 
-                Styles ermöglichen es Mitarbeitern, ihre Persönlichkeit auszudrücken und sich 
-                gleichzeitig mit dem Unternehmen zu identifizieren.
-              </p>
-
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Subtile Branding-Elemente wirken oft professioneller als große Logos. Ein kleines 
-                Etikett, ein dezentes Logo oder spezielle Farbakzente können genauso wirkungsvoll 
-                sein wie auffällige Aufdrucke.
-              </p>
-
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Der ROI von hochwertiger Workwear
-              </h2>
-              
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Hochwertige Arbeitskleidung ist eine Investition, die sich mehrfach auszahlt. 
-                Mitarbeiter fühlen sich wertgeschätzt, die Fluktuation sinkt und das Unternehmen 
-                wird für potenzielle Bewerber attraktiver. Gleichzeitig steigt die Markensichtbarkeit.
-              </p>
-
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Studien zeigen, dass Unternehmen mit durchdachter Corporate Fashion höhere 
-                Mitarbeiterzufriedenheit und bessere Bewertungen auf Arbeitgeberportalen erzielen. 
-                Die Investition in Qualität zahlt sich langfristig aus.
-              </p>
-
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Nachhaltigkeit als Wettbewerbsvorteil
-              </h2>
-              
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Nachhaltige Workwear spricht besonders die Generation Z und Millennials an, 
-                die zunehmend Wert auf ethische Unternehmenspraktiken legen. Fair produzierte 
-                Kleidung aus ökologischen Materialien wird zum Differenzierungsmerkmal.
-              </p>
-
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Transparenz in der Produktionskette und Zertifizierungen wie GOTS oder 
-                Fair Trade ermöglichen es Unternehmen, ihre Nachhaltigkeitsstrategie 
-                authentisch zu kommunizieren.
-              </p>
-
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Die Zukunft der Corporate Fashion
-              </h2>
-              
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Workwear wird zunehmend zum strategischen Instrument im Employer Branding. 
-                Unternehmen, die heute in hochwertige, nachhaltige Arbeitskleidung investieren, 
-                positionieren sich als attraktive Arbeitgeber und starke Marken. 
-                Die Zeit der billigen T-Shirt-Drucke ist endgültig vorbei.
-              </p>
+              {(['endOfTshirtEra','businessCard','qualityConvinces','individuality','roi','sustainability'] as const).map((key) => {
+                const s = (t.sections as any)[key];
+                return (
+                  <div key={key}>
+                    <h2 className="text-2xl font-light mb-4 text-foreground font-display">{s.title}</h2>
+                    <p className="mb-6 font-body leading-relaxed text-muted-foreground">{s.content1}</p>
+                    <p className="mb-8 font-body leading-relaxed text-muted-foreground">{s.content2}</p>
+                  </div>
+                );
+              })}
+              <h2 className="text-2xl font-light mb-4 text-foreground font-display">{(t.sections as any).future.title}</h2>
+              <p className="mb-8 font-body leading-relaxed text-muted-foreground">{(t.sections as any).future.content}</p>
             </div>
 
             <div className="mt-16 p-8 bg-[hsl(var(--cream-tan))] rounded-lg text-center">
               <h3 className="text-xl font-light mb-4 text-foreground font-display">
-                Bereit für hochwertige Workwear?
+                {(t as any).ctaTitle}
               </h3>
               <p className="text-muted-foreground mb-6 font-body">
-                Entwickeln Sie mit uns Arbeitskleidung, die Ihre Mitarbeiter stolz macht.
+                {(t as any).ctaDescription}
               </p>
               <Button size="lg" asChild>
                 <a href="mailto:service@cmk-studio.com?subject=*Anfrage* Workwear Kollektion">
-                  Jetzt Projekt starten
+                  {(t as any).ctaButton}
                 </a>
               </Button>
             </div>
