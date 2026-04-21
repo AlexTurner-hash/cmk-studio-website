@@ -41,7 +41,7 @@ const UeberUns = () => {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg mx-auto text-clay/80 font-body">
               <p className="text-lg leading-relaxed mb-6">
-                CMK Studio ist ein unabhängiger Partner für Marken, Creator und Unternehmen, die hochwertige Kollektionen in Europa produzieren möchten.
+                CMK Studio ist ein unabhängiger Partner für Marken und Unternehmen, die hochwertige Kollektionen in Europa produzieren möchten.
               </p>
               <p className="text-lg leading-relaxed mb-6">
                 Mit über 20 Jahren Erfahrung in Modedesign und industrieller Fertigung verbinden wir kreative Beratung mit klaren Prozessen und nachhaltiger Produktion. Unser Ansatz: persönliche Betreuung, transparente Kosten und verlässliche Ergebnisse – von der ersten Skizze bis zum fertigen Produkt.
