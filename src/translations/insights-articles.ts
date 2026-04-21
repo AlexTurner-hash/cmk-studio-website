@@ -82,7 +82,89 @@ export const insightsArticlesDE = {
     subtitle: 'Von T-Shirt bis Lingerie: Wie lange dauert Textilproduktion wirklich? Ein detaillierter Timeline-Guide mit realistischen Zahlen statt Wunschdenken.',
     category: 'Planung',
     readTime: '10 min Lesezeit',
-    backToInsights: 'Zurück zu Insights'
+    backToInsights: 'Zurück zu Insights',
+    ctaTitle: 'Realistische Timeline für Ihr Projekt?',
+    ctaDescription: 'Wir erstellen eine detaillierte Timeline mit allen Produktionsschritten für Ihre Kollektion.',
+    ctaButton: 'Jetzt Projekt starten',
+    sections: {
+      underestimatedTimeline: {
+        title: 'Warum fast alle Startups ihre Timeline unterschätzen',
+        paragraphs: [
+          '"Wir wollen im November launchen, also müssen wir im Oktober produzieren" – dieser Satz fällt in fast jedem Erstgespräch. Die Realität: Bis zur Produktion vergehen Monate. Und die Produktion selbst ist nur ein kleiner Teil der Gesamtzeit.',
+          'Das Problem: Startups planen rückwärts vom Launch-Datum und unterschätzen systematisch jeden einzelnen Schritt. Dann kommt Panik, Qualität leidet, oder der Launch muss verschoben werden.'
+        ]
+      },
+      sevenPhases: {
+        title: 'Die 7 Phasen jeder Textilproduktion',
+        intro: 'Bevor ein einziges Teil genäht wird, durchläuft jede Kollektion diese Phasen:',
+        items: [
+          { label: 'Phase 1: Design & Konzeption (2-4 Wochen)', text: 'Skizzen, Moodboards, Farbkonzepte, erste Material-Recherche. Bei einfachen Basics schneller, bei komplexen Designs länger.' },
+          { label: 'Phase 2: Technische Entwicklung (2-3 Wochen)', text: 'Schnittmuster erstellen, Gradierung (Größen), Tech-Packs erstellen. Diese Phase wird oft unterschätzt – aber ohne saubere Tech-Packs kann kein Produzent arbeiten.' },
+          { label: 'Phase 3: Materialbeschaffung (3-6 Wochen)', text: 'Stoffe bestellen, Farben freigeben, Qualität prüfen. Bei Standard-Materialien schneller, bei Custom-Entwicklungen (z.B. spezielle Drucke, Stickereien) deutlich länger.' },
+          { label: 'Phase 4: Prototyping (3-5 Wochen)', text: 'Erste Muster nähen, Passform prüfen, Anpassungen vornehmen. Rechnen Sie mit 2-3 Prototyp-Runden. Jede Runde: 7-10 Tage.' },
+          { label: 'Phase 5: Pre-Production (1-2 Wochen)', text: 'Finale Freigabe, Produktions-Setup, Materialzuschnitt. Diese Phase wird oft vergessen – aber auch hier lauern Verzögerungen.' },
+          { label: 'Phase 6: Produktion (2-4 Wochen)', text: 'Nähen, Qualitätskontrolle, Verpackung. Die eigentliche Produktion ist oft der schnellste Teil – wenn alles vorbereitet ist.' },
+          { label: 'Phase 7: Logistik & Delivery (1-3 Wochen)', text: 'Transport zur Lagerstätte / zu Ihnen. In Europa: 3-7 Tage. Aus Fernost per Luftfracht: 7-14 Tage. Per Seefracht: 6-8 Wochen.' }
+        ]
+      },
+      timelinesByCategory: {
+        title: 'Realistische Timelines nach Produktkategorie',
+        items: [
+          { label: 'Basic T-Shirts & Sweats (Europa):', text: 'Gesamtdauer: 10-14 Wochen. Design & Tech: 3 Wochen | Material: 3 Wochen | Prototyping: 3 Wochen | Produktion: 2 Wochen | Logistik: 1 Woche' },
+          { label: 'Basic T-Shirts & Sweats (Fernost):', text: 'Gesamtdauer: 16-24 Wochen. Längere Kommunikationswege, langsameres Prototyping, Seefracht-Logistik. Der Preisvorteil wird durch Zeitnachteil erkauft.' },
+          { label: 'Lingerie (Europa):', text: 'Gesamtdauer: 14-18 Wochen. Design & Tech: 4 Wochen | Material: 4 Wochen (Spitzen, elastische Stoffe) | Prototyping: 4 Wochen (komplexe Passform) | Produktion: 3 Wochen | Logistik: 1 Woche' },
+          { label: 'Swimwear (Europa):', text: 'Gesamtdauer: 12-16 Wochen. Ähnlich wie Lingerie, aber Materialien sind standardisierter. Passform-Entwicklung ist kritisch – rechnen Sie mit 3-4 Prototyp-Runden.' },
+          { label: 'Knitwear / Strick (Europa):', text: 'Gesamtdauer: 16-22 Wochen. Design & Tech: 4 Wochen | Strick-Setup: 3 Wochen | Material: 4 Wochen | Prototyping: 4 Wochen | Produktion: 4 Wochen | Logistik: 1 Woche. Strickware ist aufwendig – Maschinenprogrammierung, komplexe Finishing-Prozesse.' },
+          { label: 'Workwear / Corporate Fashion (Europa):', text: 'Gesamtdauer: 12-16 Wochen. Plus: Zeit für Corporate-Approvals, Logo-Entwicklung, Testing. Workwear braucht oft spezielle Zertifizierungen – das verlängert Material-Beschaffung.' },
+          { label: 'Leather Goods / Accessories (Europa):', text: 'Gesamtdauer: 10-14 Wochen. Leder-Qualität variiert stark – Material-Auswahl ist zeitintensiv. Aber Produktion selbst ist oft schneller als bei Textilien.' }
+        ]
+      },
+      hiddenTimeEaters: {
+        title: 'Die versteckten Zeitfresser: Was wirklich Zeit kostet',
+        items: [
+          { label: 'Zeitfresser #1: Entscheidungs-Latenz', text: 'Sie bekommen Prototypen – aber Feedback dauert eine Woche. Farb-Freigaben ziehen sich. Interne Abstimmungen dauern. Jede Verzögerung addiert sich.' },
+          { label: 'Zeitfresser #2: Material-Verfügbarkeit', text: 'Der perfekte Stoff ist ausverkauft. Nachproduktion dauert 6 Wochen. Oder: Die Wunschfarbe existiert nicht – Custom-Färbung nötig (+4 Wochen).' },
+          { label: 'Zeitfresser #3: Passform-Probleme', text: 'Der Prototyp sitzt nicht. Schnittmuster muss angepasst werden. Neue Prototyp-Runde. Das kann 2-3 Wochen kosten – pro Runde.' },
+          { label: 'Zeitfresser #4: Produktionsauslastung', text: 'Gute Produzenten sind ausgelastet. Wenn Sie im September für Dezember-Lieferung anfragen, kann es zu spät sein. Produktionsslots müssen oft Monate im Voraus gebucht werden.' }
+        ]
+      },
+      europeVsAsia: {
+        title: 'Europa vs. Fernost: Der Zeit-Vergleich',
+        intro: 'Die verbreitete Annahme: "Fernost ist schneller, weil größere Kapazitäten." Stimmt das?',
+        realityLabel: 'Realität:',
+        bullets: [
+          'Kommunikation: Zeitverschiebung, Sprachbarrieren verlängern jede Entscheidung',
+          'Prototyping: Muster per Luftfracht dauern 7-10 Tage one-way. Jede Runde kostet 2-3 Wochen',
+          'Qualitätskontrolle: Probleme werden erst spät erkannt – oft nach Produktion',
+          'Logistik: Seefracht 6-8 Wochen. Luftfracht 7-14 Tage, aber teuer'
+        ],
+        conclusion: 'Ergebnis: Fernost-Produktion dauert oft 6-10 Wochen länger als Europa – trotz schnellerer reiner Produktionszeit. Der Zeitvorteil Europas liegt in kurzen Wegen, schneller Kommunikation und Flexibilität bei Problemen.'
+      },
+      timelineOptimization: {
+        title: 'Timeline-Optimierung: Wie Sie Zeit sparen',
+        items: [
+          { label: 'Tipp #1: Parallel-Prozesse statt sequenziell', text: 'Material-Bestellung und Schnittmuster-Entwicklung können parallel laufen. Design-Finalisierung während Material-Beschaffung. Nutzen Sie Wartezeiten produktiv.' },
+          { label: 'Tipp #2: Stock-Materials statt Custom', text: 'Lagerware ist sofort verfügbar. Custom-Färbungen, -Drucke, -Stickereien verlängern die Timeline um Wochen. Für den ersten Launch: Keep it simple.' },
+          { label: 'Tipp #3: Erfahrene Partner = weniger Iterationen', text: 'Ein guter Produzent erkennt Passform-Probleme früh und schlägt Lösungen vor. Das spart 1-2 Prototyp-Runden = 3-6 Wochen.' },
+          { label: 'Tipp #4: Puffer einplanen', text: 'Planen Sie immer 20-30% Puffer ein. Wenn die Timeline 12 Wochen beträgt, kalkulieren Sie mit 15-16 Wochen. Lieber früh fertig als zu spät.' }
+        ]
+      },
+      expressProduction: {
+        title: 'Express-Produktion: Geht es auch schneller?',
+        intro: 'Ja – aber zu einem Preis. Express-Produktion bedeutet:',
+        bullets: [
+          'Aufpreise von 20-40% auf Produktionskosten',
+          'Nutzung von Lager-Materialien (weniger Auswahl)',
+          'Möglicherweise Kompromisse bei Passform-Optimierung',
+          'Höheres Fehlerrisiko'
+        ],
+        conclusion: 'Realistisch: Basic T-Shirts in 6-7 Wochen. Komplexe Produkte (Lingerie, Knitwear) kaum beschleunigbar. Express ist für Notfälle, nicht für Standard-Planung.'
+      },
+      conclusion: {
+        title: 'Fazit: Zeit ist Ihre wertvollste Ressource',
+        content: 'Realistische Timeline-Planung ist der Unterschied zwischen erfolgreichem Launch und Desaster. Rechnen Sie mit 12-16 Wochen für einfache Kollektionen, 16-24 Wochen für komplexe Produkte. Planen Sie Puffer ein. Arbeiten Sie mit erfahrenen Partnern, die Bottlenecks kennen und vermeiden. Dann wird Ihr Launch-Termin realistisch statt Wunschdenken.'
+      }
+    }
   },
   privateLabelBekleidung: {
     title: 'Private Label für regionale Händler: Wie mittelständische Modehäuser mit Eigenmarken punkten',
@@ -214,7 +296,85 @@ export const insightsArticlesDE = {
     subtitle: 'Realistische Zahlen statt Wunschdenken: Ein detaillierter Einblick in die tatsächlichen Kosten der Modeproduktion – von Material über Fertigung bis Logistik.',
     category: 'Kalkulation',
     readTime: '10 min Lesezeit',
-    backToInsights: 'Zurück zu Insights'
+    backToInsights: 'Zurück zu Insights',
+    ctaTitle: 'Realistische Kalkulation für Ihr Projekt?',
+    ctaDescription: 'Wir erstellen eine transparente, detaillierte Kostenkalkulation für Ihre Kollektion.',
+    ctaButton: 'Kostenlose Kalkulation anfragen',
+    sections: {
+      hiddenCosts: {
+        title: 'Die versteckten Kosten: Warum 5€ pro Teil selten realistisch sind',
+        paragraphs: [
+          '"Ich habe gehört, man kann T-Shirts für 5€ produzieren lassen" – dieser Satz fällt in fast jedem Erstgespräch mit Fashion-Startups. Die Realität sieht anders aus. Ein qualitativ hochwertiges Basic-T-Shirt in Europa kostet zwischen 12-18€ in der Produktion. Aber warum diese Diskrepanz?',
+          'Die 5€-Kalkulation ignoriert systematisch Entwicklungskosten, Prototyping, Qualitätskontrollen, Zertifizierungen und realistische Materialpreise für nachhaltige Stoffe. Wer mit dieser Kalkulation startet, landet unweigerlich bei Billigproduzenten mit fragwürdigen Standards.'
+        ]
+      },
+      breakdown: {
+        title: 'Kostenaufschlüsselung: T-Shirt-Produktion im Detail',
+        groups: [
+          { label: 'Material (40-45% der Kosten):', bullets: ['GOTS-zertifizierte Bio-Baumwolle: 6-8€/kg', 'Nackenband, Etiketten, Verpackung: 0,80-1,20€', 'Schnittmuster und Gradierung: einmalig 200-400€'] },
+          { label: 'Fertigung (35-40% der Kosten):', bullets: ['Zuschnitt: 0,50-0,80€ pro Teil', 'Nähen: 3-5€ pro Teil (abhängig von Komplexität)', 'Qualitätskontrolle: 0,40-0,60€ pro Teil'] },
+          { label: 'Zusatzkosten (15-20% der Kosten):', bullets: ['Prototyping: 3-5 Muster à 80-120€', 'Logistik innerhalb Europas: 1-2€ pro Teil', 'Projektmanagement und Koordination: 8-12% Aufschlag'] }
+        ]
+      },
+      europeVsAsia: {
+        title: 'Europa vs. Fernost: Der ehrliche Kostenvergleich',
+        intro: 'Ein Basic-T-Shirt aus Bangladesh kostet tatsächlich 3-5€ in der Produktion. Aber diese Rechnung ignoriert versteckte Kosten, die erst später sichtbar werden:',
+        bullets: [
+          'Internationale Logistik: 2-4€ pro Teil (Luft) oder 8-12 Wochen (See)',
+          'Zollabwicklung und Import: 1-2€ pro Teil + Zeitaufwand',
+          'Qualitätsprobleme: 10-15% Ausschuss sind normal',
+          'Nachbestellungen: Minimum Order Quantities von 1000+ Stück',
+          'Fehlende Reaktionsfähigkeit: Korrekturen dauern Monate'
+        ],
+        conclusion: 'Real Total Cost of Ownership: Das 5€-T-Shirt aus Fernost kostet am Ende oft 10-14€ – plus monatelange Wartezeiten, Qualitätsprobleme und Zero Flexibilität.'
+      },
+      moqs: {
+        title: 'Mindestbestellmengen (MOQs): Der unterschätzte Kostenfaktor',
+        paragraphs: [
+          'Fernost-Produzenten arbeiten mit MOQs von 500-1000 Stück pro Farbe und Größe. Ein T-Shirt in 4 Farben und 5 Größen bedeutet also: 20 Varianten × 500 Stück = 10.000 Teile Mindestbestellung. Bei 5€ Produktion = 50.000€ Kapitalbindung.',
+          'Europäische Micro-Production startet bei 50-100 Stück pro Variante. Gleiche Kollektion: 20 Varianten × 50 Stück = 1.000 Teile. Bei 14€ Produktion = 14.000€ Kapitalbindung. Der höhere Stückpreis wird durch drastisch niedrigere MOQs kompensiert.'
+        ]
+      },
+      complexProducts: {
+        title: 'Komplexe Produkte: Warum Lingerie und Swimwear besonders sind',
+        intro: 'Die Kostenstruktur ändert sich dramatisch bei technisch anspruchsvollen Kategorien:',
+        bullets: [
+          'Lingerie: 18-35€ Produktionskosten (Spezial-Materialien, aufwendige Verarbeitung)',
+          'Swimwear: 15-28€ (technische Stoffe, aufwendige Passform-Entwicklung)',
+          'Workwear: 20-45€ (Zertifizierungen, Sicherheitsstandards, Langlebigkeit)',
+          'Knitwear: 25-60€ (spezialisierte Strickereien, aufwendige Finishing-Prozesse)'
+        ],
+        conclusion: 'Bei diesen Kategorien macht europäische Produktion nicht nur qualitativ, sondern auch wirtschaftlich Sinn: Kürzere Entwicklungszyklen, weniger Prototyp-Runden, sofortige Korrekturmöglichkeiten.'
+      },
+      costExplosion: {
+        title: 'Die versteckte Kostenexplosion: Was passiert bei Problemen?',
+        intro: 'Ein reales Beispiel: Ein Startup produziert 2000 Swimwear-Teile in China für 8€/Stück. Nach Ankunft in Europa stellt sich heraus: Die Passform stimmt nicht. Lösungsoptionen:',
+        bullets: [
+          'Option A: Neue Produktion (8-12 Wochen, 16.000€ + Logistik)',
+          'Option B: Lokale Änderungsschneiderei (4-8€ pro Teil = 8.000-16.000€ Zusatzkosten)',
+          'Option C: Mit Rabatten verkaufen (Imageschaden + Verlustgeschäft)'
+        ],
+        conclusion: 'Hätte die Produktion in Europa stattgefunden: Problem nach 2 Teilen erkannt, Schnitt korrigiert, Produktion fortgesetzt. Mehrkosten: 0€. Zeitverlust: 3 Tage statt 12 Wochen.'
+      },
+      fairCalculation: {
+        title: 'Faire Kalkulation: So planen Sie realistisch',
+        intro: 'Eine realistische Gesamtkalkulation für eine kleine Fashion-Kollektion (4 Styles, 500 Teile):',
+        bullets: [
+          'Entwicklung und Design: 2.000-4.000€',
+          'Prototyping (3-5 Runden): 1.500-3.000€',
+          'Materialkosten: 3.500-6.000€',
+          'Produktion: 6.000-9.000€',
+          'Qualitätskontrolle und Verpackung: 800-1.200€',
+          'Logistik: 600-1.000€',
+          'Projektmanagement: 1.200-1.800€'
+        ],
+        conclusion: 'Gesamtkosten: 15.600 - 26.000€ für 500 hochwertige Teile. Das sind 31-52€ pro Teil – was bei einem Verkaufspreis von 90-150€ eine gesunde Marge ermöglicht.'
+      },
+      conclusion: {
+        title: 'Fazit: Ehrliche Kalkulation ist der Grundstein für Erfolg',
+        content: 'Unrealistische Kalkulationen sind die häufigste Ursache für gescheiterte Fashion-Startups. Wer mit 5€-Produktionskosten plant, wird entweder bei der Qualität oder bei der Marge massive Abstriche machen müssen. Realistische Planung mit fairen, transparenten Kostenstrukturen schafft die Basis für nachhaltiges Wachstum – nicht nur ökologisch, sondern auch wirtschaftlich.'
+      }
+    }
   },
   spezialisierungExpertise: {
     title: 'Spezialisierung zahlt sich aus: Warum Nischen-Expertise in der Textilproduktion entscheidend ist',
@@ -337,7 +497,89 @@ export const insightsArticlesEN = {
     subtitle: 'From T-shirt to lingerie: How long does textile production really take? A detailed timeline guide with realistic numbers instead of wishful thinking.',
     category: 'Planning',
     readTime: '10 min read',
-    backToInsights: 'Back to Insights'
+    backToInsights: 'Back to Insights',
+    ctaTitle: 'Realistic timeline for your project?',
+    ctaDescription: 'We create a detailed timeline with all production steps for your collection.',
+    ctaButton: 'Start Project Now',
+    sections: {
+      underestimatedTimeline: {
+        title: 'Why Almost All Startups Underestimate Their Timeline',
+        paragraphs: [
+          '"We want to launch in November, so we need to produce in October" – this sentence comes up in almost every initial conversation. The reality: months pass before production. And production itself is only a small part of the total time.',
+          'The problem: Startups plan backwards from the launch date and systematically underestimate every single step. Then panic sets in, quality suffers, or the launch has to be postponed.'
+        ]
+      },
+      sevenPhases: {
+        title: 'The 7 Phases of Every Textile Production',
+        intro: 'Before a single piece is sewn, every collection goes through these phases:',
+        items: [
+          { label: 'Phase 1: Design & Concept (2-4 weeks)', text: 'Sketches, moodboards, color concepts, initial material research. Faster for simple basics, longer for complex designs.' },
+          { label: 'Phase 2: Technical Development (2-3 weeks)', text: 'Creating patterns, grading (sizes), creating tech packs. This phase is often underestimated – but no producer can work without clean tech packs.' },
+          { label: 'Phase 3: Material Sourcing (3-6 weeks)', text: 'Ordering fabrics, approving colors, checking quality. Faster for standard materials, significantly longer for custom developments (e.g. special prints, embroidery).' },
+          { label: 'Phase 4: Prototyping (3-5 weeks)', text: 'Sewing first samples, checking fit, making adjustments. Expect 2-3 prototype rounds. Each round: 7-10 days.' },
+          { label: 'Phase 5: Pre-Production (1-2 weeks)', text: 'Final approval, production setup, material cutting. This phase is often forgotten – but delays lurk here too.' },
+          { label: 'Phase 6: Production (2-4 weeks)', text: 'Sewing, quality control, packaging. Actual production is often the fastest part – when everything is prepared.' },
+          { label: 'Phase 7: Logistics & Delivery (1-3 weeks)', text: 'Transport to warehouse / to you. In Europe: 3-7 days. From Asia by air freight: 7-14 days. By sea freight: 6-8 weeks.' }
+        ]
+      },
+      timelinesByCategory: {
+        title: 'Realistic Timelines by Product Category',
+        items: [
+          { label: 'Basic T-Shirts & Sweats (Europe):', text: 'Total duration: 10-14 weeks. Design & Tech: 3 weeks | Material: 3 weeks | Prototyping: 3 weeks | Production: 2 weeks | Logistics: 1 week' },
+          { label: 'Basic T-Shirts & Sweats (Asia):', text: 'Total duration: 16-24 weeks. Longer communication channels, slower prototyping, sea freight logistics. The price advantage is paid for with a time disadvantage.' },
+          { label: 'Lingerie (Europe):', text: 'Total duration: 14-18 weeks. Design & Tech: 4 weeks | Material: 4 weeks (lace, elastic fabrics) | Prototyping: 4 weeks (complex fit) | Production: 3 weeks | Logistics: 1 week' },
+          { label: 'Swimwear (Europe):', text: 'Total duration: 12-16 weeks. Similar to lingerie, but materials are more standardized. Fit development is critical – expect 3-4 prototype rounds.' },
+          { label: 'Knitwear (Europe):', text: 'Total duration: 16-22 weeks. Design & Tech: 4 weeks | Knit setup: 3 weeks | Material: 4 weeks | Prototyping: 4 weeks | Production: 4 weeks | Logistics: 1 week. Knitwear is complex – machine programming, complex finishing processes.' },
+          { label: 'Workwear / Corporate Fashion (Europe):', text: 'Total duration: 12-16 weeks. Plus: time for corporate approvals, logo development, testing. Workwear often needs special certifications – this extends material sourcing.' },
+          { label: 'Leather Goods / Accessories (Europe):', text: 'Total duration: 10-14 weeks. Leather quality varies greatly – material selection is time-consuming. But production itself is often faster than for textiles.' }
+        ]
+      },
+      hiddenTimeEaters: {
+        title: 'The Hidden Time Eaters: What Really Costs Time',
+        items: [
+          { label: 'Time Eater #1: Decision Latency', text: 'You receive prototypes – but feedback takes a week. Color approvals drag on. Internal coordination takes time. Every delay adds up.' },
+          { label: 'Time Eater #2: Material Availability', text: 'The perfect fabric is sold out. Reproduction takes 6 weeks. Or: the desired color doesn\'t exist – custom dyeing required (+4 weeks).' },
+          { label: 'Time Eater #3: Fit Problems', text: 'The prototype doesn\'t fit. Pattern needs to be adjusted. New prototype round. That can cost 2-3 weeks – per round.' },
+          { label: 'Time Eater #4: Production Capacity', text: 'Good producers are booked out. If you inquire in September for December delivery, it may be too late. Production slots often need to be booked months in advance.' }
+        ]
+      },
+      europeVsAsia: {
+        title: 'Europe vs. Asia: The Time Comparison',
+        intro: 'The widespread assumption: "Asia is faster because of larger capacities." Is that true?',
+        realityLabel: 'Reality:',
+        bullets: [
+          'Communication: Time zones, language barriers extend every decision',
+          'Prototyping: Samples by air freight take 7-10 days one-way. Each round costs 2-3 weeks',
+          'Quality control: Problems are detected late – often after production',
+          'Logistics: Sea freight 6-8 weeks. Air freight 7-14 days, but expensive'
+        ],
+        conclusion: 'Result: Asian production often takes 6-10 weeks longer than Europe – despite faster pure production time. Europe\'s time advantage lies in short distances, fast communication and flexibility when problems arise.'
+      },
+      timelineOptimization: {
+        title: 'Timeline Optimization: How to Save Time',
+        items: [
+          { label: 'Tip #1: Parallel Processes Instead of Sequential', text: 'Material ordering and pattern development can run in parallel. Design finalization during material sourcing. Use waiting times productively.' },
+          { label: 'Tip #2: Stock Materials Instead of Custom', text: 'Stock goods are immediately available. Custom dyeing, prints, embroidery extend the timeline by weeks. For the first launch: keep it simple.' },
+          { label: 'Tip #3: Experienced Partners = Fewer Iterations', text: 'A good producer detects fit problems early and proposes solutions. That saves 1-2 prototype rounds = 3-6 weeks.' },
+          { label: 'Tip #4: Plan Buffers', text: 'Always plan a 20-30% buffer. If the timeline is 12 weeks, calculate with 15-16 weeks. Better to be ready early than too late.' }
+        ]
+      },
+      expressProduction: {
+        title: 'Express Production: Can It Be Faster?',
+        intro: 'Yes – but at a price. Express production means:',
+        bullets: [
+          'Surcharges of 20-40% on production costs',
+          'Use of stock materials (less choice)',
+          'Possibly compromises in fit optimization',
+          'Higher risk of errors'
+        ],
+        conclusion: 'Realistic: Basic T-shirts in 6-7 weeks. Complex products (lingerie, knitwear) hardly accelerable. Express is for emergencies, not for standard planning.'
+      },
+      conclusion: {
+        title: 'Conclusion: Time Is Your Most Valuable Resource',
+        content: 'Realistic timeline planning is the difference between a successful launch and a disaster. Plan for 12-16 weeks for simple collections, 16-24 weeks for complex products. Plan buffers. Work with experienced partners who know and avoid bottlenecks. Then your launch date becomes realistic instead of wishful thinking.'
+      }
+    }
   },
   privateLabelBekleidung: {
     title: 'Private Label for Regional Retailers: How Mid-Size Fashion Houses Score with Own Brands',
@@ -469,7 +711,85 @@ export const insightsArticlesEN = {
     subtitle: 'Realistic numbers instead of wishful thinking: A detailed insight into the actual costs of fashion production – from materials to manufacturing to logistics.',
     category: 'Calculation',
     readTime: '10 min read',
-    backToInsights: 'Back to Insights'
+    backToInsights: 'Back to Insights',
+    ctaTitle: 'Realistic calculation for your project?',
+    ctaDescription: 'We create a transparent, detailed cost calculation for your collection.',
+    ctaButton: 'Request Free Calculation',
+    sections: {
+      hiddenCosts: {
+        title: 'The Hidden Costs: Why €5 per Piece Is Rarely Realistic',
+        paragraphs: [
+          '"I heard you can have T-shirts produced for €5" – this sentence comes up in almost every initial conversation with fashion startups. The reality looks different. A high-quality basic T-shirt produced in Europe costs between €12-18 in production. But why this discrepancy?',
+          'The €5 calculation systematically ignores development costs, prototyping, quality controls, certifications and realistic material prices for sustainable fabrics. Anyone who starts with this calculation inevitably ends up with cheap producers with questionable standards.'
+        ]
+      },
+      breakdown: {
+        title: 'Cost Breakdown: T-Shirt Production in Detail',
+        groups: [
+          { label: 'Material (40-45% of costs):', bullets: ['GOTS-certified organic cotton: €6-8/kg', 'Neck tape, labels, packaging: €0.80-1.20', 'Pattern and grading: one-time €200-400'] },
+          { label: 'Manufacturing (35-40% of costs):', bullets: ['Cutting: €0.50-0.80 per piece', 'Sewing: €3-5 per piece (depending on complexity)', 'Quality control: €0.40-0.60 per piece'] },
+          { label: 'Additional costs (15-20% of costs):', bullets: ['Prototyping: 3-5 samples at €80-120 each', 'Logistics within Europe: €1-2 per piece', 'Project management and coordination: 8-12% surcharge'] }
+        ]
+      },
+      europeVsAsia: {
+        title: 'Europe vs. Asia: The Honest Cost Comparison',
+        intro: 'A basic T-shirt from Bangladesh actually costs €3-5 in production. But this calculation ignores hidden costs that only become visible later:',
+        bullets: [
+          'International logistics: €2-4 per piece (air) or 8-12 weeks (sea)',
+          'Customs clearance and import: €1-2 per piece + time investment',
+          'Quality issues: 10-15% defects are normal',
+          'Reorders: minimum order quantities of 1000+ pieces',
+          'Lack of responsiveness: corrections take months'
+        ],
+        conclusion: 'Real Total Cost of Ownership: The €5 T-shirt from Asia often ends up costing €10-14 – plus months of waiting times, quality problems and zero flexibility.'
+      },
+      moqs: {
+        title: 'Minimum Order Quantities (MOQs): The Underestimated Cost Factor',
+        paragraphs: [
+          'Asian producers work with MOQs of 500-1000 pieces per color and size. A T-shirt in 4 colors and 5 sizes therefore means: 20 variants × 500 pieces = 10,000 pieces minimum order. At €5 production = €50,000 capital tied up.',
+          'European micro-production starts at 50-100 pieces per variant. Same collection: 20 variants × 50 pieces = 1,000 pieces. At €14 production = €14,000 capital tied up. The higher unit price is offset by drastically lower MOQs.'
+        ]
+      },
+      complexProducts: {
+        title: 'Complex Products: Why Lingerie and Swimwear Are Special',
+        intro: 'The cost structure changes dramatically for technically demanding categories:',
+        bullets: [
+          'Lingerie: €18-35 production costs (special materials, complex processing)',
+          'Swimwear: €15-28 (technical fabrics, complex fit development)',
+          'Workwear: €20-45 (certifications, safety standards, durability)',
+          'Knitwear: €25-60 (specialized knitting mills, complex finishing processes)'
+        ],
+        conclusion: 'For these categories, European production makes sense not only in terms of quality but also economically: shorter development cycles, fewer prototype rounds, immediate correction options.'
+      },
+      costExplosion: {
+        title: 'The Hidden Cost Explosion: What Happens When Problems Arise?',
+        intro: 'A real example: A startup produces 2,000 swimwear pieces in China for €8/piece. After arrival in Europe, it turns out: the fit is wrong. Solution options:',
+        bullets: [
+          'Option A: New production (8-12 weeks, €16,000 + logistics)',
+          'Option B: Local alterations tailor (€4-8 per piece = €8,000-16,000 additional costs)',
+          'Option C: Sell with discounts (image damage + loss-making business)'
+        ],
+        conclusion: 'Had production taken place in Europe: problem detected after 2 pieces, pattern corrected, production continued. Additional costs: €0. Time lost: 3 days instead of 12 weeks.'
+      },
+      fairCalculation: {
+        title: 'Fair Calculation: How to Plan Realistically',
+        intro: 'A realistic total calculation for a small fashion collection (4 styles, 500 pieces):',
+        bullets: [
+          'Development and design: €2,000-4,000',
+          'Prototyping (3-5 rounds): €1,500-3,000',
+          'Material costs: €3,500-6,000',
+          'Production: €6,000-9,000',
+          'Quality control and packaging: €800-1,200',
+          'Logistics: €600-1,000',
+          'Project management: €1,200-1,800'
+        ],
+        conclusion: 'Total costs: €15,600 - 26,000 for 500 high-quality pieces. That\'s €31-52 per piece – which allows a healthy margin at a retail price of €90-150.'
+      },
+      conclusion: {
+        title: 'Conclusion: Honest Calculation Is the Foundation for Success',
+        content: 'Unrealistic calculations are the most common cause of failed fashion startups. Anyone planning with €5 production costs will have to make massive cuts either in quality or in margin. Realistic planning with fair, transparent cost structures creates the basis for sustainable growth – not only ecologically, but also economically.'
+      }
+    }
   },
   spezialisierungExpertise: {
     title: 'Specialization Pays Off: Why Niche Expertise in Textile Production is Crucial',
