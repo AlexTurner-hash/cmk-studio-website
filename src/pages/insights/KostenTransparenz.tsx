@@ -8,16 +8,17 @@ import { insightsArticlesDE, insightsArticlesEN } from "@/translations/insights-
 
 const KostenTransparenz = () => {
   const { language } = useLanguage();
-  const t = language === 'de' ? insightsArticlesDE.kostenTransparenz : insightsArticlesEN.kostenTransparenz;
-  
+  const t: any = language === 'de' ? insightsArticlesDE.kostenTransparenz : insightsArticlesEN.kostenTransparenz;
+  const s = t.sections;
+
   return (
     <>
       <title>{language === 'de' ? 'Kosten-Transparenz: Was kostet Modeproduktion wirklich? | CMK Studio' : 'Cost Transparency: What Does Fashion Production Really Cost? | CMK Studio'}</title>
       <meta name="description" content={t.subtitle} />
-      
+
       <div className="min-h-screen">
         <Navigation />
-        
+
         <article className="pt-24 pb-16">
           <div className="container mx-auto px-6 max-w-4xl">
             <Button variant="ghost" asChild className="mb-8">
@@ -32,200 +33,84 @@ const KostenTransparenz = () => {
                 <span className="text-sm font-medium text-[hsl(var(--cream-tan-hover))] tracking-wide uppercase">
                   {t.category}
                 </span>
-                <span className="text-sm text-muted-foreground">
-                  {t.readTime}
-                </span>
+                <span className="text-sm text-muted-foreground">{t.readTime}</span>
               </div>
-              
               <h1 className="text-3xl md:text-5xl font-light mb-6 text-foreground font-display leading-tight">
                 {t.title}
               </h1>
-              
-              <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                {t.subtitle}
-              </p>
+              <p className="text-lg text-muted-foreground font-body leading-relaxed">{t.subtitle}</p>
             </header>
 
             <div className="aspect-[16/9] mb-12 rounded-lg overflow-hidden">
-              <img 
-                src={blogImage} 
-                alt="Kostenkalkulation für Modeproduktion mit Dokumenten und Stoffproben"
-                className="w-full h-full object-cover"
-              />
+              <img src={blogImage} alt={t.title} className="w-full h-full object-cover" />
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Die versteckten Kosten: Warum 5€ pro Teil selten realistisch sind
-              </h2>
-              
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                "Ich habe gehört, man kann T-Shirts für 5€ produzieren lassen" – dieser Satz fällt in fast jedem 
-                Erstgespräch mit Fashion-Startups. Die Realität sieht anders aus. Ein qualitativ hochwertiges 
-                Basic-T-Shirt in Europa kostet zwischen 12-18€ in der Produktion. Aber warum diese Diskrepanz?
-              </p>
+              {/* hiddenCosts */}
+              <h2 className="text-2xl font-light mb-4 text-foreground font-display">{s.hiddenCosts.title}</h2>
+              {s.hiddenCosts.paragraphs.map((p: string, i: number) => (
+                <p key={i} className={`${i === s.hiddenCosts.paragraphs.length - 1 ? 'mb-8' : 'mb-6'} font-body leading-relaxed text-muted-foreground`}>{p}</p>
+              ))}
 
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Die 5€-Kalkulation ignoriert systematisch Entwicklungskosten, Prototyping, Qualitätskontrollen, 
-                Zertifizierungen und realistische Materialpreise für nachhaltige Stoffe. Wer mit dieser Kalkulation 
-                startet, landet unweigerlich bei Billigproduzenten mit fragwürdigen Standards.
-              </p>
+              {/* breakdown */}
+              <h2 className="text-2xl font-light mb-4 text-foreground font-display">{s.breakdown.title}</h2>
+              {s.breakdown.groups.map((g: any, i: number) => (
+                <div key={i}>
+                  <p className="mb-4 font-body leading-relaxed text-muted-foreground"><strong>{g.label}</strong></p>
+                  <ul className={`${i === s.breakdown.groups.length - 1 ? 'mb-8' : 'mb-6'} space-y-2 text-muted-foreground font-body`}>
+                    {g.bullets.map((b: string, j: number) => <li key={j}>• {b}</li>)}
+                  </ul>
+                </div>
+              ))}
 
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Kostenaufschlüsselung: T-Shirt-Produktion im Detail
-              </h2>
-              
-              <p className="mb-4 font-body leading-relaxed text-muted-foreground">
-                <strong>Material (40-45% der Kosten):</strong>
-              </p>
+              {/* europeVsAsia */}
+              <h2 className="text-2xl font-light mb-4 text-foreground font-display">{s.europeVsAsia.title}</h2>
+              <p className="mb-6 font-body leading-relaxed text-muted-foreground">{s.europeVsAsia.intro}</p>
               <ul className="mb-6 space-y-2 text-muted-foreground font-body">
-                <li>• GOTS-zertifizierte Bio-Baumwolle: 6-8€/kg</li>
-                <li>• Nackenband, Etiketten, Verpackung: 0,80-1,20€</li>
-                <li>• Schnittmuster und Gradierung: einmalig 200-400€</li>
+                {s.europeVsAsia.bullets.map((b: string, i: number) => <li key={i}>• {b}</li>)}
               </ul>
+              <p className="mb-8 font-body leading-relaxed text-muted-foreground"><strong>{s.europeVsAsia.conclusion}</strong></p>
 
-              <p className="mb-4 font-body leading-relaxed text-muted-foreground">
-                <strong>Fertigung (35-40% der Kosten):</strong>
-              </p>
+              {/* moqs */}
+              <h2 className="text-2xl font-light mb-4 text-foreground font-display">{s.moqs.title}</h2>
+              {s.moqs.paragraphs.map((p: string, i: number) => (
+                <p key={i} className={`${i === s.moqs.paragraphs.length - 1 ? 'mb-8' : 'mb-6'} font-body leading-relaxed text-muted-foreground`}>{p}</p>
+              ))}
+
+              {/* complexProducts */}
+              <h2 className="text-2xl font-light mb-4 text-foreground font-display">{s.complexProducts.title}</h2>
+              <p className="mb-6 font-body leading-relaxed text-muted-foreground">{s.complexProducts.intro}</p>
               <ul className="mb-6 space-y-2 text-muted-foreground font-body">
-                <li>• Zuschnitt: 0,50-0,80€ pro Teil</li>
-                <li>• Nähen: 3-5€ pro Teil (abhängig von Komplexität)</li>
-                <li>• Qualitätskontrolle: 0,40-0,60€ pro Teil</li>
+                {s.complexProducts.bullets.map((b: string, i: number) => <li key={i}>• {b}</li>)}
               </ul>
+              <p className="mb-8 font-body leading-relaxed text-muted-foreground">{s.complexProducts.conclusion}</p>
 
-              <p className="mb-4 font-body leading-relaxed text-muted-foreground">
-                <strong>Zusatzkosten (15-20% der Kosten):</strong>
-              </p>
-              <ul className="mb-8 space-y-2 text-muted-foreground font-body">
-                <li>• Prototyping: 3-5 Muster à 80-120€</li>
-                <li>• Logistik innerhalb Europas: 1-2€ pro Teil</li>
-                <li>• Projektmanagement und Koordination: 8-12% Aufschlag</li>
-              </ul>
-
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Europa vs. Fernost: Der ehrliche Kostenvergleich
-              </h2>
-              
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Ein Basic-T-Shirt aus Bangladesh kostet tatsächlich 3-5€ in der Produktion. Aber diese Rechnung 
-                ignoriert versteckte Kosten, die erst später sichtbar werden:
-              </p>
-
+              {/* costExplosion */}
+              <h2 className="text-2xl font-light mb-4 text-foreground font-display">{s.costExplosion.title}</h2>
+              <p className="mb-6 font-body leading-relaxed text-muted-foreground">{s.costExplosion.intro}</p>
               <ul className="mb-6 space-y-2 text-muted-foreground font-body">
-                <li>• Internationale Logistik: 2-4€ pro Teil (Luft) oder 8-12 Wochen (See)</li>
-                <li>• Zollabwicklung und Import: 1-2€ pro Teil + Zeitaufwand</li>
-                <li>• Qualitätsprobleme: 10-15% Ausschuss sind normal</li>
-                <li>• Nachbestellungen: Minimum Order Quantities von 1000+ Stück</li>
-                <li>• Fehlende Reaktionsfähigkeit: Korrek­turen dauern Monate</li>
+                {s.costExplosion.bullets.map((b: string, i: number) => <li key={i}>• {b}</li>)}
               </ul>
+              <p className="mb-8 font-body leading-relaxed text-muted-foreground"><strong>{s.costExplosion.conclusion}</strong></p>
 
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                <strong>Real Total Cost of Ownership:</strong> Das 5€-T-Shirt aus Fernost kostet am Ende 
-                oft 10-14€ – plus monatelange Wartezeiten, Qualitätsprobleme und Zero Flexibilität.
-              </p>
-
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Mindestbestellmengen (MOQs): Der unterschätzte Kostenfaktor
-              </h2>
-              
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Fernost-Produzenten arbeiten mit MOQs von 500-1000 Stück pro Farbe und Größe. Ein T-Shirt in 
-                4 Farben und 5 Größen bedeutet also: 20 Varianten × 500 Stück = 10.000 Teile Mindestbestellung. 
-                Bei 5€ Produktion = 50.000€ Kapitalbindung.
-              </p>
-
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Europäische Micro-Production startet bei 50-100 Stück pro Variante. Gleiche Kollektion: 
-                20 Varianten × 50 Stück = 1.000 Teile. Bei 14€ Produktion = 14.000€ Kapitalbindung. 
-                Der höhere Stückpreis wird durch drastisch niedrigere MOQs kompensiert.
-              </p>
-
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Komplexe Produkte: Warum Lingerie und Swimwear besonders sind
-              </h2>
-              
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Die Kostenstruktur ändert sich dramatisch bei technisch anspruchsvollen Kategorien:
-              </p>
-
+              {/* fairCalculation */}
+              <h2 className="text-2xl font-light mb-4 text-foreground font-display">{s.fairCalculation.title}</h2>
+              <p className="mb-6 font-body leading-relaxed text-muted-foreground">{s.fairCalculation.intro}</p>
               <ul className="mb-6 space-y-2 text-muted-foreground font-body">
-                <li>• <strong>Lingerie:</strong> 18-35€ Produktionskosten (Spezial-Materialien, aufwendige Verarbeitung)</li>
-                <li>• <strong>Swimwear:</strong> 15-28€ (technische Stoffe, aufwendige Passform-Entwicklung)</li>
-                <li>• <strong>Workwear:</strong> 20-45€ (Zertifizierungen, Sicherheitsstandards, Langlebigkeit)</li>
-                <li>• <strong>Knitwear:</strong> 25-60€ (spezialisierte Strickereien, aufwendige Finishing-Prozesse)</li>
+                {s.fairCalculation.bullets.map((b: string, i: number) => <li key={i}>• {b}</li>)}
               </ul>
+              <p className="mb-8 font-body leading-relaxed text-muted-foreground"><strong>{s.fairCalculation.conclusion}</strong></p>
 
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Bei diesen Kategorien macht europäische Produktion nicht nur qualitativ, sondern auch wirtschaftlich Sinn: 
-                Kürzere Entwicklungszyklen, weniger Prototyp-Runden, sofortige Korrekturmöglichkeiten.
-              </p>
-
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Die versteckte Kostenexplosion: Was passiert bei Problemen?
-              </h2>
-              
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Ein reales Beispiel: Ein Startup produziert 2000 Swimwear-Teile in China für 8€/Stück. 
-                Nach Ankunft in Europa stellt sich heraus: Die Passform stimmt nicht. Lösungsoptionen:
-              </p>
-
-              <ul className="mb-6 space-y-2 text-muted-foreground font-body">
-                <li>• <strong>Option A:</strong> Neue Produktion (8-12 Wochen, 16.000€ + Logistik)</li>
-                <li>• <strong>Option B:</strong> Lokale Änderungsschneiderei (4-8€ pro Teil = 8.000-16.000€ Zusatzkosten)</li>
-                <li>• <strong>Option C:</strong> Mit Rabatten verkaufen (Imageschaden + Verlusgeschäft)</li>
-              </ul>
-
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                <strong>Hätte die Produktion in Europa stattgefunden:</strong> Problem nach 2 Teilen erkannt, 
-                Schnitt korrigiert, Produktion fortgesetzt. Mehrkosten: 0€. Zeitverlust: 3 Tage statt 12 Wochen.
-              </p>
-
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Faire Kalkulation: So planen Sie realistisch
-              </h2>
-              
-              <p className="mb-6 font-body leading-relaxed text-muted-foreground">
-                Eine realistische Gesamtkalkulation für eine kleine Fashion-Kollektion (4 Styles, 500 Teile):
-              </p>
-
-              <ul className="mb-6 space-y-2 text-muted-foreground font-body">
-                <li>• Entwicklung und Design: 2.000-4.000€</li>
-                <li>• Prototyping (3-5 Runden): 1.500-3.000€</li>
-                <li>• Materialkosten: 3.500-6.000€</li>
-                <li>• Produktion: 6.000-9.000€</li>
-                <li>• Qualitätskontrolle und Verpackung: 800-1.200€</li>
-                <li>• Logistik: 600-1.000€</li>
-                <li>• Projektmanagement: 1.200-1.800€</li>
-              </ul>
-
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                <strong>Gesamtkosten: 15.600 - 26.000€</strong> für 500 hochwertige Teile. 
-                Das sind 31-52€ pro Teil – was bei einem Verkaufspreis von 90-150€ eine gesunde Marge ermöglicht.
-              </p>
-
-              <h2 className="text-2xl font-light mb-4 text-foreground font-display">
-                Fazit: Ehrliche Kalkulation ist der Grundstein für Erfolg
-              </h2>
-              
-              <p className="mb-8 font-body leading-relaxed text-muted-foreground">
-                Unrealistische Kalkulationen sind die häufigste Ursache für gescheiterte Fashion-Startups. 
-                Wer mit 5€-Produktionskosten plant, wird entweder bei der Qualität oder bei der Marge massive 
-                Abstriche machen müssen. Realistische Planung mit fairen, transparenten Kostenstrukturen 
-                schafft die Basis für nachhaltiges Wachstum – nicht nur ökologisch, sondern auch wirtschaftlich.
-              </p>
+              {/* conclusion */}
+              <h2 className="text-2xl font-light mb-4 text-foreground font-display">{s.conclusion.title}</h2>
+              <p className="mb-8 font-body leading-relaxed text-muted-foreground">{s.conclusion.content}</p>
             </div>
 
             <div className="mt-16 p-8 bg-[hsl(var(--cream-tan))] rounded-lg text-center">
-              <h3 className="text-xl font-light mb-4 text-foreground font-display">
-                Realistische Kalkulation für Ihr Projekt?
-              </h3>
-              <p className="text-muted-foreground mb-6 font-body">
-                Wir erstellen eine transparente, detaillierte Kostenkalkulation für Ihre Kollektion.
-              </p>
+              <h3 className="text-xl font-light mb-4 text-foreground font-display">{t.ctaTitle}</h3>
+              <p className="text-muted-foreground mb-6 font-body">{t.ctaDescription}</p>
               <Button size="lg" asChild>
-                <a href="mailto:service@cmk-studio.com?subject=*Anfrage* Kostenkalkulation">
-                  Kostenlose Kalkulation anfragen
-                </a>
+                <a href="mailto:service@cmk-studio.com?subject=*Anfrage* Kostenkalkulation">{t.ctaButton}</a>
               </Button>
             </div>
           </div>
