@@ -52,7 +52,7 @@ const ServicesSection = () => {
 
         {/* CTA Button */}
         <div className="text-center mb-16">
-          <a href="#contact" className="btn-accent">
+          <a href="#contact" className="btn-accent rounded-none shadow-none">
             {t('servicesSection.cta')}
           </a>
         </div>
