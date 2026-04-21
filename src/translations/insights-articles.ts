@@ -629,7 +629,85 @@ export const insightsArticlesEN = {
     subtitle: 'Realistic numbers instead of wishful thinking: A detailed insight into the actual costs of fashion production – from materials to manufacturing to logistics.',
     category: 'Calculation',
     readTime: '10 min read',
-    backToInsights: 'Back to Insights'
+    backToInsights: 'Back to Insights',
+    ctaTitle: 'Realistic calculation for your project?',
+    ctaDescription: 'We create a transparent, detailed cost calculation for your collection.',
+    ctaButton: 'Request Free Calculation',
+    sections: {
+      hiddenCosts: {
+        title: 'The Hidden Costs: Why €5 per Piece Is Rarely Realistic',
+        paragraphs: [
+          '"I heard you can have T-shirts produced for €5" – this sentence comes up in almost every initial conversation with fashion startups. The reality looks different. A high-quality basic T-shirt produced in Europe costs between €12-18 in production. But why this discrepancy?',
+          'The €5 calculation systematically ignores development costs, prototyping, quality controls, certifications and realistic material prices for sustainable fabrics. Anyone who starts with this calculation inevitably ends up with cheap producers with questionable standards.'
+        ]
+      },
+      breakdown: {
+        title: 'Cost Breakdown: T-Shirt Production in Detail',
+        groups: [
+          { label: 'Material (40-45% of costs):', bullets: ['GOTS-certified organic cotton: €6-8/kg', 'Neck tape, labels, packaging: €0.80-1.20', 'Pattern and grading: one-time €200-400'] },
+          { label: 'Manufacturing (35-40% of costs):', bullets: ['Cutting: €0.50-0.80 per piece', 'Sewing: €3-5 per piece (depending on complexity)', 'Quality control: €0.40-0.60 per piece'] },
+          { label: 'Additional costs (15-20% of costs):', bullets: ['Prototyping: 3-5 samples at €80-120 each', 'Logistics within Europe: €1-2 per piece', 'Project management and coordination: 8-12% surcharge'] }
+        ]
+      },
+      europeVsAsia: {
+        title: 'Europe vs. Asia: The Honest Cost Comparison',
+        intro: 'A basic T-shirt from Bangladesh actually costs €3-5 in production. But this calculation ignores hidden costs that only become visible later:',
+        bullets: [
+          'International logistics: €2-4 per piece (air) or 8-12 weeks (sea)',
+          'Customs clearance and import: €1-2 per piece + time investment',
+          'Quality issues: 10-15% defects are normal',
+          'Reorders: minimum order quantities of 1000+ pieces',
+          'Lack of responsiveness: corrections take months'
+        ],
+        conclusion: 'Real Total Cost of Ownership: The €5 T-shirt from Asia often ends up costing €10-14 – plus months of waiting times, quality problems and zero flexibility.'
+      },
+      moqs: {
+        title: 'Minimum Order Quantities (MOQs): The Underestimated Cost Factor',
+        paragraphs: [
+          'Asian producers work with MOQs of 500-1000 pieces per color and size. A T-shirt in 4 colors and 5 sizes therefore means: 20 variants × 500 pieces = 10,000 pieces minimum order. At €5 production = €50,000 capital tied up.',
+          'European micro-production starts at 50-100 pieces per variant. Same collection: 20 variants × 50 pieces = 1,000 pieces. At €14 production = €14,000 capital tied up. The higher unit price is offset by drastically lower MOQs.'
+        ]
+      },
+      complexProducts: {
+        title: 'Complex Products: Why Lingerie and Swimwear Are Special',
+        intro: 'The cost structure changes dramatically for technically demanding categories:',
+        bullets: [
+          'Lingerie: €18-35 production costs (special materials, complex processing)',
+          'Swimwear: €15-28 (technical fabrics, complex fit development)',
+          'Workwear: €20-45 (certifications, safety standards, durability)',
+          'Knitwear: €25-60 (specialized knitting mills, complex finishing processes)'
+        ],
+        conclusion: 'For these categories, European production makes sense not only in terms of quality but also economically: shorter development cycles, fewer prototype rounds, immediate correction options.'
+      },
+      costExplosion: {
+        title: 'The Hidden Cost Explosion: What Happens When Problems Arise?',
+        intro: 'A real example: A startup produces 2,000 swimwear pieces in China for €8/piece. After arrival in Europe, it turns out: the fit is wrong. Solution options:',
+        bullets: [
+          'Option A: New production (8-12 weeks, €16,000 + logistics)',
+          'Option B: Local alterations tailor (€4-8 per piece = €8,000-16,000 additional costs)',
+          'Option C: Sell with discounts (image damage + loss-making business)'
+        ],
+        conclusion: 'Had production taken place in Europe: problem detected after 2 pieces, pattern corrected, production continued. Additional costs: €0. Time lost: 3 days instead of 12 weeks.'
+      },
+      fairCalculation: {
+        title: 'Fair Calculation: How to Plan Realistically',
+        intro: 'A realistic total calculation for a small fashion collection (4 styles, 500 pieces):',
+        bullets: [
+          'Development and design: €2,000-4,000',
+          'Prototyping (3-5 rounds): €1,500-3,000',
+          'Material costs: €3,500-6,000',
+          'Production: €6,000-9,000',
+          'Quality control and packaging: €800-1,200',
+          'Logistics: €600-1,000',
+          'Project management: €1,200-1,800'
+        ],
+        conclusion: 'Total costs: €15,600 - 26,000 for 500 high-quality pieces. That\'s €31-52 per piece – which allows a healthy margin at a retail price of €90-150.'
+      },
+      conclusion: {
+        title: 'Conclusion: Honest Calculation Is the Foundation for Success',
+        content: 'Unrealistic calculations are the most common cause of failed fashion startups. Anyone planning with €5 production costs will have to make massive cuts either in quality or in margin. Realistic planning with fair, transparent cost structures creates the basis for sustainable growth – not only ecologically, but also economically.'
+      }
+    }
   },
   spezialisierungExpertise: {
     title: 'Specialization Pays Off: Why Niche Expertise in Textile Production is Crucial',
