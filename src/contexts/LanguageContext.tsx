@@ -196,7 +196,7 @@ const translationsDE = {
     readTime: 'min',
     posts: [
       {
-        title: 'Wie Sie Ihre erste Modekollektion planen – ein Leitfaden für Startups und Creator',
+        title: 'Wie Sie Ihre erste Modekollektion planen – ein Leitfaden für Startups und Marken',
         excerpt: 'Von der ersten Idee bis zur fertigen Kollektion: Entdecken Sie die wichtigsten Schritte für eine erfolgreiche Modekollektion und vermeiden Sie typische Anfängerfehler.',
         category: 'Startup-Guide'
       },
@@ -221,9 +221,9 @@ const translationsDE = {
         company: 'Merz b. Schwanen'
       },
       {
-        quote: '...versteht Streetwear genauso wie High Fashion und spricht auch die Sprache von Creators. CMK Studio macht aus Moods und Ideen eine fertige Kollektion und guidet einen durch den gesamten Prozess.',
+        quote: '...versteht Streetwear genauso wie High Fashion und spricht auch die Sprache von Marken. CMK Studio macht aus Moods und Ideen eine fertige Kollektion und guidet einen durch den gesamten Prozess.',
         client: 'Lena Mantler',
-        company: 'Model, Creator, mánt'
+        company: 'Model, mánt'
       },
       {
         quote: 'Als Unternehmerin muss man sich auf seine Ziele und diversen Projekte konzentrieren. Ein Partner wie CMK Studio setzt unsere Werte und unsere Ansprüche an Qualität und Verlässlichkeit um. Das ist ein echtes Geschenk.',
@@ -484,7 +484,7 @@ const translationsEN = {
     readTime: 'min',
     posts: [
       {
-        title: 'How to Plan Your First Fashion Collection – A Guide for Startups and Creators',
+        title: 'How to Plan Your First Fashion Collection – A Guide for Startups and Brands',
         excerpt: 'From the initial idea to the finished collection: Discover the most important steps for a successful fashion collection and avoid typical beginner mistakes.',
         category: 'Startup Guide'
       },
@@ -509,9 +509,9 @@ const translationsEN = {
         company: 'Merz b. Schwanen'
       },
       {
-        quote: '...understands streetwear as well as high fashion and also speaks the language of creators. CMK Studio turns moods and ideas into a finished collection and guides you through the entire process.',
+        quote: '...understands streetwear as well as high fashion and also speaks the language of brands. CMK Studio turns moods and ideas into a finished collection and guides you through the entire process.',
         client: 'Lena Mantler',
-        company: 'Model, Creator, mánt'
+        company: 'Model, mánt'
       },
       {
         quote: 'As an entrepreneur, you have to focus on your goals and various projects. A partner like CMK Studio implements our values and our demands for quality and reliability. That is a real gift.',
