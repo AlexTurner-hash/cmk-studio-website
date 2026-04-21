@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ArrowRight } from "lucide-react";
@@ -72,13 +71,10 @@ const FeaturedInsightSection = () => {
                 {featuredArticle.excerpt}
               </p>
 
-              <Button 
-                variant="ghost" 
-                className="group/btn p-0 h-auto text-[hsl(var(--bronze))] hover:text-[hsl(var(--bronze))]/80 hover:bg-transparent"
-              >
+              <span className="inline-flex items-center p-0 h-auto text-[hsl(var(--bronze))] transition-colors group-hover:text-[hsl(var(--bronze))]/80">
                 {featuredArticle.cta}
-                <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-              </Button>
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
             </div>
           </Link>
         </div>
