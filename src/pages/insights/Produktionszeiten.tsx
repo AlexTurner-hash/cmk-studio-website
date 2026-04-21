@@ -8,8 +8,9 @@ import { insightsArticlesDE, insightsArticlesEN } from "@/translations/insights-
 
 const Produktionszeiten = () => {
   const { language } = useLanguage();
-  const t = language === 'de' ? insightsArticlesDE.produktionszeiten : insightsArticlesEN.produktionszeiten;
-  
+  const t: any = language === 'de' ? insightsArticlesDE.produktionszeiten : insightsArticlesEN.produktionszeiten;
+  const s = t.sections;
+
   return (
     <>
       <title>{language === 'de' ? 'Produktionszeiten Textil realistisch planen - Timeline-Guide | CMK Studio' : 'Realistic Textile Production Timelines - Timeline Guide | CMK Studio'}</title>
