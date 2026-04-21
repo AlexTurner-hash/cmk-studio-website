@@ -55,7 +55,7 @@ const translationsDE = {
   hero: {
     title1: 'Ihre Kollektion.',
     title2: 'Unsere Produktion.',
-    subtitle: 'CMK Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa – damit Marken, Creator und Unternehmen Kollektionen effizient, hochwertig und transparent realisieren können.',
+    subtitle: 'CMK Studio verbindet Beratung, Design, nachhaltige Produktion und Logistik in Europa – damit Marken und Unternehmen Kollektionen effizient, hochwertig und transparent realisieren können.',
     cta: 'Projekt starten'
   },
   intro: {
@@ -196,7 +196,7 @@ const translationsDE = {
     readTime: 'min',
     posts: [
       {
-        title: 'Wie Sie Ihre erste Modekollektion planen – ein Leitfaden für Startups und Creator',
+        title: 'Wie Sie Ihre erste Modekollektion planen – ein Leitfaden für Startups und Marken',
         excerpt: 'Von der ersten Idee bis zur fertigen Kollektion: Entdecken Sie die wichtigsten Schritte für eine erfolgreiche Modekollektion und vermeiden Sie typische Anfängerfehler.',
         category: 'Startup-Guide'
       },
@@ -221,9 +221,9 @@ const translationsDE = {
         company: 'Merz b. Schwanen'
       },
       {
-        quote: '...versteht Streetwear genauso wie High Fashion und spricht auch die Sprache von Creators. CMK Studio macht aus Moods und Ideen eine fertige Kollektion und guidet einen durch den gesamten Prozess.',
+        quote: '...versteht Streetwear genauso wie High Fashion und spricht auch die Sprache von Marken. CMK Studio macht aus Moods und Ideen eine fertige Kollektion und guidet einen durch den gesamten Prozess.',
         client: 'Lena Mantler',
-        company: 'Model, Creator, mánt'
+        company: 'Model, mánt'
       },
       {
         quote: 'Als Unternehmerin muss man sich auf seine Ziele und diversen Projekte konzentrieren. Ein Partner wie CMK Studio setzt unsere Werte und unsere Ansprüche an Qualität und Verlässlichkeit um. Das ist ein echtes Geschenk.',
@@ -234,7 +234,7 @@ const translationsDE = {
   },
   servicesSection: {
     title: 'Für wen wir arbeiten',
-    subtitle: 'Wir begleiten Unternehmen, Creator und Beratungshäuser bei der Entwicklung und Produktion hochwertiger Kollektionen – von der ersten Idee bis zur fertigen Kollektion.',
+    subtitle: 'Wir begleiten Unternehmen, Marken und Beratungshäuser bei der Entwicklung und Produktion hochwertiger Kollektionen – von der ersten Idee bis zur fertigen Kollektion.',
     cta: 'Jetzt anfragen',
     portfolioTitle: '100% individuelle Produktion',
     portfolioSubtitle: 'Von Knitwear, Denim und Basics bis zu High Fashion und Accessoires. Wir produzieren frei nach ihren Wünschen, statt nur Basics zu bedrucken. Und wir beraten, was möglich ist.',
@@ -249,11 +249,11 @@ const translationsDE = {
         ]
       },
       {
-        title: 'Creator',
+        title: 'Marken',
         items: [
           { title: 'Fashion Drops', description: 'Limitierte Fashion-Releases für Influencer und Content Creator.' },
           { title: 'Merch', description: 'Hochwertiges Merchandise für Ihre Community.' },
-          { title: 'Kollektionen', description: 'Umfassende Kollektionen für Creator und Influencer.' }
+          { title: 'Kollektionen', description: 'Umfassende Kollektionen für Marken und Influencer.' }
         ]
       },
       {
@@ -343,7 +343,7 @@ const translationsEN = {
   hero: {
     title1: 'Your Collection.',
     title2: 'Our Production.',
-    subtitle: 'CMK Studio combines consulting, design, sustainable production and logistics in Europe – enabling brands, creators and companies to realize collections efficiently, with high quality and transparency.',
+    subtitle: 'CMK Studio combines consulting, design, sustainable production and logistics in Europe – enabling brands and companies to realize collections efficiently, with high quality and transparency.',
     cta: 'Start Project'
   },
   intro: {
@@ -484,7 +484,7 @@ const translationsEN = {
     readTime: 'min',
     posts: [
       {
-        title: 'How to Plan Your First Fashion Collection – A Guide for Startups and Creators',
+        title: 'How to Plan Your First Fashion Collection – A Guide for Startups and Brands',
         excerpt: 'From the initial idea to the finished collection: Discover the most important steps for a successful fashion collection and avoid typical beginner mistakes.',
         category: 'Startup Guide'
       },
@@ -509,9 +509,9 @@ const translationsEN = {
         company: 'Merz b. Schwanen'
       },
       {
-        quote: '...understands streetwear as well as high fashion and also speaks the language of creators. CMK Studio turns moods and ideas into a finished collection and guides you through the entire process.',
+        quote: '...understands streetwear as well as high fashion and also speaks the language of brands. CMK Studio turns moods and ideas into a finished collection and guides you through the entire process.',
         client: 'Lena Mantler',
-        company: 'Model, Creator, mánt'
+        company: 'Model, mánt'
       },
       {
         quote: 'As an entrepreneur, you have to focus on your goals and various projects. A partner like CMK Studio implements our values and our demands for quality and reliability. That is a real gift.',
@@ -522,7 +522,7 @@ const translationsEN = {
   },
   servicesSection: {
     title: 'Who We Work For',
-    subtitle: 'We support companies, creators and consultancies in developing and producing high-quality collections – from the first idea to the finished collection.',
+    subtitle: 'We support companies, brands and consultancies in developing and producing high-quality collections – from the first idea to the finished collection.',
     cta: 'Request Now',
     portfolioTitle: '100% Individual Production',
     portfolioSubtitle: 'From knitwear, denim and basics to high fashion and accessories. We produce freely according to your wishes, instead of just printing on basics. And we advise what is possible.',
@@ -537,11 +537,11 @@ const translationsEN = {
         ]
       },
       {
-        title: 'Creators',
+        title: 'Brands',
         items: [
           { title: 'Fashion Drops', description: 'Limited fashion releases for influencers and content creators.' },
           { title: 'Merch', description: 'High-quality merchandise for your community.' },
-          { title: 'Collections', description: 'Comprehensive collections for creators and influencers.' }
+          { title: 'Collections', description: 'Comprehensive collections for brands and influencers.' }
         ]
       },
       {

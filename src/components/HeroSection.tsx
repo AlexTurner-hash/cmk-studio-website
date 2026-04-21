@@ -91,7 +91,7 @@ const HeroSection = () => {
 
         {/* Get in Contact Button */}
         <div className="flex justify-center">
-          <a href="#contact" className="btn-accent">
+          <a href="#contact" className="btn-accent font-light rounded-none shadow-none">
             {t('hero.cta')}
           </a>
         </div>
