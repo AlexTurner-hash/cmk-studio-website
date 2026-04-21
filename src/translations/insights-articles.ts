@@ -497,7 +497,89 @@ export const insightsArticlesEN = {
     subtitle: 'From T-shirt to lingerie: How long does textile production really take? A detailed timeline guide with realistic numbers instead of wishful thinking.',
     category: 'Planning',
     readTime: '10 min read',
-    backToInsights: 'Back to Insights'
+    backToInsights: 'Back to Insights',
+    ctaTitle: 'Realistic timeline for your project?',
+    ctaDescription: 'We create a detailed timeline with all production steps for your collection.',
+    ctaButton: 'Start Project Now',
+    sections: {
+      underestimatedTimeline: {
+        title: 'Why Almost All Startups Underestimate Their Timeline',
+        paragraphs: [
+          '"We want to launch in November, so we need to produce in October" – this sentence comes up in almost every initial conversation. The reality: months pass before production. And production itself is only a small part of the total time.',
+          'The problem: Startups plan backwards from the launch date and systematically underestimate every single step. Then panic sets in, quality suffers, or the launch has to be postponed.'
+        ]
+      },
+      sevenPhases: {
+        title: 'The 7 Phases of Every Textile Production',
+        intro: 'Before a single piece is sewn, every collection goes through these phases:',
+        items: [
+          { label: 'Phase 1: Design & Concept (2-4 weeks)', text: 'Sketches, moodboards, color concepts, initial material research. Faster for simple basics, longer for complex designs.' },
+          { label: 'Phase 2: Technical Development (2-3 weeks)', text: 'Creating patterns, grading (sizes), creating tech packs. This phase is often underestimated – but no producer can work without clean tech packs.' },
+          { label: 'Phase 3: Material Sourcing (3-6 weeks)', text: 'Ordering fabrics, approving colors, checking quality. Faster for standard materials, significantly longer for custom developments (e.g. special prints, embroidery).' },
+          { label: 'Phase 4: Prototyping (3-5 weeks)', text: 'Sewing first samples, checking fit, making adjustments. Expect 2-3 prototype rounds. Each round: 7-10 days.' },
+          { label: 'Phase 5: Pre-Production (1-2 weeks)', text: 'Final approval, production setup, material cutting. This phase is often forgotten – but delays lurk here too.' },
+          { label: 'Phase 6: Production (2-4 weeks)', text: 'Sewing, quality control, packaging. Actual production is often the fastest part – when everything is prepared.' },
+          { label: 'Phase 7: Logistics & Delivery (1-3 weeks)', text: 'Transport to warehouse / to you. In Europe: 3-7 days. From Asia by air freight: 7-14 days. By sea freight: 6-8 weeks.' }
+        ]
+      },
+      timelinesByCategory: {
+        title: 'Realistic Timelines by Product Category',
+        items: [
+          { label: 'Basic T-Shirts & Sweats (Europe):', text: 'Total duration: 10-14 weeks. Design & Tech: 3 weeks | Material: 3 weeks | Prototyping: 3 weeks | Production: 2 weeks | Logistics: 1 week' },
+          { label: 'Basic T-Shirts & Sweats (Asia):', text: 'Total duration: 16-24 weeks. Longer communication channels, slower prototyping, sea freight logistics. The price advantage is paid for with a time disadvantage.' },
+          { label: 'Lingerie (Europe):', text: 'Total duration: 14-18 weeks. Design & Tech: 4 weeks | Material: 4 weeks (lace, elastic fabrics) | Prototyping: 4 weeks (complex fit) | Production: 3 weeks | Logistics: 1 week' },
+          { label: 'Swimwear (Europe):', text: 'Total duration: 12-16 weeks. Similar to lingerie, but materials are more standardized. Fit development is critical – expect 3-4 prototype rounds.' },
+          { label: 'Knitwear (Europe):', text: 'Total duration: 16-22 weeks. Design & Tech: 4 weeks | Knit setup: 3 weeks | Material: 4 weeks | Prototyping: 4 weeks | Production: 4 weeks | Logistics: 1 week. Knitwear is complex – machine programming, complex finishing processes.' },
+          { label: 'Workwear / Corporate Fashion (Europe):', text: 'Total duration: 12-16 weeks. Plus: time for corporate approvals, logo development, testing. Workwear often needs special certifications – this extends material sourcing.' },
+          { label: 'Leather Goods / Accessories (Europe):', text: 'Total duration: 10-14 weeks. Leather quality varies greatly – material selection is time-consuming. But production itself is often faster than for textiles.' }
+        ]
+      },
+      hiddenTimeEaters: {
+        title: 'The Hidden Time Eaters: What Really Costs Time',
+        items: [
+          { label: 'Time Eater #1: Decision Latency', text: 'You receive prototypes – but feedback takes a week. Color approvals drag on. Internal coordination takes time. Every delay adds up.' },
+          { label: 'Time Eater #2: Material Availability', text: 'The perfect fabric is sold out. Reproduction takes 6 weeks. Or: the desired color doesn\'t exist – custom dyeing required (+4 weeks).' },
+          { label: 'Time Eater #3: Fit Problems', text: 'The prototype doesn\'t fit. Pattern needs to be adjusted. New prototype round. That can cost 2-3 weeks – per round.' },
+          { label: 'Time Eater #4: Production Capacity', text: 'Good producers are booked out. If you inquire in September for December delivery, it may be too late. Production slots often need to be booked months in advance.' }
+        ]
+      },
+      europeVsAsia: {
+        title: 'Europe vs. Asia: The Time Comparison',
+        intro: 'The widespread assumption: "Asia is faster because of larger capacities." Is that true?',
+        realityLabel: 'Reality:',
+        bullets: [
+          'Communication: Time zones, language barriers extend every decision',
+          'Prototyping: Samples by air freight take 7-10 days one-way. Each round costs 2-3 weeks',
+          'Quality control: Problems are detected late – often after production',
+          'Logistics: Sea freight 6-8 weeks. Air freight 7-14 days, but expensive'
+        ],
+        conclusion: 'Result: Asian production often takes 6-10 weeks longer than Europe – despite faster pure production time. Europe\'s time advantage lies in short distances, fast communication and flexibility when problems arise.'
+      },
+      timelineOptimization: {
+        title: 'Timeline Optimization: How to Save Time',
+        items: [
+          { label: 'Tip #1: Parallel Processes Instead of Sequential', text: 'Material ordering and pattern development can run in parallel. Design finalization during material sourcing. Use waiting times productively.' },
+          { label: 'Tip #2: Stock Materials Instead of Custom', text: 'Stock goods are immediately available. Custom dyeing, prints, embroidery extend the timeline by weeks. For the first launch: keep it simple.' },
+          { label: 'Tip #3: Experienced Partners = Fewer Iterations', text: 'A good producer detects fit problems early and proposes solutions. That saves 1-2 prototype rounds = 3-6 weeks.' },
+          { label: 'Tip #4: Plan Buffers', text: 'Always plan a 20-30% buffer. If the timeline is 12 weeks, calculate with 15-16 weeks. Better to be ready early than too late.' }
+        ]
+      },
+      expressProduction: {
+        title: 'Express Production: Can It Be Faster?',
+        intro: 'Yes – but at a price. Express production means:',
+        bullets: [
+          'Surcharges of 20-40% on production costs',
+          'Use of stock materials (less choice)',
+          'Possibly compromises in fit optimization',
+          'Higher risk of errors'
+        ],
+        conclusion: 'Realistic: Basic T-shirts in 6-7 weeks. Complex products (lingerie, knitwear) hardly accelerable. Express is for emergencies, not for standard planning.'
+      },
+      conclusion: {
+        title: 'Conclusion: Time Is Your Most Valuable Resource',
+        content: 'Realistic timeline planning is the difference between a successful launch and a disaster. Plan for 12-16 weeks for simple collections, 16-24 weeks for complex products. Plan buffers. Work with experienced partners who know and avoid bottlenecks. Then your launch date becomes realistic instead of wishful thinking.'
+      }
+    }
   },
   privateLabelBekleidung: {
     title: 'Private Label for Regional Retailers: How Mid-Size Fashion Houses Score with Own Brands',
