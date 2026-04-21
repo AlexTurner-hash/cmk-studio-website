@@ -365,14 +365,97 @@ export const insightsArticlesEN = {
     subtitle: 'Learn how high-quality, sustainable workwear becomes your company\'s flagship and why employees today value comfort, quality and individual details.',
     category: 'Employer Branding',
     readTime: '6 min read',
-    backToInsights: 'Back to Insights'
+    backToInsights: 'Back to Insights',
+    ctaTitle: 'Ready for high-quality workwear?',
+    ctaDescription: 'Develop workwear with us that makes your employees proud.',
+    ctaButton: 'Start Project Now',
+    sections: {
+      endOfTshirtEra: {
+        title: 'The End of the T-Shirt Era',
+        content1: 'Cheap T-shirts with printed logos are a thing of the past. Modern employees have higher expectations of their workwear and see it as a reflection of corporate culture. Companies still relying on cheap online prints are missing an important opportunity in employer branding.',
+        content2: 'High-quality workwear signals appreciation for employees and shows that the company is willing to invest in quality. This message resonates both internally and externally.'
+      },
+      businessCard: {
+        title: 'Workwear as a Business Card',
+        content1: 'Employees are a company\'s best ambassadors. When they are proud of their workwear and even wear it in their free time, the company becomes a personal recommendation. High-quality workwear turns every employee into an authentic brand ambassador.',
+        content2: 'Especially in creative and technical industries, clothing is an important expression of corporate identity. Startups and innovative companies use thoughtful workwear to communicate their culture and values.'
+      },
+      qualityConvinces: {
+        title: 'Quality That Convinces',
+        content1: 'Employees immediately notice the difference between cheap mass-produced goods and high-quality clothing. A good fit, pleasant materials and thoughtful details create a positive wearing experience that affects work attitude.',
+        content2: 'Sustainable materials such as organic cotton or recycled fibers also show that the company takes responsibility. These values are increasingly appreciated and expected by modern employees.'
+      },
+      individuality: {
+        title: 'Individuality Instead of Uniform Look',
+        content1: 'Modern workwear doesn\'t have to look uniform. Different cuts, colors and styles allow employees to express their personality while identifying with the company.',
+        content2: 'Subtle branding elements often appear more professional than large logos. A small label, a discreet logo or special color accents can be just as effective as eye-catching prints.'
+      },
+      roi: {
+        title: 'The ROI of High-Quality Workwear',
+        content1: 'High-quality workwear is an investment that pays off in many ways. Employees feel valued, turnover decreases and the company becomes more attractive to potential applicants. At the same time, brand visibility increases.',
+        content2: 'Studies show that companies with thoughtful corporate fashion achieve higher employee satisfaction and better ratings on employer review platforms. Investing in quality pays off in the long run.'
+      },
+      sustainability: {
+        title: 'Sustainability as a Competitive Advantage',
+        content1: 'Sustainable workwear particularly appeals to Generation Z and millennials, who increasingly value ethical business practices. Fairly produced clothing made from ecological materials becomes a differentiator.',
+        content2: 'Transparency in the production chain and certifications such as GOTS or Fair Trade enable companies to communicate their sustainability strategy authentically.'
+      },
+      future: {
+        title: 'The Future of Corporate Fashion',
+        content: 'Workwear is increasingly becoming a strategic tool in employer branding. Companies that invest in high-quality, sustainable workwear today position themselves as attractive employers and strong brands. The era of cheap T-shirt prints is definitively over.'
+      }
+    }
   },
   luxuryHospitalityCollections: {
     title: 'Luxury to Go: How Hotels and Spas Generate New Revenue with Exclusive Collections',
     subtitle: 'From yoga apparel to premium bath textiles: Learn how high-end hotels and spa resorts delight their guests and open up additional revenue streams through high-quality own brands.',
     category: 'Hospitality',
     readTime: '7 min read',
-    backToInsights: 'Back to Insights'
+    backToInsights: 'Back to Insights',
+    ctaTitle: 'Ready for your hotel collection?',
+    ctaDescription: 'Develop a lifestyle collection with us that delights your guests.',
+    ctaButton: 'Start Project Now',
+    sections: {
+      moreThanMerch: {
+        title: 'More Than Just Hotel Merchandise',
+        content1: 'Luxury hotels and spa resorts are increasingly discovering the potential of high-quality own brands. What was once considered simple merchandising is evolving into strategic lifestyle collections that extend the hotel experience and generate new revenue streams.',
+        content2: 'Guests want to take a piece of their vacation experience home with them. High-quality textiles they got to know during their stay become coveted keepsakes and lifestyle products.'
+      },
+      yogaApparel: {
+        title: 'Yoga Apparel: The Spa Trend Par Excellence',
+        content1: 'Spa resorts are increasingly focusing on exclusive yoga and wellness collections. High-quality yoga pants, tops and accessories made from sustainable materials appeal to health-conscious guests and extend the wellness experience at home. Premium resorts in the Rhine-Main region such as Villa Kennedy Frankfurt or Schlosshotel Kronberg are already successfully relying on exclusive own brands.',
+        content2: 'These collections position the resort as a lifestyle brand and create an emotional connection beyond the stay. Guests become brand ambassadors who represent the resort in their daily lives.'
+      },
+      premiumBath: {
+        title: 'Premium Bath Textiles as Signature Products',
+        content1: 'Luxurious bathrobes, towels and bedding become coveted signature products. Guests who came to appreciate the quality during their stay are willing to pay premium prices for these products.',
+        content2: 'Hotels can define their own quality standards and choose materials that perfectly match the brand identity. From organic cotton to innovative fiber blends, products are created that clearly stand out from standard goods.'
+      },
+      psychology: {
+        title: 'The Psychology of Luxury Shopping',
+        content1: 'Guests in luxury resorts are in a special emotional state. They are relaxed, open to new experiences and willing to invest in quality. This mood is ideal for selling high-quality collections.',
+        content2: 'Shopping becomes part of the overall experience. A tastefully designed hotel boutique becomes an experiential space where guests get to know and appreciate the brand in a new way.'
+      },
+      sustainability: {
+        title: 'Sustainability as a Luxury Standard',
+        content1: 'Modern luxury travelers expect sustainability. Organic-certified materials, fair production conditions and environmentally friendly packaging are becoming standard in the hospitality industry.',
+        content2: 'Through transparent sustainability standards, hotels can strengthen their credibility and position themselves as responsible brands. This also justifies higher prices for the collections.'
+      },
+      digitalMeetsPhysical: {
+        title: 'Digital Meets Physical',
+        content1: 'Successful hotel collections are not limited to on-site boutique sales. Online shops expand the reach and allow former guests to order products even after their stay.',
+        content2: 'Social media amplifies this effect: Guests share their hotel experiences and become authentic influencers for the collections. User-generated content becomes the most effective advertising.'
+      },
+      roi: {
+        title: 'ROI and Strategic Advantages',
+        content1: 'High-quality collections offer attractive margins and can contribute significantly to profitability. At the same time, they strengthen brand loyalty and create additional touchpoints with guests.',
+        content2: 'Hotels that invest in thoughtful collections differentiate themselves from the competition and create unique experiences that go beyond the mere stay. The investment pays off many times over.'
+      },
+      future: {
+        title: 'The Future of Hotel Retail',
+        content: 'The boundaries between hospitality and lifestyle brands are increasingly blurring. Hotels are becoming lifestyle destinations whose collections expand the brand experience and tap into new target groups. Those who invest in high-quality own brands today are optimally positioned for the future of the hospitality industry.'
+      }
+    }
   },
   creatorsInfluencersFashion: {
     title: 'From Idea to Collection: How Creators and Influencers Make the Jump to Fashion Production',
